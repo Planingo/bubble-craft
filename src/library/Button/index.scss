@@ -1,0 +1,14 @@
+@import '../colors.scss';
+@import '../size.scss';
+
+button {
+  background-color: $white;
+  color: $grey-140;
+  text-transform: uppercase;
+  border: $border solid $grey-140;
+  height: $box-height;
+  border-radius: $box-radius;
+  padding-left: $medium-margin;
+  padding-right: $medium-margin;
+  font-size: $medium;
+}
