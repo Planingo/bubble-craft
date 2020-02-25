@@ -1,14 +1,11 @@
 version: 2.1
 jobs:
   deploy:
-    executor:
-      name: node/default
-      tag: '13'
+    docker:
+      - image: circleci/node:13
     steps:
-      - node/with-cache:
-          steps:
-            - run: yarn add caprover
       - checkout
+      - run: yarn global add caprover
       - run: yarn deploy
 
 workflows:
@@ -20,6 +17,3 @@ workflows:
             branches:
               only:
                 - master
-
-orbs:
-  node: circleci/node@1.1
