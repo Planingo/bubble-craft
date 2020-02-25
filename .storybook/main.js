@@ -11,5 +11,6 @@ module.exports = {
     '@storybook/addon-backgrounds/register',
     '@storybook/addon-a11y/register',
     '@storybook/addon-links/register',
+    'storybook-addon-xd-designs/register',
   ],
 };

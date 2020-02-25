@@ -6,7 +6,8 @@ addParameters({
     viewports: INITIAL_VIEWPORTS, // newViewports would be an ViewportMap. (see below for examples)
   },
   backgrounds: [
-    { name: 'twitter', value: '#00aced', default: true },
+    { name: 'planingo', value: '#ffffff', default: true },
+    { name: 'twitter', value: '#00aced'},
     { name: 'facebook', value: '#3b5998' },
   ],
 });

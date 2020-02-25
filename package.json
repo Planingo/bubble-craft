@@ -16,7 +16,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy": "caprover deploy -h https://captain.caprover.cocaud.dev/ -p ${CAPROVER_PASSWORD} -a ditto"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,6 +48,7 @@
     "@storybook/react": "^5.3.13",
     "babel-loader": "^8.0.6",
     "node-sass": "^4.13.1",
-    "react-is": "^16.12.0"
+    "react-is": "^16.12.0",
+    "storybook-addon-xd-designs": "^5.3.1"
   }
 }
