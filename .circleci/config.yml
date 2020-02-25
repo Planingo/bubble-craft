@@ -1,0 +1,18 @@
+version: 2.1
+jobs:
+  deploy:
+    docker:
+      - image: circleci/node:13
+    steps:
+      - checkout
+      - run: yarn global add caprover
+      - run: yarn deploy
+
+workflows:
+  version: 2
+  common:
+    jobs:
+      - deploy:
+          filters:
+            tags:
+              only: /.*/
