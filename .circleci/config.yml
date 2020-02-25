@@ -14,5 +14,6 @@ workflows:
     jobs:
       - deploy:
           filters:
-            tags:
-              only: /.*/
+            branches:
+              only:
+                - master
