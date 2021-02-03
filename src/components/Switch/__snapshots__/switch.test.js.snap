@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch component Snapshot button 1`] = `
+<body>
+  <div>
+    <button
+      aria-checked="false"
+      aria-label="switch"
+      class="ant-switch"
+      role="switch"
+      type="button"
+    >
+      <div
+        class="ant-switch-handle"
+      />
+      <span
+        class="ant-switch-inner"
+      />
+    </button>
+  </div>
+</body>
+`;

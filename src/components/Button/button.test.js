@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom/extend-expect';
-import { fireEvent, render } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
-import Button from './Button';
+import {Button} from './Button';
 
 describe('Button component', () => {
   const textContent = 'LOGIN';
@@ -17,13 +17,13 @@ describe('Button component', () => {
   });
 
   it('should render given children', () => {
-    const { getByText } = render(button);
-    expect(getByText(textContent)).toBeInTheDocument();
+    render(button);
+    expect(screen.getByText(textContent)).toBeInTheDocument();
   });
 
   it('clicks on button', () => {
-    const { getByRole } = render(button);
-    const buttonClick = getByRole('button');
+    render(button);
+    const buttonClick = screen.getByRole('button');
     fireEvent.click(buttonClick);
     expect(onClick).toHaveBeenCalledTimes(1);
   });
