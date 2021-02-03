@@ -1,0 +1,86 @@
+import { Meta, ArgsTable } from '@storybook/addon-docs/blocks';
+import {Checkbox} from './Checkbox';
+
+
+<Meta
+  title="Components/Checkbox"
+  argTypes={{
+    autofocus: {
+      name:'autofocus', 
+      description:'autofocus', 
+      control: {
+        type: 'boolean'
+      },
+      table: {
+        defaultValue: {
+          summary: 'false'
+        }
+      },
+    },
+    checked: {
+      description:'checked', 
+      control: {
+        type: 'boolean'
+      },
+      table: {
+        defaultValue: {
+          summary: 'false'
+        }
+      },
+    },
+    disabled: {
+      description:'disabled', 
+      control: {
+        type: 'boolean'
+      },
+      table: {
+        defaultValue: {
+          summary: 'false'
+        }
+      },
+    },
+    defaultChecked: {
+      description:'defaultChecked', 
+      control: {
+        type: 'boolean'
+      },
+      table: {
+        defaultValue: {
+          summary: 'false'
+        }
+      },
+    },  
+    indeterminate: {
+      description:'indeterminate', 
+      control: {
+        type: 'boolean'
+      },
+      table: {
+        defaultValue: {
+          summary: 'false'
+        }
+      },
+    }, 
+    onChange: {
+      description:'onChange', 
+      control: {
+        type: 'text'
+      },
+    },  
+    
+  }}
+/>
+
+### Checkbox
+
+Use this playground to test the Checkbox component
+
+<Canvas>
+  <Story name="Standard">
+    {args => {
+      return <Checkbox {...args} />;
+    }}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Standard" />
