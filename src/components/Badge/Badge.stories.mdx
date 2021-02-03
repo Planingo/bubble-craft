@@ -1,0 +1,124 @@
+import { Meta, ArgsTable } from '@storybook/addon-docs/blocks';
+import {Badge} from './Badge';
+
+
+<Meta
+  title="Components/Badge"
+  argTypes={{
+    color: {
+      name:'color', 
+      description:'color', 
+      control: {
+        type: 'color'
+      },
+    },
+    count: {
+      description:'count', 
+      control: {
+        type: 'number'
+      }
+    },
+    dot: {
+      description:'dot', 
+      control: {
+        type: 'boolean'
+      },
+      table: {
+        defaultValue: {
+          summary: 'false',
+        }
+      }
+    },
+    offset: {
+      description:'offset', 
+      control: {
+        type: '[number, number]',
+      }
+    },  
+    overflowCount: {
+      description: 'overflowCount',
+      control: {
+        type: 'number'
+      },
+      table: {
+        defaultValue: {
+          summary: '99'
+        }
+      }
+    },
+    showZero: {
+      description:'showZero', 
+      control: {
+        type: 'boolean'
+      },
+      table: {
+        defaultValue: {
+          summary: 'false'
+        }
+      }
+    },
+    size: {
+      description:'icon', 
+      control: {
+        type: 'select',
+        options: [
+          'default',
+          'small'
+        ]
+      },
+      table: {
+        defaultValue: {
+          summary: 'default'
+        }
+      }
+    },
+    status: {
+      description:'loading', 
+      control: {
+        type: 'select',
+        options: [
+          'success',
+          'processing',
+          'default',
+          'error',
+          'warning'
+        ]
+      },
+      table: {
+        defaultValue: {
+          summary: 'default'
+        }
+      }
+    },
+    text: {
+      description:'text', 
+      control: {
+        type: 'text',
+      }
+    },
+    title: {
+      description:'title', 
+      control: {
+        type: 'text'
+      }
+    }
+  }}
+  args={{
+    count: 12,
+  }}
+/>
+
+### Button
+
+Use this playground to test the button component
+
+<Canvas>
+  <Story name="Standard">
+    {args => {
+      return <Badge {...args} />;
+    }}
+  </Story>
+</Canvas>
+
+
+<ArgsTable story="Standard" />
