@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox component Snapshot Checkbox 1`] = `
+<body>
+  <div>
+    <label
+      class="ant-checkbox-wrapper"
+    >
+      <span
+        class="ant-checkbox"
+      >
+        <input
+          aria-label="checkbox"
+          class="ant-checkbox-input"
+          type="checkbox"
+          value=""
+        />
+        <span
+          class="ant-checkbox-inner"
+        />
+      </span>
+    </label>
+  </div>
+</body>
+`;
