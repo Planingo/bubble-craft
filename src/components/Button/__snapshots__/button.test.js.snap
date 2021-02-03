@@ -4,9 +4,12 @@ exports[`Button component Snapshot button 1`] = `
 <body>
   <div>
     <button
-      class="primary"
+      class="ant-btn ant-btn-primary ant-btn-round"
+      type="button"
     >
-      LOGIN
+      <span>
+        LOGIN
+      </span>
     </button>
   </div>
 </body>
