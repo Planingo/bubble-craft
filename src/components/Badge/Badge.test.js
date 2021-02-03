@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom/extend-expect';
 import { fireEvent, render } from '@testing-library/react';
 import React from 'react';
-import Button from './index';
+import Button from './Button';
 
 describe('Button component', () => {
   const textContent = 'LOGIN';

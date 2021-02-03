@@ -1,15 +1,7 @@
 {
   "name": "ditto",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^10.0.0",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.4.0"
-  },
+  "description": "Disign systeme planingo",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -17,7 +9,17 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "deploy": "caprover deploy -h https://captain.caprover.cocaud.dev/ -p ${CAPROVER_PASSWORD} -b master -a ditto"
+    "deploy": "caprover deploy -h https://captain.caprover.cocaud.dev/ -p ${CAPROVER_PASSWORD} -b master -a ditto",
+    "storybook:start": "yarn storybook:copy-public && yarn start-storybook -p 6006 -s ./public"
+  },
+  "author": "Bugsyaya",
+  "dependencies": {
+    "@storybook/addon-essentials": "^6.1.16",
+    "antd": "^4.12.1",
+    "less": "^4.1.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.2"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,20 +37,29 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^5.3.13",
-    "@storybook/addon-actions": "^5.3.13",
-    "@storybook/addon-backgrounds": "^5.3.13",
-    "@storybook/addon-docs": "^5.3.13",
-    "@storybook/addon-knobs": "^5.3.13",
-    "@storybook/addon-links": "^5.3.13",
-    "@storybook/addon-storysource": "^5.3.13",
-    "@storybook/addon-viewport": "^5.3.13",
-    "@storybook/addons": "^5.3.13",
-    "@storybook/preset-create-react-app": "^1.5.2",
-    "@storybook/react": "^5.3.13",
+    "@storybook/addon-a11y": "^6.1.16",
+    "@storybook/addon-actions": "^6.1.16",
+    "@storybook/addon-backgrounds": "^6.1.16",
+    "@storybook/addon-docs": "^6.1.16",
+    "@storybook/addon-knobs": "^6.1.16",
+    "@storybook/addon-links": "^6.1.16",
+    "@storybook/addon-storysource": "^6.1.16",
+    "@storybook/addon-viewport": "^6.1.16",
+    "@storybook/addons": "^6.1.16",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.16",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.6.3",
     "babel-loader": "^8.0.6",
-    "node-sass": "^4.13.1",
-    "react-is": "^16.12.0",
-    "storybook-addon-xd-designs": "^5.3.1"
+    "eslint": "^7.8.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "jest": "^26.3.0",
+    "jest-image-snapshot": "^4.1.0",
+    "node-sass": "^5.0.0",
+    "prettier": "^2.1.1",
+    "react-docgen": "^5.3.1",
+    "react-is": "^17.0.1"
   }
 }
