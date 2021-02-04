@@ -1,5 +1,5 @@
 {
-  "name": "ditto",
+  "name": "@planingo/ditto",
   "version": "0.1.0",
   "description": "Disign systeme planingo",
   "scripts": {

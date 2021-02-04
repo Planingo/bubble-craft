@@ -16,6 +16,17 @@ jobs:
             - ~/.config
             - ./node_modules
       - run: yarn test
+  publish:
+    docker:
+      - image: circleci/node:15
+    steps:
+      - checkout
+      - run:
+          name: Authenticate with NPM
+          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
+      - run:
+          name: Publish package
+          command: yarn publish --access public
   deploy:
     docker:
       - image: circleci/node:15
@@ -29,6 +40,13 @@ workflows:
   common:
     jobs:
       - unit-test
+      - publish :
+          requires:
+            - unit-test
+          filters:
+            branches:
+              only:
+                - master
       - deploy:
           requires:
             - unit-test
