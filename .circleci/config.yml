@@ -1,8 +1,24 @@
 version: 2.1
 jobs:
+  unit-test:
+    docker:
+      - image: circleci/node:15
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - dependencies-{{ checksum "yarn.lock" }}
+      - run: yarn
+      - save_cache:
+          key: dependencies-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache
+            - ~/.config
+            - ./node_modules
+      - run: yarn test
   deploy:
     docker:
-      - image: circleci/node:13
+      - image: circleci/node:15
     steps:
       - checkout
       - run: yarn global add caprover
@@ -12,7 +28,10 @@ workflows:
   version: 2
   common:
     jobs:
+      - unit-test
       - deploy:
+          requires:
+            - unit-test
           filters:
             branches:
               only:
