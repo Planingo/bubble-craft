@@ -23,7 +23,7 @@ jobs:
       - checkout
       - run:
           name: Authenticate with NPM and publish
-          command: echo "//registry.npmjs.org/:_authToken=${{secrets.npm_TOKEN}}" > .npmrc && yarn publish --access public
+          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > .npmrc && yarn publish --access public
   deploy:
     docker:
       - image: circleci/node:15
