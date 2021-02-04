@@ -9,6 +9,7 @@ const Checkbox = ({
   disabled = false,
   indeterminate = false,
   onChange,
+  children,
 }) => {
   return <AntdCheckbox
     aria-label='checkbox'
@@ -18,7 +19,7 @@ const Checkbox = ({
     defaultChecked={defaultChecked}
     indeterminate={indeterminate}
     onChange={onChange}
-    {...props} />
+    {...props} >{children}</AntdCheckbox>
 }
 
 export { Checkbox };

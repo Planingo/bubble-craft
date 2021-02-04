@@ -19,6 +19,9 @@ exports[`Checkbox component Snapshot Checkbox 1`] = `
           class="ant-checkbox-inner"
         />
       </span>
+      <span>
+        Coucou
+      </span>
     </label>
   </div>
 </body>
