@@ -4,7 +4,7 @@ exports[`Button component Snapshot button 1`] = `
 <body>
   <div>
     <button
-      class="ant-btn ant-btn-primary ant-btn-round"
+      class="ant-btn"
       type="button"
     >
       <span>

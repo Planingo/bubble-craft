@@ -3,11 +3,11 @@ import { Checkbox as AntdCheckbox } from 'antd'
 
 const CheckboxGroup = ({
   props,
-  defaultValue = [],
-  disabled = false,
+  defaultValue,
+  disabled,
   name,
-  options = [],
-  value = [],
+  options,
+  value,
   onChange,
 }) => {
   return <AntdCheckbox.Group

@@ -3,11 +3,11 @@ import { Checkbox as AntdCheckbox } from 'antd'
 
 const Checkbox = ({
   props,
-  autofocus = false,
-  checked = false,
-  defaultChecked = false,
-  disabled = false,
-  indeterminate = false,
+  autofocus,
+  checked,
+  defaultChecked,
+  disabled,
+  indeterminate,
   onChange,
   children,
 }) => {

@@ -4,18 +4,14 @@ import { Switch as AntdSwitch } from 'antd'
 const Switch = ({
   props,
   children,
-  /**
-  * Level of the Switch defining it's color and outline.
-  * Possible values are: primary, secondary, tertiary, warning & danger.
-  */
-  autoFocus = false,
-  checked = false,
+  autoFocus,
+  checked,
   checkedChildren,
   className,
-  defaultChecked = false,
-  disabled = false,
-  loading = false,
-  size = 'default',
+  defaultChecked,
+  disabled,
+  loading,
+  size,
   unCheckedChildren,
   onChange,
   onClick

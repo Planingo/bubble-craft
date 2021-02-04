@@ -4,22 +4,18 @@ import { Button as AntdButton } from 'antd'
 const Button = ({
   props,
   children,
-  /**
-  * Level of the button defining it's color and outline.
-  * Possible values are: primary, secondary, tertiary, warning & danger.
-  */
-  block = false,
-  danger = false,
-  disabled = false,
-  ghost = false,
+  block,
+  danger,
+  disabled,
+  ghost,
   href,
-  htmlType = 'button',
+  htmlType,
   icon,
-  loading = false,
-  shape = 'round',
-  size = 'middle',
+  loading,
+  shape,
+  size,
   target,
-  type = 'primary',
+  type,
   onClick
 }) => {
   return <AntdButton
