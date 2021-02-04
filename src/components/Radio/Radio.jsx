@@ -4,14 +4,10 @@ import { Radio as AntdRadio } from 'antd'
 const Radio = ({
   props,
   children,
-  /**
-  * Level of the Switch defining it's color and outline.
-  * Possible values are: primary, secondary, tertiary, warning & danger.
-  */
-  autoFocus = false,
-  checked = false,
-  defaultChecked = false,
-  disabled = false,
+  autoFocus,
+  checked,
+  defaultChecked,
+  disabled,
   value,
 }) => {
   return <AntdRadio
