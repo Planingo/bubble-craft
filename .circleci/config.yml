@@ -32,18 +32,26 @@ jobs:
       - run: yarn global add caprover
       - run: yarn deploy
 
+filters-tag: &filters-tag
+  branches:
+    ignore: /.*/
+  tags:
+    only: /.*/
+
+filters-all: &filters-all
+  tags:
+    only: /.*/
+
 workflows:
   version: 2
   common:
     jobs:
-      - unit-test
+      - unit-test :
+          filters: *filters-all
       - publish :
           requires:
             - unit-test
-          filters:
-            branches:
-              only:
-                - master
+          filters: *filters-tag
       - deploy:
           requires:
             - unit-test
