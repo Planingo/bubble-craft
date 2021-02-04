@@ -1,0 +1,81 @@
+import { Meta, ArgsTable } from '@storybook/addon-docs/blocks';
+import {Radio} from './Radio';
+
+
+<Meta
+  title="Components/Radio"
+  argTypes={{
+    autoFocus: {
+      name:'autoFocus', 
+      description:'autoFocus', 
+      control: {
+        type: 'boolean'
+      },
+      table: {
+        defaultValue: {
+          summary: 'false'
+        }
+      },
+    },
+    checked: {
+      description:'checked', 
+      control: {
+        type: 'boolean'
+      },
+      table: {
+        defaultValue: {
+          summary: 'false'
+        }
+      },
+    },
+    defaultChecked: {
+      description:'defaultChecked', 
+      control: {
+        type: 'boolean'
+      },
+      table: {
+        defaultValue: {
+          summary: 'false'
+        }
+      },
+    },
+    disabled: {
+      description:'disabled', 
+      control: {
+        type: 'boolean'
+      },
+      table: {
+        defaultValue: {
+          summary: 'false'
+        }
+      },
+    },
+    value: {
+      description:'value', 
+      control: {
+        type: 'text'
+      }
+    },
+    children: {
+      description:'children', 
+      control: {
+        type: 'text'
+      }
+    }
+  }}
+/>
+
+### Radio
+
+Use this playground to test the Radio component
+
+<Canvas>
+  <Story name="Standard">
+    {args => {
+      return <Radio {...args} />;
+    }}
+  </Story>
+</Canvas>
+
+
+<ArgsTable story="Standard" />

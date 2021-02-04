@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch component Snapshot button 1`] = `
+<body>
+  <div>
+    <label
+      class="ant-radio-wrapper"
+    >
+      <span
+        class="ant-radio"
+      >
+        <input
+          class="ant-radio-input"
+          role="radio"
+          type="radio"
+          value=""
+        />
+        <span
+          class="ant-radio-inner"
+        />
+      </span>
+      <span>
+        radio
+      </span>
+    </label>
+  </div>
+</body>
+`;
