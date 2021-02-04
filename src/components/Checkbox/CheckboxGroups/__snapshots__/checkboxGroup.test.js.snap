@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxGroup component Snapshot CheckboxGroup 1`] = `
+<body>
+  <div>
+    <div
+      class="ant-checkbox-group"
+      role="checkbox-group"
+    />
+  </div>
+</body>
+`;
