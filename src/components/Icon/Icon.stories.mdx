@@ -1,0 +1,66 @@
+import { Meta, ArgsTable } from '@storybook/addon-docs/blocks';
+import * as icons from './Icon';
+
+<Meta
+  title="Components/Icon"
+  argTypes={{
+    component: {
+      description:'component',
+      control: {
+        type: 'text',
+      },
+    },
+    rotate: {
+      description:'rotate', 
+      control: {
+        type: 'number'
+      }
+    },
+    spin: {
+      description:'spin', 
+      control: {
+        type: 'boolean'
+      },
+      table: {
+        defaultValue: {
+          summary: 'false',
+        }
+      }
+    },
+    style: {
+      description:'style', 
+      control: {
+        type: 'object',
+      }
+    }
+  }}
+  args={{
+    style:{fontSize: '4em'},
+  }}
+/>
+
+### Icon
+
+Use this playground to test the button component
+
+<Canvas>
+  <Story name="Standard">
+    {args => {
+      return <div style={{display: "grid", gap: "20px", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))"}}>
+        {
+          Object.entries(icons)
+          .filter(([iconName]) => iconName.toUpperCase()[0] === iconName[0] && iconName !== 'IconProvider')
+          .map(([iconName, Icon]) => 
+              <div style={{display: "flex", flexDirection: "column", alignItems: "center"}} key={iconName} >
+                <Icon {...args} />
+                <p>{iconName}</p>
+              </div>
+          )
+        }
+        </div>
+    }}
+  </Story>
+</Canvas>
+
+
+<ArgsTable story="Standard" />
