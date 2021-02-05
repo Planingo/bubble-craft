@@ -6,3 +6,4 @@ export * from './Checkbox/Checkbox';
 export * from './Radio/Radio';
 export * from './Spin/Spin';
 export * from './Switch/Switch';
+export * from './Tag/Tag';
