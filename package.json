@@ -21,7 +21,7 @@
     "react-dom": "^17.0.1"
   },
   "eslintConfig": {
-    "extends": "react-app"
+      "extends": ["react-app", "plugin:mdx/recommended"]
   },
   "browserslist": {
     "production": [
@@ -53,6 +53,7 @@
     "@testing-library/user-event": "^12.6.3",
     "antd": "^4.12.1",
     "eslint": "^7.8.1",
+    "eslint-plugin-mdx": "^1.8.2",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0",
     "jest-image-snapshot": "^4.1.0",
@@ -64,5 +65,8 @@
     "react-dom": "^17.0.1",
     "react-is": "^17.0.1",
     "react-scripts": "4.0.2"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.4.0"
   }
 }
