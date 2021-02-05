@@ -1,6 +1,6 @@
 {
   "name": "@planingo/ditto",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Disign systeme planingo",
   "main": "src/components/index.js",
   "module": "src",
