@@ -1,0 +1,110 @@
+import { Meta, ArgsTable } from '@storybook/addon-docs/blocks';
+import {RadioGroup} from './RadioGroup';
+
+
+<Meta
+  title="Components/Radio/RadioGroup"
+  argTypes={{
+    buttonStyle: { 
+      description:'buttonStyle', 
+      control: {
+        type: 'select',
+        options: ['outline', 'solid']
+      },
+      table: {
+        defaultValue: {
+          summary: '[outline]'
+        }
+      },
+    },
+    defaultValue: {
+      description:'defaultValue', 
+      control: {
+        type: 'text'
+      }
+    },
+    disabled: {
+      description:'disabled', 
+      control: {
+        type: 'boolean'
+      },
+      table: {
+        defaultValue: {
+          summary: 'false'
+        }
+      },
+    },
+    name: {
+      description:'name', 
+      control: {
+        type: 'text'
+      }
+    },  
+    options: {
+      description:'options', 
+      control: {
+        type: 'object'
+      }
+    }, 
+    optionType: {
+      description:'optionType', 
+      control: {
+        type: 'select',
+        options: ['default', 'button']
+      },
+      table: {
+        defaultValue: {
+          summary: 'default'
+        }
+      },
+    }, 
+    size: {
+      description:'size', 
+      control: {
+        type: 'select',
+        options: ['large', 'middle', 'small']
+      }
+    }, 
+    value: {
+      description:'value', 
+      control: {
+        type: 'text'
+      }
+    }, 
+    onChange: {
+      description:'onChange', 
+      control: {
+        type: 'text'
+      },
+    }
+  }}
+  args={{
+    value: 'Apple',
+    buttonStyle: 'outline',
+    disabled: false,
+    optionType: 'button',
+    size: 'large',
+    options: [
+      { label: 'Apple', value: 'Apple' },
+      { label: 'Pear', value: 'Pear' },
+      { label: 'Orange', value: 'Orange' },
+    ],
+    onChange: function onChange(checkedValues) {
+      console.log('checked = ', checkedValues);
+    }
+  }}
+/>
+
+### Radio
+
+Use this playground to test the RadioGroup component
+
+<Canvas>
+  <Story name="Standard">
+    {args => {
+      return <RadioGroup {...args} />;
+    }}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Standard" />
