@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge component Snapshot button 1`] = `
+<body>
+  <div>
+    <span
+      class="ant-badge ant-badge-not-a-wrapper"
+    />
+  </div>
+</body>
+`;

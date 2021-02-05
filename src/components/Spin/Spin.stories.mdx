@@ -1,0 +1,71 @@
+import { Meta, ArgsTable } from '@storybook/addon-docs/blocks';
+import {Spin} from './Spin';
+
+
+<Meta
+  title="Components/Spin"
+  argTypes={{
+    delay: {
+      description:'delay', 
+      control: {
+        type: 'number'
+      },
+    },
+    indicator: {
+      description:'indicator', 
+      control: {
+        type: 'text'
+      }
+    },
+    size: {
+      description:'size', 
+      control: {
+        type: 'select',
+        options: ["small", "default", "large"]
+      },
+      table: {
+        defaultValue: {
+          summary: 'default',
+        }
+      }
+    },
+    spinning: {
+      description:'spinning', 
+      control: {
+        type: 'boolean',
+      },
+      table: {
+        defaultValue: {
+          summary: 'true',
+        }
+      }
+    },  
+    tip: {
+      description: 'tip',
+      control: {
+        type: 'text'
+      }
+    },
+    wrapperClassName: {
+      description: 'wrapperClassName',
+      control: {
+        type: 'text'
+      }
+    }
+  }}
+/>
+
+### Spin
+
+Use this playground to test the Spin component
+
+<Canvas>
+  <Story name="Standard">
+    {args => {
+      return <Spin {...args} />;
+    }}
+  </Story>
+</Canvas>
+
+
+<ArgsTable story="Standard" />
