@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioGroup component Snapshot RadioGroup 1`] = `
+<body>
+  <div>
+    <div
+      class="ant-radio-group ant-radio-group-outline"
+    />
+  </div>
+</body>
+`;
