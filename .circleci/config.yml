@@ -1,7 +1,7 @@
 version: 2.1
 orbs:
   discord: antonioned/discord@0.1.0
-  
+
 jobs:
   unit-test:
     docker:
@@ -28,9 +28,9 @@ jobs:
           name: Authenticate with NPM and publish
           command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > .npmrc && yarn publish --access public
       - discord/status:
-        success_only: true
-        success_message: ":sparkles: Une nouvelle version de Ditto est disponible :partying_face:"
-        webhook: "${DISCORD_STATUS_WEBHOOK}"
+          success_only: true
+          success_message: ":sparkles: Une nouvelle version de Ditto est disponible :partying_face:"
+          webhook: "${DISCORD_STATUS_WEBHOOK}"
   deploy:
     docker:
       - image: circleci/node:15
