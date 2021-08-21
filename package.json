@@ -1,7 +1,7 @@
 {
   "name": "@planingo/ditto",
   "version": "0.1.7",
-  "description": "Disign systeme planingo",
+  "description": "Design system planingo",
   "main": "src/components/index.js",
   "module": "src",
   "scripts": {
@@ -60,7 +60,6 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0",
     "jest-image-snapshot": "^4.1.0",
-    "less": "^4.1.1",
     "node-sass": "^5.0.0",
     "prettier": "^2.1.1",
     "react": "^17.0.1",
@@ -70,6 +69,8 @@
     "react-scripts": "4.0.2"
   },
   "dependencies": {
-    "@ant-design/icons": "^4.4.0"
+    "@ant-design/icons": "^4.4.0",
+    "less": "^4.1.1",
+    "less-loader": "^7.3.0"
   }
 }
