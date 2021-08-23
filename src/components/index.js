@@ -1,5 +1,7 @@
 import 'antd/dist/antd.css';
 
+import '../../Theme/index';
+
 export * from './Button/Button';
 export * from './Badge/Badge';
 export * from './Checkbox/Checkbox';

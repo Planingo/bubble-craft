@@ -1,0 +1,33 @@
+.rectangle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.big {
+    height: 100px;
+}
+
+.small {
+    height: 50px;
+}
+
+.header {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.last-left {
+    border-bottom-left-radius: 20px;
+}
+
+.last-right {
+    border-bottom-right-radius: 20px;
+}
