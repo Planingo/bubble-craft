@@ -2,51 +2,51 @@
 
 :root {
   /* Liste des couleurs : https://www.figma.com/file/WpaitEea7ORxKf90Q3UqWm/Ices?node-id=4%3A31 */
-  --PRIMARY-COLOR-180: @primary-180;
-  --PRIMARY-COLOR-160: @primary-160;
-  --PRIMARY-COLOR-140: @primary-140;
-  --PRIMARY-COLOR-120: @primary-120;
-  --PRIMARY-COLOR: @primary-100;
-  --PRIMARY-COLOR-080: @primary-080;
-  --PRIMARY-COLOR-060: @primary-060;
-  --PRIMARY-COLOR-040: @primary-040;
-  --PRIMARY-COLOR-020: @primary-020;
+  --PRIMARY-180: @primary-180;
+  --PRIMARY-160: @primary-160;
+  --PRIMARY-140: @primary-140;
+  --PRIMARY-120: @primary-120;
+  --PRIMARY: @primary-100;
+  --PRIMARY-080: @primary-080;
+  --PRIMARY-060: @primary-060;
+  --PRIMARY-040: @primary-040;
+  --PRIMARY-020: @primary-020;
 
-  --SECONDARY-COLOR-180: @secondary-180;
-  --SECONDARY-COLOR-160: @secondary-160;
-  --SECONDARY-COLOR-140: @secondary-140;
-  --SECONDARY-COLOR-120: @secondary-120;
-  --SECONDARY-COLOR: @secondary-100;
-  --SECONDARY-COLOR-080: @secondary-080;
-  --SECONDARY-COLOR-060: @secondary-060;
-  --SECONDARY-COLOR-040: @secondary-040;
-  --SECONDARY-COLOR-020: @secondary-020;
+  --SECONDARY-180: @secondary-180;
+  --SECONDARY-160: @secondary-160;
+  --SECONDARY-140: @secondary-140;
+  --SECONDARY-120: @secondary-120;
+  --SECONDARY: @secondary-100;
+  --SECONDARY-080: @secondary-080;
+  --SECONDARY-060: @secondary-060;
+  --SECONDARY-040: @secondary-040;
+  --SECONDARY-020: @secondary-020;
 
-  --GREEN-COLOR-180: @green-180;
-  --GREEN-COLOR-160: @green-160;
-  --GREEN-COLOR-140: @green-140;
-  --GREEN-COLOR-120: @green-120;
-  --GREEN-COLOR: @green-100;
-  --GREEN-COLOR-080: @green-080;
-  --GREEN-COLOR-060: @green-060;
-  --GREEN-COLOR-040: @green-040;
-  --GREEN-COLOR-020: @green-020;
+  --GREEN-180: @green-180;
+  --GREEN-160: @green-160;
+  --GREEN-140: @green-140;
+  --GREEN-120: @green-120;
+  --GREEN: @green-100;
+  --GREEN-080: @green-080;
+  --GREEN-060: @green-060;
+  --GREEN-040: @green-040;
+  --GREEN-020: @green-020;
 
-  --RED-COLOR-180: @red-180;
-  --RED-COLOR-160: @red-160;
-  --RED-COLOR-140: @red-140;
-  --RED-COLOR-120: @red-120;
-  --RED-COLOR: @red-100;
-  --RED-COLOR-080: @red-080;
-  --RED-COLOR-060: @red-060;
-  --RED-COLOR-040: @red-040;
-  --RED-COLOR-020: @red-020;
+  --RED-180: @red-180;
+  --RED-160: @red-160;
+  --RED-140: @red-140;
+  --RED-120: @red-120;
+  --RED: @red-100;
+  --RED-080: @red-080;
+  --RED-060: @red-060;
+  --RED-040: @red-040;
+  --RED-020: @red-020;
 
-  --CANCEL-ERROR-COLOR: @error-100;
+  --CANCEL-ERROR: @error-100;
 
-  --WARNING-COLOR: @warning-100;
+  --WARNING: @warning-100;
 
-  --VALID-COLOR: @valid-100;
+  --VALID: @valid-100;
 
   --WHITE: @white-180;
   --WHITE-100: @white-100;
@@ -148,16 +148,6 @@ h3 {
   font-size: 1.24em !important;
 }
 
-button {
-  font-family: "Montserrat-Bold";
-  font-size: 1em;
-
-  * {
-    font-family: "Montserrat-Bold";
-    font-size: 1em;
-  }
-}
-
 * {
   font-family: "Montserrat-Regular";
   font-size: 0.97em;
@@ -245,20 +235,20 @@ button {
 /* PRIMARY */
 
 .primary-180 {
-  background-color: var(--PRIMARY-COLOR-180) !important;
+  background-color: var(--PRIMARY-180) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--PRIMARY-COLOR-180) !important;
-    color: var(--PRIMARY-COLOR-180) !important;
+    border-color: var(--PRIMARY-180) !important;
+    color: var(--PRIMARY-180) !important;
     
     * {
-      color: var(--PRIMARY-COLOR-180) !important;
+      color: var(--PRIMARY-180) !important;
     }
 
     &[disabled] {
@@ -277,20 +267,20 @@ button {
 }
 
 .primary-160 {
-  background-color: var(--PRIMARY-COLOR-160) !important;
+  background-color: var(--PRIMARY-160) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--PRIMARY-COLOR-160) !important;
-    color: var(--PRIMARY-COLOR-160) !important;
+    border-color: var(--PRIMARY-160) !important;
+    color: var(--PRIMARY-160) !important;
     
     * {
-      color: var(--PRIMARY-COLOR-160) !important;
+      color: var(--PRIMARY-160) !important;
     }
 
     &[disabled] {
@@ -309,20 +299,20 @@ button {
 }
 
 .primary-140 {
-  background-color: var(--PRIMARY-COLOR-140) !important;
+  background-color: var(--PRIMARY-140) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--PRIMARY-COLOR-140) !important;
-    color: var(--PRIMARY-COLOR-140) !important;
+    border-color: var(--PRIMARY-140) !important;
+    color: var(--PRIMARY-140) !important;
     
     * {
-      color: var(--PRIMARY-COLOR-140) !important;
+      color: var(--PRIMARY-140) !important;
     }
 
     &[disabled] {
@@ -341,20 +331,20 @@ button {
 }
 
 .primary-120 {
-  background-color: var(--PRIMARY-COLOR-120) !important;
+  background-color: var(--PRIMARY-120) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--PRIMARY-COLOR-120) !important;
-    color: var(--PRIMARY-COLOR-120) !important;
+    border-color: var(--PRIMARY-120) !important;
+    color: var(--PRIMARY-120) !important;
     
     * {
-      color: var(--PRIMARY-COLOR-120) !important;
+      color: var(--PRIMARY-120) !important;
     }
 
     &[disabled] {
@@ -373,7 +363,7 @@ button {
 }
 
 .primary {
-  background-color: var(--PRIMARY-COLOR) !important;
+  background-color: var(--PRIMARY) !important;
   color: var(--WHITE) !important;
   
   * {
@@ -381,30 +371,30 @@ button {
   }
 
   &:hover {
-    background-color: var(--PRIMARY-COLOR-140) !important;
+    background-color: var(--PRIMARY-140) !important;
   }
 
   &:active {
-    background-color: var(--PRIMARY-COLOR-180) !important;
+    background-color: var(--PRIMARY-180) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--PRIMARY-COLOR) !important;
-    color: var(--PRIMARY-COLOR) !important;
+    border-color: var(--PRIMARY) !important;
+    color: var(--PRIMARY) !important;
     
     * {
-      color: var(--PRIMARY-COLOR) !important;
+      color: var(--PRIMARY) !important;
     }
 
     &:hover {
-      border-color: var(--PRIMARY-COLOR-180) !important;
-      color: var(--PRIMARY-COLOR-180) !important;
+      border-color: var(--PRIMARY-180) !important;
+      color: var(--PRIMARY-180) !important;
     }
   
     &:active {
-      border-color: var(--PRIMARY-COLOR-180) !important;
-      color: var(--PRIMARY-COLOR-180) !important;
+      border-color: var(--PRIMARY-180) !important;
+      color: var(--PRIMARY-180) !important;
       background-color: rgba(157, 196, 219, 0.1) !important;
     }
 
@@ -424,20 +414,20 @@ button {
 }
 
 .primary-080 {
-  background-color: var(--PRIMARY-COLOR-080) !important;
+  background-color: var(--PRIMARY-080) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--PRIMARY-COLOR-080) !important;
-    color: var(--PRIMARY-COLOR-080) !important;
+    border-color: var(--PRIMARY-080) !important;
+    color: var(--PRIMARY-080) !important;
     
     * {
-      color: var(--PRIMARY-COLOR-080) !important;
+      color: var(--PRIMARY-080) !important;
     }
 
     &[disabled] {
@@ -456,20 +446,20 @@ button {
 }
 
 .primary-060 {
-  background-color: var(--PRIMARY-COLOR-060) !important;
+  background-color: var(--PRIMARY-060) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--PRIMARY-COLOR-060) !important;
-    color: var(--PRIMARY-COLOR-060) !important;
+    border-color: var(--PRIMARY-060) !important;
+    color: var(--PRIMARY-060) !important;
     
     * {
-      color: var(--PRIMARY-COLOR-060) !important;
+      color: var(--PRIMARY-060) !important;
     }
 
     &[disabled] {
@@ -488,20 +478,20 @@ button {
 }
 
 .primary-040 {
-  background-color: var(--PRIMARY-COLOR-040) !important;
+  background-color: var(--PRIMARY-040) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--PRIMARY-COLOR-040) !important;
-    color: var(--PRIMARY-COLOR-040) !important;
+    border-color: var(--PRIMARY-040) !important;
+    color: var(--PRIMARY-040) !important;
     
     * {
-      color: var(--PRIMARY-COLOR-040) !important;
+      color: var(--PRIMARY-040) !important;
     }
 
     &[disabled] {
@@ -520,20 +510,20 @@ button {
 }
 
 .primary-020 {
-  background-color: var(--PRIMARY-COLOR-020) !important;
+  background-color: var(--PRIMARY-020) !important;
   color: var(--BLACK) !important;
   
   * {
     color: var(--BLACK) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--PRIMARY-COLOR-020) !important;
-    color: var(--PRIMARY-COLOR-020) !important;
+    border-color: var(--PRIMARY-020) !important;
+    color: var(--PRIMARY-020) !important;
     
     * {
-      color: var(--PRIMARY-COLOR-020) !important;
+      color: var(--PRIMARY-020) !important;
     }
 
     &[disabled] {
@@ -554,20 +544,20 @@ button {
 /* SECONDARY */
 
 .secondary-180 {
-  background-color: var(--SECONDARY-COLOR-180) !important;
+  background-color: var(--SECONDARY-180) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--SECONDARY-COLOR-180) !important;
-    color: var(--SECONDARY-COLOR-180) !important;
+    border-color: var(--SECONDARY-180) !important;
+    color: var(--SECONDARY-180) !important;
     
     * {
-      color: var(--SECONDARY-COLOR-180) !important;
+      color: var(--SECONDARY-180) !important;
     }
 
     &[disabled] {
@@ -586,20 +576,20 @@ button {
 }
 
 .secondary-160 {
-  background-color: var(--SECONDARY-COLOR-160) !important;
+  background-color: var(--SECONDARY-160) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--SECONDARY-COLOR-160) !important;
-    color: var(--SECONDARY-COLOR-160) !important;
+    border-color: var(--SECONDARY-160) !important;
+    color: var(--SECONDARY-160) !important;
     
     * {
-      color: var(--SECONDARY-COLOR-160) !important;
+      color: var(--SECONDARY-160) !important;
     }
 
     &[disabled] {
@@ -618,20 +608,20 @@ button {
 }
 
 .secondary-140 {
-  background-color: var(--SECONDARY-COLOR-140) !important;
+  background-color: var(--SECONDARY-140) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--SECONDARY-COLOR-140) !important;
-    color: var(--SECONDARY-COLOR-140) !important;
+    border-color: var(--SECONDARY-140) !important;
+    color: var(--SECONDARY-140) !important;
     
     * {
-      color: var(--SECONDARY-COLOR-140) !important;
+      color: var(--SECONDARY-140) !important;
     }
 
     &[disabled] {
@@ -650,20 +640,20 @@ button {
 }
 
 .secondary-120 {
-  background-color: var(--SECONDARY-COLOR-120) !important;
+  background-color: var(--SECONDARY-120) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--SECONDARY-COLOR-120) !important;
-    color: var(--SECONDARY-COLOR-120) !important;
+    border-color: var(--SECONDARY-120) !important;
+    color: var(--SECONDARY-120) !important;
     
     * {
-      color: var(--SECONDARY-COLOR-120) !important;
+      color: var(--SECONDARY-120) !important;
     }
 
     &[disabled] {
@@ -682,20 +672,20 @@ button {
 }
 
 .secondary {
-  background-color: var(--SECONDARY-COLOR) !important;
+  background-color: var(--SECONDARY) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--SECONDARY-COLOR) !important;
-    color: var(--SECONDARY-COLOR) !important;
+    border-color: var(--SECONDARY) !important;
+    color: var(--SECONDARY) !important;
     
     * {
-      color: var(--SECONDARY-COLOR) !important;
+      color: var(--SECONDARY) !important;
     }
 
     &[disabled] {
@@ -714,20 +704,20 @@ button {
 }
 
 .secondary-080 {
-  background-color: var(--SECONDARY-COLOR-080) !important;
+  background-color: var(--SECONDARY-080) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--SECONDARY-COLOR-080) !important;
-    color: var(--SECONDARY-COLOR-080) !important;
+    border-color: var(--SECONDARY-080) !important;
+    color: var(--SECONDARY-080) !important;
     
     * {
-      color: var(--SECONDARY-COLOR-080) !important;
+      color: var(--SECONDARY-080) !important;
     }
 
     &[disabled] {
@@ -746,20 +736,20 @@ button {
 }
 
 .secondary-060 {
-  background-color: var(--SECONDARY-COLOR-060) !important;
+  background-color: var(--SECONDARY-060) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--SECONDARY-COLOR-060) !important;
-    color: var(--SECONDARY-COLOR-060) !important;
+    border-color: var(--SECONDARY-060) !important;
+    color: var(--SECONDARY-060) !important;
     
     * {
-      color: var(--SECONDARY-COLOR-060) !important;
+      color: var(--SECONDARY-060) !important;
     }
 
     &[disabled] {
@@ -778,20 +768,20 @@ button {
 }
 
 .secondary-040 {
-  background-color: var(--SECONDARY-COLOR-040) !important;
+  background-color: var(--SECONDARY-040) !important;
   color: var(--BLACK) !important;
   
   * {
     color: var(--BLACK) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--SECONDARY-COLOR-040) !important;
-    color: var(--SECONDARY-COLOR-040) !important;
+    border-color: var(--SECONDARY-040) !important;
+    color: var(--SECONDARY-040) !important;
     
     * {
-      color: var(--SECONDARY-COLOR-040) !important;
+      color: var(--SECONDARY-040) !important;
     }
 
     &[disabled] {
@@ -810,20 +800,20 @@ button {
 }
 
 .secondary-020 {
-  background-color: var(--SECONDARY-COLOR-020) !important;
+  background-color: var(--SECONDARY-020) !important;
   color: var(--BLACK) !important;
   
   * {
     color: var(--BLACK) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--SECONDARY-COLOR-020) !important;
-    color: var(--SECONDARY-COLOR-020) !important;
+    border-color: var(--SECONDARY-020) !important;
+    color: var(--SECONDARY-020) !important;
     
     * {
-      color: var(--SECONDARY-COLOR-020) !important;
+      color: var(--SECONDARY-020) !important;
     }
 
     &[disabled] {
@@ -844,7 +834,7 @@ button {
 /* CANCEL-ERROR */
 
 .cancel-error {
-  background-color: var(--CANCEL-ERROR-COLOR) !important;
+  background-color: var(--CANCEL-ERROR) !important;
   color: var(--WHITE) !important;
   
   * {
@@ -852,30 +842,30 @@ button {
   }
 
   &:hover {
-    background-color: var(--CANCEL-ERROR-COLOR-140) !important;
+    background-color: var(--CANCEL-ERROR-140) !important;
   }
 
   &:active {
-    background-color: var(--CANCEL-ERROR-COLOR-180) !important;
+    background-color: var(--CANCEL-ERROR-180) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--CANCEL-ERROR-COLOR) !important;
-    color: var(--CANCEL-ERROR-COLOR) !important;
+    border-color: var(--CANCEL-ERROR) !important;
+    color: var(--CANCEL-ERROR) !important;
     
     * {
-      color: var(--CANCEL-ERROR-COLOR) !important;
+      color: var(--CANCEL-ERROR) !important;
     }
 
     &:hover {
-      border-color: var(--CANCEL-ERROR-COLOR-180) !important;
-      color: var(--CANCEL-ERROR-COLOR-180) !important;
+      border-color: var(--CANCEL-ERROR-180) !important;
+      color: var(--CANCEL-ERROR-180) !important;
     }
   
     &:active {
-      border-color: var(--CANCEL-ERROR-COLOR-180) !important;
-      color: var(--CANCEL-ERROR-COLOR-180) !important;
+      border-color: var(--CANCEL-ERROR-180) !important;
+      color: var(--CANCEL-ERROR-180) !important;
       background-color: rgba(157, 196, 219, 0.1) !important;
     }
 
@@ -898,20 +888,20 @@ button {
 /* WARNING */
 
 .warning {
-  background-color: var(--WARNING-COLOR) !important;
+  background-color: var(--WARNING) !important;
   color: var(--BLACK) !important;
   
   * {
     color: var(--BLACK) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--WARNING-COLOR) !important;
-    color: var(--WARNING-COLOR) !important;
+    border-color: var(--WARNING) !important;
+    color: var(--WARNING) !important;
     
     * {
-      color: var(--WARNING-COLOR) !important;
+      color: var(--WARNING) !important;
     }
 
     &[disabled] {
@@ -933,20 +923,20 @@ button {
 /* VALID */
 
 .valid {
-  background-color: var(--VALID-COLOR) !important;
+  background-color: var(--VALID) !important;
   color: var(--BLACK) !important;
   
   * {
     color: var(--BLACK) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--VALID-COLOR) !important;
-    color: var(--VALID-COLOR) !important;
+    border-color: var(--VALID) !important;
+    color: var(--VALID) !important;
     
     * {
-      color: var(--VALID-COLOR) !important;
+      color: var(--VALID) !important;
     }
 
     &[disabled] {
@@ -969,20 +959,20 @@ button {
 /* GREEN */
 
 .green-180 {
-  background-color: var(--GREEN-COLOR-180) !important;
+  background-color: var(--GREEN-180) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--GREEN-COLOR-180) !important;
-    color: var(--GREEN-COLOR-180) !important;
+    border-color: var(--GREEN-180) !important;
+    color: var(--GREEN-180) !important;
     
     * {
-      color: var(--GREEN-COLOR-180) !important;
+      color: var(--GREEN-180) !important;
     }
 
     &[disabled] {
@@ -1001,20 +991,20 @@ button {
 }
 
 .green-160 {
-  background-color: var(--GREEN-COLOR-160) !important;
+  background-color: var(--GREEN-160) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--GREEN-COLOR-160) !important;
-    color: var(--GREEN-COLOR-160) !important;
+    border-color: var(--GREEN-160) !important;
+    color: var(--GREEN-160) !important;
     
     * {
-      color: var(--GREEN-COLOR-160) !important;
+      color: var(--GREEN-160) !important;
     }
 
     &[disabled] {
@@ -1033,20 +1023,20 @@ button {
 }
 
 .green-140 {
-  background-color: var(--GREEN-COLOR-140) !important;
+  background-color: var(--GREEN-140) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--GREEN-COLOR-140) !important;
-    color: var(--GREEN-COLOR-140) !important;
+    border-color: var(--GREEN-140) !important;
+    color: var(--GREEN-140) !important;
     
     * {
-      color: var(--GREEN-COLOR-140) !important;
+      color: var(--GREEN-140) !important;
     }
 
     &[disabled] {
@@ -1065,20 +1055,20 @@ button {
 }
 
 .green-120 {
-  background-color: var(--GREEN-COLOR-120) !important;
+  background-color: var(--GREEN-120) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--GREEN-COLOR-120) !important;
-    color: var(--GREEN-COLOR-120) !important;
+    border-color: var(--GREEN-120) !important;
+    color: var(--GREEN-120) !important;
     
     * {
-      color: var(--GREEN-COLOR-120) !important;
+      color: var(--GREEN-120) !important;
     }
 
     &[disabled] {
@@ -1097,7 +1087,7 @@ button {
 }
 
 .green {
-  background-color: var(--GREEN-COLOR) !important;
+  background-color: var(--GREEN) !important;
   color: var(--WHITE) !important;
   
   * {
@@ -1105,30 +1095,30 @@ button {
   }
 
   &:hover {
-    background-color: var(--GREEN-COLOR-140) !important;
+    background-color: var(--GREEN-140) !important;
   }
 
   &:active {
-    background-color: var(--GREEN-COLOR-180) !important;
+    background-color: var(--GREEN-180) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--GREEN-COLOR) !important;
-    color: var(--GREEN-COLOR) !important;
+    border-color: var(--GREEN) !important;
+    color: var(--GREEN) !important;
     
     * {
-      color: var(--GREEN-COLOR) !important;
+      color: var(--GREEN) !important;
     }
 
     &:hover {
-      border-color: var(--GREEN-COLOR-180) !important;
-      color: var(--GREEN-COLOR-180) !important;
+      border-color: var(--GREEN-180) !important;
+      color: var(--GREEN-180) !important;
     }
   
     &:active {
-      border-color: var(--GREEN-COLOR-180) !important;
-      color: var(--GREEN-COLOR-180) !important;
+      border-color: var(--GREEN-180) !important;
+      color: var(--GREEN-180) !important;
       background-color: rgba(157, 196, 219, 0.1) !important;
     }
 
@@ -1148,20 +1138,20 @@ button {
 }
 
 .green-080 {
-  background-color: var(--GREEN-COLOR-080) !important;
+  background-color: var(--GREEN-080) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--GREEN-COLOR-080) !important;
-    color: var(--GREEN-COLOR-080) !important;
+    border-color: var(--GREEN-080) !important;
+    color: var(--GREEN-080) !important;
     
     * {
-      color: var(--GREEN-COLOR-080) !important;
+      color: var(--GREEN-080) !important;
     }
 
     &[disabled] {
@@ -1180,20 +1170,20 @@ button {
 }
 
 .green-060 {
-  background-color: var(--GREEN-COLOR-060) !important;
+  background-color: var(--GREEN-060) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--GREEN-COLOR-060) !important;
-    color: var(--GREEN-COLOR-060) !important;
+    border-color: var(--GREEN-060) !important;
+    color: var(--GREEN-060) !important;
     
     * {
-      color: var(--GREEN-COLOR-060) !important;
+      color: var(--GREEN-060) !important;
     }
 
     &[disabled] {
@@ -1212,20 +1202,20 @@ button {
 }
 
 .green-040 {
-  background-color: var(--GREEN-COLOR-040) !important;
+  background-color: var(--GREEN-040) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--GREEN-COLOR-040) !important;
-    color: var(--GREEN-COLOR-040) !important;
+    border-color: var(--GREEN-040) !important;
+    color: var(--GREEN-040) !important;
     
     * {
-      color: var(--GREEN-COLOR-040) !important;
+      color: var(--GREEN-040) !important;
     }
 
     &[disabled] {
@@ -1244,20 +1234,20 @@ button {
 }
 
 .green-020 {
-  background-color: var(--GREEN-COLOR-020) !important;
+  background-color: var(--GREEN-020) !important;
   color: var(--BLACK) !important;
   
   * {
     color: var(--BLACK) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--GREEN-COLOR-020) !important;
-    color: var(--GREEN-COLOR-020) !important;
+    border-color: var(--GREEN-020) !important;
+    color: var(--GREEN-020) !important;
     
     * {
-      color: var(--GREEN-COLOR-020) !important;
+      color: var(--GREEN-020) !important;
     }
 
     &[disabled] {
@@ -1278,20 +1268,20 @@ button {
 /* RED */
 
 .red-180 {
-  background-color: var(--RED-COLOR-180) !important;
+  background-color: var(--RED-180) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--RED-COLOR-180) !important;
-    color: var(--RED-COLOR-180) !important;
+    border-color: var(--RED-180) !important;
+    color: var(--RED-180) !important;
     
     * {
-      color: var(--RED-COLOR-180) !important;
+      color: var(--RED-180) !important;
     }
 
     &[disabled] {
@@ -1310,20 +1300,20 @@ button {
 }
 
 .red-160 {
-  background-color: var(--RED-COLOR-160) !important;
+  background-color: var(--RED-160) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--RED-COLOR-160) !important;
-    color: var(--RED-COLOR-160) !important;
+    border-color: var(--RED-160) !important;
+    color: var(--RED-160) !important;
     
     * {
-      color: var(--RED-COLOR-160) !important;
+      color: var(--RED-160) !important;
     }
 
     &[disabled] {
@@ -1342,20 +1332,20 @@ button {
 }
 
 .red-140 {
-  background-color: var(--RED-COLOR-140) !important;
+  background-color: var(--RED-140) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--RED-COLOR-140) !important;
-    color: var(--RED-COLOR-140) !important;
+    border-color: var(--RED-140) !important;
+    color: var(--RED-140) !important;
     
     * {
-      color: var(--RED-COLOR-140) !important;
+      color: var(--RED-140) !important;
     }
 
     &[disabled] {
@@ -1374,20 +1364,20 @@ button {
 }
 
 .red-120 {
-  background-color: var(--RED-COLOR-120) !important;
+  background-color: var(--RED-120) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--RED-COLOR-120) !important;
-    color: var(--RED-COLOR-120) !important;
+    border-color: var(--RED-120) !important;
+    color: var(--RED-120) !important;
     
     * {
-      color: var(--RED-COLOR-120) !important;
+      color: var(--RED-120) !important;
     }
 
     &[disabled] {
@@ -1406,7 +1396,7 @@ button {
 }
 
 .red {
-  background-color: var(--RED-COLOR) !important;
+  background-color: var(--RED) !important;
   color: var(--WHITE) !important;
   
   * {
@@ -1414,30 +1404,30 @@ button {
   }
 
   &:hover {
-    background-color: var(--RED-COLOR-140) !important;
+    background-color: var(--RED-140) !important;
   }
 
   &:active {
-    background-color: var(--RED-COLOR-180) !important;
+    background-color: var(--RED-180) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--RED-COLOR) !important;
-    color: var(--RED-COLOR) !important;
+    border-color: var(--RED) !important;
+    color: var(--RED) !important;
     
     * {
-      color: var(--RED-COLOR) !important;
+      color: var(--RED) !important;
     }
 
     &:hover {
-      border-color: var(--RED-COLOR-180) !important;
-      color: var(--RED-COLOR-180) !important;
+      border-color: var(--RED-180) !important;
+      color: var(--RED-180) !important;
     }
   
     &:active {
-      border-color: var(--RED-COLOR-180) !important;
-      color: var(--RED-COLOR-180) !important;
+      border-color: var(--RED-180) !important;
+      color: var(--RED-180) !important;
       background-color: rgba(157, 196, 219, 0.1) !important;
     }
 
@@ -1457,20 +1447,20 @@ button {
 }
 
 .red-080 {
-  background-color: var(--RED-COLOR-080) !important;
+  background-color: var(--RED-080) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--RED-COLOR-080) !important;
-    color: var(--RED-COLOR-080) !important;
+    border-color: var(--RED-080) !important;
+    color: var(--RED-080) !important;
     
     * {
-      color: var(--RED-COLOR-080) !important;
+      color: var(--RED-080) !important;
     }
 
     &[disabled] {
@@ -1489,20 +1479,20 @@ button {
 }
 
 .red-060 {
-  background-color: var(--RED-COLOR-060) !important;
+  background-color: var(--RED-060) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--RED-COLOR-060) !important;
-    color: var(--RED-COLOR-060) !important;
+    border-color: var(--RED-060) !important;
+    color: var(--RED-060) !important;
     
     * {
-      color: var(--RED-COLOR-060) !important;
+      color: var(--RED-060) !important;
     }
 
     &[disabled] {
@@ -1521,20 +1511,20 @@ button {
 }
 
 .red-040 {
-  background-color: var(--RED-COLOR-040) !important;
+  background-color: var(--RED-040) !important;
   color: var(--WHITE) !important;
   
   * {
     color: var(--WHITE) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--RED-COLOR-040) !important;
-    color: var(--RED-COLOR-040) !important;
+    border-color: var(--RED-040) !important;
+    color: var(--RED-040) !important;
     
     * {
-      color: var(--RED-COLOR-040) !important;
+      color: var(--RED-040) !important;
     }
 
     &[disabled] {
@@ -1553,20 +1543,20 @@ button {
 }
 
 .red-020 {
-  background-color: var(--RED-COLOR-020) !important;
+  background-color: var(--RED-020) !important;
   color: var(--BLACK) !important;
   
   * {
     color: var(--BLACK) !important;
   }
 
-  &.ghost {
+  &.ghost, &[ghost] {
     background-color: transparent !important;
-    border-color: var(--RED-COLOR-020) !important;
-    color: var(--RED-COLOR-020) !important;
+    border-color: var(--RED-020) !important;
+    color: var(--RED-020) !important;
     
     * {
-      color: var(--RED-COLOR-020) !important;
+      color: var(--RED-020) !important;
     }
 
     &[disabled] {

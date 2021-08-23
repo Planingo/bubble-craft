@@ -24,7 +24,10 @@
     "extends": [
       "react-app",
       "plugin:mdx/recommended"
-    ]
+    ],
+    "rules": {
+      "import/no-anonymous-default-export": "off"
+    }
   },
   "browserslist": {
     "production": [
