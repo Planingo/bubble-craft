@@ -72,7 +72,7 @@
     "react-scripts": "4.0.2"
   },
   "dependencies": {
-    "@ant-design/icons": "^4.4.0",
+    "@ant-design/icons": "^4.6.3",
     "less": "^4.1.1",
     "less-loader": "^7.3.0"
   }
