@@ -21,15 +21,17 @@ export const Button = ({children, ...props }) => {
   if (props.size === 'large') props['data-large'] = true
   if (props.size === 'small') props['data-small'] = true
   return (
-    <AntdButton
-      className={`storybook-button`}
-      {...props}
-      icon={''}
-    >
-      {!props.rightIcon && props.icon}
-      {!props.onlyIcon && children}
-      {props.rightIcon && props.icon}
-    </AntdButton>
+    <div className="storybook-button">
+      <AntdButton
+        className={props.className}
+        {...props}
+        icon={''}
+      >
+        {!props.rightIcon && props.icon}
+        {!props.onlyIcon && children}
+        {props.rightIcon && props.icon}
+      </AntdButton>
+    </div>
   );
 };
 
@@ -66,6 +68,10 @@ Button.propTypes = {
   * TODO property
   */
   htmlType: PropTypes.string,
+  /**
+  * TODO property
+  */
+  className: PropTypes.string,
   /**
   * TODO property
   */

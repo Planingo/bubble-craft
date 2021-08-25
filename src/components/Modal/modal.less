@@ -1,0 +1,31 @@
+.ant-modal-content {
+  background: linear-gradient(135deg, rgba(252, 133, 94, 0.5), rgba(101, 253, 233, 0.5), rgba(244, 113, 255, 0.5), rgba(101, 253, 233, 0.5));
+  padding: 1px;
+  div {
+    background: white;
+    color: black;
+  }
+
+  .ant-modal-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.storybook-modal::before {
+  background: linear-gradient(135deg, rgba(252, 133, 94, 0.5), rgba(101, 253, 233, 0.5), rgba(244, 113, 255, 0.5), rgba(101, 253, 233, 0.5));
+  animation: 3s linear 0s infinite alternate modal_animation;
+  content: "";
+  filter: blur(25px);
+  height: calc(100% - 40px);
+  left: 20px;
+  position: absolute;
+  top: 20px;
+  width: calc(100% - 40px);
+}
+
+@keyframes modal_animation {
+  to {
+    transform: scale(1.05);
+  }
+}
