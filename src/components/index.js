@@ -6,6 +6,7 @@ export * from './Button/Button';
 export * from './Badge/Badge';
 export * from './Checkbox/Checkbox';
 export * from './Checkbox/CheckboxGroups/CheckboxGroup';
+export * from './Modal/Modal';
 export * from './Radio/Radio';
 export * from './Radio/RadioGroups/RadioGroup';
 export * from './Spin/Spin';
