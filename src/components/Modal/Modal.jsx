@@ -37,12 +37,16 @@ export const Modal = ({children, ...props }) => {
         className='storybook-modal' 
         mask={props?.mask}
         title={props?.title}
-        visible={isModalVisible} 
-        onOk={handleOk} 
-        onCancel={handleCancel}
+        visible={isModalVisible}
         footer={[
-          <Button key="cancel" danger ghost>{props.cancelText}</Button>,
-          <Button key="validate" className="cta">{props.okText}</Button>,
+          <Button key="cancel" danger ghost onClick={async () => {
+            handleCancel()
+            props.onCancel()
+          }}>{props.cancelText}</Button>,
+          <Button key="validate" className="cta" onClick={async () => {
+            handleOk()
+            props.onOk()
+          }}>{props.okText}</Button>,
         ]}
         {...props}
       >
