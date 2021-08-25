@@ -3,15 +3,19 @@
 exports[`Button component Snapshot button 1`] = `
 <body>
   <div>
-    <button
-      class="ant-btn ant-btn-primary storybook-button"
-      label="test"
-      type="button"
+    <div
+      class="storybook-button"
     >
-      <span>
-        LOGIN
-      </span>
-    </button>
+      <button
+        class="ant-btn ant-btn-primary"
+        label="test"
+        type="button"
+      >
+        <span>
+          LOGIN
+        </span>
+      </button>
+    </div>
   </div>
 </body>
 `;
