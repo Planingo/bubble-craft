@@ -38,14 +38,16 @@ export const Modal = ({children, ...props }) => {
         mask={props?.mask}
         title={props?.title}
         visible={isModalVisible}
+        onCancel={handleCancel}
+        onOk={handleOk}
         footer={[
           <Button key="cancel" danger ghost onClick={async () => {
             handleCancel()
-            props.onCancel()
+            props?.onCancel()
           }}>{props.cancelText}</Button>,
           <Button key="validate" className="cta" onClick={async () => {
             handleOk()
-            props.onOk()
+            props?.onOk()
           }}>{props.okText}</Button>,
         ]}
         {...props}
