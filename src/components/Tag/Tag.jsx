@@ -1,25 +1,62 @@
 import React from 'react';
 import { Tag as AntdTag } from 'antd'
+import PropTypes from 'prop-types';
+import './tag.less'
 
-const Tag = ({
-  props,
-  closable,
-  closeIcon,
-  color,
-  icon,
-  visible,
-  onClose,
-  children
-}) => {
+
+/**
+ * 
+ * # 🚧 _Composant en construction_ 🚧
+ * 
+ * # TODO
+ * 
+ * ## Description
+ * 
+ * Documentations andt du composant : https://ant.design/components/tag/
+ * 
+ */
+ export const Tag = ({children, ...props }) => {
   return <AntdTag
   role='tag'
-  closable={closable}
-  closeIcon={closeIcon}
-  color={color}
-  icon={icon}
-  visible={visible}
-  onClose={onClose}
-    {...props} >{children}</AntdTag>
+  className={props?.type}
+    {...props} 
+    >
+      {children}
+  </AntdTag>
 }
 
-export { Tag };
+Tag.propTypes = {
+  /**
+  * TODO property
+  */
+   type: PropTypes.string,
+   /**
+   * TODO property
+   */
+    closable: PropTypes.bool,
+  /**
+  * TODO property
+  */
+   closeIcon: PropTypes.node,
+  /**
+  * TODO property
+  */
+   color: PropTypes.string,
+  /**
+  * TODO property
+  */
+   icon: PropTypes.node,
+  /**
+  * TODO property
+  */
+   visible: PropTypes.bool,
+  /**
+  * TODO property
+  */
+   onClose: PropTypes.func,
+};
+
+Tag.defaultProps = {
+  closable: false,
+  visible: true,
+};
