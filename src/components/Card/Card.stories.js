@@ -10,7 +10,6 @@ export default {
     title: "Minerva McGonagall",
     tags: ['Métamorphose', 'Ancient Runes', 'Arithmancy'],
     icon: <TagsOutlined />,
-    style: { width: 300 },
     type: 'lesson'
   }
 };

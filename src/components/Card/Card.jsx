@@ -27,7 +27,7 @@ export const Card = ({children, ...props }) => {
         </div>
       </div>}
       hoverable
-      style={props?.style}
+      style={props?.style || { width: 300 }}
       cover={<img alt={props?.alt} src={props?.src} />}
       actions={[
         <DownloadOutlined key="download" id='download' onClick={props?.onDownload} />,
