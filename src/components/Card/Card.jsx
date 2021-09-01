@@ -5,6 +5,7 @@ import { DownloadOutlined, CloudUploadOutlined, DeleteOutlined, TagsOutlined } f
 import './card.less'
 import { Button } from '../Button/Button';
 import { Tag } from '../Tag/Tag'
+import { Tooltip } from '../Tooltip/Tooltip';
 
 /**
  * 
@@ -32,9 +33,15 @@ export const Card = ({children, ...props }) => {
       style={props?.style || { width: 300 }}
       cover={<img alt={props?.alt} src={props?.src} />}
       actions={[
-        <DownloadOutlined key="download" id='download' onClick={props?.onDownload} />,
-        <CloudUploadOutlined key="cloud" id='cloud' onClick={props?.onCloud} />,
-        <DeleteOutlined key="delete" id='delete' onClick={props?.onDelete} />,
+        <Tooltip title={props.downloadTitle} placement='bottom'>
+          <DownloadOutlined key="download" id='download' onClick={props?.onDownload} />
+        </Tooltip>,
+        <Tooltip title={props.cloudTitle} placement='bottom'>
+          <CloudUploadOutlined key="cloud" id='cloud' onClick={props?.onCloud} />
+        </Tooltip>,
+        <Tooltip title={props.deleteTitle} placement='bottom'>
+          <DeleteOutlined key="delete" id='delete' onClick={props?.onDelete} />
+        </Tooltip>,
       ]}
     />
   );
@@ -44,15 +51,27 @@ Card.propTypes = {
   /**
   * TODO property
   */
-   onDownload: PropTypes.func,
+   downloadTitle: PropTypes.string,
   /**
   * TODO property
   */
-   onCloud: PropTypes.func,
+   cloudTitle: PropTypes.string,
   /**
   * TODO property
   */
-   onDelete: PropTypes.func,
+   deleteTitle: PropTypes.string,
+   /**
+   * TODO property
+   */
+    onDownload: PropTypes.func,
+   /**
+   * TODO property
+   */
+    onCloud: PropTypes.func,
+   /**
+   * TODO property
+   */
+    onDelete: PropTypes.func,
   /**
   * TODO property
   */
