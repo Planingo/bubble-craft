@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button as AntdButton } from 'antd';
+import { Radio as AntdRadio } from 'antd';
 import './button.less'
+import { AppstoreFilled, AppstoreOutlined, UnorderedListOutlined } from '@ant-design/icons';
 
 /**
  * 
@@ -22,20 +24,39 @@ export const Button = ({children, ...props }) => {
   if (props.size === 'small') props['data-small'] = true
   return (
     <div className="storybook-button">
-      <AntdButton
-        className={props.className}
-        {...props}
-        icon={''}
-      >
-        {!props.rightIcon && props.icon}
-        {!props.onlyIcon && children}
-        {props.rightIcon && props.icon}
-      </AntdButton>
+      {!props.switch ?
+        <AntdButton
+          className={props.className}
+          {...props}
+          icon={''}
+        >
+          {!props.rightIcon && props.icon}
+          {!props.onlyIcon && children}
+          {props.rightIcon && props.icon}
+        </AntdButton>
+      :
+        <AntdRadio.Group {...props} size='large'>
+          <AntdRadio.Button className={props.activeGrid ? 'active' : 'unactive'}><AppstoreOutlined/></AntdRadio.Button>
+          <AntdRadio.Button className={props.activeList ? 'active' : 'unactive'}><UnorderedListOutlined/></AntdRadio.Button>
+        </AntdRadio.Group>
+      }
     </div>
   );
 };
 
 Button.propTypes = {
+  /**
+  * TODO property
+  */
+  activeGrid: PropTypes.bool,
+  /**
+  * TODO property
+  */
+  activeList: PropTypes.bool,
+  /**
+  * TODO property
+  */
+  switch: PropTypes.bool,
   /**
   * TODO property
   */
@@ -106,5 +127,8 @@ Button.defaultProps = {
   size: "middle",
   type: 'primary',
   onlyIcon: false,
-  rightIcon: false
+  rightIcon: false,
+  switch: false,
+  activeGrid: true,
+  activeList: false
 };
