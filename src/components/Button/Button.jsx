@@ -35,7 +35,7 @@ export const Button = ({children, ...props }) => {
           {props.rightIcon && props.icon}
         </AntdButton>
       :
-        <AntdRadio.Group {...props} size='large'>
+        <AntdRadio.Group {...props}>
           <AntdRadio.Button className={props.activeGrid ? 'active' : 'unactive'}><AppstoreOutlined/></AntdRadio.Button>
           <AntdRadio.Button className={props.activeList ? 'active' : 'unactive'}><UnorderedListOutlined/></AntdRadio.Button>
         </AntdRadio.Group>
