@@ -87,7 +87,7 @@ Card.propTypes = {
   /**
   * TODO property
   */
-   title: PropTypes.string,
+   title: PropTypes.node,
   /**
   * TODO property
   */

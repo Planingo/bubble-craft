@@ -16,7 +16,7 @@ import { AppstoreFilled, AppstoreOutlined, UnorderedListOutlined } from '@ant-de
  * Documentations andt du composant : https://ant.design/components/button/
  * 
  */
-export const Button = ({children, ...props }) => {
+export const Button = ({children, activeGrid, activeList, switch: pswitch, onlyIcon, rightIcon, icon, ...props }) => {
   if (props.ghost || props.type === "dashed") props['data-ghost'] = true
   if (props.danger) props['data-danger'] = true
   if (props.type === 'link' || props.type === 'text') props['data-link'] = true
@@ -24,20 +24,18 @@ export const Button = ({children, ...props }) => {
   if (props.size === 'small') props['data-small'] = true
   return (
     <div className="storybook-button">
-      {!props.switch ?
+      {!pswitch ?
         <AntdButton
-          className={props.className}
           {...props}
-          icon={''}
         >
-          {!props.rightIcon && props.icon}
-          {!props.onlyIcon && children}
-          {props.rightIcon && props.icon}
+          {!rightIcon && icon}
+          {!onlyIcon && children}
+          {rightIcon && icon}
         </AntdButton>
       :
         <AntdRadio.Group {...props}>
-          <AntdRadio.Button className={props.activeGrid ? 'active' : 'unactive'}><AppstoreOutlined/></AntdRadio.Button>
-          <AntdRadio.Button className={props.activeList ? 'active' : 'unactive'}><UnorderedListOutlined/></AntdRadio.Button>
+          <AntdRadio.Button className={activeGrid ? 'active' : 'unactive'}><AppstoreOutlined/></AntdRadio.Button>
+          <AntdRadio.Button className={!activeGrid ? 'active' : 'unactive'}><UnorderedListOutlined/></AntdRadio.Button>
         </AntdRadio.Group>
       }
     </div>
@@ -49,10 +47,6 @@ Button.propTypes = {
   * TODO property
   */
   activeGrid: PropTypes.bool,
-  /**
-  * TODO property
-  */
-  activeList: PropTypes.bool,
   /**
   * TODO property
   */
@@ -80,7 +74,7 @@ Button.propTypes = {
   /**
   * TODO property
   */
-   type: PropTypes.oneOfType(['primary', 'dashed', 'link', 'text', 'default']),
+   type: PropTypes.oneOf(['primary', 'dashed', 'link', 'text', 'default']),
   /**
   * TODO property
   */
@@ -104,7 +98,7 @@ Button.propTypes = {
   /**
   * TODO property
   */
-  size: PropTypes.oneOfType(['large', 'middle', 'small']),
+  size: PropTypes.oneOf(['large', 'middle', 'small']),
   /**
   * TODO property
   */
@@ -129,6 +123,5 @@ Button.defaultProps = {
   onlyIcon: false,
   rightIcon: false,
   switch: false,
-  activeGrid: true,
-  activeList: false
+  activeGrid: true
 };

@@ -9,6 +9,7 @@ export default {
   args: {
     title: "Minerva McGonagall",
     tags: ['Métamorphose', 'Ancient Runes', 'Arithmancy'],
+    src: 'https://avatars.bugsyaya.dev/285/',
     icon: <TagsOutlined />,
     type: 'lesson',
     downloadTitle: 'Télécharger',

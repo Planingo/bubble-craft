@@ -86,7 +86,7 @@ Modal.propTypes = {
   /**
   * TODO property
   */
-   autoFocusButton: PropTypes.oneOfType([null, 'ok', 'cancel']),
+   autoFocusButton: PropTypes.oneOf([null, 'ok', 'cancel']),
   /**
   * TODO property
   */

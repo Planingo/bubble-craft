@@ -80,11 +80,11 @@ Tooltip.propTypes = {
   /**
   * TODO property
   */
-  placement: PropTypes.oneOfType(['top', 'left', 'right', 'bottom', 'topLeft', 'topRight', 'bottomLeft', 'bottomRight', 'leftTop', 'leftBottom', 'rightTop', 'rightBottom']),
+  placement: PropTypes.oneOf(['top', 'left', 'right', 'bottom', 'topLeft', 'topRight', 'bottomLeft', 'bottomRight', 'leftTop', 'leftBottom', 'rightTop', 'rightBottom']),
   /**
    * TODO property
   */
-  trigger: PropTypes.oneOfType(['hover', 'focus', 'click', 'contextMenu']),
+  trigger: PropTypes.oneOf(['hover', 'focus', 'click', 'contextMenu']),
   /**
   * TODO property
   */
