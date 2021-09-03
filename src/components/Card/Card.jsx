@@ -111,7 +111,4 @@ Card.propTypes = {
 };
 
 Card.defaultProps = {
-  src: 'https://avatars.bugsyaya.dev/285/',
-  title: 'Minerva McGonagall',
-  tags: [],
 };
