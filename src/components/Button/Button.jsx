@@ -35,7 +35,7 @@ export const Button = ({children, activeGrid, activeList, switch: pswitch, onlyI
       :
         <AntdRadio.Group {...props}>
           <AntdRadio.Button className={activeGrid ? 'active' : 'unactive'}><AppstoreOutlined/></AntdRadio.Button>
-          <AntdRadio.Button className={!activeGrid ? 'active' : 'unactive'}><UnorderedListOutlined/></AntdRadio.Button>
+          <AntdRadio.Button className={activeGrid ? 'unactive' : 'active'}><UnorderedListOutlined/></AntdRadio.Button>
         </AntdRadio.Group>
       }
     </div>
