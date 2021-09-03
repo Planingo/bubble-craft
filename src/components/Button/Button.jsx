@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Button as AntdButton } from 'antd';
 import { Radio as AntdRadio } from 'antd';
 import './button.less'
-import { AppstoreFilled, AppstoreOutlined, UnorderedListOutlined } from '@ant-design/icons';
+import { AppstoreOutlined, UnorderedListOutlined } from '@ant-design/icons';
 
 /**
  * 
@@ -35,7 +35,7 @@ export const Button = ({children, activeGrid, activeList, switch: pswitch, onlyI
       :
         <AntdRadio.Group {...props}>
           <AntdRadio.Button className={activeGrid ? 'active' : 'unactive'}><AppstoreOutlined/></AntdRadio.Button>
-          <AntdRadio.Button className={activeGrid ? 'unactive' : 'active'}><UnorderedListOutlined/></AntdRadio.Button>
+          <AntdRadio.Button className={activeList ? 'active' : 'unactive'}><UnorderedListOutlined/></AntdRadio.Button>
         </AntdRadio.Group>
       }
     </div>
@@ -47,6 +47,10 @@ Button.propTypes = {
   * TODO property
   */
   activeGrid: PropTypes.bool,
+  /**
+  * TODO property
+  */
+   activeList: PropTypes.bool,
   /**
   * TODO property
   */
