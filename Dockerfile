@@ -10,6 +10,7 @@ RUN yarn
 COPY src src
 COPY public public
 COPY .storybook .storybook
+COPY Theme Theme
 RUN yarn build-storybook
 
 # production environment
