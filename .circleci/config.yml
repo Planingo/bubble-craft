@@ -62,7 +62,4 @@ workflows:
       - deploy:
           requires:
             - unit-test
-          filters:
-            branches:
-              only:
-                - master
+          filters: *filters-tag
