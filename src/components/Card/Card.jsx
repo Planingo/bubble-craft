@@ -25,9 +25,9 @@ export const Card = ({children, ...props }) => {
         <div className='title-container'>
           <h1>{props?.title}</h1>
         </div>
-        {/* <div className='tag-container'>
+        <div className='tag-container'>
           {props?.tags.map(lesson => <Tag type={props?.type} icon={props?.icon}>{lesson}</Tag>)}
-        </div> */}
+        </div>
       </div>}
       hoverable
       style={props?.style || { width: 300 }}

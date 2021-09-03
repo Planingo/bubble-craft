@@ -45,10 +45,7 @@ export const Modal = ({children, ...props }) => {
             handleCancel()
             props?.onCancel()
           }}>{props.cancelText}</Button>,
-          <Button key="validate" className="cta" onClick={async () => {
-            handleOk()
-            props?.onOk()
-          }}>{props.okText}</Button>,
+          props.ValidateButton(handleOk),
         ]}
         {...props}
       >
@@ -63,6 +60,10 @@ Modal.propTypes = {
   * TODO property
   */
   OpenModal: PropTypes.func,
+  /**
+  * TODO property
+  */
+  ValidateButton: PropTypes.node,
   /**
   * TODO property
   */
@@ -166,11 +167,7 @@ Modal.propTypes = {
 };
 
 Modal.defaultProps = {
-  OpenModal: (showModal) => <Button type="primary" onClick={showModal}>
-      Ouvrir la modale
-    </Button>,
   closable: false,
   mask: false,
-  okText: "Valider",
   cancelText: "Annuler",
 };

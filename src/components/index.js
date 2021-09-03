@@ -8,6 +8,7 @@ export * from './Card/Card';
 export * from './Checkbox/Checkbox';
 export * from './Checkbox/CheckboxGroups/CheckboxGroup';
 export * from './Modal/Modal';
+export * from './Notification/Notification';
 export * from './Radio/Radio';
 export * from './Radio/RadioGroups/RadioGroup';
 export * from './Spin/Spin';
