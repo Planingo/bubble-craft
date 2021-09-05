@@ -25,8 +25,13 @@ export const Card = ({children, ...props }) => {
         <div className='title-container'>
           <h1>{props?.title}</h1>
         </div>
-        <div className='tag-container'>
+        <div className='container'>
+          {props?.tags && 
+          <Tooltip placement='bottom' title={props?.tags.join(', ')}>
+            <div className='tag-container'>
           {props?.tags.map(lesson => <Tag type={props?.type} icon={props?.icon}>{lesson}</Tag>)}
+          </div>
+          </Tooltip>}
         </div>
       </div>}
       hoverable
