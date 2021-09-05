@@ -20,8 +20,8 @@ import { Tooltip } from '../Tooltip/Tooltip';
  */
 export const Card = ({children, ...props }) => {
   return (
-      <AntdCard
-      title={<div className="title">
+    <AntdCard
+      title={<div className="title-card">
         <div className='title-container'>
           <h1>{props?.title}</h1>
         </div>
