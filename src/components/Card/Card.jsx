@@ -29,7 +29,7 @@ export const Card = ({children, ...props }) => {
           {props?.tags && 
           <Tooltip placement='bottom' title={props?.tags.join(', ')}>
             <div className='tag-container'>
-          {props?.tags.map(lesson => <Tag type={props?.type} icon={props?.icon}>{lesson}</Tag>)}
+          {props?.tags.map(tag => <Tag type={props?.type} icon={props?.icon} key={tag}>{tag}</Tag>)}
           </div>
           </Tooltip>}
         </div>
