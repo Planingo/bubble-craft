@@ -63,7 +63,7 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0",
     "jest-image-snapshot": "^4.1.0",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "prettier": "^2.1.1",
     "react": "^17.0.1",
     "react-docgen": "^5.3.1",
