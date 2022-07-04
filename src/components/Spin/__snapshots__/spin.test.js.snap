@@ -4,6 +4,8 @@ exports[`Spin component Snapshot spin 1`] = `
 <body>
   <div>
     <div
+      aria-busy="true"
+      aria-live="polite"
       class="ant-spin ant-spin-spinning"
     >
       <span
