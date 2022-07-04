@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Card as AntdCard } from 'antd';
-import { DownloadOutlined, CloudUploadOutlined, DeleteOutlined, TagsOutlined } from "../Icon/Icon"
+import { DownloadOutlined, CloudUploadOutlined, DeleteOutlined } from "../Icon/Icon"
 import './card.less'
-import { Button } from '../Button/Button';
 import { Tag } from '../Tag/Tag'
 import { Tooltip } from '../Tooltip/Tooltip';
 
