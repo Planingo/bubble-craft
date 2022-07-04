@@ -80,6 +80,6 @@
     "@ant-design/icons": "^4.6.3",
     "less": "^4.1.1",
     "less-loader": "^7.3.0",
-    "babel-loader": "^8.2.5"
+    "babel-loader": "8.1.0"
   }
 }
