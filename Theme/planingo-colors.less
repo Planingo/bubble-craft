@@ -69,6 +69,11 @@
   --BLACK-100: @black-100;
   --BLACK-060: @black-060;
   --BLACK-020: @black-020;
+
+  --paragraphe: @paragraphe;
+  --small-title: @small-title;
+  --title: @title;
+  --big-title: @big-title;
 }
 
 
@@ -145,24 +150,31 @@
   font-family: "Montserrat-ThinItalic";
   src: url("./Montserrat/Montserrat-ThinItalic.ttf") format("ttf");
 }
+
 h1 {
-  font-family: "Montserrat-Bold";
-  font-size: 1.52em !important;
+  font-family: "Montserrat-Regular" !important;
+  font-size: var(--big-title) !important;
 }
 
 h2 {
-  font-family: "Montserrat-Regular";
-  font-size: 1.52em !important;
+  font-family: "Montserrat-Regular" !important;
+  font-size: var(--title) !important;
 }
 
 h3 {
-  font-family: "Montserrat-Bold";
-  font-size: 1.24em !important;
+  font-family: "Montserrat-Regular" !important;
+  font-size: var(--small-title) !important;
+}
+
+
+h4 {
+  font-family: "Montserrat-Regular" !important;
+  font-size: var(--paragraphe) !important;
 }
 
 * {
-  font-family: "Montserrat-Regular";
-  font-size: 0.97em;
+  font-family: "Montserrat-Regular" !important;
+  font-size: var(--paragraphe) !important;
 }
 
 
