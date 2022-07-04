@@ -5,7 +5,7 @@ orbs:
 jobs:
   unit-test:
     docker:
-      - image: circleci/node:15
+      - image: circleci/node:14
     steps:
       - checkout
       - restore_cache:
@@ -21,7 +21,7 @@ jobs:
       - run: yarn test
   publish:
     docker:
-      - image: circleci/node:15
+      - image: circleci/node:14
     steps:
       - checkout
       - run:
@@ -33,7 +33,7 @@ jobs:
           webhook: "${DISCORD_STATUS_WEBHOOK}"
   deploy:
     docker:
-      - image: circleci/node:15
+      - image: circleci/node:14
     steps:
       - checkout
       - run: yarn global add caprover
