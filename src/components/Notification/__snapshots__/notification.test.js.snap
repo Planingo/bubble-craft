@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notification component Snapshot card 1`] = `
+<body>
+  <div>
+    <div
+      class="storybook-button"
+    >
+      <button
+        class="ant-btn ant-btn-primary"
+        type="button"
+      >
+        <span>
+          coucou
+        </span>
+      </button>
+    </div>
+  </div>
+</body>
+`;
