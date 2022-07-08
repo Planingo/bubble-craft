@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from '../Button/Button';
-import { Notification } from '../Notification/Notification';
+import Button from '../Button/Button';
+import Notif from '../Notification/Notification';
 
 import { Modal } from './Modal';
 
@@ -13,7 +13,7 @@ export default {
     OpenModal: (showModal) => <Button type="primary" onClick={showModal}>
       Ouvrir la modale
     </Button>,
-    ValidateButton: (handleOk) => <Notification
+    ValidateButton: (handleOk) => <Notif
       OpenNotification={(openNotification) => 
         <Button key="validate" className="cta" onClick={() => {
           openNotification()
