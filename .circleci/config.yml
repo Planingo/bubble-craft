@@ -3,6 +3,12 @@ orbs:
   discord: antonioned/discord@0.1.0
 
 jobs:
+  chromatic:
+      docker:
+        - image: circleci/node:14
+      steps:
+        - checkout
+        - run: npx chromatic --project-token=c68eb85b3eec
   unit-test:
     docker:
       - image: circleci/node:14
@@ -54,6 +60,8 @@ workflows:
   common:
     jobs:
       - unit-test :
+          filters: *filters-all
+      - chromatic :
           filters: *filters-all
       - publish :
           requires:

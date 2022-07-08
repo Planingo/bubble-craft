@@ -27,3 +27,5 @@ storybook-static
 .metals
 
 .jest-test-results.json
+
+build-storybook.log
