@@ -1,4 +1,5 @@
 import '../Theme/antd.customize.less'
+import results from '../.jest-test-results.json';
 export const parameters = {
     options: {
         storySort: (a, b) =>

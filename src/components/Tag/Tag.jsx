@@ -6,11 +6,7 @@ import './tag.less'
 
 /**
  * 
- * # 🚧 _Composant en construction_ 🚧
- * 
- * # TODO
- * 
- * ## Description
+ * Ce composant permet de catégoriser et/ou de marquer des évenements, des actions....
  * 
  * Documentations andt du composant : https://ant.design/components/tag/
  * 
@@ -27,31 +23,31 @@ import './tag.less'
 
 Tag.propTypes = {
   /**
-  * TODO property
+  * Définit le type du bouton (primary, secondary, warning, professor, module, lesson, pathway)
   */
    type: PropTypes.string,
    /**
-   * TODO property
+   * Définit si le tag est fermable ou non.
    */
     closable: PropTypes.bool,
   /**
-  * TODO property
+  * Définit l'icon de fermeture du tag
   */
    closeIcon: PropTypes.node,
   /**
-  * TODO property
+  * Définit la couleur du tag
   */
    color: PropTypes.string,
   /**
-  * TODO property
+  * Définit l'icon
   */
    icon: PropTypes.node,
   /**
-  * TODO property
+  * Définit si le tag est visible ou non
   */
    visible: PropTypes.bool,
   /**
-  * TODO property
+  * Fonction permettant de fermer le tag
   */
    onClose: PropTypes.func,
 };
