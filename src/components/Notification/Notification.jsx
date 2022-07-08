@@ -61,6 +61,6 @@ Notif.propTypes = {
     bottom: PropTypes.number,             
 };
 
-Notification.defaultProps = {
+Notif.defaultProps = {
   type: 'info'
 }
