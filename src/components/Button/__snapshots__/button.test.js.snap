@@ -7,7 +7,7 @@ exports[`Button component Snapshot button 1`] = `
       class="storybook-button"
     >
       <button
-        class="ant-btn ant-btn-primary"
+        class="ant-btn ant-btn-default"
         label="test"
         type="button"
       >

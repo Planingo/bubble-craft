@@ -1,118 +1,80 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Card as AntdCard } from 'antd';
-import { DownloadOutlined, CloudUploadOutlined, DeleteOutlined } from "../Icon/Icon"
-import './card.less'
-import { Tag } from '../Tag/Tag'
-import { Tooltip } from '../Tooltip/Tooltip';
+import './card.css'
 
 /**
- * 
- * # 🚧 _Composant en construction_ 🚧
- * 
- * # TODO
- * 
- * ## Description
  * 
  * Documentations andt du composant : https://ant.design/components/card/
  * 
  */
-export const Card = ({children, ...props }) => {
+export default function Card({children, tags, ...props }){
   return (
     <AntdCard
-      title={<div className="title-card">
-        <div className='title-container'>
-          <h1>{props?.title}</h1>
-        </div>
-        <div className='container'>
-          {props?.tags && 
-          <Tooltip placement='bottom' title={props?.tags.join(', ')}>
-            <div className='tag-container'>
-          {props?.tags.map(tag => <Tag type={props?.type} icon={props?.icon} key={tag}>{tag}</Tag>)}
-          </div>
-          </Tooltip>}
-        </div>
-      </div>}
       hoverable
-      style={props?.style || { width: 300 }}
-      cover={<img alt={props?.alt} src={props?.src} />}
-      actions={[
-        <Tooltip title={props.downloadTitle} placement='bottom'>
-          <DownloadOutlined key="download" id='download' onClick={props?.onDownload} />
-        </Tooltip>,
-        <Tooltip title={props.cloudTitle} placement='bottom'>
-          <CloudUploadOutlined key="cloud" id='cloud' onClick={props?.onCloud} />
-        </Tooltip>,
-        <Tooltip title={props.deleteTitle} placement='bottom'>
-          <DeleteOutlined key="delete" id='delete' onClick={props?.onDelete} />
-        </Tooltip>,
-      ]}
+      {...props}
     />
   );
 };
 
-Card.propTypes = {
-  /**
-  * TODO property
-  */
-   downloadTitle: PropTypes.string,
-  /**
-  * TODO property
-  */
-   cloudTitle: PropTypes.string,
-  /**
-  * TODO property
-  */
-   deleteTitle: PropTypes.string,
-   /**
-   * TODO property
-   */
-    onDownload: PropTypes.func,
-   /**
-   * TODO property
-   */
-    onCloud: PropTypes.func,
-   /**
-   * TODO property
-   */
-    onDelete: PropTypes.func,
-  /**
-  * TODO property
-  */
-   activeTabKey: PropTypes.string,
-  /**
-  * TODO property
-  */
-   alt: PropTypes.string,
-  /**
-  * TODO property
-  */
-   src: PropTypes.string,
-  /**
-  * TODO property
-  */
-   title: PropTypes.node,
-  /**
-  * TODO property
-  */
-   className: PropTypes.string,
-  /**
-  * TODO property
-  */
-   tags: PropTypes.array,
-  /**
-  * TODO property
-  */
-   type: PropTypes.string,
-  /**
-  * TODO property
-  */
-  icon: PropTypes.node,
-  /**
-  * TODO property
-  */
-  style: PropTypes.object,
-};
-
-Card.defaultProps = {
-};
+// Card.propTypes = {
+//   /**
+//   * TODO property
+//   */
+//    downloadTitle: PropTypes.string,
+//   /**
+//   * TODO property
+//   */
+//    cloudTitle: PropTypes.string,
+//   /**
+//   * TODO property
+//   */
+//    deleteTitle: PropTypes.string,
+//    /**
+//    * TODO property
+//    */
+//     onDownload: PropTypes.func,
+//    /**
+//    * TODO property
+//    */
+//     onCloud: PropTypes.func,
+//    /**
+//    * TODO property
+//    */
+//     onDelete: PropTypes.func,
+//   /**
+//   * TODO property
+//   */
+//    activeTabKey: PropTypes.string,
+//   /**
+//   * TODO property
+//   */
+//    alt: PropTypes.string,
+//   /**
+//   * TODO property
+//   */
+//    src: PropTypes.string,
+//   /**
+//   * TODO property
+//   */
+//    title: PropTypes.node,
+//   /**
+//   * TODO property
+//   */
+//    className: PropTypes.string,
+//   /**
+//   * TODO property
+//   */
+//    tags: PropTypes.array,
+//   /**
+//   * TODO property
+//   */
+//    type: PropTypes.string,
+//   /**
+//   * TODO property
+//   */
+//   icon: PropTypes.node,
+//   /**
+//   * TODO property
+//   */
+//   style: PropTypes.object,
+// };

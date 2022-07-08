@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom/extend-expect';
 import { render } from '@testing-library/react';
 import React from 'react';
-import { Button } from '../Button/Button';
-import {Notification} from './Notification';
+import Button from '../Button/Button';
+import Notif from './Notification';
 
 describe('Notification component', () => {
   const textContent = {
@@ -12,10 +12,10 @@ describe('Notification component', () => {
   };
 
   const notification = (
-    <Notification {...textContent} />
+    <Notif {...textContent} />
   );
 
-  it('Snapshot card', () => {
+  it('Snapshot notification', () => {
     const { baseElement } = render(notification);
     expect(baseElement).toMatchSnapshot();
   });
