@@ -16,9 +16,12 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "deploy": "caprover deploy -h https://captain.caprover.cocaud.dev/ -p ${CAPROVER_PASSWORD} -b master -a ditto",
-    "storybook:start": "yarn storybook:copy-public && yarn start-storybook -p 6006 -s ./public"
+    "storybook:start": "yarn storybook:copy-public && yarn start-storybook -p 6006 -s ./public",
+    "chromatic": "npx chromatic --project-token=c68eb85b3eec"
   },
-  "author": "Bugsyaya",
+  "author": {
+    "name": "Bugsyaya"
+  },
   "peerDependencies": {
     "antd": "^4.12.1",
     "react": "^17.0.1",
@@ -65,6 +68,7 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^13.2.1",
     "antd": "^4.21.5",
+    "chromatic": "^6.7.0",
     "eslint": "^7.8.1",
     "eslint-plugin-mdx": "^1.8.2",
     "eslint-plugin-react": "^7.20.6",
@@ -89,5 +93,7 @@
     "less": "^4.1.1",
     "less-loader": "^7.3.0",
     "react-screenshot-test": "^2.3.3"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "@planingo/ditto@0.1.34"
 }
