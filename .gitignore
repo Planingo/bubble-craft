@@ -25,3 +25,5 @@ yarn-error.log*
 storybook-static
 
 .metals
+
+.jest-test-results.json
