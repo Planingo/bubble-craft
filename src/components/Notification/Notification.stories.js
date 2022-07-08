@@ -1,11 +1,11 @@
 import React from 'react';
-import { Button } from '../Button/Button';
+import Button from '../Button/Button';
 
-import { Notification } from './Notification';
+import Notif from './Notification';
 
 export default {
   title: 'Components/Notification',
-  component: Notification,
+  component: Notif,
   args: {
     title: "C'est une super notif",
     description: "Juste pour dire que ca fonctionne de ouf !",
@@ -13,6 +13,6 @@ export default {
   }
 };
 
-const NotificationGlobal = (args) => <Notification {...args} />;
+const NotificationGlobal = (args) => <Notif {...args} />;
 
 export const Defaut = NotificationGlobal.bind({});

@@ -5,6 +5,9 @@ import * as Components from './components';
 export const COMPONENTS_EXCLUDE = ['CardGrid'];
 
 export const getComponentLink = componentName => `Composants/${componentName}`;
+export const getComponentLinkAtomes = componentName => `Atomes/${componentName}`;
+
+export const COMPONENTS = ['Card', 'Modal', 'Notification']
 
 <Meta title="Ditto" />
 
@@ -103,10 +106,26 @@ export const getComponentLink = componentName => `Composants/${componentName}`;
 
 # Planingo Design System
 
+<div class="subheading">Atomes</div>
+<div class="link-list">
+  {Object.keys(Components)
+    .filter(componentName => !COMPONENTS_EXCLUDE.includes(componentName))
+    .filter(componentName => !COMPONENTS.includes(componentName))
+    .map(componentName => {
+      return <a key={componentName} class="link-item" onClick={linkTo(getComponentLinkAtomes(componentName), 'Default')}>
+        <span>
+          <strong>{componentName}</strong>
+          {Components[componentName].__docgenInfo?.description}
+        </span>
+      </a>
+    })}
+</div>
+
 <div class="subheading">Composants</div>
 <div class="link-list">
   {Object.keys(Components)
     .filter(componentName => !COMPONENTS_EXCLUDE.includes(componentName))
+    .filter(componentName => COMPONENTS.includes(componentName))
     .map(componentName => {
       return <a key={componentName} class="link-item" onClick={linkTo(getComponentLink(componentName), 'Default')}>
         <span>

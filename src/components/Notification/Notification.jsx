@@ -16,7 +16,7 @@ const Context = React.createContext({ name: 'Default' });
  * Documentations andt du composant : https://ant.design/components/notification/
  * 
  */
-export const Notification = ({...props }) => {
+export default function Notif({...props }){
   const [api, contextHolder] = notification.useNotification();
 
   const openNotification = (type) => {
@@ -38,7 +38,7 @@ export const Notification = ({...props }) => {
   );
 };
 
-Notification.propTypes = {
+Notif.propTypes = {
   /**
    * TODO property
   */
