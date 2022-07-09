@@ -6,7 +6,7 @@
   padding: 0 !important;
 }
 
-svg {
+li > span > span > svg {
   font-size: 2em !important;
 }
 
