@@ -1,23 +1,8 @@
-.pathway {
-    background-color: var(--GREEN-020);
-    border-color: var(--GREEN-060);
-    color: var(--GREEN-060);
-}
-
-.module {
-    background-color: var(--YELLOW-020);
-    border-color: var(--YELLOW-060);
-    color: var(--YELLOW-060);
-}
-
-.lesson {
-    background-color: var(--RED-020);
-    border-color: var(--RED-060);
-    color: var(--RED-060);
-}
-
-.professor {
-    background-color: var(--BLUE-020);
-    border-color: var(--BLUE-060);
-    color: var(--BLUE-060);
+.ant-tag {
+    font-size: 1em !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: auto;
+    max-width: 230px;
 }
