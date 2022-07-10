@@ -7,6 +7,7 @@ export Button from './Button/Button';
 export Card from './Card/Card';
 export * from './Checkbox/Checkbox';
 export * from './Checkbox/CheckboxGroups/CheckboxGroup';
+export Empty from './Empty/Empty';
 export * from './Modal/Modal';
 export Notif from './Notification/Notification';
 export * from './Radio/Radio';
