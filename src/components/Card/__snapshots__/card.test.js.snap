@@ -4,12 +4,13 @@ exports[`Card component Snapshot card 1`] = `
 <body>
   <div>
     <div
-      class="ant-card ant-card-bordered ant-card-hoverable ant-card-type-lesson"
+      class="ant-card ant-card-bordered ant-card-hoverable ant-card-default ant-card-type-lesson"
       cloudtitle="Envoyer"
       deletetitle="Supprimer"
       downloadtitle="Télécharger"
       icon="[object Object]"
       src="https://avatars.bugsyaya.dev/285/"
+      tags="Métamorphose,Ancient Runes,Arithmancy"
     >
       <div
         class="ant-card-head"
