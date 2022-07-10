@@ -2,7 +2,7 @@ import React from 'react';
 import results from '../../../.jest-test-results.json';
 import { withTests } from '@storybook/addon-jest';
 import Card from './Card';
-import { CloudUploadOutlined, DeleteOutlined, DownloadOutlined, TagsOutlined } from '../Icon/Icon'
+import { CloudUploadOutlined, DeleteOutlined, DownloadOutlined } from '../Icon/Icon'
 import { Tooltip } from '../Tooltip/Tooltip';
 import Tag from '../Tag/Tag';
 
@@ -47,109 +47,102 @@ Default.args = {
     </div>
     <img src="https://avatars.bugsyaya.dev/285/" alt="Etudiant"/>
   </>,
-  title: "Minerva McGonagall",
-  icon: <TagsOutlined />,
-  type: 'lesson',
-  downloadTitle: 'Télécharger',
-  cloudTitle: 'Envoyer',
-  deleteTitle: 'Supprimer',
+  title: "Minerva McGonagall"
 }
 
 Default.argTypes = {
   actions: {
-    description:"La liste d'actions s'affiche en bas de la carte", 
     control: {
       type: 'object'
     },
   },
-    // count: {
-    //     description:'Numéro à afficher sur le badge', 
-    //     control: {
-    //         type: 'number'
-    //     }
-    // },
-    // dot: {
-    //     description:"Indique s'il faut afficher un point rouge au lieu de compter", 
-    //     control: {
-    //         type: 'boolean'
-    //     },
-    //     table: {
-    //         defaultValue: {
-    //             summary: 'false',
-    //         }
-    //     }
-    // },
-    // offset: {
-    //     description:'Définir le décalage du point du badge (ex : offset: {[10, 10]})', 
-    //     control: {
-    //     type: "array",
-    //     }
-    // },  
-    // overflowCount: {
-    //     description: 'Nombre maximum à afficher',
-    //     control: {
-    //         type: 'number'
-    //     },
-    //     table: {
-    //         defaultValue: {
-    //             summary: '99'
-    //         }
-    //     }
-    // },
-    // showZero: {
-    //     description:"Indique s'il faut afficher le badge lorsque le nombre est égal à zéro", 
-    //     control: {
-    //         type: 'boolean'
-    //     },
-    //     table: {
-    //         defaultValue: {
-    //             summary: 'false'
-    //         }
-    //     }
-    // },
-    // size: {
-    //     description:'Si `count` est défini, `size` définit la taille du badge', 
-    //     control: {
-    //         type: 'select',
-    //         options: [
-    //             'default',
-    //             'small'
-    //         ]
-    //     },
-    //     table: {
-    //         defaultValue: {
-    //             summary: 'default'
-    //         }
-    //     }
-    // },
-    // status: {
-    //     description:'Définir statut du point du badge', 
-    //     control: {
-    //     type: 'select',
-    //     options: [
-    //         'success',
-    //         'processing',
-    //         'default',
-    //         'error',
-    //         'warning'
-    //     ]
-    //     },
-    //     table: {
-    //         defaultValue: {
-    //             summary: 'default'
-    //         }
-    //     }
-    // },
-    // text: {
-    //     description:"Si `status` est défini, `text` définit le texte d'affichage de l'état `dot`", 
-    //     control: {
-    //         type: 'text',
-    //     }
-    // },
-    // title: {
-    //     description:'Texte à afficher au survol du badge', 
-    //     control: {
-    //         type: 'text'
-    //     }
-    // }
+  activeTabKey: {
+    control: {
+      type: 'text'
+    },
+  },
+  bodyStyle: {
+    control: {
+      type: 'text'
+    },
+  },
+  bordered: {
+    control: {
+      type: 'boolean'
+    },
+  },
+  cover: {
+    control: {
+      type: 'object'
+    },
+  },
+  defaultActiveTabKey: {
+    control: {
+      type: 'text'
+    },
+  },
+  extra: {
+    control: {
+      type: 'array'
+    },
+  },
+  headStyle: {
+    control: {
+      type: 'text'
+    },
+  },
+  hoverable: {
+    control: {
+      type: 'boolean'
+    },
+  },
+  loading: {
+    control: {
+      type: 'boolean'
+    },
+  },
+  size: {
+    control: {
+      type: 'text',
+      options: [
+          'default',
+          'small'
+      ]
+    },
+    table: {
+        defaultValue: {
+            summary: 'default'
+        }
+    }
+  },
+  tabBarExtraContent: {
+    control: {
+      type: 'object'
+    },
+  },
+  tabList: {
+    control: {
+      type: 'object'
+    },
+  },
+  tabProps: {
+    control: {
+      type: 'object'
+    },
+  },
+  title: {
+    control: {
+      type: 'object'
+    },
+  },
+  type: {
+    control: {
+      type: 'text'
+    },
+  },
+  onTabChange: {
+    control: {
+      type: 'func'
+    },
+  },
 };
