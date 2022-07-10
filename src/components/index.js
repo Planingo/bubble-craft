@@ -14,5 +14,5 @@ export * from './Radio/Radio';
 export * from './Radio/RadioGroups/RadioGroup';
 export * from './Spin/Spin';
 export * from './Switch/Switch';
-export * from './Tag/Tag';
+export Tag from './Tag/Tag';
 export * from './Tooltip/Tooltip';

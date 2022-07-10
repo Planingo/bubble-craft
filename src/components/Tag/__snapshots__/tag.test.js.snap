@@ -5,7 +5,6 @@ exports[`Tag component Snapshot tag 1`] = `
   <div>
     <span
       class="ant-tag"
-      role="tag"
     >
       C'est un super tag
       <span

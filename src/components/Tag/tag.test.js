@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom/extend-expect';
 import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
-import {Tag} from './Tag';
+import Tag from './Tag';
 
 describe('Tag component', () => {
   const textContent = "C'est un super tag";
