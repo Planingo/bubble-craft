@@ -67,10 +67,7 @@ workflows:
       - unit-test :
           filters: *filters-all
       - chromatic :
-          filters:
-            branches:
-              only: 
-                master
+          filters: *filters-all
       - publish :
           requires:
             - unit-test
