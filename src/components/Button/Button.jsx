@@ -18,90 +18,69 @@ export default function Button({...props }){
   );
 };
 
-// Button.propTypes = {
-//   /**
-//   * TODO property
-//   */
-//   activeGrid: PropTypes.bool,
-//   /**
-//   * TODO property
-//   */
-//    activeList: PropTypes.bool,
-//   /**
-//   * TODO property
-//   */
-//   switch: PropTypes.bool,
-//   /**
-//   * TODO property
-//   */
-//   block: PropTypes.bool,
-//   /**
-//   * TODO property
-//   */
-//   disabled: PropTypes.bool,
-//   /**
-//   * TODO property
-//   */
-//   danger: PropTypes.bool,
-//   /**
-//   * TODO property
-//   */
-//   ghost: PropTypes.bool,
-//   /**
-//   * TODO property
-//   */
-//   onlyIcon: PropTypes.bool,
-//   /**
-//   * TODO property
-//   */
-//    type: PropTypes.oneOf(['primary', 'dashed', 'link', 'text', 'default']),
-//   /**
-//   * TODO property
-//   */
-//   href: PropTypes.string,
-//   /**
-//   * TODO property
-//   */
-//   htmlType: PropTypes.string,
-//   /**
-//   * TODO property
-//   */
-//   className: PropTypes.string,
-//   /**
-//   * TODO property
-//   */
-//   icon: PropTypes.node,
-//   /**
-//   * TODO property
-//   */
-//   loading: PropTypes.bool,
-//   /**
-//   * TODO property
-//   */
-//   size: PropTypes.oneOf(['large', 'middle', 'small']),
-//   /**
-//   * TODO property
-//   */
-//   target: PropTypes.string,
-//   /**
-//   * TODO property
-//   */
-//   onClick: PropTypes.func,
-//   /**
-//   * TODO property
-//   */
-//   rightIcon: PropTypes.bool,
-// };
+Button.propTypes = {
+  /**
+  * Option pour ajuster la largeur du bouton à sa largeur parent
+  */
+  block: PropTypes.bool,
+  /**
+  * Définir l'état de danger du bouton
+  */
+  danger: PropTypes.bool,
+  /**
+  * État désactivé du bouton
+  */
+  disabled: PropTypes.bool,
+  /**
+  * Rendre l'arrière-plan transparent et inverser les couleurs du texte et des bordures
+  */
+  ghost: PropTypes.bool,
+  /**
+  * URL de redirection du bouton de lien
+  */
+  href: PropTypes.string,
+  /**
+  * Définissez le `type` html d'origine du `buton`, voir : MDN
+  */
+  htmlType: PropTypes.string,
+  /**
+  * Définir le composant icône du bouton
+  */
+  icon: PropTypes.node,
+  /**
+  * Définir l'état de chargement du bouton
+  */
+  loading: PropTypes.bool,
+  /**
+   * Peut être défini la forme du bouton
+   */
+  shape: PropTypes.oneOf(['default', 'circle', 'round']),
+  /**
+  * Définir la taille du bouton
+  */
+  size: PropTypes.oneOf(['large', 'middle', 'small']),
+  /**
+  * Identique à l'attribut cible de a, fonctionne lorsque href est spécifié
+  */
+  target: PropTypes.string,
+  /**
+  * Peut définir `primary`, `dashed`, `link`, `text`, `default`
+  */
+  type: PropTypes.oneOf(['primary', 'dashed', 'link', 'text', 'default']),
+  /**
+  * Définir le gestionnaire pour gérer l'événement de clic
+  */
+  onClick: PropTypes.func,
+};
 
-// Button.defaultProps = {
-//   block: false,
-//   disabled: false,
-//   htmlType: "button",
-//   loading: false,
-//   size: "middle",
-//   type: 'primary',
-//   onlyIcon: false,
-//   rightIcon: false,
-//   switch: false,
-//   activeGrid: true
-// };
+Button.defaultProps = {
+  block: false,
+  danger: false,
+  disabled: false,
+  ghost: false,
+  htmlType: 'button',
+  loading: false,
+  shape: 'default',
+  size: 'middle',
+  type: 'primary',
+};
