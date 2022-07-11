@@ -12,6 +12,7 @@ export * from './Modal/Modal';
 export Notif from './Notification/Notification';
 export * from './Radio/Radio';
 export * from './Radio/RadioGroups/RadioGroup';
+export Rate from './Rate/Rate'
 export * from './Spin/Spin';
 export * from './Switch/Switch';
 export Tag from './Tag/Tag';
