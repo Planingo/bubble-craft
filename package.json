@@ -5,22 +5,23 @@
   "description": "Design system planingo",
   "main": "src/components/index.js",
   "module": "src",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "test:generate-output": "react-scripts test --json --outputFile=.jest-test-results.json || true",
-    "screenshoot": "jest -c jest.screenshot.config.js -u",
-    "before-push": "yarn test:generate-output && yarn screenshoot",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
-    "deploy": "caprover deploy -h https://captain.caprover.cocaud.dev/ -p ${CAPROVER_PASSWORD} -b master -a ditto",
-    "storybook:start": "yarn storybook:copy-public && yarn start-storybook -p 6006 -s ./public",
-    "chromatic": "npx chromatic --project-token=c68eb85b3eec"
-  },
   "author": {
     "name": "Bugsyaya"
+  },
+  "scripts": {
+    "before-push": "yarn test:generate-output && yarn screenshoot",
+    "build": "react-scripts build",
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic --project-token=c68eb85b3eec",
+    "deploy": "caprover deploy -h https://captain.caprover.cocaud.dev/ -p ${CAPROVER_PASSWORD} -b master -a ditto",
+    "dev": "yarn storybook",
+    "eject": "react-scripts eject",
+    "screenshoot": "jest -c jest.screenshot.config.js -u",
+    "start": "react-scripts start",
+    "storybook": "start-storybook -p 9009 -s public",
+    "storybook:start": "yarn storybook:copy-public && yarn start-storybook -p 6006 -s ./public",
+    "test": "react-scripts test",
+    "test:generate-output": "react-scripts test --json --outputFile=.jest-test-results.json || true"
   },
   "peerDependencies": {
     "antd": "^4.12.1",
