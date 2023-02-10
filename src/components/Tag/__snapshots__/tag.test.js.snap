@@ -4,7 +4,7 @@ exports[`Tag component Snapshot tag 1`] = `
 <body>
   <div>
     <span
-      class="ant-tag"
+      class="ant-tag css-dev-only-do-not-override-j0nf2s"
     >
       C'est un super tag
       <span

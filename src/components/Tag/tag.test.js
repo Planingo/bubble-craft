@@ -7,7 +7,7 @@ describe('Tag component', () => {
   const textContent = "C'est un super tag";
   const onClose = jest.fn();
   const tag = (
-    <Tag onClose={e => onClose()} visible={true} closable={true}>{textContent}</Tag>
+    <Tag onClose={e => onClose()} closable={true}>{textContent}</Tag>
   );
 
   it('Snapshot tag', () => {
