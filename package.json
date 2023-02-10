@@ -24,7 +24,7 @@
     "test:generate-output": "react-scripts test --json --outputFile=.jest-test-results.json || true"
   },
   "peerDependencies": {
-    "antd": "^4.12.1",
+    "antd": "^5.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
@@ -68,7 +68,7 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^14.2.1",
-    "antd": "^4.21.5",
+    "antd": "^5.2.0",
     "chromatic": "^6.7.0",
     "eslint": "^8.20.0",
     "eslint-plugin-mdx": "^2.0.5",
