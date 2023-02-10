@@ -4,7 +4,7 @@ exports[`Switch component Snapshot button 1`] = `
 <body>
   <div>
     <label
-      class="ant-radio-wrapper"
+      class="ant-radio-wrapper css-dev-only-do-not-override-j0nf2s"
     >
       <span
         class="ant-radio"

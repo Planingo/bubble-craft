@@ -9,14 +9,13 @@
     "name": "Bugsyaya"
   },
   "scripts": {
-    "before-push": "yarn test:generate-output && yarn screenshoot",
+    "before-push": "yarn test:generate-output",
     "build": "react-scripts build",
     "build-storybook": "build-storybook -s public",
     "chromatic": "npx chromatic --project-token=c68eb85b3eec",
     "deploy": "caprover deploy -h https://captain.caprover.cocaud.dev/ -p ${CAPROVER_PASSWORD} -b master -a ditto",
     "dev": "yarn storybook",
     "eject": "react-scripts eject",
-    "screenshoot": "jest -c jest.screenshot.config.js -u",
     "start": "react-scripts start",
     "storybook": "start-storybook -p 9009 -s public",
     "storybook:start": "yarn storybook:copy-public && yarn start-storybook -p 6006 -s ./public",
@@ -92,8 +91,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-jest": "^29.2.0",
     "less": "^4.1.1",
-    "less-loader": "^7.3.0",
-    "react-screenshot-test": "^2.3.3"
+    "less-loader": "^7.3.0"
   },
   "readme": "ERROR: No README data found!",
   "_id": "@planingo/ditto@0.1.34"

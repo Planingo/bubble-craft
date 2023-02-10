@@ -6,7 +6,7 @@ exports[`Spin component Snapshot spin 1`] = `
     <div
       aria-busy="true"
       aria-live="polite"
-      class="ant-spin ant-spin-spinning"
+      class="ant-spin ant-spin-spinning css-dev-only-do-not-override-j0nf2s"
     >
       <span
         class="ant-spin-dot ant-spin-dot-spin"

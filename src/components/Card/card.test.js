@@ -11,9 +11,9 @@ describe('Card component', () => {
     src: 'https://avatars.bugsyaya.dev/285/',
     icon: <TagsOutlined />,
     type: 'lesson',
-    downloadTitle: 'Télécharger',
-    cloudTitle: 'Envoyer',
-    deleteTitle: 'Supprimer',
+    downloadtitle: 'Télécharger',
+    cloudtitle: 'Envoyer',
+    deletetitle: 'Supprimer',
   };
 
   const card = (

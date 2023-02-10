@@ -34,10 +34,6 @@ Tag.propTypes = {
   */
   icon: PropTypes.node,
   /**
-  * Définit si le tag est visible ou non
-  */
-  visible: PropTypes.bool,
-  /**
   * Fonction permettant de fermer le tag
   */
   onClose: PropTypes.func,
@@ -45,5 +41,4 @@ Tag.propTypes = {
 
 Tag.defaultProps = {
   closable: false,
-  visible: true,
 };

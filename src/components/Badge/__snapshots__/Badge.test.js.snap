@@ -4,11 +4,11 @@ exports[`Badge component Snapshot badge 1`] = `
 <body>
   <div>
     <span
-      class="ant-badge ant-badge-status ant-badge-not-a-wrapper"
+      class="ant-badge ant-badge-status ant-badge-not-a-wrapper css-dev-only-do-not-override-j0nf2s"
     >
       <span
         class="ant-badge-status-dot ant-badge-status-default"
-        style="background: rgb(255, 85, 0);"
+        style="color: rgb(255, 85, 0); background: rgb(255, 85, 0);"
       />
       <span
         class="ant-badge-status-text"

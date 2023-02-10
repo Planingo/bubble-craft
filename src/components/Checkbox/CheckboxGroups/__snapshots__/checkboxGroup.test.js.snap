@@ -4,7 +4,7 @@ exports[`CheckboxGroup component Snapshot CheckboxGroup 1`] = `
 <body>
   <div>
     <div
-      class="ant-checkbox-group"
+      class="ant-checkbox-group css-dev-only-do-not-override-j0nf2s"
       role="checkbox-group"
     />
   </div>

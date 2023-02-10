@@ -30,29 +30,27 @@ export const Modal = ({children, ...props }) => {
     setIsModalVisible(false);
   };
 
-  return (
-    <>
-      {props.OpenModal(showModal)}
-      <AntdModal 
-        className='storybook-modal' 
-        mask={props?.mask}
-        title={props?.title}
-        visible={isModalVisible}
-        onCancel={handleCancel}
-        onOk={handleOk}
-        footer={[
-          <Button key="cancel" danger ghost onClick={async () => {
-            handleCancel()
-            props?.onCancel()
-          }}>{props.cancelText}</Button>,
-          props.ValidateButton(handleOk),
-        ]}
-        {...props}
-      >
-        {children}
-      </AntdModal>
-    </>
-  );
+  return (<>
+   {props.OpenModal(showModal)}
+   <AntdModal 
+     className='storybook-modal' 
+     mask={props?.mask}
+     title={props?.title}
+     open={isModalVisible}
+     onCancel={handleCancel}
+     onOk={handleOk}
+     footer={[
+       <Button key="cancel" danger ghost onClick={async () => {
+         handleCancel()
+         props?.onCancel()
+       }}>{props.cancelText}</Button>,
+       props.ValidateButton(handleOk),
+     ]}
+     {...props}
+   >
+     {children}
+   </AntdModal>
+  </>);
 };
 
 Modal.propTypes = {

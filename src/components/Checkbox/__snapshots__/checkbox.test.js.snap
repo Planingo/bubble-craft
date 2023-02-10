@@ -4,10 +4,10 @@ exports[`Checkbox component Snapshot Checkbox 1`] = `
 <body>
   <div>
     <label
-      class="ant-checkbox-wrapper"
+      class="ant-checkbox-wrapper css-dev-only-do-not-override-j0nf2s"
     >
       <span
-        class="ant-checkbox"
+        class="ant-checkbox css-dev-only-do-not-override-j0nf2s"
       >
         <input
           aria-label="checkbox"
