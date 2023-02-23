@@ -69,6 +69,12 @@
       "wip": true
     },
     {
+      "id": "skeleton",
+      "title": "Skeleton",
+      "descrition": "TODO la description de skeleton",
+      "wip": true
+    },
+    {
       "id": "slider",
       "title": "Slider",
       "descrition": "TODO la description de slider",
