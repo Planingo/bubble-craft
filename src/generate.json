@@ -33,6 +33,12 @@
       "wip": true
     },
     {
+      "id": "floatbutton",
+      "title": "FloatButton",
+      "descrition": "TODO la description de floatbutton",
+      "wip": true
+    },
+    {
       "id": "icon",
       "title": "Icon",
       "descrition": "TODO la description de icon",
