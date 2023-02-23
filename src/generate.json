@@ -149,6 +149,12 @@
       "wip": true
     },
     {
+      "id": "message",
+      "title": "Message",
+      "descrition": "TODO la description de message",
+      "wip": true
+    },
+    {
       "id": "modal",
       "title": "Modal",
       "descrition": "TODO la description de modal",
