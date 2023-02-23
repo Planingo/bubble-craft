@@ -125,6 +125,12 @@
       "wip": true
     },
     {
+      "id": "datepicker",
+      "title": "DatePicker",
+      "descrition": "TODO la description de datepicker",
+      "wip": true
+    },
+    {
       "id": "dropdown",
       "title": "Dropdown",
       "descrition": "TODO la description de dropdown",
