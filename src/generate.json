@@ -101,6 +101,48 @@
   ],
   "molecules": [
     {
+      "id": "card",
+      "title": "Card",
+      "descrition": "TODO la description de card",
+      "wip": true
+    },
+    {
+      "id": "checkboxgroup",
+      "title": "CheckboxGroup",
+      "descrition": "TODO la description de checkboxgroup",
+      "wip": true
+    },
+    {
+      "id": "dropdown",
+      "title": "Dropdown",
+      "descrition": "TODO la description de dropdown",
+      "wip": true
+    },
+    {
+      "id": "empty",
+      "title": "Empty",
+      "descrition": "TODO la description de empty",
+      "wip": true
+    },
+    {
+      "id": "modal",
+      "title": "Modal",
+      "descrition": "TODO la description de modal",
+      "wip": true
+    },
+    {
+      "id": "notification",
+      "title": "Notification",
+      "descrition": "TODO la description de notification",
+      "wip": true
+    },
+    {
+      "id": "radiogroup",
+      "title": "RadioGroup",
+      "descrition": "TODO la description de radiogroup",
+      "wip": true
+    },
+    {
       "id": "timepicker",
       "title": "TimePicker",
       "descrition": "TODO la description de timepicker",
