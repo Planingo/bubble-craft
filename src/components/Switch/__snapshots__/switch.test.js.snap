@@ -6,7 +6,7 @@ exports[`Switch component Snapshot button 1`] = `
     <button
       aria-checked="false"
       aria-label="switch"
-      class="ant-switch css-dev-only-do-not-override-j0nf2s"
+      class="ant-switch css-dev-only-do-not-override-1km3mtt"
       role="switch"
       type="button"
     >

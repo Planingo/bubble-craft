@@ -4,7 +4,7 @@ exports[`Badge component Snapshot badge 1`] = `
 <body>
   <div>
     <span
-      class="ant-badge ant-badge-status ant-badge-not-a-wrapper css-dev-only-do-not-override-j0nf2s"
+      class="ant-badge ant-badge-status ant-badge-not-a-wrapper css-dev-only-do-not-override-1km3mtt"
     >
       <span
         class="ant-badge-status-dot ant-badge-status-default"
