@@ -14,15 +14,13 @@ import './input.css';
  * Documentations andt du composant : https://ant.design/components/input/
  * 
  */
-export const Input = ({ property, children, ...props }) => {
+export const Input = ({ property, ...props }) => {
   return (
     <AntdInput
       className='storybook-input'
       {...props}
       property
-    >
-      {children}
-    </AntdInput>
+    />
   );
 };
 
