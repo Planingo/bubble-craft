@@ -1,6 +1,5 @@
 const generate = require("../src/generate.json")
 const fs = require("fs");
-const {default: generateProptypes} = require("typescript-proptypes-generator")
 
 if (process.argv[5] === 'styles') {
     generate.styles.push({
@@ -36,7 +35,7 @@ if (process.argv[5] === 'styles') {
         }
         return 0;
       })
-} else if (process.argv[5] === 'molecules') {
+} else if (process.argv[5] === 'molécules') {
     generate.molecules.push({
         id: process.argv[2].toLowerCase(),
         title: process.argv[3] || process.argv[2],
@@ -53,7 +52,7 @@ if (process.argv[5] === 'styles') {
         }
         return 0;
       })
-} else if (process.argv[5] === 'organisms') {
+} else if (process.argv[5] === 'organismes') {
     generate.composants.push({
         id: process.argv[2].toLowerCase(),
         title: process.argv[3] || process.argv[2],
