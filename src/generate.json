@@ -93,6 +93,12 @@
       "wip": true
     },
     {
+      "id": "steps",
+      "title": "Steps",
+      "descrition": "TODO la description de steps",
+      "wip": true
+    },
+    {
       "id": "switch",
       "title": "Switch",
       "descrition": "TODO la description de switch",
