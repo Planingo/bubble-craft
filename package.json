@@ -93,7 +93,9 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-jest": "^29.2.0",
     "less": "^4.1.1",
-    "less-loader": "^7.3.0"
+    "less-loader": "^7.3.0",
+    "typescript-proptypes-generator": "^0.0.6",
+    "typescript-to-proptypes": "^2.2.1"
   },
   "readme": "ERROR: No README data found!",
   "_id": "@planingo/ditto@0.1.34"

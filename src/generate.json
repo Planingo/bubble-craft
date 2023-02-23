@@ -1,0 +1,107 @@
+{
+  "styles": [
+    {
+      "id": "color",
+      "title": "Couleurs",
+      "descrition": "TODO la description de la couleur",
+      "wip": false
+    },
+    {
+      "id": "typo",
+      "title": "Typo",
+      "descrition": "TODO la description de la typo",
+      "wip": true
+    }
+  ],
+  "atomes": [
+    {
+      "id": "badge",
+      "title": "Badge",
+      "descrition": "TODO la description de badge",
+      "wip": true
+    },
+    {
+      "id": "button",
+      "title": "Bouton",
+      "descrition": "TODO la description de bouton",
+      "wip": true
+    },
+    {
+      "id": "checkbox",
+      "title": "Checkbox",
+      "descrition": "TODO la description de checkbox",
+      "wip": true
+    },
+    {
+      "id": "icon",
+      "title": "Icon",
+      "descrition": "TODO la description de icon",
+      "wip": false
+    },
+    {
+      "id": "input",
+      "title": "Input",
+      "descrition": "TODO la description de input",
+      "wip": true
+    },
+    {
+      "id": "radio",
+      "title": "Radio",
+      "descrition": "TODO la description de radio",
+      "wip": true
+    },
+    {
+      "id": "rate",
+      "title": "Rate",
+      "descrition": "TODO la description de rate",
+      "wip": true
+    },
+    {
+      "id": "select",
+      "title": "Select",
+      "descrition": "TODO la description de select",
+      "wip": true
+    },
+    {
+      "id": "slider",
+      "title": "Slider",
+      "descrition": "TODO la description de slider",
+      "wip": true
+    },
+    {
+      "id": "spin",
+      "title": "Spin",
+      "descrition": "TODO la description de spin",
+      "wip": true
+    },
+    {
+      "id": "switch",
+      "title": "Switch",
+      "descrition": "TODO la description de switch",
+      "wip": true
+    },
+    {
+      "id": "tag",
+      "title": "Tag",
+      "descrition": "TODO la description de tag",
+      "wip": true
+    },
+    {
+      "id": "tooltip",
+      "title": "Tooltip",
+      "descrition": "TODO la description de tooltip",
+      "wip": true
+    }
+  ],
+  "molecules": [
+    {
+      "id": "timepicker",
+      "title": "TimePicker",
+      "descrition": "TODO la description de timepicker",
+      "wip": true
+    }
+  ],
+  "organisms": [],
+  "templates": [],
+  "pages": []
+}
