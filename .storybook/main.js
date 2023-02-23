@@ -13,7 +13,7 @@ module.exports = {
     '@storybook/addon-essentials',
     'storybook-addon-pseudo-states',
     '@storybook/addon-measure',
-    '@storybook/addon-jest'
+    '@storybook/addon-jest',
   ],
   webpackFinal: async (config, { configType }) => {
     const cssModel = config.module.rules.find(i => i.test.toString() === "/\\.css$/")
