@@ -57,6 +57,12 @@
       "wip": true
     },
     {
+      "id": "progress",
+      "title": "Progress",
+      "descrition": "TODO la description de progress",
+      "wip": true
+    },
+    {
       "id": "radio",
       "title": "Radio",
       "descrition": "TODO la description de radio",
