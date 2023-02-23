@@ -53,14 +53,14 @@ if (process.argv[5] === 'styles') {
         return 0;
       })
 } else if (process.argv[5] === 'organismes') {
-    generate.composants.push({
+    generate.organisms.push({
         id: process.argv[2].toLowerCase(),
         title: process.argv[3] || process.argv[2],
         descrition: process.argv[4] || `TODO la description de ${process.argv[3].toLowerCase() || process.argv[2].toLowerCase()}`,
         wip: true
     })
 
-    generate.composants.sort(function compare( a, b ) {
+    generate.organisms.sort(function compare( a, b ) {
         if ( a.title < b.title ){
           return -1;
         }
@@ -70,14 +70,14 @@ if (process.argv[5] === 'styles') {
         return 0;
       })
 } else if (process.argv[5] === 'templates') {
-    generate.layouts.push({
+    generate.templates.push({
         id: process.argv[2].toLowerCase(),
         title: process.argv[3] || process.argv[2],
         descrition: process.argv[4] || `TODO la description de ${process.argv[3].toLowerCase() || process.argv[2].toLowerCase()}`,
         wip: true
     })
 
-    generate.layouts.sort(function compare( a, b ) {
+    generate.templates.sort(function compare( a, b ) {
         if ( a.title < b.title ){
           return -1;
         }
