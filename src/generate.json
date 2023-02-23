@@ -45,6 +45,12 @@
       "wip": true
     },
     {
+      "id": "pagination",
+      "title": "Pagination",
+      "descrition": "TODO la description de pagination",
+      "wip": true
+    },
+    {
       "id": "radio",
       "title": "Radio",
       "descrition": "TODO la description de radio",
