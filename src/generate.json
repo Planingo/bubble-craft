@@ -173,7 +173,14 @@
       "wip": true
     }
   ],
-  "organisms": [],
+  "organisms": [
+    {
+      "id": "result",
+      "title": "Result",
+      "descrition": "TODO la description de result",
+      "wip": true
+    }
+  ],
   "templates": [],
   "pages": []
 }
