@@ -31,9 +31,11 @@ module.exports = {
           }
         }
       ],
-      
     }
     config.module.rules.push(lessRule)
     return config
+  },
+  core: {
+    builder: 'webpack5'
   },
 }
