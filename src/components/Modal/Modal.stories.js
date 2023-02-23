@@ -5,7 +5,7 @@ import Notif from '../Notification/Notification';
 import { Modal } from './Modal';
 
 export default {
-  title: 'Components/Modal',
+  title: 'Molécules/Modal',
   component: Modal,
   args: {
     children: "Ananas",
@@ -28,4 +28,4 @@ export default {
 
 const ModalGlobal = (args) => <Modal {...args} />;
 
-export const Defaut = ModalGlobal.bind({});
+export const Default = ModalGlobal.bind({});

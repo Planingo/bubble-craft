@@ -2,7 +2,7 @@ import { Meta, ArgsTable } from '@storybook/addon-docs/blocks';
 import * as icons from './Icon';
 
 <Meta
-  title="Components/Icon"
+  title="Atomes/Icon"
   argTypes={{
     component: {
       description:'component',
@@ -44,7 +44,7 @@ import * as icons from './Icon';
 Use this playground to test the button component
 
 <Canvas>
-  <Story name="Standard">
+  <Story name="Default">
     {args => {
       return <div style={{display: "grid", gap: "20px", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))"}}>
         {
@@ -63,4 +63,4 @@ Use this playground to test the button component
 </Canvas>
 
 
-<ArgsTable story="Standard" />
+<ArgsTable story="Default" />

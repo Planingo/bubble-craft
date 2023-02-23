@@ -8,7 +8,7 @@ import Tag from '../Tag/Tag';
 
 export default {
   component: Card,
-  title: 'Composants/Card',
+  title: 'Molécules/Card',
   decorators: [withTests({ results })],
 };
 

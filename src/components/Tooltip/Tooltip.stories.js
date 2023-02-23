@@ -3,7 +3,7 @@ import React from 'react';
 import { Tooltip } from './Tooltip';
 
 export default {
-  title: 'Components/Tooltip',
+  title: 'Atomes/Tooltip',
   component: Tooltip,
   argTypes: {
     placement: { 
@@ -37,4 +37,4 @@ export default {
 
 const TooltipGlobal = (args) => <Tooltip {...args} />;
 
-export const Defaut = TooltipGlobal.bind({});
+export const Default = TooltipGlobal.bind({});

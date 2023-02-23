@@ -1,6 +1,7 @@
 import {Meta} from '@storybook/addon-docs/blocks';
 import {linkTo} from '@storybook/addon-links';
 import * as Components from './components';
+import { styles, atomes, molecules, organisms, templates, pages } from './generate.json'
 
 export const COMPONENTS_EXCLUDE = ['CardGrid'];
 
@@ -9,7 +10,7 @@ export const getComponentLinkAtomes = componentName => `Atomes/${componentName}`
 
 export const COMPONENTS = ['Card', 'Modal', 'Notif', 'Empty']
 
-<Meta title="Ditto" />
+<Meta title="Ditto - Introduction" />
 
 <style>{`
   .subheading {
@@ -104,34 +105,112 @@ export const COMPONENTS = ['Card', 'Modal', 'Notif', 'Empty']
 
 `}</style>
 
-# Planingo Design System
+# Design system
 
-<div class="subheading">Atomes</div>
-<div class="link-list">
-  {Object.keys(Components)
-    .filter(componentName => !COMPONENTS_EXCLUDE.includes(componentName))
-    .filter(componentName => !COMPONENTS.includes(componentName))
-    .map(componentName => {
-      return <a key={componentName} class="link-item" onClick={linkTo(getComponentLinkAtomes(componentName), 'Default')}>
-        <span>
-          <strong>{componentName}</strong>
-          {Components[componentName].__docgenInfo?.description}
-        </span>
-      </a>
-    })}
+## Styles
+
+<div className="link-list">
+  {styles.map(style =>
+    <a
+      key={style.id}
+      className="link-item"
+      href={`?path=/story/styles-${style.id}--page`}
+    >
+      <div className="info-status">{style.wip ? '🚧' : '🚀'}</div>
+      <span>
+        <strong>{style.title}</strong>
+        {style.descrition}
+      </span>
+    </a>
+  )}
 </div>
 
-<div class="subheading">Composants</div>
-<div class="link-list">
-  {Object.keys(Components)
-    .filter(componentName => !COMPONENTS_EXCLUDE.includes(componentName))
-    .filter(componentName => COMPONENTS.includes(componentName))
-    .map(componentName => {
-      return <a key={componentName} class="link-item" onClick={linkTo(getComponentLink(componentName), 'Default')}>
-        <span>
-          <strong>{componentName}</strong>
-          {Components[componentName].__docgenInfo?.description}
-        </span>
-      </a>
-    })}
+## Atomes
+
+<div className="link-list">
+  {atomes.map(atome =>
+    <a
+      key={atome.id}
+      className="link-item"
+      href={`?path=/story/atomes-${atome.id}--default`}
+    >
+      <div className="info-status">{atome.wip ? '🚧' : '🚀'}</div>
+      <span>
+        <strong>{atome.title}</strong>
+        {atome.descrition}
+      </span>
+    </a>
+  )}
+</div>
+
+## Molécules
+
+<div className="link-list">
+  {molecules.map(molecule =>
+    <a
+      key={molecule.id}
+      className="link-item"
+      href={`?path=/story/molecules-${molecule.id}--default`}
+    >
+      <div className="info-status">{molecule.wip ? '🚧' : '🚀'}</div>
+      <span>
+        <strong>{molecule.title}</strong>
+        {molecule.descrition}
+      </span>
+    </a>
+  )}
+</div>
+
+## Organismes
+
+<div className="link-list">
+  {organisms.map(organism =>
+    <a
+      key={organism.id}
+      className="link-item"
+      href={`?path=/story/organisms-${composant.id}--default`}
+    >
+      <div className="info-status">{organism.wip ? '🚧' : '🚀'}</div>
+      <span>
+        <strong>{organism.title}</strong>
+        {organism.descrition}
+      </span>
+    </a>
+  )}
+</div>
+
+## Templates
+
+<div className="link-list">
+  {templates.map(template =>
+    <a
+      key={template.id}
+      className="link-item"
+      href={`?path=/story/template-${template.id}--default`}
+    >
+      <div className="info-status">{template.wip ? '🚧' : '🚀'}</div>
+      <span>
+        <strong>{template.title}</strong>
+        {template.descrition}
+      </span>
+    </a>
+  )}
+</div>
+
+## Pages
+
+<div className="link-list">
+  {pages.map(page =>
+    <a
+      key={page.id}
+      className="link-item"
+      href={`?path=/story/pages-${page.id}--default`}
+    >
+      <div className="info-status">{page.wip ? '🚧' : '🚀'}</div>
+      <span>
+        <strong>{page.title}</strong>
+        {page.descrition}
+      </span>
+    </a>
+  )}
 </div>

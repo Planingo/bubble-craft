@@ -5,7 +5,7 @@ import Empty from './Empty';
 
 export default {
   component: Empty,
-  title: 'Composants/Empty',
+  title: 'Molécules/Empty',
   decorators: [withTests({ results })],
 };
 

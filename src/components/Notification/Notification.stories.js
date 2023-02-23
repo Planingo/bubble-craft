@@ -4,7 +4,7 @@ import Button from '../Button/Button';
 import Notif from './Notification';
 
 export default {
-  title: 'Components/Notification',
+  title: 'Molécules/Notification',
   component: Notif,
   args: {
     title: "C'est une super notif",
@@ -15,4 +15,4 @@ export default {
 
 const NotificationGlobal = (args) => <Notif {...args} />;
 
-export const Defaut = NotificationGlobal.bind({});
+export const Default = NotificationGlobal.bind({});
