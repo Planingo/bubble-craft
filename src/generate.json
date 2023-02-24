@@ -27,6 +27,12 @@
       "wip": true
     },
     {
+      "id": "breadcrumb",
+      "title": "Breadcrumb",
+      "descrition": "TODO la description de breadcrumb",
+      "wip": true
+    },
+    {
       "id": "checkbox",
       "title": "Checkbox",
       "descrition": "TODO la description de checkbox",
