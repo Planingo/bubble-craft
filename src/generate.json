@@ -143,6 +143,12 @@
       "wip": true
     },
     {
+      "id": "collapse",
+      "title": "Collapse",
+      "descrition": "TODO la description de collapse",
+      "wip": true
+    },
+    {
       "id": "datepicker",
       "title": "DatePicker",
       "descrition": "TODO la description de datepicker",
