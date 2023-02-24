@@ -185,6 +185,12 @@
       "wip": true
     },
     {
+      "id": "popconfirm",
+      "title": "Popconfirm",
+      "descrition": "TODO la description de popconfirm",
+      "wip": true
+    },
+    {
       "id": "radiogroup",
       "title": "RadioGroup",
       "descrition": "TODO la description de radiogroup",
