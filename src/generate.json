@@ -195,6 +195,12 @@
       "title": "TimePicker",
       "descrition": "TODO la description de timepicker",
       "wip": true
+    },
+    {
+      "id": "timeline",
+      "title": "Timeline",
+      "descrition": "TODO la description de timeline",
+      "wip": true
     }
   ],
   "organisms": [
