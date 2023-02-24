@@ -203,6 +203,12 @@
       "title": "Result",
       "descrition": "TODO la description de result",
       "wip": true
+    },
+    {
+      "id": "upload",
+      "title": "Upload",
+      "descrition": "TODO la description de upload",
+      "wip": true
     }
   ],
   "templates": [],
