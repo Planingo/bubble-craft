@@ -161,6 +161,12 @@
       "wip": true
     },
     {
+      "id": "list",
+      "title": "List",
+      "descrition": "TODO la description de list",
+      "wip": true
+    },
+    {
       "id": "message",
       "title": "Message",
       "descrition": "TODO la description de message",
