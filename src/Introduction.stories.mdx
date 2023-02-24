@@ -28,23 +28,34 @@ export const COMPONENTS = ['Card', 'Modal', 'Notif', 'Empty']
   .link-list {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
     row-gap: 10px;
+  }
+
+  .info-status {
+    margin: 0.7em;
+  }
+
+  #design-system {
+    text-align: center;
+    margin-bottom: 0.7em;
+  }
+
+  #styles, #atomes, #molécules, #organismes, #templates, #pages {
+    margin-top: 1.7em;
   }
 
   @media (min-width: 620px) {
     .link-list {
       row-gap: 20px;
       column-gap: 20px;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(7, 1fr);
     }
   }
 
   @media all and (-ms-high-contrast:none) {
   .link-list {
       display: -ms-grid;
-      -ms-grid-columns: 1fr 1fr;
-      -ms-grid-rows: 1fr 1fr;
+      -ms-grid-columns: repeat(7, 1fr);
     }
   }
 
@@ -103,9 +114,21 @@ export const COMPONENTS = ['Card', 'Modal', 'Notif', 'Empty']
     background-position: left center;
   }
 
+  .sbdocs {
+    max-width: initial;
+  }
+
+  #docs-root {
+    margin: 2em 4em;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
 `}</style>
 
-# Design system
+# Ditto : Design system de Planin'go
 
 ## Styles
 
