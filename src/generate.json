@@ -284,6 +284,12 @@
       "wip": true
     },
     {
+      "id": "statistic",
+      "title": "Statistic",
+      "descrition": "TODO la description de statistic",
+      "wip": true
+    },
+    {
       "id": "upload",
       "title": "Upload",
       "descrition": "TODO la description de upload",
