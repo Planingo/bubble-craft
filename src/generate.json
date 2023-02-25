@@ -203,6 +203,12 @@
       "wip": true
     },
     {
+      "id": "table",
+      "title": "Table",
+      "descrition": "TODO la description de table",
+      "wip": true
+    },
+    {
       "id": "timepicker",
       "title": "TimePicker",
       "descrition": "TODO la description de timepicker",
