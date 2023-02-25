@@ -271,6 +271,12 @@
       "wip": true
     },
     {
+      "id": "segmented",
+      "title": "Segmented",
+      "descrition": "TODO la description de segmented",
+      "wip": true
+    },
+    {
       "id": "upload",
       "title": "Upload",
       "descrition": "TODO la description de upload",
