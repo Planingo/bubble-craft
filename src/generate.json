@@ -117,6 +117,12 @@
       "wip": true
     },
     {
+      "id": "tabs",
+      "title": "Tabs",
+      "descrition": "TODO la description de tabs",
+      "wip": true
+    },
+    {
       "id": "tag",
       "title": "Tag",
       "descrition": "TODO la description de tag",
