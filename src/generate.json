@@ -235,6 +235,12 @@
   ],
   "organisms": [
     {
+      "id": "carousel",
+      "title": "Carousel",
+      "descrition": "TODO la description de carousel",
+      "wip": true
+    },
+    {
       "id": "menu",
       "title": "Menu",
       "descrition": "TODO la description de menu",
