@@ -15,6 +15,12 @@
   ],
   "atomes": [
     {
+      "id": "avatar",
+      "title": "Avatar",
+      "descrition": "TODO la description de avatar",
+      "wip": true
+    },
+    {
       "id": "badge",
       "title": "Badge",
       "descrition": "TODO la description de badge",
