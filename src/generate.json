@@ -265,6 +265,12 @@
       "wip": true
     },
     {
+      "id": "treeselect",
+      "title": "TreeSelect",
+      "descrition": "TODO la description de treeselect",
+      "wip": true
+    },
+    {
       "id": "upload",
       "title": "Upload",
       "descrition": "TODO la description de upload",
