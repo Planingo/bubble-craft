@@ -229,6 +229,12 @@
       "wip": true
     },
     {
+      "id": "transfer",
+      "title": "Transfer",
+      "descrition": "TODO la description de transfer",
+      "wip": true
+    },
+    {
       "id": "upload",
       "title": "Upload",
       "descrition": "TODO la description de upload",
