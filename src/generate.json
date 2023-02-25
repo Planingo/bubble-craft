@@ -241,6 +241,13 @@
   ],
   "organisms": [
     {
+      "id": "calendar",
+      "title": "Calendar",
+      "descrition": "TODO la description de calendar",
+      "wip": true
+
+    },
+    {
       "id": "carousel",
       "title": "Carousel",
       "descrition": "TODO la description de carousel",
