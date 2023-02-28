@@ -1,4 +1,5 @@
 import React from 'react';
+import dayjs from 'dayjs';
 
 import { Calendar } from './Calendar';
 
@@ -12,5 +13,6 @@ const CalendarGlobal = (args) => <Calendar {...args} />;
 export const Default = CalendarGlobal.bind({});
 
 Default.args = {
-    children: "Calendar"
+    children: "Calendar",
+    value: dayjs('2023-02-27', 'YYYY-MM-DD')
 };
