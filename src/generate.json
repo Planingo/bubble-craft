@@ -139,6 +139,12 @@
       "title": "Tooltip",
       "descrition": "TODO la description de tooltip",
       "wip": true
+    },
+    {
+      "id": "watermark",
+      "title": "Watermark",
+      "descrition": "TODO la description de watermark",
+      "wip": true
     }
   ],
   "molecules": [
@@ -245,7 +251,6 @@
       "title": "Calendar",
       "descrition": "TODO la description de calendar",
       "wip": true
-
     },
     {
       "id": "carousel",
