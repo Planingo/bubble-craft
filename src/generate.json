@@ -245,7 +245,6 @@
       "title": "Calendar",
       "descrition": "TODO la description de calendar",
       "wip": true
-
     },
     {
       "id": "carousel",
@@ -266,18 +265,6 @@
       "wip": true
     },
     {
-      "id": "transfer",
-      "title": "Transfer",
-      "descrition": "TODO la description de transfer",
-      "wip": true
-    },
-    {
-      "id": "treeselect",
-      "title": "TreeSelect",
-      "descrition": "TODO la description de treeselect",
-      "wip": true
-    },
-    {
       "id": "segmented",
       "title": "Segmented",
       "descrition": "TODO la description de segmented",
@@ -287,6 +274,24 @@
       "id": "statistic",
       "title": "Statistic",
       "descrition": "TODO la description de statistic",
+      "wip": true
+    },
+    {
+      "id": "tour",
+      "title": "Tour",
+      "descrition": "TODO la description de tour",
+      "wip": true
+    },
+    {
+      "id": "transfer",
+      "title": "Transfer",
+      "descrition": "TODO la description de transfer",
+      "wip": true
+    },
+    {
+      "id": "treeselect",
+      "title": "TreeSelect",
+      "descrition": "TODO la description de treeselect",
       "wip": true
     },
     {
