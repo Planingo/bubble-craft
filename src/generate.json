@@ -179,6 +179,12 @@
       "wip": true
     },
     {
+      "id": "drawer",
+      "title": "Drawer",
+      "descrition": "TODO la description de drawer",
+      "wip": true
+    },
+    {
       "id": "dropdown",
       "title": "Dropdown",
       "descrition": "TODO la description de dropdown",
