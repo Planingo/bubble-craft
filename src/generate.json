@@ -81,6 +81,12 @@
       "wip": true
     },
     {
+      "id": "qrcode",
+      "title": "QRCode",
+      "descrition": "TODO la description de qrcode",
+      "wip": true
+    },
+    {
       "id": "radio",
       "title": "Radio",
       "descrition": "TODO la description de radio",
