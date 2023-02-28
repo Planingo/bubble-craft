@@ -15,6 +15,12 @@
   ],
   "atomes": [
     {
+      "id": "alert",
+      "title": "Alert",
+      "descrition": "TODO la description de alert",
+      "wip": true
+    },
+    {
       "id": "avatar",
       "title": "Avatar",
       "descrition": "TODO la description de avatar",
@@ -245,7 +251,6 @@
       "title": "Calendar",
       "descrition": "TODO la description de calendar",
       "wip": true
-
     },
     {
       "id": "carousel",
