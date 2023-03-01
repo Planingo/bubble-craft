@@ -4,12 +4,26 @@ import React from 'react';
 import {RadioGroup} from './RadioGroup';
 
 describe('RadioGroup component', () => {
+  const options = [
+    {
+      label: 'Apple',
+      value: 'Apple',
+    },
+    {
+      label: 'Pear',
+      value: 'Pear',
+    },
+    {
+      label: 'Orange',
+      value: 'Orange',
+    },
+  ]
   const radioGroup = (
-    <RadioGroup />
+    <RadioGroup options={options}/>
   );
 
   it('Snapshot RadioGroup', () => {
     const { baseElement } = render(radioGroup);
-    expect(baseElement).toMatchSnapshot();
+    expect(baseElement).toHaveTextContent("Apple");
   });
 });

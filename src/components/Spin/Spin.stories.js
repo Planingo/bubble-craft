@@ -1,10 +1,11 @@
-import { Meta, ArgsTable } from '@storybook/addon-docs/blocks';
-import {Spin} from './Spin';
+import React from 'react';
 
+import { Spin } from './Spin';
 
-<Meta
-  title="Atomes/Spin"
-  argTypes={{
+export default {
+  title: 'Atomes/Spin',
+  component: Spin,
+  argTypes: {
     delay: {
       description:'delay', 
       control: {
@@ -52,20 +53,12 @@ import {Spin} from './Spin';
         type: 'text'
       }
     }
-  }}
-/>
+  }
+};
 
-### Spin
+const SpinGlobal = (args) => <Spin {...args} />;
 
-Use this playground to test the Spin component
+export const Default = SpinGlobal.bind({});
 
-<Canvas>
-  <Story name="Default">
-    {args => {
-      return <Spin {...args} />;
-    }}
-  </Story>
-</Canvas>
-
-
-<ArgsTable story="Default" />
+Default.args = {
+};

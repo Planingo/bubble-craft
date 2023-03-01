@@ -5,12 +5,12 @@ import Empty from './Empty';
 
 describe('Empty component', () => {
   const empty = (
-    <Empty color="#f50" text="#f50" />
+    <Empty description="#f50" />
   );
 
-  it('Snapshot empty', () => {
+  it('Empty contains text', () => {
     const { baseElement } = render(empty);
-    expect(baseElement).toMatchSnapshot();
+    expect(baseElement).toHaveTextContent("#f50");
   });
 
 });

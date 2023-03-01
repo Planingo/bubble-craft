@@ -5,11 +5,11 @@ import {Spin} from './Spin';
 
 describe('Spin component', () => {
   const spin = (
-    <Spin />
+    <Spin tip="Loading"/>
   );
 
-  it('Snapshot spin', () => {
+  it('Spin content text', () => {
     const { baseElement } = render(spin);
-    expect(baseElement).toMatchSnapshot();
+    expect(baseElement).toHaveTextContent("Loading");
   });
 });

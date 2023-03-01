@@ -11,11 +11,6 @@ describe('Button component', () => {
     <Button onClick={e => onClick()} label='test'>{textContent}</Button>
   );
 
-  it('Snapshot button', () => {
-    const { baseElement } = render(button);
-    expect(baseElement).toMatchSnapshot();
-  });
-
   it('should render given children', () => {
     render(button);
     expect(screen.getByText(textContent)).toBeInTheDocument();

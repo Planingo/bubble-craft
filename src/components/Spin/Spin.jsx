@@ -13,23 +13,8 @@ import { Spin as AntdSpin } from 'antd'
  * Documentations andt du composant : https://ant.design/components/spin/
  * 
  */
-const Spin = ({
-  props,
-  delay,
-  indicator,
-  size,
-  spinning,
-  tip,
-  wrapperClassName
-}) => {
-  return <AntdSpin
-  delay={delay}
-  indicator={indicator}
-  size={size}
-  spinning={spinning}
-  tip={tip}
-  wrapperClassName={wrapperClassName}
-    {...props} />
+const Spin = ({ ...props }) => {
+  return <AntdSpin {...props} />
 }
 
 export { Spin };
