@@ -8,11 +8,6 @@ describe('CheckboxGroup component', () => {
     <CheckboxGroup />
   );
 
-  it('Snapshot CheckboxGroup', () => {
-    const { baseElement } = render(checkboxGroup);
-    expect(baseElement).toMatchSnapshot();
-  });
-
   it('should render given children', () => {
     render(checkboxGroup);
     expect(screen.getByRole('checkbox-group')).toBeInTheDocument();

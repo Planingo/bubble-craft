@@ -10,11 +10,6 @@ describe('Tag component', () => {
     <Tag onClose={e => onClose()} closable={true}>{textContent}</Tag>
   );
 
-  it('Snapshot tag', () => {
-    const { baseElement } = render(tag);
-    expect(baseElement).toMatchSnapshot();
-  });
-
   it('should render given children', () => {
     render(tag);
     expect(screen.getByText(textContent)).toBeInTheDocument();

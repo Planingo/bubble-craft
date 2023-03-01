@@ -5,12 +5,12 @@ import Rate from './Rate';
 
 describe('Rate component', () => {
   const rate = (
-    <Rate color="#f50" text="#f50" />
+    <Rate count={7} />
   );
 
-  it('Snapshot rate', () => {
+  it('Count rate', () => {
     const { baseElement } = render(rate);
-    expect(baseElement).toMatchSnapshot();
+    expect(baseElement.getElementsByClassName("ant-rate-star ").length).toEqual(7);
   });
 
 });

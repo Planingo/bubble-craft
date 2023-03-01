@@ -13,29 +13,8 @@ import { Radio as AntdRadio } from 'antd'
  * Documentations andt du composant : https://ant.design/components/radio/
  * 
  */
-const RadioGroup = ({
-  props,
-  buttonStyle,
-  defaultValue,
-  disabled,
-  name,
-  options,
-  optionType,
-  value,
-  onChange,
-  size,
-}) => {
-  return <AntdRadio.Group
-    buttonStyle={buttonStyle}
-    defaultValue={defaultValue}
-    disabled={disabled}
-    name={name}
-    options={options}
-    optionType={optionType}
-    size={size}
-    value={value}
-    onChange={onChange}
-    {...props} />
+const RadioGroup = ({ children, ...props }) => {
+  return <AntdRadio.Group {...props} />
 }
 
 export { RadioGroup };

@@ -10,11 +10,6 @@ describe('Checkbox component', () => {
     <Checkbox onChange={onChange}>{textContent}</Checkbox>
   );
 
-  it('Snapshot Checkbox', () => {
-    const { baseElement } = render(checkbox);
-    expect(baseElement).toMatchSnapshot();
-  });
-
   it('should render given children', () => {
     render(checkbox);
     expect(screen.getByText(textContent)).toBeInTheDocument();

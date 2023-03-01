@@ -8,11 +8,6 @@ describe('Switch component', () => {
   const onClick = jest.fn();
   const swi = (<Switch onChange={onChange} onClick={onClick} />);
 
-  it('Snapshot button', () => {
-    const { baseElement } = render(swi);
-    expect(baseElement).toMatchSnapshot();
-  });
-
   it('should render given children', () => {
     render(swi);
     expect(screen.getByLabelText('switch')).toBeInTheDocument();

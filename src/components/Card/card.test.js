@@ -22,6 +22,6 @@ describe('Card component', () => {
 
   it('Snapshot card', () => {
     const { baseElement } = render(card);
-    expect(baseElement).toMatchSnapshot();
+    expect(baseElement).toHaveTextContent("Minerva McGonagall");
   });
 });

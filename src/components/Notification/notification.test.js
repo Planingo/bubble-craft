@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom/extend-expect';
-import { render } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import React from 'react';
 import Button from '../Button/Button';
 import Notif from './Notification';
@@ -15,8 +15,11 @@ describe('Notification component', () => {
     <Notif {...textContent} />
   );
 
-  it('Snapshot notification', () => {
-    const { baseElement } = render(notification);
-    expect(baseElement).toMatchSnapshot();
+  it('notification content text', () => {
+    render(notification);
+    expect(screen.getByText("coucou")).toBeInTheDocument();
+    const buttonClick = screen.getByRole('button');
+    fireEvent.click(buttonClick);
+    expect(screen.getByText("C'est une super notif")).toBeInTheDocument();
   });
 });

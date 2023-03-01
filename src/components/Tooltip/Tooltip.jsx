@@ -16,7 +16,7 @@ import './tooltip.less'
  */
 export const Tooltip = ({children, ...props }) => {
   return (
-      <AntdTooltip {...props} >{children}</AntdTooltip>
+      <AntdTooltip {...props}>{children}</AntdTooltip>
   );
 };
 
