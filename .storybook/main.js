@@ -4,6 +4,10 @@ module.exports = {
     "../src/**/*.stories.@(js|jsx|ts|tsx|mdx)"
   ],
   'addons': [
+    {
+      name: '@storybook/addon-docs',
+      options: { transcludeMarkdown: true },
+    },
     '@storybook/addon-links',
     '@storybook/addon-a11y',
     '@storybook/addon-essentials',
