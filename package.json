@@ -82,6 +82,7 @@
     "react-is": "^18.2.0",
     "react-scripts": "5.0.1",
     "storybook-addon-pseudo-states": "^1.15.2",
+    "storybook-react-i18next": "^1.1.2",
     "webpack": "5"
   },
   "dependencies": {
@@ -92,8 +93,12 @@
     "babel-loader": "9.1.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-jest": "^29.2.0",
+    "i18next": "^22.4.10",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-http-backend": "^2.1.1",
     "less": "^4.1.1",
     "less-loader": "^7.3.0",
+    "react-i18next": "^12.2.0",
     "typescript-proptypes-generator": "^0.0.6",
     "typescript-to-proptypes": "^2.2.1"
   },

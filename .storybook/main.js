@@ -14,6 +14,7 @@ module.exports = {
     'storybook-addon-pseudo-states',
     '@storybook/addon-measure',
     '@storybook/addon-jest',
+    'storybook-react-i18next',
   ],
   webpackFinal: async (config, { configType }) => {
     const cssModel = config.module.rules.find(i => i.test.toString() === "/\\.css$/")
