@@ -325,6 +325,13 @@
       "wip": true
     }
   ],
-  "templates": [],
+  "templates": [
+    {
+      "id": "navigation",
+      "title": "Navigation",
+      "descrition": "TODO la description de navigation",
+      "wip": true
+    }
+  ],
   "pages": []
 }

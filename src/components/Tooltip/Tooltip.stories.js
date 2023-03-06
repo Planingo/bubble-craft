@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Tooltip } from './Tooltip';
+import IntlProvider from '../../../translation/IntlProvider';
 
 export default {
   title: 'Atomes/Tooltip',
@@ -35,6 +36,6 @@ export default {
   }
 };
 
-const TooltipGlobal = (args) => <Tooltip {...args} />;
+const TooltipGlobal = (args) => <IntlProvider><Tooltip {...args} /></IntlProvider>;
 
 export const Default = TooltipGlobal.bind({});

@@ -1,0 +1,19 @@
+{
+    "app.logout": "logout",
+    "app.my.account": "my account",
+    "app.navigation.calendars": "calendars",
+    "app.navigation.companies": "companies",
+    "app.navigation.lessons": "lessons",
+    "app.navigation.modules": "modules",
+    "app.navigation.my.calendar": "my calendar",
+    "app.navigation.pathways": "pathways",
+    "app.navigation.professors": "professors",
+    "app.navigation.rooms": "rooms",
+    "app.navigation.settings": "settings",
+    "app.navigation.students": "students",
+    "roles.super.admin": "super admin",
+    "roles.planing.keeper": "planing keeper",
+    "roles.student": "student",
+    "roles.professor": "professor",
+    "roles.company": "company"
+}

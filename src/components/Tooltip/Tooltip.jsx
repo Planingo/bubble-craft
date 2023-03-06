@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Tooltip as AntdTooltip } from 'antd';
 import './tooltip.less'
+import { useIntl } from 'react-intl'
 
 /**
  * 
@@ -15,8 +16,11 @@ import './tooltip.less'
  * 
  */
 export const Tooltip = ({children, ...props }) => {
+  const {formatMessage} = useIntl()
+  const capitalizeFirstLetter = (string) => string.charAt(0).toUpperCase() + string.slice(1);
+
   return (
-      <AntdTooltip {...props}>{children}</AntdTooltip>
+      <AntdTooltip {...props} title={capitalizeFirstLetter(formatMessage({id: props.title}))}>{children}</AntdTooltip>
   );
 };
 
