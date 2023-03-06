@@ -14,12 +14,11 @@ import './menu.css';
  * Documentations andt du composant : https://ant.design/components/menu/
  * 
  */
-export const Menu = ({ property, children, ...props }) => {
+export const Menu = ({ children, ...props }) => {
   return (
     <AntdMenu
       className='storybook-menu'
       {...props}
-      property
     >
       {children}
     </AntdMenu>
@@ -30,9 +29,7 @@ Menu.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
 };
 
 Menu.defaultProps = {
-  property: false,
 };

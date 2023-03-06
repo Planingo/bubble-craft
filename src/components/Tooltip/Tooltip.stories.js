@@ -31,7 +31,7 @@ export default {
   },
   args: {
     children: "Minerva McGonagall",
-    title: <p>C'est le prénom et le nom</p>,
+    title: "C'est le prénom et le nom",
   }
 };
 

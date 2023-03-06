@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
  * Documentations andt du composant : https://ant.design/components/badge/
  * 
  */
-export default function Badge({
+export function Badge({
   ...props
 }){
   return <AntdBadge {...props} />
