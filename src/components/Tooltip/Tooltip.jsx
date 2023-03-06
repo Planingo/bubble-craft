@@ -14,11 +14,11 @@ import './tooltip.less'
  * Documentations andt du composant : https://ant.design/components/tooltip/
  * 
  */
-export const Tooltip = ({children,  ...props }) => {
-  const capitalizeFirstLetter = (string) => string.charAt(0).toUpperCase() + string.slice(1);
+export const Tooltip = ({children, title, ...props }) => {
+  const capitalizeFirstLetter = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
   return (
-      <AntdTooltip {...props} title={capitalizeFirstLetter(props.title)}>{children}</AntdTooltip>
+      <AntdTooltip {...props} title={capitalizeFirstLetter(title)}>{children}</AntdTooltip>
   );
 };
 
