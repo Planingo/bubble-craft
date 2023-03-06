@@ -3,6 +3,7 @@ import React from 'react';
 import { Navigation } from './Navigation';
 import IntlProvider from '../../../translation/IntlProvider';
 import { Roles } from '../Roles/roles';
+import { BrowserRouter } from 'react-router-dom'
 
 export default {
   title: 'Templates/Navigation',
@@ -12,7 +13,12 @@ export default {
   }
 };
 
-const NavigationGlobal = (args) => <IntlProvider><Navigation {...args} /></IntlProvider>;
+const NavigationGlobal = (args) => 
+<IntlProvider>
+  <BrowserRouter>
+    <Navigation {...args} />
+  </BrowserRouter>
+</IntlProvider>;
 
 export const Default = NavigationGlobal.bind({});
 

@@ -5,6 +5,7 @@ import { path } from './path';
 import { Menu } from '../Menu/Menu';
 import { useIntl } from 'react-intl'
 import { Roles } from '../Roles/roles';
+import { Link } from "react-router-dom";
 
 /**
  * 
@@ -37,10 +38,10 @@ export const Navigation = ({ children, roles, ...props }) => {
       src={`https://avatars.bugsyaya.dev/50/${props.userId }`}
     />, 'sub1', null, [
       getItem(<p className='email'>{`${props?.email || "ditto-support@bugsyaya.dev"}`}</p>, 'email'),
-      getItem(<a href='/my-account'>
-        {formatMessage({id: 'app.my.account'})}
-      </a>, '2'),
-      getItem(<a href='/logout'>{formatMessage({id: 'app.logout'})}</a>, '3'),
+      getItem(<Link to='/my-account'>
+        <p>{formatMessage({id: 'app.my.account'})}</p>
+      </Link>, '2'),
+      getItem(<Link href='/logout'><p>{formatMessage({id: 'app.logout'})}</p></Link>, '3'),
    ]),
   ]
 
@@ -48,18 +49,15 @@ export const Navigation = ({ children, roles, ...props }) => {
     <div className="storybook-navigation" {...props}>
       <div className="top">
         <div className="logo">
-        <Menu mode="vertical" triggerSubMenuAction="click"
-        items={items}
-        >
-        </Menu>
+          <Menu mode="vertical" triggerSubMenuAction="click" items={items} />
         </div>
         <div className="main">
           {
             path.filter(({role}) => roles.includes(role))
             .map(({key, to, message}) => (
-              <a key={key} href={to} className="pointer">
+              <Link key={key} to={to} activeClassName='active' className="pointer">
                 {message}
-              </a>
+              </Link>
             ))
           }
         </div>
@@ -69,7 +67,13 @@ export const Navigation = ({ children, roles, ...props }) => {
 };
 
 Navigation.propTypes = {
-  roles: PropTypes.arrayOf(PropTypes.oneOf([Roles.SUPER_ADMIN, Roles.PLANING_KEEPER, Roles.STUDENT, Roles.PROFESSOR, Roles.COMPANY]))
+  roles: PropTypes.arrayOf(PropTypes.oneOf([
+    Roles.SUPER_ADMIN,
+    Roles.PLANING_KEEPER,
+    Roles.STUDENT,
+    Roles.PROFESSOR,
+    Roles.COMPANY
+  ]))
 };
 
 Navigation.defaultProps = {

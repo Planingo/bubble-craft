@@ -5,13 +5,15 @@
     width: 5em;
     display: block;
     color: var(--WHITE);
+
+    border-right: none !important;
 }
 
 .storybook-navigation > .top > .main {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    row-gap: 2em;
+    row-gap: 0.5em;
     width: 100%;
     align-items: center;
     height: 100%;
@@ -21,6 +23,34 @@
 .storybook-navigation > .top > .main > .pointer {
     cursor: pointer;
     color: var(--WHITE);
+}
+
+.storybook-navigation > .top > .main > .pointer:active {
+    background-color: var(--WHITE);
+    color: var(--PRIMARY-120);
+    display: flex;
+    border-left: 5px solid var(--PRIMARY-120);
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+.storybook-navigation > .top > .main > .pointer > div {
+    padding-right: 0em;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.storybook-navigation > .top > .main > .pointer:active > div {
+    padding: 0 0.5em 0 1em;
+    margin-left: 0.5em;
+}
+
+.active {
+    background-color: var(--WHITE);
+    color: var(--PRIMARY-120);
+    display: flex;
+    border-left: 5px solid var(--PRIMARY-120);
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
 }
 
 .storybook-navigation > .top > .main > a > div > span > svg {
@@ -80,21 +110,27 @@
     font-weight: 700;
 }
 
-.ant-menu-submenu > [role='menu'] > [role='menuitem'] > span > p {
+.ant-menu-submenu > [role='menu'] > [role='menuitem'] > span > p,
+.ant-menu-submenu > [role='menu'] > [role='menuitem'] > span > a > p {
     margin: 0;
 }
 
-.ant-menu-submenu > [role='menu'] > [role='menuitem'] > span > p::first-letter {
+.ant-menu-submenu > [role='menu'] > [role='menuitem'] > span > a > p::first-letter {
     text-transform: capitalize;
 }
 
-.ant-menu-submenu > [role='menu'] > [role='menuitem']:first-child > span > p::first-letter {
+.ant-menu-submenu > [role='menu'] > [role='menuitem']:first-child > span > a {
     text-transform: lowercase;
 }
 
 .ant-menu-submenu > [role='menu'] > [role='menuitem']:first-child:active,
 .ant-menu-submenu > [role='menu'] > [role='menuitem']:first-child:hover {
     cursor: default !important;
+}
+
+.ant-menu-submenu > [role='menu'] > [role='menuitem']:active,
+.ant-menu-submenu > [role='menu'] > [role='menuitem']:hover {
+    background-color: var(--PRIMARY-020) !important;
 }
 
 .ant-menu-submenu > [role='menu'] > [role='menuitem']:first-child:active,

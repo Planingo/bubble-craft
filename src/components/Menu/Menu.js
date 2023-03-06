@@ -29,9 +29,7 @@ Menu.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
 };
 
 Menu.defaultProps = {
-  property: false,
 };
