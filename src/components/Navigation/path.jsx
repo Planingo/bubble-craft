@@ -11,125 +11,89 @@ import { SettingOutlined } from '../Icon/icon/SettingOutlined'
 import { Roles } from '../Roles/roles'
 import { ScheduleOutlined } from '../Icon/icon/ScheduleOutlined'
 
-export const path = [
-    {
-        key: 'studentcalendar',
-        to: '/student-calendar',
-        message: <Tooltip placement='right' title={'app.navigation.my.calendar'}>
-            <div>
-                <ScheduleOutlined />
-            </div>
-        </Tooltip>,
-        role: Roles.STUDENT
-    },
-    {
-        key: 'professorcalendar',
-        to: '/professor-calendar',
-        message: <Tooltip placement='right' title={'app.navigation.my.calendar'}>
-            <div>
-                <ScheduleOutlined />
-            </div>
-        </Tooltip>,
-        role: Roles.PROFESSOR
-    },
-    {
-        key: 'companycalendars',
-        to: '/company-calendars',
-        message: <Tooltip placement='right' title={'app.navigation.my.calendar'}>
-            <div>
-                <ScheduleOutlined />
-            </div>
-        </Tooltip>,
-        role: Roles.COMPANY
-    },
-    {
-        key: 'student',
-        to: '/students',
-        message: <Tooltip placement='right' title={'app.navigation.students'}>
-            <div>
-                <UserOutlined />
-            </div>
-        </Tooltip>,
-        role: Roles.PLANING_KEEPER
-    },
-    {
-        key: 'professor',
-        to: '/professors',
-        message: <Tooltip placement='right' title={'app.navigation.professors'}>
-            <div>
-                <TeamOutlined />
-            </div>
-        </Tooltip>,
-        role: Roles.PLANING_KEEPER
-    },
-    {
-        key: 'calendar',
-        to: '/calendars',
-        message: <Tooltip placement='right' title={'app.navigation.calendars'}>
-            <div>
-                <CalendarOutlined />
-            </div>
-        </Tooltip>,
-        role: Roles.PLANING_KEEPER
-    },
-    {
-        key: 'lesson',
-        to: '/lessons',
-        message: <Tooltip placement='right' title={'app.navigation.lessons'}>
-            <div>
-                <TagOutlined />
-            </div>
-        </Tooltip>,
-        role: Roles.PLANING_KEEPER
-    },
-    {
-        key: 'module',
-        to: '/modules',
-        message: <Tooltip placement='right' title={'app.navigation.modules'}>
-            <div>
-                <TagsOutlined />
-            </div>
-        </Tooltip>,
-        role: Roles.PLANING_KEEPER
-    },
-    {
-        key: 'pathway',
-        to: '/pathways',
-        message: <Tooltip placement='right' title={'app.navigation.pathways'}>
-            <div>
-                <ExperimentOutlined />
-            </div>
-        </Tooltip>,
-        role: Roles.PLANING_KEEPER
-    },
-    {
-        key: 'room',
-        to: '/rooms',
-        message: <Tooltip placement='right' title={'app.navigation.rooms'}>
-            <div>
-                <ShopOutlined />
-            </div>
-        </Tooltip>,
-        role: Roles.PLANING_KEEPER
-    },
-    {
-        key: 'company',
-        to: '/companies',
-        message: <Tooltip placement='right' title={'app.navigation.companies'}>
-            <div>
-                <WifiOutlined />
-            </div>
-        </Tooltip>,
-        role: Roles.PLANING_KEEPER
-    },
-    {
-        key: 'settings',
-        to: '/settings',
-        message: <Tooltip placement='right' title={'app.navigation.settings'}>
-            <div>
-            <SettingOutlined />
-            </div>
-        </Tooltip>,
-        role: Roles.SUPER_ADMIN
-    },
-]
+export const path =[
+        {
+            key: 'studentcalendar',
+            to: '/student-calendar',
+            title: 'app.navigation.my.calendar',
+            icon: <ScheduleOutlined />,
+            role: Roles.STUDENT
+        },
+        {
+            key: 'professorcalendar',
+            to: '/professor-calendar',
+            title: 'app.navigation.my.calendar',
+            icon: <ScheduleOutlined />,
+            role: Roles.PROFESSOR
+        },
+        {
+            key: 'companycalendars',
+            to: '/company-calendars',
+            title: 'app.navigation.my.calendar',
+            icon: <ScheduleOutlined />,
+            role: Roles.COMPANY
+        },
+        {
+            key: 'student',
+            to: '/students',
+            title: 'app.navigation.students',
+            icon: <UserOutlined />,
+            role: Roles.PLANING_KEEPER
+        },
+        {
+            key: 'professor',
+            to: '/professors',
+            title: 'app.navigation.professors',
+            icon: <TeamOutlined />,
+            role: Roles.PLANING_KEEPER
+        },
+        {
+            key: 'calendar',
+            to: '/calendars',
+            title: 'app.navigation.calendars',
+            icon: <CalendarOutlined />,
+            role: Roles.PLANING_KEEPER
+        },
+        {
+            key: 'lesson',
+            to: '/lessons',
+            title: 'app.navigation.lessons',
+            icon: <TagOutlined />,
+            role: Roles.PLANING_KEEPER
+        },
+        {
+            key: 'module',
+            to: '/modules',
+            title: 'app.navigation.modules',
+            icon: <TagsOutlined />,
+            role: Roles.PLANING_KEEPER
+        },
+        {
+            key: 'pathway',
+            to: '/pathways',
+            title: 'app.navigation.pathways',
+            icon: <ExperimentOutlined />,
+            role: Roles.PLANING_KEEPER
+        },
+        {
+            key: 'room',
+            to: '/rooms',
+            title: 'app.navigation.rooms',
+            icon: <ShopOutlined />,
+            role: Roles.PLANING_KEEPER
+        },
+        {
+            key: 'company',
+            to: '/companies',
+            title: 'app.navigation.companies',
+            icon: <WifiOutlined />,
+            role: Roles.PLANING_KEEPER
+        },
+        {
+            key: 'settings',
+            to: '/settings',
+            title: 'app.navigation.settings',
+            icon: <SettingOutlined />,
+            role: Roles.SUPER_ADMIN
+        },
+    ]

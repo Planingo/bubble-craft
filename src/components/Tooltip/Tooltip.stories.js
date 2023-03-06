@@ -36,6 +36,6 @@ export default {
   }
 };
 
-const TooltipGlobal = (args) => <IntlProvider><Tooltip {...args} /></IntlProvider>;
+const TooltipGlobal = (args) => <Tooltip {...args} />;
 
 export const Default = TooltipGlobal.bind({});
