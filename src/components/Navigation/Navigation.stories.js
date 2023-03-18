@@ -14,7 +14,7 @@ export default {
 };
 
 const NavigationGlobal = (args) => 
-<IntlProvider>
+<IntlProvider  locale='fr'>
   <BrowserRouter>
     <Navigation {...args} />
   </BrowserRouter>

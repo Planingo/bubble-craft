@@ -1,15 +1,15 @@
 .storybook-button {
   .ant-radio-group  {
     .active {
-      background: var(--PRIMARY) !important;
-      border-color: var(--PRIMARY) !important;
+      background: var(--PRIMARY-120) !important;
+      border-color: var(--PRIMARY-120) !important;
       color: var(--WHITE) !important;
     }
 
     .unactive{
       background: var(--WHITE) !important;
-      border-color: var(--PRIMARY) !important;
-      color: var(--PRIMARY) !important;
+      border-color: var(--PRIMARY-120) !important;
+      color: var(--PRIMARY-120) !important;
     }
 
     svg {
@@ -17,12 +17,13 @@
     }
   }
 
-  button {
-    display: flex;
-    align-items: center;
+  button > span::first-letter, button > div::first-letter {
+    text-transform: capitalize;
+  }
 
-    background: var(--PRIMARY) !important;
-    border-color: var(--PRIMARY) !important;
+  a, button {
+    background: var(--PRIMARY-120) !important;
+    border-color: var(--PRIMARY-120) !important;
     color: var(--WHITE-100) !important;
     
     * {
@@ -42,10 +43,10 @@
     &[data-link] {
       background: transparent !important;
       border: none !important;
-      color: var(--PRIMARY) !important;
+      color: var(--PRIMARY-120) !important;
       
       * {
-        color: var(--PRIMARY) !important;
+        color: var(--PRIMARY-120) !important;
       }
 
       &:hover {
@@ -60,7 +61,7 @@
         }
       }
 
-      &[disabled] {
+      &.ant-btn-disabled {
         background: var(--WHITE-020) !important;  
         border-color: var(--PRIMARY-060) !important;
         
@@ -70,7 +71,7 @@
       }
     }
 
-    &[disabled] {
+    &.ant-btn-disabled {
       background: var(--PRIMARY-020) !important;
       border-color: var(--PRIMARY-060) !important;
       
@@ -79,13 +80,13 @@
       } 
     }
   
-    &[data-ghost] {
+    &.ant-btn-background-ghost {
       background: transparent !important;
-      border-color: var(--PRIMARY) !important;
-      color: var(--PRIMARY) !important;
+      border-color: var(--PRIMARY-120) !important;
+      color: var(--PRIMARY-120) !important;
       
       * {
-        color: var(--PRIMARY) !important;
+        color: var(--PRIMARY-120) !important;
       }
 
       &:hover {
@@ -106,7 +107,7 @@
         }
       }
 
-      &[disabled] {
+      &.ant-btn-disabled {
         background: var(--WHITE-020) !important;  
         border-color: var(--PRIMARY-060) !important;
         
@@ -116,7 +117,7 @@
       }
     }
 
-    &[data-danger] {
+    &.ant-btn-dangerous {
       background: var(--CANCEL-ERROR) !important;
       border-color: var(--CANCEL-ERROR) !important;
       color: var(--WHITE-100) !important;
@@ -131,7 +132,7 @@
       }
 
 
-      &[data-link] {
+      &[link] {
         background: transparent !important;
         border: none !important;
         color: var(--RED) !important;
@@ -152,7 +153,7 @@
           }
         }
 
-        &[disabled] {
+        &.ant-btn-disabled {
           background: var(--WHITE-020) !important;  
           border-color: var(--RED-060) !important;
           
@@ -167,7 +168,7 @@
         border-color: var(--RED-140) !important;
       }
 
-      &[disabled] {
+      &.ant-btn-disabled {
         background: var(--RED-020) !important;  
         border-color: var(--RED-060) !important;
         
@@ -176,7 +177,7 @@
         } 
       }
 
-      &[data-ghost] {
+      &.ant-btn-background-ghost {
         background: transparent !important;
         border-color: var(--CANCEL-ERROR) !important;
         color: var(--CANCEL-ERROR) !important;
@@ -203,7 +204,7 @@
           }
         }
   
-        &[disabled] {
+        &.ant-btn-disabled {
           background: var(--WHITE-020) !important;  
           border-color: var(--RED-060) !important;
           
@@ -250,7 +251,7 @@
           }
         }
 
-        &[disabled] {
+        &.ant-btn-disabled {
           background: var(--WHITE-020) !important;  
           border-color: var(--SECONDARY-060) !important;
           
@@ -265,7 +266,7 @@
         border-color: var(--SECONDARY-140) !important;
       }
 
-      &[disabled] {
+      &.ant-btn-disabled {
         background: var(--SECONDARY-020) !important;  
         border-color: var(--SECONDARY-060) !important;
         
@@ -274,7 +275,7 @@
         } 
       }
 
-      &[data-ghost] {
+      &.ant-btn-background-ghost {
         background: transparent !important;
         border-color: var(--SECONDARY) !important;
         color: var(--SECONDARY) !important;
@@ -301,7 +302,7 @@
           }
         }
 
-        &[disabled] {
+        &.ant-btn-disabled {
           background: var(--WHITE-020) !important;  
           border-color: var(--SECONDARY-060) !important;
           

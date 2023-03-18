@@ -327,9 +327,27 @@
   ],
   "templates": [
     {
+      "id": "additem",
+      "title": "AddItem",
+      "descrition": "TODO la description de additem",
+      "wip": true
+    },
+    {
+      "id": "header",
+      "title": "Header",
+      "descrition": "TODO la description de header",
+      "wip": true
+    },
+    {
       "id": "navigation",
       "title": "Navigation",
       "descrition": "TODO la description de navigation",
+      "wip": true
+    },
+    {
+      "id": "refinementList",
+      "title": "Refinement list",
+      "descrition": "TODO la description de refinement list",
       "wip": true
     }
   ],

@@ -10,7 +10,7 @@ import './button.less'
  */
 export default function Button({...props }){
   return (
-    <div className="storybook-button">
+    <div {...props} className="storybook-button">
         <AntdButton
           {...props}
         />
@@ -64,10 +64,6 @@ Button.propTypes = {
   */
   target: PropTypes.string,
   /**
-  * Peut définir `primary`, `dashed`, `link`, `text`, `default`
-  */
-  type: PropTypes.oneOf(['primary', 'dashed', 'link', 'text', 'default']),
-  /**
   * Définir le gestionnaire pour gérer l'événement de clic
   */
   onClick: PropTypes.func,
@@ -82,5 +78,4 @@ Button.defaultProps = {
   loading: false,
   shape: 'default',
   size: 'middle',
-  type: 'primary',
 };

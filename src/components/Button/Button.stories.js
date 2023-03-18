@@ -85,15 +85,14 @@ Default.argTypes = {
         type: "text"
       }
     },
-    type: {
-      control: {
-        type: 'select',
-        options: ['primary', 'dashed', 'link', 'default', 'ghost', `text`],
-      }
-    },
     onclick: {
       control: {
         type: 'select',
       }
     },
+    className: {
+      control: {
+        type: 'text'
+      }
+    }
 };
