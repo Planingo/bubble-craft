@@ -8,9 +8,9 @@ import { StarFilled } from '@ant-design/icons'
  * Documentations andt du composant : https://ant.design/components/rate/
  * 
  */
-export default function Rate({
+export const Rate = ({
   ...props
-}){
+}) => {
   return <AntdRate {...props} />
 }
 

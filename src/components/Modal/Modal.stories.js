@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from '../Button/Button';
-import Notif from '../Notification/Notification';
+import { Button } from '../Button/Button';
+import { Notif } from '../Notification/Notification';
 
 import { Modal } from './Modal';
 

@@ -13,7 +13,7 @@ import { Checkbox as AntdCheckbox } from 'antd'
  * Documentations andt du composant : https://ant.design/components/badge/
  * 
  */
-const CheckboxGroup = ({
+export const CheckboxGroup = ({
   props,
   defaultValue,
   disabled,
@@ -31,6 +31,4 @@ const CheckboxGroup = ({
     value={value}
     onChange={onChange}
     {...props} />
-}
-
-export { CheckboxGroup };
+};

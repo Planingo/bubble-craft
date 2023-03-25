@@ -1,7 +1,6 @@
 import React from 'react';
 import { Checkbox as AntdCheckbox } from 'antd'
 
-
 /**
  * 
  * # 🚧 _Composant en construction_ 🚧
@@ -13,7 +12,7 @@ import { Checkbox as AntdCheckbox } from 'antd'
  * Documentations andt du composant : https://ant.design/components/checkbox/
  * 
  */
-const Checkbox = ({
+export const Checkbox = ({
   props,
   autofocus,
   checked,
@@ -33,5 +32,3 @@ const Checkbox = ({
     onChange={onChange}
     {...props} >{children}</AntdCheckbox>
 }
-
-export { Checkbox };

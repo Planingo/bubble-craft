@@ -8,7 +8,7 @@ import PropTypes from 'prop-types'
  * Documentations andt du composant : https://ant.design/components/card/
  * 
  */
-export default function Card({children, ...props }){
+export const Card = ({children, ...props }) => {
   return (
     <AntdCard
       {...props}

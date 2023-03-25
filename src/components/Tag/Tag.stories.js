@@ -1,7 +1,7 @@
 import React from 'react';
 import results from '../../../.jest-test-results.json';
 import { withTests } from '@storybook/addon-jest';
-import Tag from './Tag';
+import { Tag } from './Tag';
 
 export default {
   component: Tag,

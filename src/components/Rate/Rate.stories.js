@@ -1,7 +1,7 @@
 import React from 'react';
 import results from '../../../.jest-test-results.json';
 import { withTests } from '@storybook/addon-jest';
-import Rate from './Rate';
+import { Rate } from './Rate';
 
 export default {
   component: Rate,

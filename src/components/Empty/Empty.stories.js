@@ -1,7 +1,7 @@
 import React from 'react';
 import results from '../../../.jest-test-results.json';
 import { withTests } from '@storybook/addon-jest';
-import Empty from './Empty';
+import { Empty } from './Empty';
 
 export default {
   component: Empty,

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './addItem.css';
 import { useParams } from 'react-router-dom';
 import { Modal } from '../Modal/Modal'
-import Button from '../Button/Button'
+import { Button } from '../Button/Button'
 import { Notification } from '../Notification/Notification'
 
 /**

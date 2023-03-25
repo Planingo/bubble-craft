@@ -8,7 +8,7 @@ import './button.less'
  * Documentations andt du composant : https://ant.design/components/button/
  * 
  */
-export default function Button({...props }){
+export const Button = ({...props }) => {
   return (
     <div {...props} className="storybook-button">
         <AntdButton

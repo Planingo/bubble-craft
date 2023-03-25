@@ -14,8 +14,6 @@ import './radioGroup.css'
  * Documentations andt du composant : https://ant.design/components/radio/
  * 
  */
-const RadioGroup = ({ children, ...props }) => {
+export const RadioGroup = ({ children, ...props }) => {
   return <AntdRadio.Group {...props} className='storybook-radiogroup' />
 }
-
-export { RadioGroup };

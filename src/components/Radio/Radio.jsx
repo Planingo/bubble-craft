@@ -13,7 +13,7 @@ import { Radio as AntdRadio } from 'antd'
  * Documentations andt du composant : https://ant.design/components/radio/
  * 
  */
-const Radio = ({
+export const Radio = ({
   props,
   children,
   autoFocus,
@@ -31,5 +31,3 @@ const Radio = ({
     value={value}
     {...props} >{children}</AntdRadio>
 }
-
-export { Radio };
