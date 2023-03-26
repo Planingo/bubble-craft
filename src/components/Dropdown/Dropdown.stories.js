@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Dropdown } from './Dropdown';
-import { SmileOutlined } from '@ant-design/icons';
+import { SmileOutlined } from '../Icon/icon';
 
 export default {
   title: 'Molécules/Dropdown',

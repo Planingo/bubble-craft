@@ -1,5 +1,5 @@
-import {TeamOutlined as TeamOutlinedAntd} from '@ant-design/icons'
+import {AiOutlineTeam} from 'react-icons/ai'
 
 export const TeamOutlined = () => {
-    return <TeamOutlinedAntd/>
+    return <AiOutlineTeam/>
 }

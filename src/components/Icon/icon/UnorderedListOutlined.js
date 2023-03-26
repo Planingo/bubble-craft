@@ -1,5 +1,5 @@
-import {UnorderedListOutlined as UnorderedListOutlinedAntd} from '@ant-design/icons'
+import {AiOutlineUnorderedList} from 'react-icons/ai'
 
 export const UnorderedListOutlined = () => {
-    return <UnorderedListOutlinedAntd/>
+    return <AiOutlineUnorderedList/>
 }

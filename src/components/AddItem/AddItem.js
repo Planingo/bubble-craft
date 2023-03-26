@@ -34,11 +34,8 @@ export const AddItem = ({
 	const [item, setItem] = useState()
 
   return (
-    <div
-      className='storybook-addItem'
-      {...props}
-    >
       <Modal
+        className='storybook-addItem'
         onOk={async () =>  onAdd ? await onAdd(item, id) : onEdit ? await onEdit(item, id) : null}
         OpenModal={
           (showModal) => <Button ghost={secondary} size="large" icon={icon} >{cta || title}</Button>
@@ -56,7 +53,6 @@ export const AddItem = ({
       >
         <Form setItem={setItem} />
       </Modal>
-    </div>
   );
 };
 

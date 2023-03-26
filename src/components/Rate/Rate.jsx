@@ -1,7 +1,7 @@
 import React from 'react'
 import { Rate as AntdRate } from 'antd'
 import PropTypes from 'prop-types'
-import { StarFilled } from '@ant-design/icons'
+import { StarFilled } from 'react-icons/ai'
 
 /**
  * 

@@ -40,7 +40,7 @@
   resolved "https://registry.yarnpkg.com/@ant-design/icons-svg/-/icons-svg-4.2.1.tgz#8630da8eb4471a4aabdaed7d1ff6a97dcb2cf05a"
   integrity sha512-EB0iwlKDGpG93hW8f85CTJTs4SvMX7tt5ceupvhALp1IF44SeUFOMhKUOYqpsoYWQKAOuTRDMqn75rEaKDp0Xw==
 
-"@ant-design/icons@^5.0.0", "@ant-design/icons@^5.0.1":
+"@ant-design/icons@^5.0.0":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@ant-design/icons/-/icons-5.0.1.tgz#febb1fdc5776f58187b2c953ac9a4496069d045b"
   integrity sha512-ZyF4ksXCcdtwA/1PLlnFLcF/q8/MhwxXhKHh4oCHDA4Ip+ZzAHoICtyp4wZWfiCVDP0yuz3HsjyvuldHFb3wjA==
@@ -2614,28 +2614,6 @@
     lodash.transform "^4.6.0"
     lodash.union "^4.6.0"
     lodash.values "^4.3.0"
-
-"@storybook/addon-a11y@^6.5.16":
-  version "6.5.16"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.5.16.tgz#9288a6c1d111fa4ec501d213100ffff91757d3fc"
-  integrity sha512-/e9s34o+TmEhy+Q3/YzbRJ5AJ/Sy0gjZXlvsCrcRpiQLdt5JRbN8s+Lbn/FWxy8U1Tb1wlLYlqjJ+fYi5RrS3A==
-  dependencies:
-    "@storybook/addons" "6.5.16"
-    "@storybook/api" "6.5.16"
-    "@storybook/channels" "6.5.16"
-    "@storybook/client-logger" "6.5.16"
-    "@storybook/components" "6.5.16"
-    "@storybook/core-events" "6.5.16"
-    "@storybook/csf" "0.0.2--canary.4566f4d.1"
-    "@storybook/theming" "6.5.16"
-    axe-core "^4.2.0"
-    core-js "^3.8.2"
-    global "^4.4.0"
-    lodash "^4.17.21"
-    react-sizeme "^3.0.1"
-    regenerator-runtime "^0.13.7"
-    ts-dedent "^2.0.0"
-    util-deprecate "^1.0.2"
 
 "@storybook/addon-actions@6.5.16", "@storybook/addon-actions@^6.5.16":
   version "6.5.16"
@@ -5433,7 +5411,7 @@ autoprefixer@^9.8.6:
     postcss "^7.0.32"
     postcss-value-parser "^4.1.0"
 
-axe-core@^4.2.0, axe-core@^4.4.2:
+axe-core@^4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.4.2.tgz#dcf7fb6dea866166c3eab33d68208afe4d5f670c"
   integrity sha512-LVAaGp/wkkgYJcjmHsoKx4juT1aQvJyPcW09MLCjVTh3V2cc6PnyempiLMNH5iMdfIX/zdbjUx2KDjMLCTdPeA==
@@ -14962,6 +14940,11 @@ react-error-overlay@^6.0.11:
   version "6.0.11"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.11.tgz#92835de5841c5cf08ba00ddd2d677b6d17ff9adb"
   integrity sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
+
+react-icons@^4.8.0:
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.8.0.tgz#621e900caa23b912f737e41be57f27f6b2bff445"
+  integrity sha512-N6+kOLcihDiAnj5Czu637waJqSnwlMNROzVZMhfX68V/9bu9qHaMIJC4UdozWoOk57gahFCNHwVvWzm0MTzRjg==
 
 react-input-autosize@^3.0.0:
   version "3.0.0"

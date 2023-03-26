@@ -1,29 +1,126 @@
 .storybook-button {
-  .ant-radio-group  {
-    .active {
-      background: var(--PRIMARY-120) !important;
-      border-color: var(--PRIMARY-120) !important;
-      color: var(--WHITE) !important;
-    }
+  display: flex;
+  align-items: center;
+  column-gap: 0.25em;
 
-    .unactive{
-      background: var(--WHITE) !important;
-      border-color: var(--PRIMARY-120) !important;
-      color: var(--PRIMARY-120) !important;
-    }
-
-    svg {
-      font-size: 1em !important;
-    }
+  .active {
+    background: var(--PRIMARY-120) !important;
+    border-color: var(--PRIMARY-120) !important;
+    color: var(--WHITE) !important;
   }
 
-  button > span::first-letter, button > div::first-letter {
+  .unactive{
+    background: var(--WHITE) !important;
+    border-color: var(--PRIMARY-120) !important;
+    color: var(--PRIMARY-120) !important;
+  }
+
+  svg {
+    font-size: 1em !important;
+  }
+
+  span::first-letter, button > div::first-letter {
     text-transform: capitalize;
   }
 
-  a, button {
-    background: var(--PRIMARY-120) !important;
+  background: var(--PRIMARY-120) !important;
+  border-color: var(--PRIMARY-120) !important;
+  color: var(--WHITE-100) !important;
+  
+  * {
+    color: var(--WHITE-100) !important;
+  }
+
+  &:hover {
+    background: var(--PRIMARY-080) !important;
+    border-color: var(--PRIMARY-080) !important;
+  }
+
+  &:active {
+    background: var(--PRIMARY-140) !important;
+    border-color: var(--PRIMARY-140) !important;
+  }
+
+  &[data-link] {
+    background: transparent !important;
+    border: none !important;
+    color: var(--PRIMARY-120) !important;
+    
+    * {
+      color: var(--PRIMARY-120) !important;
+    }
+
+    &:hover {
+      * {
+        color: var(--PRIMARY-080) !important;
+      }
+    }
+
+    &:active {
+      * {
+        color: var(--PRIMARY-140) !important;
+      }
+    }
+
+    &.ant-btn-disabled {
+      background: var(--WHITE-020) !important;  
+      border-color: var(--PRIMARY-060) !important;
+      
+      * {
+        color: var(--PRIMARY-060) !important;
+      } 
+    }
+  }
+
+  &.ant-btn-disabled {
+    background: var(--PRIMARY-020) !important;
+    border-color: var(--PRIMARY-060) !important;
+    
+    * {
+      color: var(--PRIMARY-060) !important;
+    } 
+  }
+
+  &.ant-btn-background-ghost {
+    background: transparent !important;
     border-color: var(--PRIMARY-120) !important;
+    color: var(--PRIMARY-120) !important;
+    
+    * {
+      color: var(--PRIMARY-120) !important;
+    }
+
+    &:hover {
+      border-color: var(--PRIMARY-080) !important;
+      color: var(--PRIMARY-080) !important;
+
+      * {
+        color: var(--PRIMARY-080) !important;
+      }
+    }
+
+    &:active {
+      border-color: var(--PRIMARY-140) !important;
+      color: var(--PRIMARY-140) !important;
+
+      * {
+        color: var(--PRIMARY-140) !important;
+      }
+    }
+
+    &.ant-btn-disabled {
+      background: var(--WHITE-020) !important;  
+      border-color: var(--PRIMARY-060) !important;
+      
+      * {
+        color: var(--PRIMARY-060) !important;
+      } 
+    }
+  }
+
+  &.ant-btn-dangerous {
+    background: var(--CANCEL-ERROR) !important;
+    border-color: var(--CANCEL-ERROR) !important;
     color: var(--WHITE-100) !important;
     
     * {
@@ -31,285 +128,188 @@
     }
 
     &:hover {
-      background: var(--PRIMARY-080) !important;
-      border-color: var(--PRIMARY-080) !important;
+      background: var(--RED-080) !important;
+      border-color: var(--RED-080) !important;
     }
 
-    &:active {
-      background: var(--PRIMARY-140) !important;
-      border-color: var(--PRIMARY-140) !important;
-    }
 
-    &[data-link] {
+    &[link] {
       background: transparent !important;
       border: none !important;
-      color: var(--PRIMARY-120) !important;
+      color: var(--RED) !important;
       
       * {
-        color: var(--PRIMARY-120) !important;
-      }
-
-      &:hover {
-        * {
-          color: var(--PRIMARY-080) !important;
-        }
-      }
-
-      &:active {
-        * {
-          color: var(--PRIMARY-140) !important;
-        }
-      }
-
-      &.ant-btn-disabled {
-        background: var(--WHITE-020) !important;  
-        border-color: var(--PRIMARY-060) !important;
-        
-        * {
-          color: var(--PRIMARY-060) !important;
-        } 
-      }
-    }
-
-    &.ant-btn-disabled {
-      background: var(--PRIMARY-020) !important;
-      border-color: var(--PRIMARY-060) !important;
-      
-      * {
-        color: var(--PRIMARY-060) !important;
-      } 
-    }
-  
-    &.ant-btn-background-ghost {
-      background: transparent !important;
-      border-color: var(--PRIMARY-120) !important;
-      color: var(--PRIMARY-120) !important;
-      
-      * {
-        color: var(--PRIMARY-120) !important;
-      }
-
-      &:hover {
-        border-color: var(--PRIMARY-080) !important;
-        color: var(--PRIMARY-080) !important;
-
-        * {
-          color: var(--PRIMARY-080) !important;
-        }
-      }
-
-      &:active {
-        border-color: var(--PRIMARY-140) !important;
-        color: var(--PRIMARY-140) !important;
-
-        * {
-          color: var(--PRIMARY-140) !important;
-        }
-      }
-
-      &.ant-btn-disabled {
-        background: var(--WHITE-020) !important;  
-        border-color: var(--PRIMARY-060) !important;
-        
-        * {
-          color: var(--PRIMARY-060) !important;
-        } 
-      }
-    }
-
-    &.ant-btn-dangerous {
-      background: var(--CANCEL-ERROR) !important;
-      border-color: var(--CANCEL-ERROR) !important;
-      color: var(--WHITE-100) !important;
-      
-      * {
-        color: var(--WHITE-100) !important;
-      }
-
-      &:hover {
-        background: var(--RED-080) !important;
-        border-color: var(--RED-080) !important;
-      }
-
-
-      &[link] {
-        background: transparent !important;
-        border: none !important;
         color: var(--RED) !important;
-        
+      }
+
+      &:hover {
         * {
-          color: var(--RED) !important;
-        }
-
-        &:hover {
-          * {
-            color: var(--RED-080) !important;
-          }
-        }
-
-        &:active {
-          * {
-            color: var(--RED-140) !important;
-          }
-        }
-
-        &.ant-btn-disabled {
-          background: var(--WHITE-020) !important;  
-          border-color: var(--RED-060) !important;
-          
-          * {
-            color: var(--RED-060) !important;
-          } 
+          color: var(--RED-080) !important;
         }
       }
 
       &:active {
-        background: var(--RED-140) !important;
-        border-color: var(--RED-140) !important;
+        * {
+          color: var(--RED-140) !important;
+        }
       }
 
       &.ant-btn-disabled {
-        background: var(--RED-020) !important;  
+        background: var(--WHITE-020) !important;  
         border-color: var(--RED-060) !important;
         
         * {
           color: var(--RED-060) !important;
         } 
       }
-
-      &.ant-btn-background-ghost {
-        background: transparent !important;
-        border-color: var(--CANCEL-ERROR) !important;
-        color: var(--CANCEL-ERROR) !important;
-        
-        * {
-          color: var(--CANCEL-ERROR) !important;
-        }
-
-        &:hover {
-          border-color: var(--RED-080) !important;
-          color: var(--RED-080) !important;
-  
-          * {
-            color: var(--RED-080) !important;
-          }
-        }
-  
-        &:active {
-          border-color: var(--RED-140) !important;
-          color: var(--RED-140) !important;
-  
-          * {
-            color: var(--RED-140) !important;
-          }
-        }
-  
-        &.ant-btn-disabled {
-          background: var(--WHITE-020) !important;  
-          border-color: var(--RED-060) !important;
-          
-          * {
-            color: var(--RED-060) !important;
-          } 
-        }
-      }
     }
 
-    &.cta {
-      background: var(--SECONDARY) !important;
-      border-color: var(--SECONDARY) !important;
-      color: var(--WHITE-100) !important;
+    &:active {
+      background: var(--RED-140) !important;
+      border-color: var(--RED-140) !important;
+    }
+
+    &.ant-btn-disabled {
+      background: var(--RED-020) !important;  
+      border-color: var(--RED-060) !important;
       
       * {
-        color: var(--WHITE-100) !important;
+        color: var(--RED-060) !important;
+      } 
+    }
+
+    &.ant-btn-background-ghost {
+      background: transparent !important;
+      border-color: var(--CANCEL-ERROR) !important;
+      color: var(--CANCEL-ERROR) !important;
+      
+      * {
+        color: var(--CANCEL-ERROR) !important;
       }
 
       &:hover {
-        background: var(--SECONDARY-080) !important;
-        border-color: var(--SECONDARY-080) !important;
-      }
+        border-color: var(--RED-080) !important;
+        color: var(--RED-080) !important;
 
-
-      &[data-link] {
-        background: transparent !important;
-        border: none !important;
-        color: var(--SECONDARY) !important;
-        
         * {
-          color: var(--SECONDARY) !important;
-        }
-
-        &:hover {
-          * {
-            color: var(--SECONDARY-080) !important;
-          }
-        }
-
-        &:active {
-          * {
-            color: var(--SECONDARY-140) !important;
-          }
-        }
-
-        &.ant-btn-disabled {
-          background: var(--WHITE-020) !important;  
-          border-color: var(--SECONDARY-060) !important;
-          
-          * {
-            color: var(--SECONDARY-060) !important;
-          } 
+          color: var(--RED-080) !important;
         }
       }
 
       &:active {
-        background: var(--SECONDARY-140) !important;
-        border-color: var(--SECONDARY-140) !important;
+        border-color: var(--RED-140) !important;
+        color: var(--RED-140) !important;
+
+        * {
+          color: var(--RED-140) !important;
+        }
       }
 
       &.ant-btn-disabled {
-        background: var(--SECONDARY-020) !important;  
+        background: var(--WHITE-020) !important;  
+        border-color: var(--RED-060) !important;
+        
+        * {
+          color: var(--RED-060) !important;
+        } 
+      }
+    }
+  }
+
+  &.cta {
+    background: var(--SECONDARY) !important;
+    border-color: var(--SECONDARY) !important;
+    color: var(--WHITE-100) !important;
+    
+    * {
+      color: var(--WHITE-100) !important;
+    }
+
+    &:hover {
+      background: var(--SECONDARY-080) !important;
+      border-color: var(--SECONDARY-080) !important;
+    }
+
+
+    &[data-link] {
+      background: transparent !important;
+      border: none !important;
+      color: var(--SECONDARY) !important;
+      
+      * {
+        color: var(--SECONDARY) !important;
+      }
+
+      &:hover {
+        * {
+          color: var(--SECONDARY-080) !important;
+        }
+      }
+
+      &:active {
+        * {
+          color: var(--SECONDARY-140) !important;
+        }
+      }
+
+      &.ant-btn-disabled {
+        background: var(--WHITE-020) !important;  
         border-color: var(--SECONDARY-060) !important;
         
         * {
           color: var(--SECONDARY-060) !important;
         } 
       }
+    }
 
-      &.ant-btn-background-ghost {
-        background: transparent !important;
-        border-color: var(--SECONDARY) !important;
+    &:active {
+      background: var(--SECONDARY-140) !important;
+      border-color: var(--SECONDARY-140) !important;
+    }
+
+    &.ant-btn-disabled {
+      background: var(--SECONDARY-020) !important;  
+      border-color: var(--SECONDARY-060) !important;
+      
+      * {
+        color: var(--SECONDARY-060) !important;
+      } 
+    }
+
+    &.ant-btn-background-ghost {
+      background: transparent !important;
+      border-color: var(--SECONDARY) !important;
+      color: var(--SECONDARY) !important;
+      
+      * {
         color: var(--SECONDARY) !important;
+      }
+
+      &:hover {
+        border-color: var(--SECONDARY-080) !important;
+        color: var(--SECONDARY-080) !important;
+
+        * {
+          color: var(--SECONDARY-080) !important;
+        }
+      }
+
+      &:active {
+        border-color: var(--SECONDARY-140) !important;
+        color: var(--SECONDARY-140) !important;
+
+        * {
+          color: var(--SECONDARY-140) !important;
+        }
+      }
+
+      &.ant-btn-disabled {
+        background: var(--WHITE-020) !important;  
+        border-color: var(--SECONDARY-060) !important;
         
         * {
-          color: var(--SECONDARY) !important;
-        }
-
-        &:hover {
-          border-color: var(--SECONDARY-080) !important;
-          color: var(--SECONDARY-080) !important;
-
-          * {
-            color: var(--SECONDARY-080) !important;
-          }
-        }
-
-        &:active {
-          border-color: var(--SECONDARY-140) !important;
-          color: var(--SECONDARY-140) !important;
-
-          * {
-            color: var(--SECONDARY-140) !important;
-          }
-        }
-
-        &.ant-btn-disabled {
-          background: var(--WHITE-020) !important;  
-          border-color: var(--SECONDARY-060) !important;
-          
-          * {
-            color: var(--SECONDARY-060) !important;
-          } 
-        }
+          color: var(--SECONDARY-060) !important;
+        } 
       }
     }
   }

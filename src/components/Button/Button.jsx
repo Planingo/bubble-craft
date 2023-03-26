@@ -10,8 +10,8 @@ import './button.less'
  */
 export const Button = ({...props }) => {
   return (
-    <div className="storybook-button">
-        <AntdButton
+    <div>
+        <AntdButton className="storybook-button"
           {...props}
         />
     </div>

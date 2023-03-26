@@ -2,7 +2,7 @@ import React from 'react';
 import results from '../../../.jest-test-results.json';
 import { withTests } from '@storybook/addon-jest';
 import { Card } from './Card';
-import { CloudUploadOutlined, DeleteOutlined, DownloadOutlined } from '../Icon/Icon'
+import { CloudUploadOutlined, DeleteOutlined, DownloadOutlined } from '../Icon/icon'
 import { Tooltip } from '../Tooltip/Tooltip';
 import { Tag } from '../Tag/Tag';
 

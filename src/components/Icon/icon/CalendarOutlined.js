@@ -1,5 +1,5 @@
-import {CalendarOutlined as CalendarOutlinedAntd} from '@ant-design/icons'
+import {AiOutlineCalendar} from 'react-icons/ai'
 
 export const CalendarOutlined = () => {
-    return <CalendarOutlinedAntd/>
+    return <AiOutlineCalendar />
 }

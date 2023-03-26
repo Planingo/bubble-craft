@@ -1,5 +1,5 @@
-import {AppstoreOutlined as AppstoreOutlinedAntd} from '@ant-design/icons'
+import { AiOutlineAppstore } from 'react-icons/ai'
 
-export const AppstoreOutlined = () => {
-    return <AppstoreOutlinedAntd/>
+export const AppstoreOutlinedDS = () => {
+    return <AiOutlineAppstore />
 }

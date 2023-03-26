@@ -1,5 +1,5 @@
-import {ShopOutlined as ShopOutlinedAntd} from '@ant-design/icons'
+import {AiOutlineShop} from 'react-icons/ai'
 
 export const ShopOutlined = () => {
-    return <ShopOutlinedAntd/>
+    return <AiOutlineShop/>
 }

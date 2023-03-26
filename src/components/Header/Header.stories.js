@@ -1,6 +1,6 @@
 import React from 'react';
 import { IntlProvider } from '../../../translation/IntlProvider';
-import { UserOutlined } from '@ant-design/icons';
+import { UserOutlined } from '../Icon/icon';
 import { Form } from 'antd';
 import { Input } from '../Input/Input';
 import { BrowserRouter } from 'react-router-dom'

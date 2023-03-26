@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
-import {PoweroffOutlined} from '@ant-design/icons'
+import { PoweroffOutlined } from '../Icon/icon'
 
 export default {
   component: Button,

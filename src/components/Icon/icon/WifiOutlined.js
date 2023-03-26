@@ -1,5 +1,5 @@
-import {WifiOutlined as WifiOutlinedAntd} from '@ant-design/icons'
+import { HiOutlineBuildingOffice2 } from 'react-icons/hi2'
 
 export const WifiOutlined = () => {
-    return <WifiOutlinedAntd/>
+    return <HiOutlineBuildingOffice2 />
 }

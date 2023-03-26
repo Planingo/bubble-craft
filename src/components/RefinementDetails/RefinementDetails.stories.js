@@ -1,8 +1,7 @@
 import React from 'react';
-
 import { RefinementDetails } from './RefinementDetails';
-import IntlProvider from '../../../translation/IntlProvider';
-import { UserOutlined } from '@ant-design/icons';
+import { IntlProvider } from '../../../translation/IntlProvider';
+import { UserOutlined } from '../Icon/icon';
 import { Form } from 'antd';
 import { Input } from '../Input/Input';
 import { BrowserRouter } from 'react-router-dom'
@@ -17,9 +16,7 @@ const RefinementListGlobal = (args) => <IntlProvider locale='fr'><BrowserRouter>
 export const Default = RefinementListGlobal.bind({});
 
 Default.args = {
-  isGrid: true,
   firstActionText: "ajouter un truc",
-  setIsGrid: console.log,
   FirstActionIcon: UserOutlined,
   FirstForm: <Form
     onValuesChange={(values) => console.log(values)}

@@ -4,10 +4,10 @@ import './refinementList.css';
 import { useIntl } from 'react-intl';
 import { RadioGroup } from '../Radio/RadioGroups/RadioGroup'
 import { Link } from 'react-router-dom';
-import { AppstoreOutlined } from '../Icon/icon/AppstoreOutlined';
+import { AppstoreOutlinedDS } from '../Icon/icon/AppstoreOutlined';
 import { UnorderedListOutlined } from '../Icon/icon/UnorderedListOutlined';
-import { AddItem } from '../AddItem/AddItem'
-import { CalendarOutlined } from '@ant-design/icons';
+import { CalendarOutlined } from '../Icon/icon/CalendarOutlined';
+import { AddItem } from '../AddItem/AddItem';
 
 /**
  * 
@@ -57,7 +57,7 @@ export const RefinementList = ({
         buttonStyle="solid"
         options={[
           {
-            label: <AppstoreOutlined />,
+            label: <AppstoreOutlinedDS />,
             value: 'Grid'
           },
           {

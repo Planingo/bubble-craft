@@ -1,5 +1,5 @@
-import {SettingOutlined as SettingOutlinedAntd} from '@ant-design/icons'
+import {AiOutlineSetting} from 'react-icons/ai'
 
 export const SettingOutlined = () => {
-    return <SettingOutlinedAntd/>
+    return <AiOutlineSetting/>
 }

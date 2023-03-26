@@ -1,5 +1,5 @@
-import {TagOutlined as TagOutlinedAntd} from '@ant-design/icons'
+import {AiOutlineTag} from 'react-icons/ai'
 
 export const TagOutlined = () => {
-    return <TagOutlinedAntd/>
+    return <AiOutlineTag/>
 }

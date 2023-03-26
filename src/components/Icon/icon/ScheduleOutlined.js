@@ -1,5 +1,5 @@
-import {ScheduleOutlined as ScheduleOutlinedAntd} from '@ant-design/icons'
+import {AiOutlineSchedule} from 'react-icons/ai'
 
 export const ScheduleOutlined = () => {
-    return <ScheduleOutlinedAntd/>
+    return <AiOutlineSchedule/>
 }

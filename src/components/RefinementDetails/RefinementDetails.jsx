@@ -2,12 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './refinementDetails.css';
 import { useIntl } from 'react-intl';
-import { RadioGroup } from '../Radio/RadioGroups/RadioGroup'
 import { Link } from 'react-router-dom';
-import { AppstoreOutlined } from '../Icon/icon/AppstoreOutlined';
-import { UnorderedListOutlined } from '../Icon/icon/UnorderedListOutlined';
 import { AddItem } from '../AddItem/AddItem'
-import { ArrowLeftOutlined, CalendarOutlined } from '@ant-design/icons';
+import { ArrowLeftOutlined, CalendarOutlined } from '../Icon/icon';
 /**
  * 
  * # 🚧 _Composant en construction_ 🚧
@@ -21,8 +18,6 @@ import { ArrowLeftOutlined, CalendarOutlined } from '@ant-design/icons';
  */
 export const RefinementDetails = ({ 
 	backTo,
-	setIsGrid,
-	isGrid,
 	FirstActionIcon,
 	firstActionText,
 	FirstForm,
@@ -34,8 +29,6 @@ export const RefinementDetails = ({
 	secondActioning,
 	onSecondAction,
 	mainActionButton,
-	onDelete,
-	onDeleteText,
 	Info,
   AddCalendar,
   addingCalendar,
