@@ -1,3 +1,7 @@
 .storybook-header {
 
 }
+
+.storybook-header > .search {
+    padding-bottom: 1em;
+}

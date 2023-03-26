@@ -351,5 +351,12 @@
       "wip": true
     }
   ],
-  "pages": []
+  "pages": [
+    {
+      "id": "globalPage",
+      "title": "Global page",
+      "descrition": "TODO la description de page global",
+      "wip": true
+    }
+  ]
 }

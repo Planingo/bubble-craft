@@ -12,7 +12,7 @@ export { Carousel } from './Carousel/Carousel';
 export { Checkbox } from './Checkbox/Checkbox';
 export { CheckboxGroup } from './Checkbox/CheckboxGroups/CheckboxGroup';
 export { Collapse } from './Collapse/Collapse';
-export { DatePicker } from './DatePicker/ColDatePickerlapse';
+export { DatePicker } from './DatePicker/DatePicker';
 export { Drawer } from './Drawer/Drawer';
 export { Dropdown } from './Dropdown/Dropdown';
 export { Empty } from './Empty/Empty';

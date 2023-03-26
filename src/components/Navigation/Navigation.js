@@ -19,7 +19,7 @@ import { Tooltip } from '../Tooltip/Tooltip';
  * 
  * 
  */
-export const Navigation = ({ children, roles, ...props }) => {
+export const Navigation = ({ roles, ...props }) => {
 
   const { formatMessage } = useIntl()
   
@@ -56,9 +56,11 @@ export const Navigation = ({ children, roles, ...props }) => {
           {
             path.filter(({role}) => roles.includes(role))
             .map(({key, to, title, icon}) => (
-              <Link key={key} to={to} activeClassName='active' className="pointer">
+              <Link key={key} to={to} activeclassname='active' className="pointer">
                 <Tooltip placement='right' title={formatMessage({id: title})}>
+                  <div>
                     {icon}
+                  </div>
                 </Tooltip>
               </Link>
             ))
@@ -70,6 +72,13 @@ export const Navigation = ({ children, roles, ...props }) => {
 };
 
 Navigation.propTypes = {
+  roles: PropTypes.arrayOf(PropTypes.oneOf([
+    Roles.SUPER_ADMIN,
+    Roles.PLANING_KEEPER,
+    Roles.STUDENT,
+    Roles.PROFESSOR,
+    Roles.COMPANY
+  ]))
 };
 
 Navigation.defaultProps = {

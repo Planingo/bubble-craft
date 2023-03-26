@@ -12,7 +12,11 @@ export default {
   component: RefinementList,
 };
 
-const RefinementListGlobal = (args) => <IntlProvider locale='en'><BrowserRouter><RefinementList {...args} /></BrowserRouter></IntlProvider>;
+const RefinementListGlobal = (args) => <IntlProvider locale='fr'>
+    <BrowserRouter>
+      <RefinementList {...args} />
+    </BrowserRouter>
+  </IntlProvider>;
 
 export const Default = RefinementListGlobal.bind({});
 

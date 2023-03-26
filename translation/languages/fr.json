@@ -1,5 +1,6 @@
 {
     "app.add.calendar": "ajouter un calendrier",
+    "app.empty": "Pour le moment c'est vide !",
     "app.logout": "déconnexion",
     "app.my.account": "mon compte",
     "app.navigation.calendars": "calendriers",

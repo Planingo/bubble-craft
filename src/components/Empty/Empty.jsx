@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
  * Documentations andt du composant : https://ant.design/components/empty/
  * 
  */
-export cons Empty = ({
+export const Empty = ({
   ...props
 }) => {
   return <AntdEmpty {...props} />

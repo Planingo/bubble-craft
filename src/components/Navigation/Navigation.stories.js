@@ -14,7 +14,7 @@ export default {
 };
 
 const NavigationGlobal = (args) => 
-<IntlProvider  locale='fr'>
+<IntlProvider locale='fr'>
   <BrowserRouter>
     <Navigation {...args} />
   </BrowserRouter>
@@ -24,15 +24,13 @@ export const Default = NavigationGlobal.bind({});
 
 Default.argTypes = {
   roles: {
-    control: {
-        type: 'multi-select',
-        options: [
-          Roles.SUPER_ADMIN,
-          Roles.PLANING_KEEPER,
-          Roles.STUDENT,
-          Roles.PROFESSOR,
-          Roles.COMPANY
-        ]
-    }
+    type: 'multi-select',
+    options: [
+      Roles.SUPER_ADMIN,
+      Roles.PLANING_KEEPER,
+      Roles.STUDENT,
+      Roles.PROFESSOR,
+      Roles.COMPANY
+    ]
   }
 };
