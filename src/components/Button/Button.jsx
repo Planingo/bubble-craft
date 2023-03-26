@@ -8,10 +8,10 @@ import './button.less'
  * Documentations andt du composant : https://ant.design/components/button/
  * 
  */
-export default function Button({...props }){
+export const Button = ({...props }) => {
   return (
-    <div className="storybook-button">
-        <AntdButton
+    <div>
+        <AntdButton className="storybook-button"
           {...props}
         />
     </div>
@@ -64,10 +64,6 @@ Button.propTypes = {
   */
   target: PropTypes.string,
   /**
-  * Peut définir `primary`, `dashed`, `link`, `text`, `default`
-  */
-  type: PropTypes.oneOf(['primary', 'dashed', 'link', 'text', 'default']),
-  /**
   * Définir le gestionnaire pour gérer l'événement de clic
   */
   onClick: PropTypes.func,
@@ -82,5 +78,4 @@ Button.defaultProps = {
   loading: false,
   shape: 'default',
   size: 'middle',
-  type: 'primary',
 };

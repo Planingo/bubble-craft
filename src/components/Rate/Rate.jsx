@@ -1,16 +1,16 @@
 import React from 'react'
 import { Rate as AntdRate } from 'antd'
 import PropTypes from 'prop-types'
-import { StarFilled } from '@ant-design/icons'
+import { StarOutlined } from '../Icon/icon'
 
 /**
  * 
  * Documentations andt du composant : https://ant.design/components/rate/
  * 
  */
-export default function Rate({
+export const Rate = ({
   ...props
-}){
+}) => {
   return <AntdRate {...props} />
 }
 
@@ -85,7 +85,7 @@ Rate.defaultProps = {
   allowClear: true,
   allowHalf: false,
   autoFocus: false,
-  character: <StarFilled />,
+  character: <StarOutlined />,
   count: 5,
   defaultValue: 0,
   disabled: false,

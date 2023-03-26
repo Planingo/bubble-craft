@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/bin/bash
 
 echo "---------------------------------------------------------------------------------------"
 echo "| /!\ Le nom du composant ne doit pas contenir de caractères spécials ou d'espace /!\ |"

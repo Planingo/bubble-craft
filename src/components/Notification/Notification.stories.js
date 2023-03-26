@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../Button/Button';
+import { Button } from '../Button/Button';
 
-import Notif from './Notification';
+import { Notif } from './Notification';
 
 export default {
   title: 'Molécules/Notification',

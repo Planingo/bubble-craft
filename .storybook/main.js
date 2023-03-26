@@ -9,7 +9,6 @@ module.exports = {
       options: { transcludeMarkdown: true },
     },
     '@storybook/addon-links',
-    '@storybook/addon-a11y',
     '@storybook/addon-essentials',
     'storybook-addon-pseudo-states',
     '@storybook/addon-measure',

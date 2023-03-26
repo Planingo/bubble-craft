@@ -1,18 +1,15 @@
 import React from 'react';
-import results from '../../../.jest-test-results.json';
-import { withTests } from '@storybook/addon-jest';
-import Button from './Button';
-import {PoweroffOutlined} from '@ant-design/icons'
+import { Button } from './Button';
+import { PoweroffOutlined } from '../Icon/icon'
 
 export default {
   component: Button,
   title: 'Atomes/Button',
-  decorators: [withTests({ results })],
 };
 
-const Template = args => <Button {...args} />;
+const ButtonGlobal = (args) => <Button {...args} />;
 
-export const Default = Template.bind({});
+export const Default = ButtonGlobal.bind({});
 
 Default.args = {
   children: "Ananas",
@@ -85,15 +82,14 @@ Default.argTypes = {
         type: "text"
       }
     },
-    type: {
-      control: {
-        type: 'select',
-        options: ['primary', 'dashed', 'link', 'default', 'ghost', `text`],
-      }
-    },
     onclick: {
       control: {
         type: 'select',
       }
     },
+    className: {
+      control: {
+        type: 'text'
+      }
+    }
 };

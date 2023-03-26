@@ -8,7 +8,7 @@ import './tag.css'
  * Documentations andt du composant : https://ant.design/components/tag/
  * 
  */
- export default function Tag({children, ...props }){
+ export const Tag = ({children, ...props }) => {
   return <AntdTag
     {...props} 
     >

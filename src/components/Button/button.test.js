@@ -1,14 +1,14 @@
 import '@testing-library/jest-dom/extend-expect';
 import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
-import Button from './Button';
+import { Button } from './Button';
 
 describe('Button component', () => {
   const textContent = 'LOGIN';
   const onClick = jest.fn();
 
   const button = (
-    <Button onClick={e => onClick()} label='test'>{textContent}</Button>
+    <Button onClick={e => onClick()} label='test' danger={false}>{textContent}</Button>
   );
 
   it('should render given children', () => {

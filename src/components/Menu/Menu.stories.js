@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Menu } from './Menu';
-import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
+import { MailOutlined, SettingOutlined } from '../Icon/icon';
 
 export default {
   title: 'Organismes/Menu',
@@ -22,7 +22,7 @@ Default.args = {
       {
         label: 'Navigation Two',
         key: 'app',
-        icon: <AppstoreOutlined />,
+        icon: <SettingOutlined />,
         disabled: true,
       },
       {

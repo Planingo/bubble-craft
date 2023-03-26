@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom/extend-expect';
 import { render } from '@testing-library/react';
 import React from 'react';
-import Empty from './Empty';
+import { Empty } from './Empty';
 
 describe('Empty component', () => {
   const empty = (

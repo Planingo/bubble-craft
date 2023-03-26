@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { message as antdMessage } from 'antd';
-import Button from '../Button/Button';
+import { Button } from '../Button/Button';
 import './message.css';
 
 /**

@@ -1,0 +1,24 @@
+.storybook-refinement-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.storybook-refinement-details > .refinement-item {
+    display: flex;
+    column-gap: 2em;
+}
+
+.storybook-refinement-details > .left {
+    display: flex;
+    align-items: center;
+}
+
+.storybook-refinement-details > .left > a {
+    display: flex;
+    align-items: center;
+}
+
+.storybook-refinement-details > .left > a > svg {
+    font-size: 2em !important;
+    fill: var(--RED) !important;
+}

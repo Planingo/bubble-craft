@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Navigation } from './Navigation';
-import IntlProvider from '../../../translation/IntlProvider';
+import { IntlProvider } from '../../../translation/IntlProvider';
 import { Roles } from '../Roles/roles';
 import { BrowserRouter } from 'react-router-dom'
 
@@ -14,7 +14,7 @@ export default {
 };
 
 const NavigationGlobal = (args) => 
-<IntlProvider>
+<IntlProvider locale='fr'>
   <BrowserRouter>
     <Navigation {...args} />
   </BrowserRouter>
@@ -24,15 +24,13 @@ export const Default = NavigationGlobal.bind({});
 
 Default.argTypes = {
   roles: {
-    control: {
-        type: 'multi-select',
-        options: [
-          Roles.SUPER_ADMIN,
-          Roles.PLANING_KEEPER,
-          Roles.STUDENT,
-          Roles.PROFESSOR,
-          Roles.COMPANY
-        ]
-    }
+    type: 'multi-select',
+    options: [
+      Roles.SUPER_ADMIN,
+      Roles.PLANING_KEEPER,
+      Roles.STUDENT,
+      Roles.PROFESSOR,
+      Roles.COMPANY
+    ]
   }
 };

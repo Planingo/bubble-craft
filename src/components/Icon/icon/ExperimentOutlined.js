@@ -1,5 +1,5 @@
-import {ExperimentOutlined as ExperimentOutlinedAntd} from '@ant-design/icons'
+import {AiOutlineExperiment} from 'react-icons/ai'
 
 export const ExperimentOutlined = () => {
-    return <ExperimentOutlinedAntd/>
+    return <AiOutlineExperiment/>
 }
