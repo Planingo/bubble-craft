@@ -6,7 +6,7 @@ import { TagOutlined } from '../Icon/icon/TagOutlined'
 import { TagsOutlined } from '../Icon/icon/TagsOutlined'
 import { ExperimentOutlined } from '../Icon/icon/ExperimentOutlined'
 import { ShopOutlined } from '../Icon/icon/ShopOutlined'
-import { WifiOutlined } from '../Icon/icon/WifiOutlined'
+import { CompanyOutlined } from '../Icon/icon/CompanyOutlined'
 import { SettingOutlined } from '../Icon/icon/SettingOutlined'
 import { Roles } from '../Roles/roles'
 import { ScheduleOutlined } from '../Icon/icon/ScheduleOutlined'
@@ -86,7 +86,7 @@ export const path =[
             key: 'company',
             to: '/companies',
             title: 'app.navigation.companies',
-            icon: <WifiOutlined />,
+            icon: <CompanyOutlined />,
             role: Roles.PLANING_KEEPER
         },
         {

@@ -1,12 +1,9 @@
 import React from 'react';
-import results from '../../../.jest-test-results.json';
-import { withTests } from '@storybook/addon-jest';
 import { Tag } from './Tag';
 
 export default {
   component: Tag,
   title: 'Atomes/Tag',
-  decorators: [withTests({ results })],
 };
 
 const Template = args => <Tag {...args} />;

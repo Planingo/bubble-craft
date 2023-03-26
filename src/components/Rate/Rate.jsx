@@ -1,7 +1,7 @@
 import React from 'react'
 import { Rate as AntdRate } from 'antd'
 import PropTypes from 'prop-types'
-import { StarFilled } from 'react-icons/ai'
+import { StarOutlined } from '../Icon/icon'
 
 /**
  * 
@@ -85,7 +85,7 @@ Rate.defaultProps = {
   allowClear: true,
   allowHalf: false,
   autoFocus: false,
-  character: <StarFilled />,
+  character: <StarOutlined />,
   count: 5,
   defaultValue: 0,
   disabled: false,
