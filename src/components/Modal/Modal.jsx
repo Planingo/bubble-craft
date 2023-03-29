@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Modal as AntdModal } from 'antd';
-import './modal.less'
+import './modal.css'
 import { Button } from '../Button/Button';
 
 /**

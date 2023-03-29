@@ -10,16 +10,19 @@ li > span > span > svg {
   font-size: 2em !important;
 }
 
-#download {
+.download {
   color: var(--PRIMARY);
+  font-size: var(--TITLE);
 }
 
-#cloud {
+.cloud {
   color: var(--SECONDARY);
+  font-size: var(--TITLE);
 }
 
-#delete {
+.delete {
   color: var(--RED);
+  font-size: var(--TITLE);
 }
 
 .ant-card-head {
@@ -30,13 +33,12 @@ li > span > span > svg {
   width: 100%;
 }
 
-.ant-card-head-title{   
-  padding-right: 1em;
-  padding-left: 1em;
+.ant-card-head-title{
+  padding: 0.5em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: var(--title) !important;
+  text-align: center;
 }
 
 .container {

@@ -5,6 +5,11 @@ import { useIntl } from 'react-intl';
 import { Link } from 'react-router-dom';
 import { AddItem } from '../AddItem/AddItem'
 import { ArrowLeftOutlined, CalendarOutlined } from '../Icon/icon';
+import { theme } from 'antd'
+import { Button } from '../Button/Button';
+
+const { useToken } = theme
+
 /**
  * 
  * # 🚧 _Composant en construction_ 🚧
@@ -34,7 +39,7 @@ export const RefinementDetails = ({
   addingCalendar,
   addCalendar,
   ...props }) => {
-
+    const { token } = useToken()
 
   const { formatMessage } = useIntl()
 
@@ -44,9 +49,7 @@ export const RefinementDetails = ({
       {...props}
     >
       <div className='left'>
-					<Link to={`/${backTo}`}>
-						<ArrowLeftOutlined />
-					</Link> 
+            <Button type='link' icon={<ArrowLeftOutlined />} href={`/${backTo}`} />
 					<div className="info">
 						{Info}
 					</div>

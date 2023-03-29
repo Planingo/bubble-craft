@@ -90,8 +90,6 @@
     "babel-loader": "9.1.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-jest": "^29.2.0",
-    "less": "^4.1.1",
-    "less-loader": "^7.3.0",
     "react-icons": "^4.8.0",
     "react-intl": "^6.2.10",
     "react-router-dom": "^6.8.2",

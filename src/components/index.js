@@ -1,5 +1,3 @@
-import '../../Theme/index';
-
 export { AddItem } from './AddItem/AddItem';
 export { Alert } from './Alert/Alert';
 export { Avatar } from './Avatar/Avatar';

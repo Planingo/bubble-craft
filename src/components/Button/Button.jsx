@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button as AntdButton } from 'antd';
-import './button.less'
 
 /**
  * 
@@ -10,11 +9,10 @@ import './button.less'
  */
 export const Button = ({...props }) => {
   return (
-    <div>
-        <AntdButton className="storybook-button"
-          {...props}
-        />
-    </div>
+    <AntdButton className="storybook-button"
+      type={props.type || 'primary'}
+      {...props}
+    />
   );
 };
 
@@ -70,12 +68,4 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  block: false,
-  danger: false,
-  disabled: false,
-  ghost: false,
-  htmlType: 'button',
-  loading: false,
-  shape: 'default',
-  size: 'middle',
 };
