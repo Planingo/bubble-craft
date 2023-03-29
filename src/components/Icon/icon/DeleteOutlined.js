@@ -1,5 +1,5 @@
 import {AiOutlineDelete} from 'react-icons/ai'
 
-export const DeleteOutlined = () => {
-    return <AiOutlineDelete/>
+export const DeleteOutlined = ({...props}) => {
+    return <AiOutlineDelete {...props}/>
 }

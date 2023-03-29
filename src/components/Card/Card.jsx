@@ -1,7 +1,11 @@
 import React from 'react';
-import { Card as AntdCard, Tabs } from 'antd';
+import { Card as AntdCard, Tabs, theme } from 'antd';
 import './card.css'
 import PropTypes from 'prop-types'
+import { Tooltip } from '../Tooltip/Tooltip';
+import { CloudUploadOutlined, DeleteOutlined, DownloadOutlined } from '../Icon/icon';
+
+const { useToken } = theme
 
 /**
  * 
@@ -9,9 +13,23 @@ import PropTypes from 'prop-types'
  * 
  */
 export const Card = ({children, ...props }) => {
+  const { token } = useToken()
+  console.log(token)
   return (
     <AntdCard
       {...props}
+
+      actions={[
+        <Tooltip title='Télécharger' placement='bottom'>
+          <DownloadOutlined className='download' />
+        </Tooltip>,
+        <Tooltip title='Envoyer' placement='bottom'>
+          <CloudUploadOutlined className='cloud' />
+        </Tooltip>,
+        <Tooltip title='Supprimer' placement='bottom'>
+          <DeleteOutlined className='delete' />
+        </Tooltip>
+      ]}
     />
   );
 };
@@ -91,5 +109,5 @@ Card.defaultProps = {
   bordered: true,
   hoverable: true,
   loading: false,
-  size: 'default',
+  size: 'default'
 }

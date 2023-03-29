@@ -1,6 +1,5 @@
 import React from 'react';
 import { Radio as AntdRadio } from 'antd'
-import './radioGroup.css'
 
 
 /**
@@ -14,6 +13,6 @@ import './radioGroup.css'
  * Documentations andt du composant : https://ant.design/components/radio/
  * 
  */
-export const RadioGroup = ({ children, ...props }) => {
+export const RadioGroup = ({ ...props }) => {
   return <AntdRadio.Group {...props} className='storybook-radiogroup' />
 }

@@ -1,0 +1,12 @@
+.ant-notification-notice-close {
+    display: none;
+}
+
+.ant-notification >svg {
+    font-size: 2.5em !important;
+}
+
+.ant-notification >.title {
+    font-size: 16px !important;
+    font-weight: 700;
+}

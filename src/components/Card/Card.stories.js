@@ -20,29 +20,7 @@ const tags = [
 export const Default = Template.bind({});
 
 Default.args = {
-  actions: [
-    <Tooltip title='Télécharger' placement='bottom'>
-      <DownloadOutlined key="download" id='download' />
-    </Tooltip>,
-    <Tooltip title='Envoyer' placement='bottom'>
-      <CloudUploadOutlined key="cloud" id='cloud' />
-    </Tooltip>,
-    <Tooltip title='Supprimer' placement='bottom'>
-      <DeleteOutlined key="delete" id='delete' />
-    </Tooltip>,
-  ],
   cover: <>
-    <div className="title-card">
-      <div className='container'>
-        {
-          (<Tooltip placement='bottom' title={tags.map(tag => tag.name).join(', ')}>
-            <div className='tag-container'>
-              {tags.map(tag => <Tag type={tag?.type} icon={tag?.icon} key={tag.id}>{tag.name}</Tag>)}
-            </div>
-          </Tooltip>)
-        }
-      </div>
-    </div>
     <img src="https://avatars.bugsyaya.dev/285/" alt="Etudiant"/>
   </>,
   title: "Minerva McGonagall"

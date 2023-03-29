@@ -20,5 +20,5 @@
 
 .storybook-refinement-details > .left > a > svg {
     font-size: 2em !important;
-    fill: var(--RED) !important;
+    fill: var(--PRIMARY) !important;
 }

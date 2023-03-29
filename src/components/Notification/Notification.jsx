@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { notification } from 'antd';
-import './notification.less'
+import './notification.css'
 
 const Context = React.createContext({ name: 'Default' });
 

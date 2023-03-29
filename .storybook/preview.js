@@ -1,4 +1,4 @@
-import '../Theme/antd.customize.less'
+import { ThemeProvider } from '../Theme/ThemeProvider';
 
 export const parameters = {
     options: {
@@ -6,4 +6,15 @@ export const parameters = {
         a[1].kind === b[1].kind ? 0 : a[1].id.localeCompare(b[1].id, undefined, { numeric: true }),
     },
 }
+
+export const decorators = [
+    (Story) => {
+        return (
+            <ThemeProvider>
+                <Story />
+            </ThemeProvider>
+        );
+    },
+  ];
+  
   
