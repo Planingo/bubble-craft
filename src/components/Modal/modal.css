@@ -1,15 +1,16 @@
 .ant-modal-content {
   background: white;
   padding: 1px;
-  div {
-    background: white;
-    color: black;
-  }
+}
 
-  .ant-modal-footer {
-    display: flex;
-    justify-content: space-between;
-  }
+.ant-modal-content > div {
+  background: white;
+  color: black;
+}
+
+.ant-modal-content > .ant-modal-footer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .storybook-modal::before {

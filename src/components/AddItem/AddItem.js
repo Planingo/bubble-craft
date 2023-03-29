@@ -4,7 +4,7 @@ import './addItem.css';
 import { useParams } from 'react-router-dom';
 import { Modal } from '../Modal/Modal'
 import { Button } from '../Button/Button'
-import { Notification } from '../Notification/Notification'
+import { Notif } from '../Notification/Notification'
 
 /**
  * 
@@ -41,7 +41,7 @@ export const AddItem = ({
           (showModal) => <Button ghost={secondary} size="large" icon={icon} >{cta || title}</Button>
         }
         ValidateButton={
-          (handleOk) => <Notification
+          (handleOk) => <Notif
             OpenNotification={(openNotification) => 
               <Button key="validate" className="cta" onClick={() => {
                 openNotification()
