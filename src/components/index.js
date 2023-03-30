@@ -17,7 +17,6 @@ export { Empty } from './Empty/Empty';
 export { FloatButton } from './FloatButton/FloatButton';
 export { GlobalPage } from './GlobalPage/GlobalPage'
 export { Header } from './Header/Header';
-export { Icon } from './Icon/icon'
 export { Input } from './Input/Input';
 export { List } from './List/List';
 export { Menu } from './Menu/Menu';
