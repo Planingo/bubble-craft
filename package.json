@@ -1,6 +1,6 @@
 {
   "name": "@planingo/ditto",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "license": "MIT",
   "description": "Design system planingo",
   "main": "src/components/index.js",
@@ -50,8 +50,11 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-backgrounds": "^6.5.16",
+    "@storybook/addon-docs": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-interactions": "^6.5.16",
     "@storybook/addon-jest": "^6.5.16",
@@ -67,6 +70,9 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.2.1",
+    "babel-loader": "9.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-jest": "^29.2.0",
     "chromatic": "^6.7.0",
     "eslint": "^8.20.0",
     "eslint-plugin-mdx": "^2.0.5",
@@ -82,16 +88,9 @@
     "react-is": "^18.2.0",
     "react-scripts": "5.0.1",
     "storybook-addon-pseudo-states": "^1.15.2",
-    "webpack": "5",
-    "@babel/preset-env": "^7.18.6",
-    "@babel/preset-react": "^7.18.6",
-    "@storybook/addon-docs": "^6.5.16",
-
-    "babel-loader": "9.1.2",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-jest": "^29.2.0",
     "typescript-proptypes-generator": "^0.0.6",
-    "typescript-to-proptypes": "^2.2.1"
+    "typescript-to-proptypes": "^2.2.1",
+    "webpack": "5"
   },
   "dependencies": {
     "antd": "^5.2.2",
