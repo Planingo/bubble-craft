@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Navigation } from './Navigation';
-import { IntlProvider } from '../../../translation/IntlProvider';
+import { IntlProvider } from '../../translation/IntlProvider'
 import { Roles } from '../Roles/roles';
 import { BrowserRouter } from 'react-router-dom'
 
