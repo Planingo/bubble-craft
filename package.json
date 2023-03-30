@@ -25,7 +25,8 @@
   "peerDependencies": {
     "antd": "^5.2.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-intl": "^6.2.10"
   },
   "eslintConfig": {
     "extends": [
@@ -77,24 +78,25 @@
     "react": "^18.2.0",
     "react-docgen": "^5.3.1",
     "react-dom": "^18.2.0",
+    "react-intl": "^6.2.10",
     "react-is": "^18.2.0",
     "react-scripts": "5.0.1",
     "storybook-addon-pseudo-states": "^1.15.2",
-    "webpack": "5"
-  },
-  "dependencies": {
+    "webpack": "5",
     "@babel/preset-env": "^7.18.6",
     "@babel/preset-react": "^7.18.6",
     "@storybook/addon-docs": "^6.5.16",
-    "antd": "^5.2.2",
+
     "babel-loader": "9.1.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-jest": "^29.2.0",
-    "react-icons": "^4.8.0",
-    "react-intl": "^6.2.10",
-    "react-router-dom": "^6.8.2",
     "typescript-proptypes-generator": "^0.0.6",
     "typescript-to-proptypes": "^2.2.1"
+  },
+  "dependencies": {
+    "antd": "^5.2.2",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.8.2"
   },
   "readme": "ERROR: No README data found!",
   "_id": "@planingo/ditto@0.1.34"
