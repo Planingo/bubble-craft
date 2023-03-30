@@ -1,6 +1,6 @@
 {
   "name": "@planingo/ditto",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "license": "MIT",
   "description": "Design system planingo",
   "main": "src/components/index.js",
@@ -86,12 +86,12 @@
     "react-dom": "^18.2.0",
     "react-intl": "^6.2.10",
     "react-is": "^18.2.0",
+    "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
     "storybook-addon-pseudo-states": "^1.15.2",
     "typescript-proptypes-generator": "^0.0.6",
     "typescript-to-proptypes": "^2.2.1",
-    "webpack": "5",
-    "react-router-dom": "^6.8.2"
+    "webpack": "5"
   },
   "dependencies": {
     "antd": "^5.2.2",
