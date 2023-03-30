@@ -23,10 +23,10 @@
     "test:generate-output": "react-scripts test --json --outputFile=.jest-test-results.json || true"
   },
   "peerDependencies": {
-    "antd": "^5.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-intl": "^6.2.10"
+    "react-intl": "^6.2.10",
+    "react-router-dom": "^6.8.2"
   },
   "eslintConfig": {
     "extends": [
@@ -90,12 +90,12 @@
     "storybook-addon-pseudo-states": "^1.15.2",
     "typescript-proptypes-generator": "^0.0.6",
     "typescript-to-proptypes": "^2.2.1",
-    "webpack": "5"
+    "webpack": "5",
+    "react-router-dom": "^6.8.2"
   },
   "dependencies": {
     "antd": "^5.2.2",
-    "react-icons": "^4.8.0",
-    "react-router-dom": "^6.8.2"
+    "react-icons": "^4.8.0"
   },
   "readme": "ERROR: No README data found!",
   "_id": "@planingo/ditto@0.1.34"
