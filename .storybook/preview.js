@@ -1,4 +1,4 @@
-import { ThemeProvider } from '../Theme/ThemeProvider';
+import { ThemeProvider } from "../src";
 
 export const parameters = {
     options: {
