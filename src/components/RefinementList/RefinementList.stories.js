@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { RefinementList } from './RefinementList';
-import { IntlProvider } from '../../../translation/IntlProvider';
+import { IntlProvider } from '../../translation/IntlProvider'
 import { UserOutlined } from '../Icon/icon';
 import { Form } from 'antd';
 import { Input } from '../Input/Input';

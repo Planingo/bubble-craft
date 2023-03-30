@@ -1,10 +1,9 @@
 import React from 'react';
-import { IntlProvider } from '../../../translation/IntlProvider';
 import { UserOutlined } from '../Icon/icon';
 import { Form } from 'antd';
 import { Input } from '../Input/Input';
 import { BrowserRouter } from 'react-router-dom'
-
+import { IntlProvider } from '../../translation/IntlProvider'
 import { GlobalPage } from './GlobalPage';
 import { Roles } from '../Roles/roles';
 
