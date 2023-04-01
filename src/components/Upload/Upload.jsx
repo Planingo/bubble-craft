@@ -14,12 +14,11 @@ import './upload.css';
  * Documentations andt du composant : https://ant.design/components/upload/
  * 
  */
-export const Upload = ({ property, children, ...props }) => {
+export const Upload = ({ children, ...props }) => {
   return (
     <AntdUpload
       className='storybook-upload'
       {...props}
-      property
     >
       {children}
     </AntdUpload>
@@ -30,9 +29,9 @@ Upload.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Upload.defaultProps = {
-  property: false,
+  
 };

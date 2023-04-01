@@ -14,12 +14,11 @@ import './template.css';
  * Documentations andt du composant : https://ant.design/components/template/
  * 
  */
-export const Template = ({ property, children, ...props }) => {
+export const Template = ({ children, ...props }) => {
   return (
     <AntdTemplate
       className='storybook-template'
       {...props}
-      property
     >
       {children}
     </AntdTemplate>
@@ -30,9 +29,9 @@ Template.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Template.defaultProps = {
-  property: false,
+  
 };

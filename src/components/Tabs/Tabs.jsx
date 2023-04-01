@@ -14,12 +14,11 @@ import './tabs.css';
  * Documentations andt du composant : https://ant.design/components/tabs/
  * 
  */
-export const Tabs = ({ property, ...props }) => {
+export const Tabs = ({ ...props }) => {
   return (
     <AntdTabs
       className='storybook-tabs'
       {...props}
-      property
     />
   );
 };
@@ -28,9 +27,9 @@ Tabs.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Tabs.defaultProps = {
-  property: false,
+  
 };

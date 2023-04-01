@@ -14,12 +14,11 @@ import './skeleton.css';
  * Documentations andt du composant : https://ant.design/components/skeleton/
  * 
  */
-export const Skeleton = ({ property, children, ...props }) => {
+export const Skeleton = ({ children, ...props }) => {
   return (
     <AntdSkeleton
       className='storybook-skeleton'
       {...props}
-      property
     >
       {children}
     </AntdSkeleton>
@@ -30,9 +29,9 @@ Skeleton.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Skeleton.defaultProps = {
-  property: false,
+  
 };

@@ -14,12 +14,11 @@ import './timePicker.css';
  * Documentations andt du composant : https://ant.design/components/timePicker/
  * 
  */
-export const TimePicker = ({ property, children, ...props }) => {
+export const TimePicker = ({ children, ...props }) => {
   return (
     <AntdTimePicker
       className='storybook-timePicker'
       {...props}
-      property
     >
       {children}
     </AntdTimePicker>
@@ -30,9 +29,9 @@ TimePicker.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 TimePicker.defaultProps = {
-  property: false,
+  
 };

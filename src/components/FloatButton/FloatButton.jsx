@@ -14,12 +14,11 @@ import './floatButton.css';
  * Documentations andt du composant : https://ant.design/components/floatButton/
  * 
  */
-export const FloatButton = ({ property, children, ...props }) => {
+export const FloatButton = ({ children, ...props }) => {
   return (
     <AntdFloatButton
       className='storybook-floatButton'
       {...props}
-      property
     >
       {children}
     </AntdFloatButton>
@@ -30,9 +29,9 @@ FloatButton.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 FloatButton.defaultProps = {
-  property: false,
+  
 };

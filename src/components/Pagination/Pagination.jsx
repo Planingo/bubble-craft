@@ -14,12 +14,11 @@ import './pagination.css';
  * Documentations andt du composant : https://ant.design/components/pagination/
  * 
  */
-export const Pagination = ({ property, children, ...props }) => {
+export const Pagination = ({ children, ...props }) => {
   return (
     <AntdPagination
       className='storybook-pagination'
       {...props}
-      property
     >
       {children}
     </AntdPagination>
@@ -30,9 +29,9 @@ Pagination.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Pagination.defaultProps = {
-  property: false,
+  
 };

@@ -14,12 +14,11 @@ import './datePicker.css';
  * Documentations andt du composant : https://ant.design/components/datePicker/
  * 
  */
-export const DatePicker = ({ property, children, ...props }) => {
+export const DatePicker = ({ children, ...props }) => {
   return (
     <AntdDatePicker
       className='storybook-datePicker'
       {...props}
-      property
     >
       {children}
     </AntdDatePicker>
@@ -30,9 +29,9 @@ DatePicker.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 DatePicker.defaultProps = {
-  property: false,
+  
 };

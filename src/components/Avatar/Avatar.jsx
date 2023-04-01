@@ -14,12 +14,11 @@ import './avatar.css';
  * Documentations andt du composant : https://ant.design/components/avatar/
  * 
  */
-export const Avatar = ({ property, children, ...props }) => {
+export const Avatar = ({ children, ...props }) => {
   return (
     <AntdAvatar
       className='storybook-avatar'
       {...props}
-      property
     >
       {children}
     </AntdAvatar>
@@ -30,9 +29,7 @@ Avatar.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
 };
 
 Avatar.defaultProps = {
-  property: false,
 };

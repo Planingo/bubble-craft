@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './gloablpage.css';
+import './globalpage.css';
 import { Header } from '../Header/Header';
 import { Navigation } from '../Navigation/Navigation';
 import { Empty } from '../Empty/Empty';
@@ -46,12 +46,7 @@ export const GlobalPage = ({
 };
 
 GlobalPage.propTypes = {
-    /**
-     * TODO property
-     */
-    property: PropTypes.bool,
 };
 
 GlobalPage.defaultProps = {
-  property: false,
 };

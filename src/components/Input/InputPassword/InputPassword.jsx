@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Input as AntdInput } from 'antd';
-import './input.css';
+import '../input.css';
 
 /**
  * 
@@ -14,17 +14,17 @@ import './input.css';
  * Documentations andt du composant : https://ant.design/components/input/
  * 
  */
-export const Input = ({ ...props }) => {
+export const InputPassword = ({ ...props }) => {
   return (
-    <AntdInput
+    <AntdInput.Password
       className='storybook-input'
       {...props}
     />
   );
 };
 
-Input.propTypes = {
+InputPassword.propTypes = {
 };
 
-Input.defaultProps = {
+InputPassword.defaultProps = {
 };

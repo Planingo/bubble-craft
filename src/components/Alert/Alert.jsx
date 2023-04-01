@@ -14,12 +14,11 @@ import './alert.css';
  * Documentations andt du composant : https://ant.design/components/alert/
  * 
  */
-export const Alert = ({ property, children, ...props }) => {
+export const Alert = ({ children, ...props }) => {
   return (
     <AntdAlert
       className='storybook-alert'
       {...props}
-      property
     >
       {children}
     </AntdAlert>
@@ -30,9 +29,7 @@ Alert.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
 };
 
 Alert.defaultProps = {
-  property: false,
 };

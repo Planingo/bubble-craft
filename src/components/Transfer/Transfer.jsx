@@ -14,12 +14,11 @@ import './transfer.css';
  * Documentations andt du composant : https://ant.design/components/transfer/
  * 
  */
-export const Transfer = ({ property, children, ...props }) => {
+export const Transfer = ({ children, ...props }) => {
   return (
     <AntdTransfer
       className='storybook-transfer'
       {...props}
-      property
     >
       {children}
     </AntdTransfer>
@@ -30,9 +29,9 @@ Transfer.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Transfer.defaultProps = {
-  property: false,
+  
 };
