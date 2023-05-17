@@ -55,7 +55,7 @@
     "@storybook/addon-actions": "^7.0.2",
     "@storybook/addon-backgrounds": "^7.0.12",
     "@storybook/addon-docs": "^6.5.16",
-    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-essentials": "^7.0.12",
     "@storybook/addon-interactions": "^6.5.16",
     "@storybook/addon-jest": "^6.5.16",
     "@storybook/addon-knobs": "^6.4.0",
