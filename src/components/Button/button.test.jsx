@@ -10,6 +10,14 @@ describe('Button component', () => {
   const button = (
     <Button onClick={e => onClick()} label='test' danger={false}>{textContent}</Button>
   );
+  
+  const buttonDisabled = (
+    <Button onClick={e => onClick()} label='test' danger={false} disabled={true}>{textContent}</Button>
+  );
+  
+  const buttonLoading = (
+    <Button onClick={e => onClick()} label='test' danger={false} loading={true}>{textContent}</Button>
+  );
 
   it('should render given children', () => {
     render(button);
@@ -21,5 +29,19 @@ describe('Button component', () => {
     const buttonClick = screen.getByRole('button');
     fireEvent.click(buttonClick);
     expect(onClick).toHaveBeenCalledTimes(1);
+  });
+
+  it('clicks on disabled button', () => {
+    render(buttonDisabled);
+    const buttonClick = screen.getByRole('button');
+    fireEvent.click(buttonClick);
+    expect(onClick).toHaveBeenCalledTimes(0);
+  });
+
+  it('clicks on loading button', () => {
+    render(buttonLoading);
+    const buttonClick = screen.getByRole('button');
+    fireEvent.click(buttonClick);
+    expect(onClick).toHaveBeenCalledTimes(0);
   });
 });
