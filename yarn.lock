@@ -3132,17 +3132,17 @@
     ts-dedent "^2.0.0"
 
 "@storybook/addon-storysource@^7.0.2":
-  version "7.0.12"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-storysource/-/addon-storysource-7.0.12.tgz#a2bd4a0fac303f1e2c7e78ad207c67d4ecf6db06"
-  integrity sha512-drWG7mY76eL8BwkD5KFMSxnErqF6iOZCk3bpUFGqT5uzx6oVkjmOimZHTEuHtHEi6TtK8QN5KTUi6vXzsGSGpA==
+  version "7.0.18"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-storysource/-/addon-storysource-7.0.18.tgz#4460e7e7245538d6722a4547f1f7eeb3ddec328b"
+  integrity sha512-ejOO9d9Aa63DCXCoXtCsOJLefdbrsvSAEV9wU2HfT+EOIS1dq/SV+ZtIMAvdAf4whB42K+pEzB5hLE2+zCK9PQ==
   dependencies:
-    "@storybook/client-logger" "7.0.12"
-    "@storybook/components" "7.0.12"
-    "@storybook/manager-api" "7.0.12"
-    "@storybook/preview-api" "7.0.12"
-    "@storybook/router" "7.0.12"
-    "@storybook/source-loader" "7.0.12"
-    "@storybook/theming" "7.0.12"
+    "@storybook/client-logger" "7.0.18"
+    "@storybook/components" "7.0.18"
+    "@storybook/manager-api" "7.0.18"
+    "@storybook/preview-api" "7.0.18"
+    "@storybook/router" "7.0.18"
+    "@storybook/source-loader" "7.0.18"
+    "@storybook/theming" "7.0.18"
     estraverse "^5.2.0"
     prop-types "^15.7.2"
     react-syntax-highlighter "^15.5.0"
@@ -4060,13 +4060,13 @@
     prettier ">=2.2.1 <=2.3.0"
     regenerator-runtime "^0.13.7"
 
-"@storybook/source-loader@7.0.12":
-  version "7.0.12"
-  resolved "https://registry.yarnpkg.com/@storybook/source-loader/-/source-loader-7.0.12.tgz#dbc6816a522c292831d65f2f2e8249a25e416fc8"
-  integrity sha512-dIT4uHiEFgIX/W1aYpKazeu+8GN2OljQsB84oO6Ea887f3emmVJRBGwvoChSAZH+ps2zGput88Lby+W5Paesow==
+"@storybook/source-loader@7.0.18":
+  version "7.0.18"
+  resolved "https://registry.yarnpkg.com/@storybook/source-loader/-/source-loader-7.0.18.tgz#ab98c942d3af2a60849f10d78da34595e45ed86b"
+  integrity sha512-n910+/rNJ3tCRUx3JJm/5ehjp5CK2WZg+KPRtG5a4AeVhQBdxsxw2D2pDYBWY1aFhJ+S4AZJOLIk9cdOMneA9g==
   dependencies:
     "@storybook/csf" "^0.1.0"
-    "@storybook/types" "7.0.12"
+    "@storybook/types" "7.0.18"
     estraverse "^5.2.0"
     lodash "^4.17.21"
     prettier "^2.8.0"
