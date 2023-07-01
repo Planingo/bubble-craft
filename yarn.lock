@@ -3269,17 +3269,17 @@
     regenerator-runtime "^0.13.7"
 
 "@storybook/addon-viewport@^7.0.2":
-  version "7.0.18"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-7.0.18.tgz#976ab4ef2daa69718e6a98560414d3ee43f56b14"
-  integrity sha512-aVVLBsWXfGDX3z1pc93LWWdG5RUoJbGL/JJPMZGwXdwWpP8V3OBl8D8bgPymyg+MgwhSRZZDDGgnJaVGGwZ6bQ==
+  version "7.0.24"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-7.0.24.tgz#4f6777589e2484a7dad56f57982ca586bde9000b"
+  integrity sha512-bc3TR+feemGxVP1QQT6OsFSldHjLToJNuQAGd5EEBsDFhcMTsmitiGVoxIylqIhfioL9zauLIsk5eLZ/TYxuXQ==
   dependencies:
-    "@storybook/client-logger" "7.0.18"
-    "@storybook/components" "7.0.18"
-    "@storybook/core-events" "7.0.18"
+    "@storybook/client-logger" "7.0.24"
+    "@storybook/components" "7.0.24"
+    "@storybook/core-events" "7.0.24"
     "@storybook/global" "^5.0.0"
-    "@storybook/manager-api" "7.0.18"
-    "@storybook/preview-api" "7.0.18"
-    "@storybook/theming" "7.0.18"
+    "@storybook/manager-api" "7.0.24"
+    "@storybook/preview-api" "7.0.24"
+    "@storybook/theming" "7.0.24"
     memoizerific "^1.11.3"
     prop-types "^15.7.2"
 
