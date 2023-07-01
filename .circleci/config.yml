@@ -1,11 +1,11 @@
 version: 2.1
 orbs:
   discord: antonioned/discord@0.1.0
+  node: circleci/node@5.0.2
 
 jobs:
   chromatic:
-      docker:
-        - image: circleci/node:latest
+      executor: node/default
       steps:
         - checkout
         - restore_cache:
@@ -15,8 +15,7 @@ jobs:
         - run: yarn install
         - run: npx chromatic --project-token=$chromatic
   unit-test:
-    docker:
-      - image: circleci/node:latest
+    executor: node/default
     steps:
       - checkout
       - restore_cache:
@@ -31,8 +30,7 @@ jobs:
             - ./node_modules
       - run: yarn test
   publish:
-    docker:
-      - image: circleci/node:latest
+    executor: node/default
     steps:
       - checkout
       - run:
@@ -43,8 +41,7 @@ jobs:
           success_message: ":partying_face: La version :sparkles:${CIRCLE_TAG}:sparkles: de Ditto est disponible :partying_face:"
           webhook: "${DISCORD_STATUS_WEBHOOK}"
   deploy:
-    docker:
-      - image: circleci/node:latest
+    executor: node/default
     steps:
       - checkout
       - run: yarn global add caprover
