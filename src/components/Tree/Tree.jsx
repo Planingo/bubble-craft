@@ -14,12 +14,11 @@ import './tree.css';
  * Documentations andt du composant : https://ant.design/components/tree/
  * 
  */
-export const Tree = ({ property, ...props }) => {
+export const Tree = ({ ...props }) => {
   return (
     <AntdTree
       className='storybook-tree'
       {...props}
-      property
     />
   );
 };
@@ -28,9 +27,9 @@ Tree.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Tree.defaultProps = {
-  property: false,
+  
 };

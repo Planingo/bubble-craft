@@ -1,4 +1,5 @@
 import { ThemeProvider } from "../src";
+import '../src/Theme/index.css';
 
 export const parameters = {
     options: {

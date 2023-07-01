@@ -14,12 +14,11 @@ import './watermark.css';
  * Documentations andt du composant : https://ant.design/components/watermark/
  * 
  */
-export const Watermark = ({ property, children, ...props }) => {
+export const Watermark = ({ children, ...props }) => {
   return (
     <AntdWatermark
       className='storybook-watermark'
       {...props}
-      property
     >
       {children}
     </AntdWatermark>
@@ -30,9 +29,9 @@ Watermark.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Watermark.defaultProps = {
-  property: false,
+  
 };

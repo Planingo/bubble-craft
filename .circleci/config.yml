@@ -5,7 +5,7 @@ orbs:
 jobs:
   chromatic:
       docker:
-        - image: circleci/node:14
+        - image: circleci/node:17
       steps:
         - checkout
         - restore_cache:
@@ -16,7 +16,7 @@ jobs:
         - run: npx chromatic --project-token=$chromatic
   unit-test:
     docker:
-      - image: circleci/node:14
+      - image: circleci/node:17
     steps:
       - checkout
       - restore_cache:
@@ -32,7 +32,7 @@ jobs:
       - run: yarn test
   publish:
     docker:
-      - image: circleci/node:14
+      - image: circleci/node:17
     steps:
       - checkout
       - run:
@@ -44,7 +44,7 @@ jobs:
           webhook: "${DISCORD_STATUS_WEBHOOK}"
   deploy:
     docker:
-      - image: circleci/node:14
+      - image: circleci/node:17
     steps:
       - checkout
       - run: yarn global add caprover

@@ -31,3 +31,19 @@
 .last-right {
     border-bottom-right-radius: 20px;
 }
+
+.black {
+    background-color: black;
+}
+
+.primary {
+    background-color: var(--PRIMARY);
+}
+
+.secondary {
+    background-color: var(--SECONDARY);
+}
+
+.red {
+    background-color: var(--RED);
+}

@@ -14,12 +14,11 @@ import './collapse.css';
  * Documentations andt du composant : https://ant.design/components/collapse/
  * 
  */
-export const Collapse = ({ property, children, ...props }) => {
+export const Collapse = ({ children, ...props }) => {
   return (
     <AntdCollapse
       className='storybook-collapse'
       {...props}
-      property
     >
       {children}
     </AntdCollapse>
@@ -30,9 +29,9 @@ Collapse.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Collapse.defaultProps = {
-  property: false,
+  
 };

@@ -14,12 +14,11 @@ import './drawer.css';
  * Documentations andt du composant : https://ant.design/components/drawer/
  * 
  */
-export const Drawer = ({ property, children, ...props }) => {
+export const Drawer = ({ children, ...props }) => {
   return (
     <AntdDrawer
       className='storybook-drawer'
       {...props}
-      property
     >
       {children}
     </AntdDrawer>
@@ -30,9 +29,9 @@ Drawer.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Drawer.defaultProps = {
-  property: false,
+  
 };

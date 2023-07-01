@@ -14,12 +14,11 @@ import './result.css';
  * Documentations andt du composant : https://ant.design/components/result/
  * 
  */
-export const Result = ({ property, children, ...props }) => {
+export const Result = ({ children, ...props }) => {
   return (
     <AntdResult
       className='storybook-result'
       {...props}
-      property
     >
       {children}
     </AntdResult>
@@ -30,9 +29,9 @@ Result.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Result.defaultProps = {
-  property: false,
+  
 };

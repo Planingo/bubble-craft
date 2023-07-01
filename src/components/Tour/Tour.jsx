@@ -14,12 +14,11 @@ import './tour.css';
  * Documentations andt du composant : https://ant.design/components/tour/
  * 
  */
-export const Tour = ({ property, children, ...props }) => {
+export const Tour = ({ children, ...props }) => {
   return (
     <AntdTour
       className='storybook-tour'
       {...props}
-      property
     >
       {children}
     </AntdTour>
@@ -30,9 +29,9 @@ Tour.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Tour.defaultProps = {
-  property: false,
+  
 };

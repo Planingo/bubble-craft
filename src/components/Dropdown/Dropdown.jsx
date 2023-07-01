@@ -14,12 +14,11 @@ import './dropdown.css';
  * Documentations andt du composant : https://ant.design/components/dropdown/
  * 
  */
-export const Dropdown = ({ property, children, ...props }) => {
+export const Dropdown = ({ children, ...props }) => {
   return (
     <AntdDropdown
       className='storybook-dropdown'
       {...props}
-      property
     >
       {children}
     </AntdDropdown>
@@ -30,9 +29,9 @@ Dropdown.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Dropdown.defaultProps = {
-  property: false,
+  
 };

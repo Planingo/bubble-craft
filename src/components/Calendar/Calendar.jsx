@@ -14,12 +14,11 @@ import './calendar.css';
  * Documentations andt du composant : https://ant.design/components/calendar/
  * 
  */
-export const Calendar = ({ property, ...props }) => {
+export const Calendar = ({ ...props }) => {
   return (
     <AntdCalendar
       className='storybook-calendar'
       {...props}
-      property
     />
   );
 };
@@ -28,9 +27,9 @@ Calendar.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Calendar.defaultProps = {
-  property: false,
+  
 };

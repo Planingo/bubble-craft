@@ -14,12 +14,11 @@ import './treeSelect.css';
  * Documentations andt du composant : https://ant.design/components/treeSelect/
  * 
  */
-export const TreeSelect = ({ property, children, ...props }) => {
+export const TreeSelect = ({ children, ...props }) => {
   return (
     <AntdTreeSelect
       className='storybook-treeSelect'
       {...props}
-      property
     >
       {children}
     </AntdTreeSelect>
@@ -30,9 +29,9 @@ TreeSelect.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 TreeSelect.defaultProps = {
-  property: false,
+  
 };

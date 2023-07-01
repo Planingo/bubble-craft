@@ -14,12 +14,11 @@ import './progress.css';
  * Documentations andt du composant : https://ant.design/components/progress/
  * 
  */
-export const Progress = ({ property, children, ...props }) => {
+export const Progress = ({ children, ...props }) => {
   return (
     <AntdProgress
       className='storybook-progress'
       {...props}
-      property
     >
       {children}
     </AntdProgress>
@@ -30,9 +29,9 @@ Progress.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Progress.defaultProps = {
-  property: false,
+  
 };

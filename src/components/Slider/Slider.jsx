@@ -14,12 +14,11 @@ import './slider.css';
  * Documentations andt du composant : https://ant.design/components/slider/
  * 
  */
-export const Slider = ({ property, children, ...props }) => {
+export const Slider = ({ children, ...props }) => {
   return (
     <AntdSlider
       className='storybook-slider'
       {...props}
-      property
     >
       {children}
     </AntdSlider>
@@ -30,9 +29,9 @@ Slider.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Slider.defaultProps = {
-  property: false,
+  
 };

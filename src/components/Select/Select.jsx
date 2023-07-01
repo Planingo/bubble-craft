@@ -14,12 +14,11 @@ import './select.css';
  * Documentations andt du composant : https://ant.design/components/select/
  * 
  */
-export const Select = ({ property, children, ...props }) => {
+export const Select = ({ children, ...props }) => {
   return (
     <AntdSelect
       className='storybook-select'
       {...props}
-      property
     >
       {children}
     </AntdSelect>
@@ -30,9 +29,9 @@ Select.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Select.defaultProps = {
-  property: false,
+  
 };

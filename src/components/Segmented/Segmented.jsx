@@ -14,12 +14,11 @@ import './segmented.css';
  * Documentations andt du composant : https://ant.design/components/segmented/
  * 
  */
-export const Segmented = ({ property, ...props }) => {
+export const Segmented = ({ ...props }) => {
   return (
     <AntdSegmented
       className='storybook-segmented'
       {...props}
-      property
     />
   );
 };
@@ -28,9 +27,9 @@ Segmented.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Segmented.defaultProps = {
-  property: false,
+  
 };

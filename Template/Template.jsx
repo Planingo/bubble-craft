@@ -13,12 +13,11 @@ import './template.css';
  * 
  * 
  */
-export const Template = ({ property, children, ...props }) => {
+export const Template = ({ children, ...props }) => {
   return (
     <template
       className='storybook-template'
       {...props}
-      property
     >
       {children}
     </template>
@@ -29,9 +28,9 @@ Template.propTypes = {
     /**
      * TODO property
      */
-    property: PropTypes.bool,
+    
 };
 
 Template.defaultProps = {
-  property: false,
+  
 };

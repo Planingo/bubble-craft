@@ -14,12 +14,11 @@ import './statistic.css';
  * Documentations andt du composant : https://ant.design/components/statistic/
  * 
  */
-export const Statistic = ({ property, ...props }) => {
+export const Statistic = ({ ...props }) => {
   return (
     <AntdStatistic
       className='storybook-statistic'
       {...props}
-      property
     />
   );
 };
@@ -28,9 +27,9 @@ Statistic.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Statistic.defaultProps = {
-  property: false,
+  
 };

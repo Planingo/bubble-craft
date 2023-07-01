@@ -14,12 +14,11 @@ import './carousel.css';
  * Documentations andt du composant : https://ant.design/components/carousel/
  * 
  */
-export const Carousel = ({ property, datas, ...props }) => {
+export const Carousel = ({ datas, ...props }) => {
   return (
     <AntdCarousel
       className='storybook-carousel'
       {...props}
-      property
     >
       {datas.map(data => data)}
     </AntdCarousel>
@@ -30,9 +29,9 @@ Carousel.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Carousel.defaultProps = {
-  property: false,
+  
 };

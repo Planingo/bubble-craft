@@ -14,12 +14,11 @@ import './table.css';
  * Documentations andt du composant : https://ant.design/components/table/
  * 
  */
-export const Table = ({ property, ...props }) => {
+export const Table = ({ ...props }) => {
   return (
     <AntdTable
       className='storybook-table'
       {...props}
-      property
     />
   );
 };
@@ -28,9 +27,9 @@ Table.propTypes = {
     /**
      * TODO property
      */
-     property: PropTypes.bool,
+     
 };
 
 Table.defaultProps = {
-  property: false,
+  
 };
