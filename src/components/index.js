@@ -20,6 +20,7 @@ export { Header } from "./Header/Header";
 export * as Icon from "./Icon/icon";
 export { Input } from "./Input/Input";
 export { List } from "./List/List";
+export { LoginPage } from "./LoginPage/LoginPage";
 export { Menu } from "./Menu/Menu";
 export { Message } from "./Message/Message";
 export { Modal } from "./Modal/Modal";
