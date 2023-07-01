@@ -5,7 +5,7 @@ import { Badge } from './Badge';
 
 describe('Badge component', () => {
   const badge = (
-    <Badge color="#f50" text="#f50" onClick={console.log}/>
+    <Badge color="#f50" text="#f50"/>
   );
 
   it('Badge content text', () => {

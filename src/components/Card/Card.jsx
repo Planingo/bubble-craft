@@ -14,7 +14,6 @@ const { useToken } = theme
  */
 export const Card = ({children, ...props }) => {
   const { token } = useToken()
-  console.log(token)
   return (
     <AntdCard
       {...props}
