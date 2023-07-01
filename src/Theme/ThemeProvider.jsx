@@ -1,5 +1,6 @@
 import { ConfigProvider, theme } from "antd"
 import { Colors } from "./Colors";
+import './index.css'
 
 const { compactAlgorithm } = theme;
 

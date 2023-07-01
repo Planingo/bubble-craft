@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button as AntdButton } from 'antd';
+import '../../Theme/index.css'
 
 /**
  * 

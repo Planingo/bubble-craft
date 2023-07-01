@@ -2,15 +2,4 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 1em;
-    height: 100vh;
-}
-
-.storybook-login-page > .form-part {
-    width: 50%;
-    margin: auto;
-}
-
-.storybook-login-page > div > form > .links {
-    display: flex;
-    justify-content: space-between;
 }

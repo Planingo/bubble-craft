@@ -13,6 +13,12 @@ module.exports = {
     'storybook-addon-pseudo-states',
     '@storybook/addon-measure',
     '@storybook/addon-jest',
+    {
+      name: '@storybook/addon-styling',
+      options: {
+        postCss: true,
+      },
+    },
   ],
   core: {
     builder: 'webpack5'
