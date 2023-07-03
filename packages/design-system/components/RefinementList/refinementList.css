@@ -1,0 +1,9 @@
+.storybook-refinement-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.storybook-refinement-list > .refinement-item {
+    display: flex;
+    column-gap: 2em;
+}

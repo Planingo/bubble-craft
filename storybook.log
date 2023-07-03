@@ -1,0 +1,15 @@
+yarn add v1.22.19
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+warning "@turbo/gen > ts-node@10.9.1" has unmet peer dependency "@types/node@*".
+warning "@turbo/gen > ts-node@10.9.1" has unmet peer dependency "typescript@>=2.7".
+warning "eslint-config-custom > eslint-config-next > @typescript-eslint/parser > @typescript-eslint/typescript-estree > tsutils@3.21.0" has unmet peer dependency "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta".
+warning " > @storybook/react-vite@7.0.24" has unmet peer dependency "vite@^3.0.0 || ^4.0.0".
+warning "@storybook/react-vite > @vitejs/plugin-react@3.1.0" has unmet peer dependency "vite@^4.1.0-beta.0".
+warning "@storybook/react-vite > @joshwooding/vite-plugin-react-docgen-typescript@0.2.1" has unmet peer dependency "vite@^3.0.0 || ^4.0.0".
+warning "@storybook/react-vite > @storybook/builder-vite@7.0.24" has unmet peer dependency "vite@^3.0.0 || ^4.0.0".
+warning "@storybook/react-vite > @joshwooding/vite-plugin-react-docgen-typescript > react-docgen-typescript@2.2.2" has unmet peer dependency "typescript@>= 4.3.x".
+error An unexpected error occurred: "ENOENT: no such file or directory, stat '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@planingo/ditto'".
+info If you think this is a bug, please open a bug report with the information provided in "/Users/bugsyaya/Desktop/Planingo/bubble-craft/yarn-error.log".
+info Visit https://yarnpkg.com/en/docs/cli/add for documentation about this command.

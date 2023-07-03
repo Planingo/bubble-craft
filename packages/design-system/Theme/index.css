@@ -1,0 +1,19 @@
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    font-family: "Montserrat";
+}
+
+h1 {
+    font-family: "Montserrat-Bold";
+}
+
+h2, h3, h4 {
+    font-family: "Montserrat-SemiBold";
+}
+
+.light-text {
+    font-family: "Montserrat-Light" !important;
+}
