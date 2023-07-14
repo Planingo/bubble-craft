@@ -76,7 +76,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-jest": "^29.2.0",
     "chromatic": "^6.7.0",
-    "eslint": "^8.20.0",
+    "eslint": "^8.45.0",
     "eslint-plugin-mdx": "^2.0.5",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0",
