@@ -47,7 +47,7 @@ Default.args = {
       </Form>,
       onFirstAction: console.log,
       firstActioning: console.log,
-      secondActionText: "editer un truc",
+      secondActionText: "app.add.calendar",
       SecondActionIcon: UserOutlined,
       SecondForm: <Form
         onValuesChange={(values) => console.log(values)}
@@ -85,7 +85,7 @@ Default.args = {
         </Form>,
         onFirstAction: console.log,
         firstActioning: console.log,
-        secondActionText: "editer un truc",
+        secondActionText: "app.add.calendar",
         SecondActionIcon: UserOutlined,
         SecondForm: <Form
           onValuesChange={(values) => console.log(values)}

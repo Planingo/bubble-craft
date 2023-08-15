@@ -7,6 +7,8 @@ import { AddItem } from '../AddItem/AddItem'
 import { ArrowLeftOutlined, CalendarOutlined } from '../Icon/icon';
 import { theme } from 'antd'
 import { Button } from '../Button/Button';
+import { toCapitalized } from '../../utils/formatText';
+import { Tag } from '../Tag/Tag';
 
 const { useToken } = theme
 
@@ -34,12 +36,11 @@ export const RefinementDetails = ({
 	secondActioning,
 	onSecondAction,
 	mainActionButton,
-	Info,
+	info,
   AddCalendar,
   addingCalendar,
   addCalendar,
   ...props }) => {
-    const { token } = useToken()
 
   const { formatMessage } = useIntl()
 
@@ -50,8 +51,14 @@ export const RefinementDetails = ({
     >
       <div className='left'>
             <Button type='link' icon={<ArrowLeftOutlined />} href={`/${backTo}`} />
-					<div className="info">
-						{Info}
+					<div className="flex">
+            <img className='w-auto h-full m-auto mx-3' alt={info.img.alt} src={info.img.src}/>
+            <div>
+              <h1 className='m-0'>{info.title}</h1>
+              {info.tags?.map(({link, tag}) => <Link to={link}>
+                <Tag className="bg-orangebubblecraft border-orange-400 text-white">{tag}</Tag>
+              </Link>)}
+            </div>
 					</div>
 				</div>
 
@@ -60,7 +67,7 @@ export const RefinementDetails = ({
           <AddItem
             mainActionButton={mainActionButton}
             icon={<FirstActionIcon />}
-            title={firstActionText}
+            title={toCapitalized(formatMessage({id: firstActionText}))}
             Form={FirstForm}
             adding={firstActioning}
             onAdd={onFirstAction}
@@ -75,7 +82,7 @@ export const RefinementDetails = ({
           <AddItem
             mainActionButton={mainActionButton}
             icon={<SecondActionIcon />}
-            title={formatMessage({ id: secondActionText}) || secondActionText}
+            title={toCapitalized(formatMessage({ id: secondActionText}) || secondActionText)}
             Form={SecondForm}
             adding={secondActioning}
             onAdd={onSecondAction}
@@ -94,7 +101,7 @@ export const RefinementDetails = ({
             adding={addingCalendar}
             onAdd={addCalendar}
             icon={<CalendarOutlined />}
-            title={formatMessage({ id: 'app.add.calendar' })}
+            title={toCapitalized(formatMessage({ id: 'app.add.calendar' }))}
           />
         </Link>
       </div>

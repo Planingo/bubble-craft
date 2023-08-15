@@ -1,17 +1,18 @@
 .storybook-global-page {
     display: grid;
     grid-template-columns: auto 1fr;
-    column-gap: 1em;
+    column-gap: 2em;
     height: 100vh;
+    padding-right: 2em;
 }
 
 .storybook-global-page > .right-part {
     display: grid;
     grid-template-rows: auto 1fr;
-    row-gap: 1em;
     height: 100vh;
 }
 
 .storybook-global-page > .right-part > .bottom-part {
+    padding-top: 1em;
     overflow: auto;
 }

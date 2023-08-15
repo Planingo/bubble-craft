@@ -1,6 +1,15 @@
 {
-    "app.add.calendar": "add a calendar",
+    "app.add.calendar": "add calendar",
+    "app.add.company": "add company",
+    "app.add.lesson": "add lesson",
+    "app.add.module": "add module",
+    "app.add.pathway": "add pathway",
+    "app.add.professor": "add professor",
+    "app.add.room": "add room",
+    "app.add.student": "add student",
+    "app.details.constraints": "constraints",
     "app.empty": "For the moment it's empty!",
+    "app.empty.constraints": "aucune contraintre pour le moment",
     "app.logout": "logout",
     "app.my.account": "my account",
     "app.navigation.calendars": "calendars",
@@ -21,6 +30,8 @@
     "form.login.signup": "create an account",
     "form.login.username": "username",
     "form.login.username.placeholder": "c.dupuit@monmail.uk",
+    "delete": "delete",
+    "download": "download",
     "error.required": "required",
     "error.required.email": "required email",
     "error.required.password": "required password",
@@ -28,5 +39,6 @@
     "roles.planing.keeper": "planing keeper",
     "roles.student": "student",
     "roles.professor": "professor",
-    "roles.company": "company"
+    "roles.company": "company",
+    "send": "send"
 }

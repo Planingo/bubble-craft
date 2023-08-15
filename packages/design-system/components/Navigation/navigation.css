@@ -1,10 +1,8 @@
 .storybook-navigation {
     height: 100vh;
-    background-color: var(--PRIMARY);
     position: sticky;
     width: 5em;
     display: block;
-    color: var(--WHITE);
 
     border-right: none !important;
 }

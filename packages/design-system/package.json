@@ -45,6 +45,8 @@
   "dependencies": {
     "final-form": "^4.20.9",
     "react-final-form": "^6.5.9",
-    "react-icons": "^4.8.0"
+    "react-icons": "^4.8.0",
+    "react-virtualized-auto-sizer": "^1.0.20",
+    "react-window": "^1.8.9"
   }
 }

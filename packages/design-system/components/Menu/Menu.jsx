@@ -17,7 +17,7 @@ import './menu.css';
 export const Menu = ({ children, ...props }) => {
   return (
     <AntdMenu
-      className='storybook-menu'
+      className='storybook-menu bg-bluebubblecraft'
       {...props}
     >
       {children}

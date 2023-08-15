@@ -1,0 +1,174 @@
+@storybook/cli v7.0.24
+
+info => Cleaning outputDir: /var/folders/p8/w9wlgyld7c70xfsxhwwtwsrm0000gn/T/chromatic--81644-F1tiyh6P5bmt
+info => Loading presets
+info Found existing addon {"name":"@storybook/addon-docs","options":{"transcludeMarkdown":true}}, skipping.
+info Found existing addon "@storybook/addon-measure", skipping.
+info Found existing addon {"name":"@storybook/addon-docs","options":{"transcludeMarkdown":true}}, skipping.
+info Found existing addon "@storybook/addon-measure", skipping.
+info => Building manager..
+info => Manager built (134 ms)
+info => Copying static files: /Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/manager/static at /var/folders/p8/w9wlgyld7c70xfsxhwwtwsrm0000gn/T/chromatic--81644-F1tiyh6P5bmt/sb-common-assets
+vite v4.3.9 building for production...
+
+./sb-common-assets/fonts.css doesn't exist at build time, it will remain unchanged to be resolved at runtime
+transforming...
+✓ 146 modules transformed.
+✓ built in 1.28s
+[commonjs--resolver] Unexpected token
+file: /Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-docs/node_modules/@storybook/components/dist/esm/index.js:7:33
+5: import '@storybook/csf';
+6: import 'qs';
+7: import '@storybook/client-logger';
+                                    ^
+ERR! RollupError: Unexpected token
+ERR!     at error (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:2245:30)
+ERR!     at Module.error (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:13572:16)
+ERR!     at Module.tryParse (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:14298:25)
+ERR!     at Module.setSource (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:13899:39)
+ERR!     at ModuleLoader.addModuleSource (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:24424:20)
+ERR!  Error [RollupError]: Unexpected token
+ERR!     at error (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:2245:30)
+ERR!     at Module.error (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:13572:16)
+ERR!     at Module.tryParse (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:14298:25)
+ERR!     at Module.setSource (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:13899:39)
+ERR!     at ModuleLoader.addModuleSource (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:24424:20) {
+ERR!   cause: SyntaxError: Unexpected token (7:40)
+ERR!       at pp$4.raise (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:21396:13)
+ERR!       at pp$9.unexpected (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:18607:8)
+ERR!       at pp$8.parseVar (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:19158:12)
+ERR!       at pp$8.parseVarStatement (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:19020:8)
+ERR!       at pp$8.parseStatement (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:18762:17)
+ERR!       at pp$8.parseTopLevel (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:18664:21)
+ERR!       at Parser.parse (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:18436:15)
+ERR!       at Function.parse (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:18486:35)
+ERR!       at Graph.contextParse (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:25522:38)
+ERR!       at Module.tryParse (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:14295:31)
+ERR!       at Module.setSource (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:13899:39)
+ERR!       at ModuleLoader.addModuleSource (file:///Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/vite/node_modules/rollup/dist/es/shared/node-entry.js:24424:20) {
+ERR!     pos: 1805,
+ERR!     loc: Position { line: 7, column: 40 },
+ERR!     raisedAt: 1806
+ERR!   },
+ERR!   code: 'PLUGIN_ERROR',
+ERR!   id: '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-docs/node_modules/@storybook/components/dist/esm/index.js',
+ERR!   pos: 1805,
+ERR!   loc: {
+ERR!     column: 33,
+ERR!     file: '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-docs/node_modules/@storybook/components/dist/esm/index.js',
+ERR!     line: 7
+ERR!   },
+ERR!   frame: "5: import '@storybook/csf';\n" +
+ERR!     "6: import 'qs';\n" +
+ERR!     "7: import '@storybook/client-logger';\n" +
+ERR!     '                                    ^',
+ERR!   pluginCode: 'PARSE_ERROR',
+ERR!   plugin: 'commonjs--resolver',
+ERR!   hook: 'resolveId',
+ERR!   watchFiles: [
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/iframe.html',
+ERR!     '/virtual:/@storybook/builder-vite/vite-app.js',
+ERR!     '\x00vite/modulepreload-polyfill',
+ERR!     '/virtual:/@storybook/builder-vite/setup-addons.js',
+ERR!     '/virtual:/@storybook/builder-vite/storybook-stories.js',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-docs/preview.js',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/react/dist/config.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-links/dist/preview.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-essentials/dist/actions/preview.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-essentials/dist/backgrounds/preview.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-essentials/dist/outline/preview.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-essentials/dist/highlight/preview.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-measure/dist/preview.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/.storybook/preview.js',
+ERR!     '\x00vite/preload-helper',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/AddItem.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Alert.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Avatar.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Badge.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Breadcrumb.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Button.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Calendar.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Card.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Carousel.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Collapse.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/DatePicker.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Drawer.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Dropdown.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Empty.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/FloatButton.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/GlobalPage.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Header.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Input.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/InputPassword.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/List.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/LoginPage.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Menu.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Message.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Modal.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Navigation.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Notification.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Pagination.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Popconfirm.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Progress.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/QRCode.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Rate.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/RefinementDetails.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/RefinementList.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Result.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Segmented.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Select.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Skeleton.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Slider.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Spin.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Statistic.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Steps.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Table.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Tabs.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Tag.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Timeline.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/TimePicker.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Tooltip.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Tour.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Transfer.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Tree.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/TreeSelect.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Upload.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/stories/Watermark.stories.jsx',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-outline/dist/preview.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-docs/dist/esm/preview.js',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-actions/dist/preview.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/prop-types/index.js',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/html-tags/index.js',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/escodegen/escodegen.js',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/ts-dedent/esm/index.js',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/react/node_modules/acorn-jsx/index.js',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/lodash/isPlainObject.js',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/lodash/isFunction.js',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/lodash/isString.js',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/react-element-to-jsx-string/dist/esm/index.js',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/react/index.js',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/react/dist/chunk-JWY6Y6NU.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/docs-tools/dist/index.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/react/node_modules/acorn/dist/acorn.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/react/node_modules/acorn-walk/dist/walk.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-backgrounds/dist/preview.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-measure/dist/chunk-YIXVQKZ5.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/global/dist/index.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-highlight/dist/preview.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-links/dist/chunk-VJY7NXNQ.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-links/dist/chunk-DXNAW7Q2.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/@storybook/addon-links/dist/chunk-JT3VIYBO.mjs',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/apps/storybook/package.json',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/packages/design-system/package.json',
+ERR!     '\x00react/jsx-runtime',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/packages/design-system/index.js',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/dayjs/dayjs.min.js',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/react-router-dom/dist/index.js',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/antd/es/index.js',
+ERR!     '/Users/bugsyaya/Desktop/Planingo/bubble-craft/node_modules/regenerator-runtime/runtime.js',
+ERR!     ... 331 more items
+ERR!   ]
+ERR! }
+info Found existing addon {"name":"@storybook/addon-docs","options":{"transcludeMarkdown":true}}, skipping.
+info Found existing addon "@storybook/addon-measure", skipping.
+[?25l[2K[1G[36m?[39m [1mWould you like to help improve Storybook by sending anonymous crash reports?[22m [90m›[39m [90m(Y/n)[39m

@@ -1,50 +1,87 @@
-import { GlobalPage, Icon } from "@planingo/design-system";
-import { useContext } from "react";
+import { CancelIcon, Card, CheckIcon, CloudUploadOutlined, DeleteOutlined, DownloadOutlined, GlobalPage, Grid, Icon, List, ListStudent } from "@planingo/design-system";
+import { useLoaderData } from "@remix-run/react";
+import { getSession } from "../sessions";
+import { json } from '@remix-run/node'
+import { useState } from "react";
+import packageJson from '../../package.json'
 
-// export async function action({ request }) {
-//   const body = await request.formData();
-//   const response = await fetch('https://hogwarts-school.caprover.cocaud.dev/v1/graphql', {
-//     method: "POST",
-//     headers: { "content-type": "application/json" },
-//     body: JSON.stringify({
-//       query: `query login($email: String!, $password: String!) {
-//         login(email: $email , password: $password) {
-//           accountId
-//           token
-//         }
-//       }`,
-//       variables: {
-//         email: body.get("email"),
-//         password: body.get("password")
-//       }
-//     })
-//   })
+export async function loader({ request }) {
+  const session = await getSession(
+    request.headers.get("Cookie")
+  );
 
-//   const { data, errors } = await response.json()
+  const response = await fetch('https://hogwarts-school.caprover.cocaud.dev/v1/graphql', {
+    method: "POST",
+    headers: { "content-type": "application/json", "Authorization": `Bearer ${session.get("account").token}` },
+    body: JSON.stringify({
+      query: `query roles($accountId: uuid!) {
+        account(where: {id: {_eq: $accountId}}) {
+          email
+          id
+          roles {
+            id
+            role {
+              name
+              id
+            }
+          }
+        }
+        student(order_by: {pathway: {name: asc}, lastName: asc, calendars_aggregate: {count: desc}}) {
+          firstName
+          id
+          lastName
+          calendars {
+            id
+          }
+          apprenticeships {
+            id
+            company {
+              id
+              name
+            }
+          }
+          pathway {
+            id
+            name
+          }
+        }
+      }`,
+      variables: {
+        accountId: session.get("account").accountId
+      }
+    })
+  })
+
+  const { data, errors } = await response.json()
   
-//   if (data) return redirect(`/students/`)
-//   else return json({errors})
-// }
+  if (data) return json(data)
+  else return json({errors})
+}
 
 export default function Index() {
+  const [isGrid, setIsGrid] = useState(false)
+  const {account, student} = useLoaderData()
+
   return (
     <div>
       <GlobalPage
         navigation={{
-          roles: [],
+          roles: account[0].roles.map(role => `roles.${role.role.name}`),
+          email: account[0].email,
         }}
+        footer={`bubble-pixel v.${packageJson.version}`}
         header={{
           placeholder: "Recherche",
           isRefinementList: true,
           refinementList: {
-            isGrid: true,
-            firstActionText: "ajouter un truc",
-            setIsGrid: console.log,
+            isGrid: isGrid,
+            firstActionText: "app.add.student",
+            setIsGrid: () => setIsGrid(!isGrid),
             FirstActionIcon: Icon.UserOutlined,
             FirstForm: () => null,
             onFirstAction: console.log,
             firstActioning: console.log,
-            secondActionText: "editer un truc",
+            secondActionText: "app.add.calendar",
             SecondActionIcon: Icon.UserOutlined,
             SecondForm: () => null,
             onSecondAction: console.log,
@@ -52,7 +89,11 @@ export default function Index() {
             AddCalendar: () =>  null
           },
         }}
-      />
+      >
+        {isGrid ? <Grid>{student.map(s => <Card key={s.id} title={`${s.lastName.toUpperCase()} ${s.firstName}`} />)}</Grid> :
+            <ListStudent data={student}/>
+        }
+      </GlobalPage>
     </div>
   );
 }
