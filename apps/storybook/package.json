@@ -36,7 +36,7 @@
     "babel-loader": "9.1.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-jest": "^29.2.0",
-    "chromatic": "^6.7.0",
+    "chromatic": "^6.19.9",
     "eslint": "^8.20.0",
     "eslint-plugin-mdx": "^2.0.5",
     "eslint-plugin-react": "^7.20.6",
@@ -59,7 +59,7 @@
   },
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "build-storybook -s public",
     "test": "react-scripts test",
     "test:generate-output": "react-scripts test --json --outputFile=.jest-test-results.json || true"
   }

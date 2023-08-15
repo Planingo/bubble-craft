@@ -1,5 +1,5 @@
-import {AiOutlineUser} from 'react-icons/ai'
+import { GoPerson } from 'react-icons/go'
 
 export const UserOutlined = () => {
-    return <AiOutlineUser/>
+    return <GoPerson/>
 }

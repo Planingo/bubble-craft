@@ -8,6 +8,7 @@ import { AppstoreOutlinedDS } from '../Icon/icon/AppstoreOutlined';
 import { UnorderedListOutlined } from '../Icon/icon/UnorderedListOutlined';
 import { CalendarOutlined } from '../Icon/icon/CalendarOutlined';
 import { AddItem } from '../AddItem/AddItem';
+import { toCapitalized } from '../../utils/formatText';
 
 /**
  * 
@@ -74,7 +75,7 @@ export const RefinementList = ({
           <AddItem
             mainActionButton={mainActionButton}
             icon={<FirstActionIcon />}
-            title={firstActionText}
+            title={toCapitalized(formatMessage({ id: firstActionText}))}
             Form={FirstForm}
             adding={firstActioning}
             onAdd={onFirstAction}
@@ -93,7 +94,7 @@ export const RefinementList = ({
             adding={addingCalendar}
             onAdd={addCalendar}
             icon={<CalendarOutlined />}
-            title={formatMessage({ id: 'app.add.calendar' })}
+            title={toCapitalized(formatMessage({ id: 'app.add.calendar' }))}
           />
         </Link>
       </div>

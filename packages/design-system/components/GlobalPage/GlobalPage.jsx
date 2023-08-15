@@ -5,6 +5,7 @@ import { Header } from '../Header/Header';
 import { Navigation } from '../Navigation/Navigation';
 import { Empty } from '../Empty/Empty';
 import { useIntl } from 'react-intl';
+import { Footer } from '../Footer/Footer';
 
 /**
  * 
@@ -27,7 +28,7 @@ export const GlobalPage = ({
 
   return (
     <div
-      className='storybook-global-page'
+      className='storybook-global-page h-screen'
       {...props}
     >
       <Navigation {...navigation}/>
@@ -40,6 +41,7 @@ export const GlobalPage = ({
         <div className='bottom-part'>
           {children || <Empty description={<p>{formatMessage({id: 'app.empty'})}</p>} />}
         </div>
+        <Footer version={props.footer}/>
       </div>
     </div>
   );

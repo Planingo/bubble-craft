@@ -47,7 +47,7 @@ export const Navigation = ({ roles, ...props }) => {
   ]
 
   return (
-    <div className="storybook-navigation" {...props}>
+    <div className="storybook-navigation bg-bluebubblecraft text-white" {...props}>
       <div className="top">
         <div className="logo">
           <Menu mode="vertical" triggerSubMenuAction="click" items={items} />
