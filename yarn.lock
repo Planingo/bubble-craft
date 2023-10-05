@@ -3609,7 +3609,7 @@
   dependencies:
     "@storybook/global" "^5.0.0"
 
-"@storybook/client-logger@7.4.2", "@storybook/client-logger@^7.0.0-beta.0 || ^7.0.0-rc.0 || ^7.0.0":
+"@storybook/client-logger@7.4.2":
   version "7.4.2"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-7.4.2.tgz#bbd31bec31837b506a9e3a345571a0975d5e4b4d"
   integrity sha512-LC8tYrYSJwF4DHRdNYh6y8hSvccwUIv5/WOZKJDmKx7mcEm6HsVuUu16C9jsl7iy6IqJYxgVz1va3WS6852E+A==
@@ -14891,9 +14891,9 @@ postcss@^7.0.14, postcss@^7.0.26, postcss@^7.0.32, postcss@^7.0.35, postcss@^7.0
     source-map "^0.6.1"
 
 postcss@^8.2.14, postcss@^8.2.15, postcss@^8.3.5, postcss@^8.4.14, postcss@^8.4.21, postcss@^8.4.23, postcss@^8.4.24, postcss@^8.4.4, postcss@^8.4.7:
-  version "8.4.29"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.29.tgz#33bc121cf3b3688d4ddef50be869b2a54185a1dd"
-  integrity sha512-cbI+jaqIeu/VGqXEarWkRCCffhjgXc0qjBtXpqJhTBohMUjUQnbBr0xqX3vEKudc4iviTewcJo5ajcec5+wdJw==
+  version "8.4.31"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.31.tgz#92b451050a9f914da6755af352bdc0192508656d"
+  integrity sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==
   dependencies:
     nanoid "^3.3.6"
     picocolors "^1.0.0"
@@ -17704,13 +17704,6 @@ telejson@^6.0.8:
     memoizerific "^1.11.3"
 
 telejson@^7.0.3, telejson@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/telejson/-/telejson-7.2.0.tgz#3994f6c9a8f8d7f2dba9be2c7c5bbb447e876f32"
-  integrity sha512-1QTEcJkJEhc8OnStBx/ILRu5J2p0GjvWsBx56bmZRqnrkdBMUe+nX92jxV+p3dB4CP6PZCdJMQJwCggkNBMzkQ==
-  dependencies:
-    memoizerific "^1.11.3"
-
-telejson@^7.2.0:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/telejson/-/telejson-7.2.0.tgz#3994f6c9a8f8d7f2dba9be2c7c5bbb447e876f32"
   integrity sha512-1QTEcJkJEhc8OnStBx/ILRu5J2p0GjvWsBx56bmZRqnrkdBMUe+nX92jxV+p3dB4CP6PZCdJMQJwCggkNBMzkQ==
