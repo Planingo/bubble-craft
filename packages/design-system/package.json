@@ -27,7 +27,7 @@
     "eslint-plugin-react-hooks": "^4.1.0",
     "jest-image-snapshot": "^6.0.0",
     "node-sass": "^9.0.0",
-    "postcss": "^8.4.24",
+    "postcss": "^8.4.31",
     "prettier": "^2.1.1",
     "react": "^18.2.0",
     "react-docgen": "^6.0.1",
