@@ -85,7 +85,7 @@
     "postcss": "^8.4.24",
     "prettier": "^3.0.3",
     "react": "^18.2.0",
-    "react-docgen": "^6.0.1",
+    "react-docgen": "^7.0.1",
     "react-dom": "^18.2.0",
     "react-intl": "^6.2.10",
     "react-is": "^18.2.0",
