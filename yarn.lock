@@ -3132,18 +3132,18 @@
     util-deprecate "^1.0.2"
 
 "@storybook/addon-backgrounds@^7.0.12":
-  version "7.4.2"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-backgrounds/-/addon-backgrounds-7.4.2.tgz#1d68c2a123e35580dc614c4849dd6a83976e4883"
-  integrity sha512-Vl6Vw1NzO5jRqlAEpG017z6N79Drlp7Wpw8O9+69/dKtTNmuLqLnPxWrn4nL2CNvghHToLMpToSAFpRo2fBZBg==
+  version "7.5.3"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-backgrounds/-/addon-backgrounds-7.5.3.tgz#a6aa9df791220cff6290e7f93e04c546063f5407"
+  integrity sha512-UCOVd4UNIL5FRiwi9nyiWFocn/7ewwS6bIWnq66AaHg/sv92YwsPmgQJn0DMBGDOvUAWpiHdVsZNOTX6nvw4gA==
   dependencies:
-    "@storybook/client-logger" "7.4.2"
-    "@storybook/components" "7.4.2"
-    "@storybook/core-events" "7.4.2"
+    "@storybook/client-logger" "7.5.3"
+    "@storybook/components" "7.5.3"
+    "@storybook/core-events" "7.5.3"
     "@storybook/global" "^5.0.0"
-    "@storybook/manager-api" "7.4.2"
-    "@storybook/preview-api" "7.4.2"
-    "@storybook/theming" "7.4.2"
-    "@storybook/types" "7.4.2"
+    "@storybook/manager-api" "7.5.3"
+    "@storybook/preview-api" "7.5.3"
+    "@storybook/theming" "7.5.3"
+    "@storybook/types" "7.5.3"
     memoizerific "^1.11.3"
     ts-dedent "^2.0.0"
 
@@ -4492,7 +4492,7 @@
     "@types/express" "^4.7.0"
     file-system-cache "2.3.0"
 
-"@storybook/types@7.4.2", "@storybook/types@^7.0.12":
+"@storybook/types@7.4.2":
   version "7.4.2"
   resolved "https://registry.yarnpkg.com/@storybook/types/-/types-7.4.2.tgz#c7ae7521e6f7a3f811797464724d5e4714597ca9"
   integrity sha512-OOJ2TeS3Zzc6spHbdH+JXml0q4IHuYt9axmXAv1/pkhqHjA5072pyUacmlYNQeihpQOOsKLiCQUQlvtMy9fTnQ==
@@ -4502,7 +4502,7 @@
     "@types/express" "^4.7.0"
     file-system-cache "2.3.0"
 
-"@storybook/types@7.5.3":
+"@storybook/types@7.5.3", "@storybook/types@^7.0.12":
   version "7.5.3"
   resolved "https://registry.yarnpkg.com/@storybook/types/-/types-7.5.3.tgz#be956805dafc09fa9a7a3dd4e0e5097ef08e4fd4"
   integrity sha512-iu5W0Kdd6nysN5CPkY4GRl+0BpxRTdSfBIJak7mb6xCIHSB5t1tw4BOuqMQ5EgpikRY3MWJ4gY647QkWBX3MNQ==
