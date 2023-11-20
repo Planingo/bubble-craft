@@ -1,5 +1,5 @@
 import React from 'react';
-import { AddItem } from '@planingo/design-system'
+import { AddItem } from './AddItem'
 
 export default {
   title: 'Templates/AddItem',

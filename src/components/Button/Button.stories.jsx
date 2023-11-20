@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, PoweroffOutlined } from '@planingo/design-system'
+import { Button, PoweroffOutlined } from './Button'
 
 export default {
   component: Button,
