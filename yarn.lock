@@ -3132,18 +3132,11 @@
     util-deprecate "^1.0.2"
 
 "@storybook/addon-backgrounds@^7.0.12":
-  version "7.4.2"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-backgrounds/-/addon-backgrounds-7.4.2.tgz#1d68c2a123e35580dc614c4849dd6a83976e4883"
-  integrity sha512-Vl6Vw1NzO5jRqlAEpG017z6N79Drlp7Wpw8O9+69/dKtTNmuLqLnPxWrn4nL2CNvghHToLMpToSAFpRo2fBZBg==
+  version "7.6.3"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-backgrounds/-/addon-backgrounds-7.6.3.tgz#4f4ca4ed998fb2267d2a056f8921a43d9869bff8"
+  integrity sha512-ZZFNf8FBYBsuXvXdVk3sBgxJTn6s0HznuEE9OmAA7tMsLEDlUiWS9LEvjX2jX5K0kWivHTkJDTXV0NcLL1vWAg==
   dependencies:
-    "@storybook/client-logger" "7.4.2"
-    "@storybook/components" "7.4.2"
-    "@storybook/core-events" "7.4.2"
     "@storybook/global" "^5.0.0"
-    "@storybook/manager-api" "7.4.2"
-    "@storybook/preview-api" "7.4.2"
-    "@storybook/theming" "7.4.2"
-    "@storybook/types" "7.4.2"
     memoizerific "^1.11.3"
     ts-dedent "^2.0.0"
 
