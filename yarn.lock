@@ -3136,9 +3136,9 @@
     util-deprecate "^1.0.2"
 
 "@storybook/addon-backgrounds@^7.0.12":
-  version "7.6.3"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-backgrounds/-/addon-backgrounds-7.6.3.tgz#4f4ca4ed998fb2267d2a056f8921a43d9869bff8"
-  integrity sha512-ZZFNf8FBYBsuXvXdVk3sBgxJTn6s0HznuEE9OmAA7tMsLEDlUiWS9LEvjX2jX5K0kWivHTkJDTXV0NcLL1vWAg==
+  version "7.6.4"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-backgrounds/-/addon-backgrounds-7.6.4.tgz#8ba49f4ad88327f606edb1f08fb0aef4e8eb3f05"
+  integrity sha512-gNy3kIkHSr+Lg/jVDHwbZjIe1po5SDGZNVe39vrJwnqGz8T1clWes9WHCL6zk/uaCDA3yUna2Nt/KlOFAWDSoQ==
   dependencies:
     "@storybook/global" "^5.0.0"
     memoizerific "^1.11.3"
