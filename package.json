@@ -20,7 +20,7 @@
     "storybook": "storybook dev -p 9009 -s public",
     "storybook:start": "yarn storybook:copy-public && yarn start-storybook -p 6006 -s ./public",
     "test": "react-scripts test",
-    "test:generate-output": "react-scripts test --json --outputFile=.jest-test-results.json || true"
+    "test:generate-output": "react-scripts test --json --outputFile=.jest-test-results.json"
   },
   "peerDependencies": {
     "react": "^18.2.0",
