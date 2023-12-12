@@ -3179,7 +3179,7 @@
     "@storybook/preview-api" "7.0.12"
     "@storybook/theming" "7.0.12"
 
-"@storybook/addon-viewport@7.0.12", "@storybook/addon-viewport@^7.0.12":
+"@storybook/addon-viewport@7.0.12":
   version "7.0.12"
   resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-7.0.12.tgz#c470223fb439fed039331089c9f9013e837c055e"
   integrity sha512-pMgqtDQF8e9AErnRKbbSK9m1lcKn1dFSOkk0PgSBwIIjmha6q+GeT45EHQrQGtkLdtWT0iTktC8ivzIiGKmHkg==
@@ -3193,6 +3193,13 @@
     "@storybook/theming" "7.0.12"
     memoizerific "^1.11.3"
     prop-types "^15.7.2"
+
+"@storybook/addon-viewport@^7.0.12":
+  version "7.6.4"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-7.6.4.tgz#f39601082f48a903c47cae71a84b05428ea20331"
+  integrity sha512-SoTcHIoqybhYD28v7QExF1EZnl7FfxuP74VDhtze5LyMd2CbqmVnUfwewLCz/3IvCNce0GqdNyg1m6QJ7Eq1uw==
+  dependencies:
+    memoizerific "^1.11.3"
 
 "@storybook/addons@7.0.12":
   version "7.0.12"
@@ -3417,17 +3424,10 @@
   dependencies:
     "@storybook/global" "^5.0.0"
 
-"@storybook/client-logger@7.6.4":
+"@storybook/client-logger@7.6.4", "@storybook/client-logger@^7.0.0-beta.0 || ^7.0.0-rc.0 || ^7.0.0":
   version "7.6.4"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-7.6.4.tgz#7533f5194903f554c297b0d327efee04c5accfbb"
   integrity sha512-vJwMShC98tcoFruRVQ4FphmFqvAZX1FqZqjFyk6IxtFumPKTVSnXJjlU1SnUIkSK2x97rgdUMqkdI+wAv/tugQ==
-  dependencies:
-    "@storybook/global" "^5.0.0"
-
-"@storybook/client-logger@^7.0.0-beta.0 || ^7.0.0-rc.0 || ^7.0.0":
-  version "7.6.3"
-  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-7.6.3.tgz#221d6617e6874025b94602bc7ba6bf09d154bf5f"
-  integrity sha512-BpsCnefrBFdxD6ukMjAblm1D6zB4U5HR1I85VWw6LOqZrfzA6l/1uBxItz0XG96HTjngbvAabWf5k7ZFCx5UCg==
   dependencies:
     "@storybook/global" "^5.0.0"
 
