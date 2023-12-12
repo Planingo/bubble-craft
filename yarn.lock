@@ -15443,9 +15443,9 @@ store2@^2.14.2:
   integrity sha512-siT1RiqlfQnGqgT/YzXVUNsom9S0H1OX+dpdGN1xkyYATo4I6sep5NmsRD/40s3IIOvlCq6akxkqG82urIZW1w==
 
 storybook-addon-pseudo-states@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/storybook-addon-pseudo-states/-/storybook-addon-pseudo-states-2.0.1.tgz#3c2f7219eb1c9aa125a33fe7d7570957dbc81578"
-  integrity sha512-k7btLopDyoZELDSvVYMzNhEInf+IWns8NGJbvCPBrZxkukhnYmzQ9aLxjPDwjBTfLxSewu9Yfx2qKGzKDj+/ng==
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/storybook-addon-pseudo-states/-/storybook-addon-pseudo-states-2.1.2.tgz#9a04b8b97abecba69a47eca37966e297d15f924f"
+  integrity sha512-AHv6q1JiQEUnMyZE3729iV6cNmBW7bueeytc4Lga4+8W1En8YNea5VjqAdrDNJhXVU0QEEIGtxkD3EoC9aVWLw==
 
 storybook@^7.0.12:
   version "7.0.12"
