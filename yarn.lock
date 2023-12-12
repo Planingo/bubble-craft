@@ -3070,20 +3070,12 @@
     "@storybook/preview-api" "7.0.12"
 
 "@storybook/addon-interactions@^7.0.12":
-  version "7.0.12"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-interactions/-/addon-interactions-7.0.12.tgz#585403b16044ea3e4c83e59891328dc5fa778243"
-  integrity sha512-Rb1mv1RQrTd3sA/WwNTdv00rW+7APfvZEeZks6+8+kS1C4EFMDmLnVBZlPllFdo1BOnTCyer4GZZ5ncVkWNLyQ==
+  version "7.6.4"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-interactions/-/addon-interactions-7.6.4.tgz#e46a68f715b48b8d630fdc6a98c94ad3c7553f73"
+  integrity sha512-LjK9uhkgnbGyDwwa7pQhLptDEHeTIFmy+KurfJs9T08DpvRFfuuzyW4mj/hA63R1W5yjFSAhRiZj26+D7kBIyw==
   dependencies:
-    "@storybook/client-logger" "7.0.12"
-    "@storybook/components" "7.0.12"
-    "@storybook/core-common" "7.0.12"
-    "@storybook/core-events" "7.0.12"
     "@storybook/global" "^5.0.0"
-    "@storybook/instrumenter" "7.0.12"
-    "@storybook/manager-api" "7.0.12"
-    "@storybook/preview-api" "7.0.12"
-    "@storybook/theming" "7.0.12"
-    "@storybook/types" "7.0.12"
+    "@storybook/types" "7.6.4"
     jest-mock "^27.0.6"
     polished "^4.2.2"
     ts-dedent "^2.2.0"
@@ -3629,7 +3621,7 @@
   resolved "https://registry.yarnpkg.com/@storybook/global/-/global-5.0.0.tgz#b793d34b94f572c1d7d9e0f44fac4e0dbc9572ed"
   integrity sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==
 
-"@storybook/instrumenter@7.0.12", "@storybook/instrumenter@^7.0.0-beta.0 || ^7.0.0-rc.0 || ^7.0.0":
+"@storybook/instrumenter@^7.0.0-beta.0 || ^7.0.0-rc.0 || ^7.0.0":
   version "7.0.12"
   resolved "https://registry.yarnpkg.com/@storybook/instrumenter/-/instrumenter-7.0.12.tgz#7c49a4d821ecb7ec1c2a38251986dca97816313b"
   integrity sha512-jx4rb4AMT1YIOpE0HCdfyLvpYU+94wPkC9vt7sZGWAp7nnYG+KO/lx3XCJaR9qQPIxVYejJtWkeGn4RID79SoQ==
