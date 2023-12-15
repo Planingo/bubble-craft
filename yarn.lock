@@ -3238,11 +3238,11 @@
     uuid "^9.0.0"
 
 "@storybook/addon-actions@^7.0.12":
-  version "7.6.4"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-7.6.4.tgz#b2d2941baa926718f0c53581c8cc8b19c2e0393b"
-  integrity sha512-91UD5KPDik74VKVioPMcbwwvDXN/non8p1wArYAHCHCmd/Pts5MJRiFueSdfomSpNjUtjtn6eSXtwpIL3XVOfQ==
+  version "7.6.5"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-7.6.5.tgz#276ed222cc038423cd5ee80441f88544a2663311"
+  integrity sha512-lW/m9YcaNfBZk+TZLxyzHdd563mBWpsUIveOKYjcPdl/q0FblWWZrRsFHqwLK1ldZ4AZXs8J/47G8CBr6Ew2uQ==
   dependencies:
-    "@storybook/core-events" "7.6.4"
+    "@storybook/core-events" "7.6.5"
     "@storybook/global" "^5.0.0"
     "@types/uuid" "^9.0.1"
     dequal "^2.0.2"
@@ -3801,6 +3801,13 @@
   version "7.6.4"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-7.6.4.tgz#55405545dbc9ae5715654d2198ee1f1a3cc34ef7"
   integrity sha512-i3xzcJ19ILSy4oJL5Dz9y0IlyApynn5RsGhAMIsW+mcfri+hGfeakq1stNCo0o7jW4Y3A7oluFTtIoK8DOxQdQ==
+  dependencies:
+    ts-dedent "^2.0.0"
+
+"@storybook/core-events@7.6.5":
+  version "7.6.5"
+  resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-7.6.5.tgz#bcac8a2625c1f63d290d4ca0b70bb7a953939750"
+  integrity sha512-zk2q/qicYXAzHA4oV3GDbIql+Kd4TOHUgDE8e4jPCOPp856z2ScqEKUAbiJizs6eEJOH4nW9Db1kuzgrBVEykQ==
   dependencies:
     ts-dedent "^2.0.0"
 
