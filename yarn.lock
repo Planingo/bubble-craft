@@ -3359,9 +3359,9 @@
     ts-dedent "^2.2.0"
 
 "@storybook/addon-jest@^7.0.12":
-  version "7.6.5"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-jest/-/addon-jest-7.6.5.tgz#9f18677b4b862236d0c47da21ee27f96d6896295"
-  integrity sha512-giwmIHioWb3pq7iBe9EvtGdJ7D7OU0X3fhRCDVJd4TquE5RX82cLvOqu2on1gcwCThMWwmy+VGlL/HFmScHXIg==
+  version "7.6.8"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-jest/-/addon-jest-7.6.8.tgz#f1d0f05cf7a41464db72dea952fd73685c847ea9"
+  integrity sha512-tWToUmWw0GpPtkbZlSh0RN1bWGQxetm651kphtb1uTSx6lsNHQRvcBBMyO1GQRL/7WiCaH6C1YcGiDI1C2c5hw==
   dependencies:
     "@storybook/global" "^5.0.0"
     tiny-invariant "^1.3.1"
