@@ -3265,9 +3265,9 @@
     ts-dedent "^2.0.0"
 
 "@storybook/addon-backgrounds@^7.0.12":
-  version "7.6.8"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-backgrounds/-/addon-backgrounds-7.6.8.tgz#fb754784ab8fb19d6e0b1dd11f8bac1796303f1c"
-  integrity sha512-b+Oj41z2W/Pv6oCXmcjGdNkOStbVItrlDoIeUGyDKrngzH9Kpv5u2XZTHkZWGWusLhOVq8ENBDqj6ENRL6kDtw==
+  version "7.6.11"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-backgrounds/-/addon-backgrounds-7.6.11.tgz#26d5a08e88adb49dcb38a3f6dd4ed614ca467e3b"
+  integrity sha512-Tzgn5AqNFcehPNeohrY4fJsCFjux2GnJQDHKWt/jeAtkbDVUd4VOZBxR6SMEnuLOsR3tywJh7tf2PgRNCc1hzw==
   dependencies:
     "@storybook/global" "^5.0.0"
     memoizerific "^1.11.3"
