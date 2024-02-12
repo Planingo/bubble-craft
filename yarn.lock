@@ -3385,9 +3385,9 @@
     react-select "^5.7.0"
 
 "@storybook/addon-links@^7.0.12":
-  version "7.6.8"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-7.6.8.tgz#6858f68eb702f80048f3c68d226e965053ed56e1"
-  integrity sha512-lw+xMvzfhyOR5I5792rGCf31OfVsiNG+uCc6CEewjKdC+e4GZDXzAkLIrLVUvbf6iUvHzERD63Y5nKz2bt5yZA==
+  version "7.6.14"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-7.6.14.tgz#fc2fef6d964b8543357c00220f1666e0b91d02f7"
+  integrity sha512-xzDWQEzntia9ArFQC95TEw/Tqp/cNFq0SSuQQ6d9/ryQczuSdRGFHRmEd99/92ufNgCGPaRZOB7sweiKG0bkzA==
   dependencies:
     "@storybook/csf" "^0.1.2"
     "@storybook/global" "^5.0.0"
