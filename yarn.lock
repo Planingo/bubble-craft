@@ -3430,11 +3430,11 @@
     ts-dedent "^2.0.0"
 
 "@storybook/addon-storysource@^7.0.12":
-  version "7.6.8"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-storysource/-/addon-storysource-7.6.8.tgz#40d871e60d2e6d190b4fe152c5b05b01f0fc5a85"
-  integrity sha512-cijp3Ob+ihvlUWmS9puZPNwmyk0pyxBNJ0KBoH+fQA8uZjHCySRQE0/Y7V1Qk68Y/7o3Jw4txL3k6LJtuXyyjg==
+  version "7.6.16"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-storysource/-/addon-storysource-7.6.16.tgz#27d044f0d3ff5803eb37e817ec3786f0e46863e6"
+  integrity sha512-F/t0Y8bDF0C5m0h9Tui0ODCVAhp4Qicq6wonsZovEoSdhUE+Fq+dBtQ9K+zUYpQYf2alnvFexhy6xdAwBXFZAw==
   dependencies:
-    "@storybook/source-loader" "7.6.8"
+    "@storybook/source-loader" "7.6.16"
     estraverse "^5.2.0"
     tiny-invariant "^1.3.1"
 
@@ -3623,6 +3623,18 @@
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-7.0.12.tgz#54fc4a14cd27746c1f210e45d563f4d88cf2280c"
   integrity sha512-KDdDmDs8kxAJU+vndTqTNazjLO+XoIPiTRlfP7mk7cgHiQXSjMYy3JSCQ7W0of0Q+9VSl/ve9CNbnGbcQF7rNQ==
 
+"@storybook/channels@7.6.16":
+  version "7.6.16"
+  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-7.6.16.tgz#0aa15f77356211270d2dad8a7e257ed7374ade50"
+  integrity sha512-LKB0t4OGISez1O4TRJ/CDPxlb2wAW7gg8YRL91VVUHeffVyr4bnpklvMbLbuEcYrysM82Q2UMB9ipQdyK6Issg==
+  dependencies:
+    "@storybook/client-logger" "7.6.16"
+    "@storybook/core-events" "7.6.16"
+    "@storybook/global" "^5.0.0"
+    qs "^6.10.0"
+    telejson "^7.2.0"
+    tiny-invariant "^1.3.1"
+
 "@storybook/channels@7.6.4":
   version "7.6.4"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-7.6.4.tgz#d0af47f1f049c3ad77bcdefec54253f56b3b0a47"
@@ -3718,6 +3730,13 @@
   version "7.0.12"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-7.0.12.tgz#259931a1de7503227f0c082e130ca98e5109ca92"
   integrity sha512-MQMtIgGEgdixvxnBvZ2m8hhc0DGJWeCpHtxg7oqBLBEBmCYFueTqDZHl4Z6SoCrK0a2YS5X/BIXOcEtP1ulMKw==
+  dependencies:
+    "@storybook/global" "^5.0.0"
+
+"@storybook/client-logger@7.6.16":
+  version "7.6.16"
+  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-7.6.16.tgz#73782e461bfd29f94c3006e6ebe6f90294ca339b"
+  integrity sha512-Vquhmgk/SO0VeAkojcA1juuicBHoTST+f4XwBvyUNiebOSOdGIkxHVxpDFXu2kS0aKflFBEutX2IgoysDup+fQ==
   dependencies:
     "@storybook/global" "^5.0.0"
 
@@ -3842,6 +3861,13 @@
   version "7.0.12"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-7.0.12.tgz#928409c27cca2855189834726c268b7c59996994"
   integrity sha512-VTmb/zjbz3o1bg+bATzLigVXMVDC/S1FP8CqIrz4mkiys52139FGzMandL2Y2AecPZPGss7ZRdfma28HKVYTRg==
+
+"@storybook/core-events@7.6.16":
+  version "7.6.16"
+  resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-7.6.16.tgz#320f88f463201a1a1c857c7b596dd61bde34e4c8"
+  integrity sha512-mkBqzrbp6vmdjo0fBZGrFQQ4YdvMFxF6AesdKTf8EzPa69FoxnhQLrmQ4aXF+9vXkxfXVJF2HfpoTEdfqqAo+w==
+  dependencies:
+    ts-dedent "^2.0.0"
 
 "@storybook/core-events@7.6.4":
   version "7.6.4"
@@ -4228,13 +4254,13 @@
     memoizerific "^1.11.3"
     qs "^6.10.0"
 
-"@storybook/source-loader@7.6.8":
-  version "7.6.8"
-  resolved "https://registry.yarnpkg.com/@storybook/source-loader/-/source-loader-7.6.8.tgz#8a8e92fdfbde7c2d41d5c0a67f86b7ac9e85521e"
-  integrity sha512-k6xB0USQUU3GLhdQOMmc0w3Wl7l12iUKWyeWMg4aR1V0n4X5njzhiK7XYtQ1lNnhsyoXQzOech5HjTeZ6/AXEw==
+"@storybook/source-loader@7.6.16":
+  version "7.6.16"
+  resolved "https://registry.yarnpkg.com/@storybook/source-loader/-/source-loader-7.6.16.tgz#85be7dce50f7226c5cdfe75fb3bac58324672ccf"
+  integrity sha512-HPZOFw0eAi5l5nXfewo7jMC2IRqhwF2TQfXvceNKk9ohr1bZXWz6+/Axs7ZGmdNjT0izgiOnq3vUTDsGLURHYQ==
   dependencies:
     "@storybook/csf" "^0.1.2"
-    "@storybook/types" "7.6.8"
+    "@storybook/types" "7.6.16"
     estraverse "^5.2.0"
     lodash "^4.17.21"
     prettier "^2.8.0"
@@ -4299,6 +4325,16 @@
     "@types/babel__core" "^7.0.0"
     "@types/express" "^4.7.0"
     file-system-cache "^2.0.0"
+
+"@storybook/types@7.6.16":
+  version "7.6.16"
+  resolved "https://registry.yarnpkg.com/@storybook/types/-/types-7.6.16.tgz#58d1ab44ecde1def28a4ed35f5cdc3c01c1f717a"
+  integrity sha512-Ld4dKbgSbvqThdBNwNlOxQu5AiS6U9DXI5evf/j83eWs6skO3OBdQp+GWa6sUCI9eRqH8tFsw/YmMcIZ4uZrBQ==
+  dependencies:
+    "@storybook/channels" "7.6.16"
+    "@types/babel__core" "^7.0.0"
+    "@types/express" "^4.7.0"
+    file-system-cache "2.3.0"
 
 "@storybook/types@7.6.4":
   version "7.6.4"
