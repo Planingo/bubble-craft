@@ -1,0 +1,33 @@
+import { Steps } from '../components/Steps/Steps';
+import { withTests } from '@storybook/addon-jest';
+import results from '../../.jest-test-results.json';
+
+const meta = {
+  title: 'Atomes/Steps',
+  component: Steps,
+  decorators: [withTests({ results })],
+  parameters: { jest: ['steps.test.jsx'] }
+};
+
+export default meta;
+
+export const Playground = {
+  args: {
+    current: 1,
+    items: [
+      {
+        title: 'Finished',
+        description: 'This is a description.',
+      },
+      {
+        title: 'In Progress',
+        description: 'This is a description.',
+        subTitle: 'Left 00:00:08',
+      },
+      {
+        title: 'Waiting',
+        description: 'This is a description.',
+      },
+    ]
+  },
+};
