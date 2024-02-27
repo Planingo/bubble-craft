@@ -1,3 +1,5 @@
+import { BrowserRouter } from 'react-router-dom'
+import { IntlProvider } from '../src/translation/IntlProvider'
 import { ThemeProvider } from "../src";
 import '../src/Theme/index.css';
 
@@ -12,7 +14,11 @@ export const decorators = [
     (Story) => {
         return (
             <ThemeProvider>
-                <Story />
+                <IntlProvider>
+                    <BrowserRouter>
+                        <Story />
+                    </BrowserRouter>
+                </IntlProvider>
             </ThemeProvider>
         );
     },

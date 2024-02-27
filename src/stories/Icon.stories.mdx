@@ -1,0 +1,17 @@
+import { Meta } from '@storybook/blocks';
+import * as icons from '../components/Icon/icon';
+
+<Meta title="Styles/Icon" />
+
+<div style={{display: "grid", gap: "20px", gridTemplateColumns: "repeat(auto-fill, minmax(14 wdw0px, 1fr))"}}>
+  {
+    Object.entries(icons)
+    .filter(([iconName]) => iconName.toUpperCase()[0] === iconName[0] && iconName !== 'IconProvider')
+    .map(([iconName, Icon]) => 
+        <div style={{display: "flex", flexDirection: "column", alignItems: "center"}} key={iconName} >
+          <Icon />
+          <p>{iconName}</p>
+        </div>
+    )
+  }
+</div>
