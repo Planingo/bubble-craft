@@ -1,5 +1,4 @@
-# build environment
-FROM node:16 as builder
+FROM nginx:1.17
 
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
@@ -10,9 +9,7 @@ RUN yarn
 COPY . .
 
 RUN yarn build-storybook
-
-# production environment
-FROM nginx:1.17
+COPY storybook-static ./
 
 RUN rm -rf /etc/nginx/conf.d
 RUN mkdir -p /etc/nginx/conf.d
