@@ -31,7 +31,7 @@ export const Notif = ({...props }) => {
   }
 
   return (
-      <Context.Provider>
+      <Context.Provider value="notif">
         {contextHolder}
         {props.OpenNotification(() => openNotification((props.type)))}
       </Context.Provider>

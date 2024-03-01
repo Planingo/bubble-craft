@@ -1,11 +1,9 @@
 import React from 'react';
-import { Card as AntdCard, Tabs, theme } from 'antd';
+import { Card as AntdCard, Tabs } from 'antd';
 import './card.css'
 import PropTypes from 'prop-types'
 import { Tooltip } from '../Tooltip/Tooltip';
 import { CloudUploadOutlined, DeleteOutlined, DownloadOutlined } from '../Icon/icon';
-
-const { useToken } = theme
 
 /**
  * 
@@ -13,11 +11,9 @@ const { useToken } = theme
  * 
  */
 export const Card = ({children, ...props }) => {
-  const { token } = useToken()
   return (
     <AntdCard
       {...props}
-
       actions={[
         <Tooltip title='Télécharger' placement='bottom'>
           <DownloadOutlined className='download' />

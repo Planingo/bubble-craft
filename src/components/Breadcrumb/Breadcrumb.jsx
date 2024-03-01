@@ -14,23 +14,11 @@ import './breadcrumb.css';
  * Documentations andt du composant : https://ant.design/components/breadcrumb/
  * 
  */
-export const Breadcrumb = ({ items, ...props }) => {
+export const Breadcrumb = ({ items }) => {
   return (
     <AntdBreadcrumb
       className='storybook-breadcrumb'
-      {...props}
-    >
-      {items.map(item => <AntdBreadcrumb.Item>{item}</AntdBreadcrumb.Item>)}
-    </AntdBreadcrumb>
+      items={items}
+    />
   );
-};
-
-Breadcrumb.propTypes = {
-    /**
-     * TODO property
-     */
-    items: PropTypes.array,
-};
-
-Breadcrumb.defaultProps = {
 };
