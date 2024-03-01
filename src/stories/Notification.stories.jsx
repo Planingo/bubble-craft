@@ -7,7 +7,7 @@ const meta = {
   title: 'Molécules/Notification',
   component: Notif,
   decorators: [withTests({ results })],
-  parameters: { jest: ['notif.test.jsx'] }
+  parameters: { jest: ['notification.test.jsx'] }
 };
 
 export default meta;

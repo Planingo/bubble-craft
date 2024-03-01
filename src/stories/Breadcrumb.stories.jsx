@@ -13,6 +13,9 @@ export default meta;
 
 export const Playground = {
   args: {
-    items: [<>Home</>, <a href="/">Application Center</a>]
+    items: [
+      {key:'home', title:"Home"},
+      {key:'home2', title:<a href="/">Application Center</a>}
+    ]
   },
 };

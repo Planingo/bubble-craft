@@ -13,6 +13,5 @@ export default meta;
 
 export const Playground = {
   args: {
-    children: "Spin"
   },
 };

@@ -67,7 +67,7 @@
     "@storybook/react": "^7.0.12",
     "@storybook/react-webpack5": "^7.0.12",
     "@storybook/testing-library": "^0.2.2",
-    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.2.1",
     "autoprefixer": "^10.4.14",
@@ -97,7 +97,7 @@
     "webpack": "5"
   },
   "dependencies": {
-    "antd": "^5.2.2",
+    "antd": "^5.14.2",
     "final-form": "^4.20.9",
     "react-final-form": "^6.5.9",
     "react-icons": "^4.8.0"
