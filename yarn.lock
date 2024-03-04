@@ -21273,8 +21273,8 @@ __metadata:
   linkType: hard
 
 "storybook-addon-pseudo-states@npm:^2.0.1":
-  version: 2.1.2
-  resolution: "storybook-addon-pseudo-states@npm:2.1.2"
+  version: 2.2.0
+  resolution: "storybook-addon-pseudo-states@npm:2.2.0"
   peerDependencies:
     "@storybook/components": ^7.4.6
     "@storybook/core-events": ^7.4.6
@@ -21288,7 +21288,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10c0/6b13365a4756e2f51d35661d3397ba744e33930c1f3d23580a408e0455e2a0709de2787ac1b794db8690a8ed96e6bdeede99f86c51956fa75a83e559b212920f
+  checksum: 10c0/07a551365bbcea15427c367be4049e649dd39f27710cd0d075f589d4bf96b42db472af14163f91ae5345c15c7aa29dbf4c40718ad83baa96f65a8683079e1bf4
   languageName: node
   linkType: hard
 
