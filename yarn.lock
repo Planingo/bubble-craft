@@ -7913,13 +7913,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.4.14":
-  version: 10.4.16
-  resolution: "autoprefixer@npm:10.4.16"
+"autoprefixer@npm:^10.4.14, autoprefixer@npm:^10.4.7":
+  version: 10.4.18
+  resolution: "autoprefixer@npm:10.4.18"
   dependencies:
-    browserslist: "npm:^4.21.10"
-    caniuse-lite: "npm:^1.0.30001538"
-    fraction.js: "npm:^4.3.6"
+    browserslist: "npm:^4.23.0"
+    caniuse-lite: "npm:^1.0.30001591"
+    fraction.js: "npm:^4.3.7"
     normalize-range: "npm:^0.1.2"
     picocolors: "npm:^1.0.0"
     postcss-value-parser: "npm:^4.2.0"
@@ -7927,25 +7927,7 @@ __metadata:
     postcss: ^8.1.0
   bin:
     autoprefixer: bin/autoprefixer
-  checksum: 10c0/e00256e754d481a026d928bca729b25954074dd142dbec022f0a7db0d3bbc0dc2e2dc7542e94fec22eff81e21fe140e6856448e2d9a002660cb1e2ad434daee0
-  languageName: node
-  linkType: hard
-
-"autoprefixer@npm:^10.4.7":
-  version: 10.4.7
-  resolution: "autoprefixer@npm:10.4.7"
-  dependencies:
-    browserslist: "npm:^4.20.3"
-    caniuse-lite: "npm:^1.0.30001335"
-    fraction.js: "npm:^4.2.0"
-    normalize-range: "npm:^0.1.2"
-    picocolors: "npm:^1.0.0"
-    postcss-value-parser: "npm:^4.2.0"
-  peerDependencies:
-    postcss: ^8.1.0
-  bin:
-    autoprefixer: bin/autoprefixer
-  checksum: 10c0/80efba20a1884598098eb718c625020f3d234a285e562997c17a5f78560b307b0494051b8851b03862e58a78bafc9e4c9c0d1828293e438a22c935834b6d629e
+  checksum: 10c0/b6e1c1ba2fc6c09360cdcd75b00ce809c5dbe1ad4c30f0186764609a982aa5563d45965cb9e6a9d195c639a9fb1dcac2594484fc41624050195f626e9add666e
   languageName: node
   linkType: hard
 
@@ -8561,7 +8543,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:^4.0.0, browserslist@npm:^4.14.5, browserslist@npm:^4.16.6, browserslist@npm:^4.18.1, browserslist@npm:^4.20.3, browserslist@npm:^4.21.0, browserslist@npm:^4.21.10, browserslist@npm:^4.22.2":
+"browserslist@npm:^4.0.0, browserslist@npm:^4.14.5, browserslist@npm:^4.16.6, browserslist@npm:^4.18.1, browserslist@npm:^4.20.3, browserslist@npm:^4.21.0, browserslist@npm:^4.22.2":
   version: 4.22.2
   resolution: "browserslist@npm:4.22.2"
   dependencies:
@@ -8575,7 +8557,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:^4.22.3":
+"browserslist@npm:^4.22.3, browserslist@npm:^4.23.0":
   version: 4.23.0
   resolution: "browserslist@npm:4.23.0"
   dependencies:
@@ -8826,17 +8808,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001335, caniuse-lite@npm:^1.0.30001565":
+"caniuse-lite@npm:^1.0.30001565":
   version: 1.0.30001566
   resolution: "caniuse-lite@npm:1.0.30001566"
   checksum: 10c0/cd163075b1a9feaf9c9f657c3551279fcdac471471d67ee57ab2286c7b5480168e6336e359741b469fa40e94716f0f95ec185d87bd57d58894d66d8c21d7db04
-  languageName: node
-  linkType: hard
-
-"caniuse-lite@npm:^1.0.30001538":
-  version: 1.0.30001563
-  resolution: "caniuse-lite@npm:1.0.30001563"
-  checksum: 10c0/a8b367d43e0307ec243d8df8515d563fa3de895e9698eec4539037aed400da81e0df737164da2a6b7104ab6e75b4ea63db0adebcaabe326f2792841980259256
   languageName: node
   linkType: hard
 
@@ -8844,6 +8819,13 @@ __metadata:
   version: 1.0.30001591
   resolution: "caniuse-lite@npm:1.0.30001591"
   checksum: 10c0/21937d341c3d75994504db21340f65573a1e847a8ab33ee4964ed493994d6552864c494ba144485459abd9c711c75c0708bc9fa19f2bff525bff75ffb0a42c3b
+  languageName: node
+  linkType: hard
+
+"caniuse-lite@npm:^1.0.30001591":
+  version: 1.0.30001593
+  resolution: "caniuse-lite@npm:1.0.30001593"
+  checksum: 10c0/c1601015ee4846da731f78164d4d863e6ee49a32988c4d879e9ab07ebdedcd32122161a3ff09f991485208d7a743db62fb5bd3dfbe4312f271c03f810a85cb4f
   languageName: node
   linkType: hard
 
@@ -11998,7 +11980,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fraction.js@npm:^4.2.0, fraction.js@npm:^4.3.6":
+"fraction.js@npm:^4.3.7":
   version: 4.3.7
   resolution: "fraction.js@npm:4.3.7"
   checksum: 10c0/df291391beea9ab4c263487ffd9d17fed162dbb736982dee1379b2a8cc94e4e24e46ed508c6d278aded9080ba51872f1bc5f3a5fd8d7c74e5f105b508ac28711
