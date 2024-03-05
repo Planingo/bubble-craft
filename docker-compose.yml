@@ -6,6 +6,4 @@ services:
     # Exposition du port 80
     ports:
       - "80:80"
-    volumes:
-      - ./default.conf:/etc/nginx/conf.d/default.conf
-      - ./storybook-static:/usr/share/nginx/html
+    build: .

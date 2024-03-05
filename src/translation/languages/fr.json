@@ -1,5 +1,6 @@
 {
     "app.add.calendar": "ajouter un calendrier",
+    "app.add.lesson": "ajouter une leçon",
     "app.empty": "Pour le moment c'est vide !",
     "app.logout": "déconnexion",
     "app.my.account": "mon compte",
@@ -23,6 +24,8 @@
     "form.login.username.placeholder": "c.dupuit@monmail.fr",
     "error.password.character": "votre mot de passe doit contenir au moins 8 charactères.",
     "error.required": "requis",
+    "no.data": "aucune donnée",
+    "no.data.lesson": "pas de leçon",
     "roles.super.admin": "super admin",
     "roles.planing.keeper": "planing keeper",
     "roles.student": "student",

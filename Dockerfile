@@ -1,15 +1,20 @@
-FROM nginx:1.17
+# build environment
+FROM node:18 as builder
 
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 
-COPY package.json yarn.lock ./
+RUN corepack enable
+
+COPY package.json yarn.lock .yarn .yarnrc.yml ./
 RUN yarn
 
 COPY . .
 
 RUN yarn build-storybook
-COPY storybook-static ./
+
+# production environment
+FROM nginx:1.17
 
 RUN rm -rf /etc/nginx/conf.d
 RUN mkdir -p /etc/nginx/conf.d

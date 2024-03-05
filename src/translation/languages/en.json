@@ -1,5 +1,6 @@
 {
     "app.add.calendar": "add a calendar",
+    "app.add.lesson": "add a lesson",
     "app.empty": "For the moment it's empty!",
     "app.logout": "logout",
     "app.my.account": "my account",
@@ -22,6 +23,8 @@
     "form.login.username": "username",
     "form.login.username.placeholder": "c.dupuit@monmail.uk",
     "error.required": "required",
+    "no.data": "no data",
+    "no.data.lesson": "no lesson",
     "roles.super.admin": "super admin",
     "roles.planing.keeper": "planing keeper",
     "roles.student": "student",
