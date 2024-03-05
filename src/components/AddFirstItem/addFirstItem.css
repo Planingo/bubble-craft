@@ -1,0 +1,6 @@
+.storybook-addFirstItem {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 1.5em;
+    column-gap: 1em;
+}

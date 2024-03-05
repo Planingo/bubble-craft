@@ -1,0 +1,7 @@
+.storybook-noData > div > div > .addItemEmpty > button {
+    background-color: #EEB341;
+}
+
+.storybook-noData > div > div > .addItemEmpty > button:hover {
+    background-color: #EAA012 !important;
+}

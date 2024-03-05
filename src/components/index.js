@@ -15,6 +15,8 @@ export { Drawer } from "./Drawer/Drawer";
 export { Dropdown } from "./Dropdown/Dropdown";
 export { Empty } from "./Empty/Empty";
 export { FloatButton } from "./FloatButton/FloatButton";
+export { Gallery } from "./Gallery/Gallery";
+export { GalleryList } from './GalleryList/GalleryList'
 export { GlobalPage } from "./GlobalPage/GlobalPage";
 export { Header } from "./Header/Header";
 export * as Icon from "./Icon/icon";
@@ -25,6 +27,7 @@ export { Menu } from "./Menu/Menu";
 export { Message } from "./Message/Message";
 export { Modal } from "./Modal/Modal";
 export { Navigation } from "./Navigation/Navigation";
+export { NoData } from "./NoData/NoData";
 export { Notif } from "./Notification/Notification";
 export { Pagination } from "./Pagination/Pagination";
 export { Popconfirm } from "./Popconfirm/Popconfirm";

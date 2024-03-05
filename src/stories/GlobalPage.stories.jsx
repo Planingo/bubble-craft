@@ -32,7 +32,6 @@ export const Playground = {
         FirstForm: <Form
           onValuesChange={(values) => console.log(values)}
           layout="vertical"
-          hideRequiredMark
         >
             <Form.Item
               name="lastName"

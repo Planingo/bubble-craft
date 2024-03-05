@@ -1,0 +1,17 @@
+.storybook-gallerylist {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.5em;
+    column-gap: 1em;
+    justify-content: space-between;
+}
+
+.storybook-gallerylist > div > div > div > div > div > div > table > tbody > tr > td > img {
+    max-height: 3em;
+}
+
+.storybook-gallerylist-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
