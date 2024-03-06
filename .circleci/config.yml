@@ -41,11 +41,23 @@ jobs:
           success_message: ":partying_face: La version :sparkles:${CIRCLE_TAG}:sparkles: de Ditto est disponible :partying_face:"
           webhook: "${DISCORD_STATUS_WEBHOOK}"
   deploy:
-    executor: node/default
+    docker:
+      - image: google/cloud-sdk:latest
     steps:
-      - checkout
-      - run: yarn global add caprover
-      - run: yarn deploy
+      - run:
+          name: Configure gcloud
+          command: |
+            echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
+            gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
+            gcloud config set project $GCLOUD_PROJECT_ID
+      # Déploiement sur Google Cloud Run
+      - run:
+          name: Build
+          command: gcloud builds submit --region=$REGION --tag $_AR_HOSTNAME/$GCLOUD_PROJECT_ID/_SERVICE_NAME/$REPO_NAME:$CIRCLE_SHA1
+      - run:
+          name: Deploy to Cloud Run
+          command: |
+            gcloud run deploy $REPO_NAME --image=$_AR_HOSTNAME/$GCLOUD_PROJECT_ID/_SERVICE_NAME/$REPO_NAME:$CIRCLE_SHA1 --platform=$PLATFORM --region=$REGION --allow-$ALLOW
 
 filters-tag: &filters-tag
   branches:
