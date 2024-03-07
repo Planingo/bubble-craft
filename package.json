@@ -1,6 +1,6 @@
 {
   "name": "@planingo/ditto",
-  "version": "2.2.13",
+  "version": "2.2.14",
   "license": "MIT",
   "description": "Design system planingo",
   "main": "src/index.js",
