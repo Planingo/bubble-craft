@@ -54,7 +54,7 @@ jobs:
       # Déploiement sur Google Cloud Run
       - run:
           name: Build
-          command: ls && gcloud builds submit --region=$REGION --tag $_AR_HOSTNAME/$GCLOUD_PROJECT_ID/$_SERVICE_NAME/$REPO_NAME:$CIRCLE_SHA1
+          command: ls -la && gcloud builds submit --region=$REGION --tag $_AR_HOSTNAME/$GCLOUD_PROJECT_ID/$_SERVICE_NAME/$REPO_NAME:$CIRCLE_SHA1
       - run:
           name: Deploy to Cloud Run
           command: |
