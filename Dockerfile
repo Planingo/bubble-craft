@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 
 RUN corepack enable
 
-COPY package.json yarn.lock .yarn .yarnrc.yml ./
+COPY package.json yarn.lock .yarn/* .yarnrc.yml ./
 RUN yarn
 
 COPY . .
