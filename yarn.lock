@@ -3979,7 +3979,7 @@ __metadata:
   resolution: "@planingo/ditto@workspace:."
   dependencies:
     "@storybook/addon-actions": "npm:^7.6.17"
-    "@storybook/addon-backgrounds": "npm:^7.6.17"
+    "@storybook/addon-backgrounds": "npm:^8.0.1"
     "@storybook/addon-docs": "npm:^7.6.17"
     "@storybook/addon-essentials": "npm:^7.6.17"
     "@storybook/addon-interactions": "npm:^7.6.17"
@@ -4899,7 +4899,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-backgrounds@npm:7.6.17, @storybook/addon-backgrounds@npm:^7.6.17":
+"@storybook/addon-backgrounds@npm:7.6.17":
   version: 7.6.17
   resolution: "@storybook/addon-backgrounds@npm:7.6.17"
   dependencies:
@@ -4907,6 +4907,17 @@ __metadata:
     memoizerific: "npm:^1.11.3"
     ts-dedent: "npm:^2.0.0"
   checksum: 10c0/43518d762efa8dd140d029541e8e2bb748173a8428e3de67287ca132525e33e443282a2b06f3b381250d9557ada9ea3a07039aa69cf3de6b04aec02027fb9943
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-backgrounds@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "@storybook/addon-backgrounds@npm:8.0.1"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+    memoizerific: "npm:^1.11.3"
+    ts-dedent: "npm:^2.0.0"
+  checksum: 10c0/14fdeadfd51dafb1c131c1dae74cae68a408816a30fa5e14d751ca130a7f64d36a990b379666b34cadc27864b1ce0b01373d8de79bb45bca1f84147844990c13
   languageName: node
   linkType: hard
 
