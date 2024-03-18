@@ -23,6 +23,8 @@ export * as Icon from "./Icon/icon";
 export { Input } from "./Input/Input";
 export { List } from "./List/List";
 export { LoginPage } from "./LoginPage/LoginPage";
+export { ResetPage } from "./LoginPage/ResetPage";
+export { SignupPage } from "./LoginPage/SignupPage";
 export { Menu } from "./Menu/Menu";
 export { Message } from "./Message/Message";
 export { Modal } from "./Modal/Modal";
