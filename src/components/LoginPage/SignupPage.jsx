@@ -21,7 +21,7 @@ import { toCapitalized } from '../../utils/formatText';
  * 
  * 
  */
-export const LoginPage = ({
+export const SignupPage = ({
   children,
   onSubmit,
   loading,
@@ -41,10 +41,19 @@ export const LoginPage = ({
 		return undefined
 	}
 
+	const requiredPasswordConfirm = value => {
+		if (!value) return formatMessage({ id: 'error.required' })
+
+		if (value.length < 9)
+			return formatMessage({ id: 'error.password.character' })
+
+		return undefined
+	}
+
   return (
     <div className='storybook-login-page' {...props} >
       <div className='form-login'>
-        <h1 className="title">{formatMessage({ id: 'form.login' }).toUpperCase()}</h1>
+        <h1 className="title">{formatMessage({ id: 'form.signup' }).toUpperCase()}</h1>
         <FinalForm
           onSubmit={onSubmit}
           render={({ handleSubmit, valid }) => (
@@ -52,7 +61,7 @@ export const LoginPage = ({
               <Field name="username" validate={requiredEmail}>
                 {({ input, meta }) => (
                   <Form.Item
-                    label={toCapitalized(formatMessage({ id: 'form.login.username' }))}
+                    label={toCapitalized(formatMessage({ id: 'form.signup.username' }))}
                     validateStatus={
                       meta.touched && meta.error ? 'error' : undefined
                     }
@@ -62,7 +71,7 @@ export const LoginPage = ({
                       {...input}
                       type="email"
                       placeholder={formatMessage({
-                        id: 'form.login.username.placeholder',
+                        id: 'form.signup.username.placeholder',
                       })}
                     />
                   </Form.Item>
@@ -71,7 +80,7 @@ export const LoginPage = ({
               <Field name="password" validate={requiredPassword}>
                 {({ input, meta }) => (
                   <Form.Item
-                    label={toCapitalized(formatMessage({ id: 'form.login.password' }))}
+                    label={toCapitalized(formatMessage({ id: 'form.signup.password' }))}
                     validateStatus={
                       meta.touched && meta.error ? 'error' : undefined
                     }
@@ -80,18 +89,18 @@ export const LoginPage = ({
                     <InputPassword
                       {...input}
                       placeholder={formatMessage({
-                        id: 'form.login.password.placeholder',
+                        id: 'form.signup.password.placeholder',
                       })}
                     />
                   </Form.Item>
                 )}
               </Field>
               <div className="create-forget">
-                <Link className="light-text" to="reset">
+                <Link className="light-text" to="/reset">
                   {toCapitalized(formatMessage({id: 'form.login.forget'}))}
                 </Link>
-                <Link className="light-text" to="signup">
-                  {toCapitalized(formatMessage({id: 'form.login.signup'}))}
+                <Link className="light-text" to="/">
+                  {toCapitalized(formatMessage({id: 'form.login.login'}))}
                 </Link>
               </div>
               <Button
@@ -101,7 +110,7 @@ export const LoginPage = ({
                 shape="round"
                 size="large"
               >
-                {toCapitalized(formatMessage({ id: 'form.login.login' }))}
+                {toCapitalized(formatMessage({ id: 'form.create' }))}
               </Button>
             </Form>
           )}
@@ -114,8 +123,8 @@ export const LoginPage = ({
   );
 };
 
-LoginPage.propTypes = {
+SignupPage.propTypes = {
 };
 
-LoginPage.defaultProps = {
+SignupPage.defaultProps = {
 };
