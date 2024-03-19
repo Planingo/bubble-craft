@@ -43,7 +43,7 @@ jobs:
             - ~/.cache
             - ~/.config
             - ./node_modules
-      - run: sudo apt-get update && sudo apt-get install xvfb libnss3-dev libatk1.0-0 libatk-bridge2.0-0
+      - run: sudo apt-get update && sudo apt-get install xvfb libnss3-dev libatk1.0-0 libatk-bridge2.0-0 libcups2
       - run: yarn test:e2e
   publish:
     executor: node/default
