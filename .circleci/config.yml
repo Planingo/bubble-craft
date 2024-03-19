@@ -29,6 +29,21 @@ jobs:
             - ~/.config
             - ./node_modules
       - run: yarn test
+  e2e-test:
+    executor: node/default
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - dependencies-{{ checksum "yarn.lock" }}
+      - run: yarn
+      - save_cache:
+          key: dependencies-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache
+            - ~/.config
+            - ./node_modules
+      - run: yarn test:e2e
   publish:
     executor: node/default
     steps:
@@ -76,6 +91,8 @@ workflows:
     jobs:
       - unit-test :
           filters: *filters-all
+      - e2e-test :
+          filters: *filters-all
       - chromatic :
           filters: *filters-all
       - publish :
@@ -85,4 +102,5 @@ workflows:
       - deploy:
           requires:
             - unit-test
+            - e2e-test
           filters: *filters-tag
