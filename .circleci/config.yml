@@ -44,6 +44,7 @@ jobs:
             - ~/.config
             - ./node_modules
       - run: sudo apt-get update && sudo apt-get install xvfb libnss3-dev libatk1.0-0 libatk-bridge2.0-0 libcups2 libgtk-3-0 libgbm1 libasound2
+      - run: sudo apt-get install google-chrome-stable
       - run: yarn test:e2e
   publish:
     executor: node/default
