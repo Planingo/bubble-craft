@@ -43,6 +43,7 @@ jobs:
             - ~/.cache
             - ~/.config
             - ./node_modules
+      - run: sudo apt-get install xvfb
       - run: yarn test:e2e
   publish:
     executor: node/default
