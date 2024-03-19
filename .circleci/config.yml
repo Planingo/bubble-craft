@@ -43,7 +43,7 @@ jobs:
             - ~/.cache
             - ~/.config
             - ./node_modules
-      - run: sudo apt-get update && sudo apt-get install xvfb
+      - run: sudo apt-get update && sudo apt-get install xvfb libnss3-dev
       - run: yarn test:e2e
   publish:
     executor: node/default
