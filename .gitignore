@@ -36,3 +36,6 @@ build-storybook.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+cypress/results/*
+cypress/screenshots/*
