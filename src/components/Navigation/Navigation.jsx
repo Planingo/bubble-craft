@@ -5,7 +5,7 @@ import { path } from './path';
 import { Menu } from '../Menu/Menu';
 import { useIntl } from 'react-intl'
 import { Roles } from '../Roles/roles';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Tooltip } from '../Tooltip/Tooltip';
 
 /**
@@ -20,8 +20,8 @@ import { Tooltip } from '../Tooltip/Tooltip';
  * 
  */
 export const Navigation = ({ roles, ...props }) => {
-
   const { formatMessage } = useIntl()
+  const location = useLocation();
   
   const getItem = (label, key, icon, children, type) => {
     return {
@@ -56,7 +56,7 @@ export const Navigation = ({ roles, ...props }) => {
           {
             path.filter(({role}) => roles.includes(role))
             .map(({key, to, title, icon}) => (
-              <Link key={key} to={to} activeclassname='active' className="pointer">
+              <Link key={key} to={to} className={`pointer ${location.pathname.includes(to) ? `active` : ''}`}>
                 <Tooltip placement='right' title={formatMessage({id: title})}>
                   <div>
                     {icon}

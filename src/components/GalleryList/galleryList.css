@@ -4,6 +4,8 @@
     row-gap: 1.5em;
     column-gap: 1em;
     justify-content: space-between;
+    margin-right: 1em;
+    margin-left: 1em;
 }
 
 .storybook-gallerylist > div > div > div > div > div > div > table > tbody > tr > td > img {

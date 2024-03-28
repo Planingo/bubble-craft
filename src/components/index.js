@@ -1,3 +1,11 @@
+export { AddStudent } from './AddStudent';
+export { StudentForm } from './AddItem/StudentForm'
+export { ModuleForm } from './AddItem/ModuleForm'
+export { RoomForm } from './AddItem/RoomForm'
+export { PathwayForm } from './AddItem/PathwayForm'
+export { ProfessorForm } from './AddItem/ProfessorForm'
+export { CompanyForm } from './AddItem/CompanyForm'
+export { LessonForm } from './AddItem/LessonForm'
 export { AddItem } from "./AddItem/AddItem";
 export { Alert } from "./Alert/Alert";
 export { Avatar } from "./Avatar/Avatar";
@@ -14,6 +22,8 @@ export { DatePicker } from "./DatePicker/DatePicker";
 export { Drawer } from "./Drawer/Drawer";
 export { Dropdown } from "./Dropdown/Dropdown";
 export { Empty } from "./Empty/Empty";
+export { Form } from './Form/Form';
+export { Field } from './Field/Field'
 export { FloatButton } from "./FloatButton/FloatButton";
 export { Gallery } from "./Gallery/Gallery";
 export { GalleryList } from './GalleryList/GalleryList'
@@ -62,3 +72,25 @@ export { Tree } from "./Tree/Tree";
 export { TreeSelect } from "./TreeSelect/TreeSelect";
 export { Upload } from "./Upload/Upload";
 export { Watermark } from "./Watermark/Watermark";
+
+export { AppstoreOutlinedDS } from './Icon/icon/AppstoreOutlined'
+export { ArrowLeftOutlined } from './Icon/icon/ArrowLeftOutlined'
+export { CalendarOutlined } from './Icon/icon/CalendarOutlined'
+export { CloudUploadOutlined } from './Icon/icon/CloudUploadOutlined'
+export { DeleteOutlined } from './Icon/icon/DeleteOutlined'
+export { DownloadOutlined } from './Icon/icon/DownloadOutlined'
+export { ExperimentOutlined } from './Icon/icon/ExperimentOutlined'
+export { ExportOutlined } from './Icon/icon/ExportOutlined'
+export { MailOutlined } from './Icon/icon/MailOutlined'
+export { PoweroffOutlined } from './Icon/icon/PoweroffOutlined'
+export { ScheduleOutlined } from './Icon/icon/ScheduleOutlined'
+export { SettingOutlined } from './Icon/icon/SettingOutlined'
+export { ShopOutlined } from './Icon/icon/ShopOutlined'
+export { SmileOutlined } from './Icon/icon/SmileOutlined'
+export { StarOutlined } from './Icon/icon/StarOutlined'
+export { TagOutlined } from './Icon/icon/TagOutlined'
+export { TagsOutlined } from './Icon/icon/TagsOutlined'
+export { TeamOutlined } from './Icon/icon/TeamOutlined'
+export { UnorderedListOutlined } from './Icon/icon/UnorderedListOutlined'
+export { UserOutlined } from './Icon/icon/UserOutlined'
+export { CompanyOutlined } from './Icon/icon/CompanyOutlined'

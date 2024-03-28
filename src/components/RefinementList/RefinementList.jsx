@@ -41,6 +41,7 @@ export const RefinementList = ({
   AddCalendar,
   addingCalendar,
   addCalendar,
+  formId,
   ...props }) => {
 
 
@@ -74,12 +75,13 @@ export const RefinementList = ({
           <AddItem
             mainActionButton={mainActionButton}
             icon={<FirstActionIcon />}
-            title={firstActionText}
+            title={formatMessage({id: firstActionText})}
             Form={FirstForm}
             adding={firstActioning}
             onAdd={onFirstAction}
             editing={secondActioning}
             onEdit={onSecondAction}
+            formId={formId}
           />
         ) : (
           <></>
@@ -94,6 +96,7 @@ export const RefinementList = ({
             onAdd={addCalendar}
             icon={<CalendarOutlined />}
             title={formatMessage({ id: 'app.add.calendar' })}
+            formId={formId}
           />
         </Link>
       </div>

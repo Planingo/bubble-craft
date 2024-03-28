@@ -3,7 +3,10 @@
     flex-wrap: wrap;
     row-gap: 1.5em;
     column-gap: 1em;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-right: 1em;
+    padding-left: 1em;
+    overflow: scroll;
 }
 
 .storybook-gallery-loading {

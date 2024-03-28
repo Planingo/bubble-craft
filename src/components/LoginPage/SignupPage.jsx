@@ -58,7 +58,7 @@ export const SignupPage = ({
           onSubmit={onSubmit}
           render={({ handleSubmit, valid }) => (
             <Form onFinish={handleSubmit} layout="vertical">
-              <Field name="username" validate={requiredEmail}>
+              <Field name="email" validate={requiredEmail}>
                 {({ input, meta }) => (
                   <Form.Item
                     label={toCapitalized(formatMessage({ id: 'form.signup.username' }))}
@@ -99,7 +99,7 @@ export const SignupPage = ({
                 <Link className="light-text" to="/reset">
                   {toCapitalized(formatMessage({id: 'form.login.forget'}))}
                 </Link>
-                <Link className="light-text" to="/">
+                <Link className="light-text" to="/login">
                   {toCapitalized(formatMessage({id: 'form.login.login'}))}
                 </Link>
               </div>

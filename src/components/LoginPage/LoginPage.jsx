@@ -49,7 +49,7 @@ export const LoginPage = ({
           onSubmit={onSubmit}
           render={({ handleSubmit, valid }) => (
             <Form onFinish={handleSubmit} layout="vertical">
-              <Field name="username" validate={requiredEmail}>
+              <Field name="email" validate={requiredEmail}>
                 {({ input, meta }) => (
                   <Form.Item
                     label={toCapitalized(formatMessage({ id: 'form.login.username' }))}

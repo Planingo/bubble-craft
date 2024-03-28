@@ -45,9 +45,9 @@ export const Gallery = ({
       {datas && datas.map((data) => <div className="container" key={data.id}>
         <Card
           tags={data.tags}
-          downloadTitle={data.downloadTitle}
-          cloudTitle={data.cloudTitle}
-          deleteTitle={data.deleteTitle}
+          downloadTitle={data.actions.downloadTitle}
+          cloudTitle={data.actions.cloudTitle}
+          deleteTitle={data.actions.deleteTitle}
           link={data.link}
           title={data.name}
           alt={data.alt}

@@ -17,6 +17,23 @@ export const Playground = {
   args: {
     children: "Ananas",
     title: "Envoyer le calendrier",
+    footer: [
+      <Button key="back" onClick={handleCancel}>
+        Return
+      </Button>,
+      <Button key="submit" type="primary" loading={loading} onClick={handleOk}>
+        Submit
+      </Button>,
+      <Button
+        key="link"
+        href="https://google.com"
+        type="primary"
+        loading={loading}
+        onClick={handleOk}
+      >
+        Search on Google
+      </Button>,
+    ],
     OpenModal: (showModal) => <Button type="primary" onClick={showModal}>
       Ouvrir la modale
     </Button>,
@@ -29,6 +46,6 @@ export const Playground = {
       }
       title="C'est un titre"
       description="C'est une description !"
-      />
+    />
   },
 };

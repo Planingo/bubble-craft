@@ -63,7 +63,7 @@ export const ResetPage = ({
                 <Link className="light-text" to="/signup">
                   {toCapitalized(formatMessage({id: 'form.login.signup'}))}
                 </Link>
-                <Link className="light-text" to="/">
+                <Link className="light-text" to="/login">
                   {toCapitalized(formatMessage({id: 'form.login.login'}))}
                 </Link>
               </div>

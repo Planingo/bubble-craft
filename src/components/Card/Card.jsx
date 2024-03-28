@@ -13,15 +13,16 @@ import { CloudUploadOutlined, DeleteOutlined, DownloadOutlined } from '../Icon/i
 export const Card = ({children, ...props }) => {
   return (
     <AntdCard
-      {...props}
+      title={props.title}
+      cover={<img alt={props.alt} src={props.src} />}
       actions={[
-        <Tooltip title='Télécharger' placement='bottom'>
+        <Tooltip title={props.downloadTitle || 'Télécharger'} placement='bottom'>
           <DownloadOutlined className='download' />
         </Tooltip>,
-        <Tooltip title='Envoyer' placement='bottom'>
+        <Tooltip title={props.cloudTitle || 'Envoyer'} placement='bottom'>
           <CloudUploadOutlined className='cloud' />
         </Tooltip>,
-        <Tooltip title='Supprimer' placement='bottom'>
+        <Tooltip title={props.deleteTitle || 'Supprimer'} placement='bottom'>
           <DeleteOutlined className='delete' />
         </Tooltip>
       ]}
@@ -82,10 +83,6 @@ Card.propTypes = {
    * Liste des têtes de TabPane
   */
   tabList: PropTypes.array,
-  /**
-   * CF tabs
-  */
-  tabProps: Tabs,
   /**
    * Titre de la carte
   */
