@@ -1,6 +1,6 @@
 import { addons } from '@storybook/addons';
-import dittoTheme from './DittoTheme';
+import Bubble_craftTheme from './Bubble-craftTheme';
 
 addons.setConfig({
-  theme: dittoTheme,
+  theme: Bubble_craftTheme,
 });

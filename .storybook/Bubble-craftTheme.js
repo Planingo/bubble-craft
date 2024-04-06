@@ -31,8 +31,8 @@ export default create({
   inputTextColor: 'black',
   inputBorderRadius: 4,
 
-  brandTitle: 'Ditto design system',
-  brandUrl: 'ditto.bugsyaya.dev',
-  brandImage: 'https://cdn.custom-cursor.com/packs/5292/pokemon-ditto-cursor-pack.png',
+  brandTitle: 'Bubble-craft design system',
+  brandUrl: 'bubble-craft.bugsyaya.dev',
+  brandImage: 'https://cdn.custom-cursor.com/packs/5292/pokemon-bubble-craft-cursor-pack.png',
   brandTarget: '_self',
 });

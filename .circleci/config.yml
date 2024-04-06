@@ -63,7 +63,7 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > .npmrc && yarn publish --access public
       - discord/status:
           success_only: true
-          success_message: ":partying_face: La version :sparkles:${CIRCLE_TAG}:sparkles: de Ditto est disponible :partying_face:"
+          success_message: ":partying_face: La version :sparkles:${CIRCLE_TAG}:sparkles: de Bubble-craft est disponible :partying_face:"
           webhook: "${DISCORD_STATUS_WEBHOOK}"
   deploy:
     docker:

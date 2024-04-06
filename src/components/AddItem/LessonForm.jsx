@@ -1,11 +1,11 @@
 import { DatePicker } from "../DatePicker/DatePicker"
 import { Field } from "../Field/Field"
-import { Form as DittoForm } from "../Form/Form"
+import { Form as Bubble_CraftForm } from "../Form/Form"
 import { Input } from "../Input/Input"
 import { Select } from "../Select/Select"
 
 export const LessonForm = ({onSubmit, modules}) => {
-    return <DittoForm
+    return <Bubble_CraftForm
             onSubmit={onSubmit}
             render={({handleSubmit, form, submitting, values}) => (
                 <form onSubmit={handleSubmit} id="lesson-form">

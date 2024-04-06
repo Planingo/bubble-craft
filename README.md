@@ -1,5 +1,5 @@
 # Présentation du projet
-Ditto est le design system (DS) pour les projets front de planingo.
+Bubble-craft est le design system (DS) pour les projets front de pixel-brew.
 
 # Lancement du projet
 `
