@@ -1,6 +1,6 @@
 {
   "name": "@pixel-brew/bubble-craft",
-  "version": "2.2.16",
+  "version": "2.3.0",
   "license": "MIT",
   "description": "Design system de Pixel Brew",
   "main": "src/index.js",
