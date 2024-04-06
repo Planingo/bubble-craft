@@ -14,7 +14,7 @@ import { Tooltip as AntdTooltip } from 'antd';
  * 
  */
 export const Tooltip = ({children, title, ...props }) => {
-  const capitalizeFirstLetter = (str) => str.charAt(0).toUpperCase() + str.slice(1);
+  const capitalizeFirstLetter = (str) => str.charAt(0)?.toUpperCase() + str.slice(1);
 
   return (
       <AntdTooltip {...props} title={capitalizeFirstLetter(title)}>{children}</AntdTooltip>

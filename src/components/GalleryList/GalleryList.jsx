@@ -4,6 +4,7 @@ import { Spin } from '../Spin/Spin';
 import { NoData } from '../NoData/NoData';
 import { Table } from '../Table/Table';
 import { useIntl } from 'react-intl';
+import { toCapitalized } from '../../utils/formatText';
 
 /**
  * 
@@ -22,9 +23,10 @@ export const GalleryList = ({
   Add,
   datas,
   columns,
+  actions,
   ...props 
 }) => {
-	const intl = useIntl()
+	const {formatMessage} = useIntl()
 if (loading)
   return (
     <div className='storybook-gallerylist-loading'>
@@ -32,13 +34,13 @@ if (loading)
     </div>
   )
 
-if (datas.length === 0)
+if (datas?.length === 0)
   return (
     <NoData
       Add={Add}
-      cta={intl.formatMessage({ id: `app.add.${name}` })}
-      description={intl.formatMessage({ id: `no.data.${name}` })}
-      title={intl.formatMessage({ id: `app.add.${name}` })}
+      cta={formatMessage({ id: `app.add.${name}` })}
+      description={formatMessage({ id: `no.data.${name}` })}
+      title={formatMessage({ id: `app.add.${name}` })}
     />
   )
 
@@ -50,7 +52,16 @@ return (
         tableLayout="fixed"
         pagination={false}
         rowKey={(record) => record.id}
-        columns={columns}
+        columns={columns.map((column) => ({
+          dataIndex: column.key,
+          key: column.key,
+          title: toCapitalized(formatMessage({ id: `app.${column.key}`})),
+          render: column.render,
+          sorter: column.sorter,
+          filters: column.filters,
+          filterSearch: true,
+          onFilter: column.onFilter
+        }))}
         dataSource={datas}
       />
     </div>

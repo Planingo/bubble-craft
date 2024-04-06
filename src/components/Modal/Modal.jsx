@@ -43,7 +43,9 @@ export const Modal = ({children, ...props }) => {
        <Button key="cancel" danger ghost onClick={async () => {
          handleCancel()
          props?.onCancel()
-       }}>{props.cancelText}</Button>,
+       }}>
+        {props.cancelText}
+       </Button>,
        props.ValidateButton(handleOk),
      ]}
      {...props}
@@ -58,10 +60,6 @@ Modal.propTypes = {
   * TODO property
   */
   OpenModal: PropTypes.func,
-  /**
-  * TODO property
-  */
-  ValidateButton: PropTypes.node,
   /**
   * TODO property
   */

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './refinementDetails.css';
 import { useIntl } from 'react-intl';
-import { Link } from 'react-router-dom';
+import { redirect, Link } from 'react-router-dom';
 import { AddItem } from '../AddItem/AddItem'
 import { ArrowLeftOutlined, CalendarOutlined } from '../Icon/icon';
 import { theme } from 'antd'
@@ -49,18 +49,19 @@ export const RefinementDetails = ({
       {...props}
     >
       <div className='left'>
-            <Button type='link' icon={<ArrowLeftOutlined />} href={`/${backTo}`} />
+            <Button type="link" icon={<ArrowLeftOutlined />} onClick={() => backTo()}/>
 					<div className="info">
 						{Info}
 					</div>
 				</div>
 
       <div className="refinement-item">
+        <div>
         {firstActionText ? (
           <AddItem
             mainActionButton={mainActionButton}
             icon={<FirstActionIcon />}
-            title={firstActionText}
+            title={formatMessage({ id: firstActionText})}
             Form={FirstForm}
             adding={firstActioning}
             onAdd={onFirstAction}
@@ -85,6 +86,7 @@ export const RefinementDetails = ({
         ) : (
           <></>
         )}
+        </div>
 
         <Link to="/calendars">
           <AddItem

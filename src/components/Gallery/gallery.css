@@ -1,13 +1,10 @@
-.storybook-gallery {
+.storybook-gallery, .storybook-gallery-loading {
     display: flex;
     flex-wrap: wrap;
     row-gap: 1.5em;
     column-gap: 1em;
-    justify-content: space-between;
-}
-
-.storybook-gallery-loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    padding-right: 1em;
+    padding-left: 1em;
+    overflow: scroll;
 }

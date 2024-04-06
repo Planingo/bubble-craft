@@ -1,0 +1,6 @@
+.storybook-button {
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

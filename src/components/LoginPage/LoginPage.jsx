@@ -1,14 +1,14 @@
-import React from 'react';
-import './loginpage.css';
-import { useIntl } from 'react-intl';
-import { DrawPart } from './DrawPart/DrawPart';
-import { Form as FinalForm, Field } from 'react-final-form'
 import { Form } from 'antd';
-import { Link } from 'react-router-dom'
-import { Input } from '../Input/Input';
-import { Button } from '../Button/Button';
-import { InputPassword } from '../Input/InputPassword/InputPassword';
+import React from 'react';
+import { Field, Form as FinalForm } from 'react-final-form';
+import { useIntl } from 'react-intl';
+import { Link } from 'react-router-dom';
 import { toCapitalized } from '../../utils/formatText';
+import { Button } from '../Button/Button';
+import { Input } from '../Input/Input';
+import { InputPassword } from '../Input/InputPassword/InputPassword';
+import { DrawPart } from './DrawPart/DrawPart';
+import './loginpage.css';
 
 /**
  * 
@@ -49,7 +49,7 @@ export const LoginPage = ({
           onSubmit={onSubmit}
           render={({ handleSubmit, valid }) => (
             <Form onFinish={handleSubmit} layout="vertical">
-              <Field name="username" validate={requiredEmail}>
+              <Field name="email" validate={requiredEmail}>
                 {({ input, meta }) => (
                   <Form.Item
                     label={toCapitalized(formatMessage({ id: 'form.login.username' }))}
@@ -87,10 +87,10 @@ export const LoginPage = ({
                 )}
               </Field>
               <div className="create-forget">
-                <Link className="light-text" to="reset">
+                <Link className="light-text" to="/reset">
                   {toCapitalized(formatMessage({id: 'form.login.forget'}))}
                 </Link>
-                <Link className="light-text" to="signup">
+                <Link className="light-text" to="/signup">
                   {toCapitalized(formatMessage({id: 'form.login.signup'}))}
                 </Link>
               </div>

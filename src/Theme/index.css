@@ -17,3 +17,7 @@ h2, h3, h4 {
 .light-text {
     font-family: "Montserrat-Light" !important;
 }
+
+a {
+    text-decoration: none !important;
+}

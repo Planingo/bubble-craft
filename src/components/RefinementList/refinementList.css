@@ -1,6 +1,7 @@
 .storybook-refinement-list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .storybook-refinement-list > .refinement-item {

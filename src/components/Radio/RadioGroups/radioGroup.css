@@ -1,0 +1,12 @@
+.storybook-radiogroup > div {
+    display: flex;
+}
+
+.storybook-radiogroup > div > label {
+    display: flex;
+}
+
+.storybook-radiogroup > div > label > span:nth-last-child(1) {
+    display: flex;
+    align-items: center;
+}

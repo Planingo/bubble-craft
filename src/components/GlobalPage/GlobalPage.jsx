@@ -20,6 +20,7 @@ import { useIntl } from 'react-intl';
 export const GlobalPage = ({
   navigation,
   header,
+  footer,
   children,
   ...props }) => {
 
@@ -39,6 +40,9 @@ export const GlobalPage = ({
         </div>
         <div className='bottom-part'>
           {children || <Empty description={<p>{formatMessage({id: 'app.empty'})}</p>} />}
+        </div>
+        <div className='footer'>
+          <p>{footer}</p>
         </div>
       </div>
     </div>

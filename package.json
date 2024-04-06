@@ -26,6 +26,7 @@
     "test:e2e:with:report": "yarn test:e2e && yarn merge:report && yarn to:html"
   },
   "peerDependencies": {
+    "@fullcalendar/resource": "*",
     "mocha": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -107,12 +108,18 @@
     "webpack": "5"
   },
   "dependencies": {
+    "@fullcalendar/core": "^6.1.11",
+    "@fullcalendar/daygrid": "^6.1.11",
+    "@fullcalendar/react": "^6.1.11",
+    "@fullcalendar/resource-timegrid": "^6.1.11",
+    "@fullcalendar/timegrid": "^6.1.11",
     "antd": "^5.14.2",
     "final-form": "^4.20.9",
+    "fullcalendar": "^6.1.11",
     "react-final-form": "^6.5.9",
     "react-icons": "^5.0.1"
   },
   "readme": "ERROR: No README data found!",
   "_id": "@pixel-brew/bubble-craft@0.1.34",
-  "packageManager": "yarn@4.1.0"
+  "packageManager": "yarn@4.1.1"
 }
