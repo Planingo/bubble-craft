@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "ditto.png",
+      "src": "bubble-craft.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "ditto.png",
+      "src": "bubble-craft.png",
       "type": "image/png",
       "sizes": "512x512"
     }

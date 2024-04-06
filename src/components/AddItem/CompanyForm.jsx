@@ -1,9 +1,9 @@
 import { Field } from "../Field/Field"
-import { Form as DittoForm } from "../Form/Form"
+import { Form as Bubble_CraftForm } from "../Form/Form"
 import { Input } from "../Input/Input"
 
 export const CompanyForm = ({onSubmit}) => {
-    return <DittoForm
+    return <Bubble_CraftForm
             onSubmit={onSubmit}
             render={({handleSubmit, form, submitting, values}) => (
                 <form onSubmit={handleSubmit} id="company-form">
