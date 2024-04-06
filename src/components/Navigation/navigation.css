@@ -52,7 +52,7 @@
     margin-left: 0.5em;
 }
 
-.active {
+.storybook-navigation > .top > .main > .active {
     background-color: var(--WHITE);
     color: var(--PRIMARY) !important;
     display: flex;

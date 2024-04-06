@@ -1,3 +1,4 @@
+export { Actions } from './Actions/Actions';
 export { AddStudent } from './AddStudent';
 export { StudentForm } from './AddItem/StudentForm'
 export { ModuleForm } from './AddItem/ModuleForm'
@@ -55,6 +56,7 @@ export { Roles } from "./Roles/roles";
 export { Segmented } from "./Segmented/Segmented";
 export { Select } from "./Select/Select";
 export { Skeleton } from "./Skeleton/Skeleton";
+export { SkeletonImage } from './Skeleton/SkeletonImage'
 export { Slider } from "./Slider/Slider";
 export { Spin } from "./Spin/Spin";
 export { Statistic } from "./Statistic/Statistic";

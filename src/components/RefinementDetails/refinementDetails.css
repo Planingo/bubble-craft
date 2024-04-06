@@ -6,11 +6,22 @@
 .storybook-refinement-details > .refinement-item {
     display: flex;
     column-gap: 2em;
+    align-items: center;
+}
+
+.storybook-refinement-details > .refinement-item > div {
+    display: flex;
+    column-gap: 2em;
 }
 
 .storybook-refinement-details > .left {
     display: flex;
     align-items: center;
+    column-gap: 0.5em;
+}
+
+.storybook-refinement-details > .left > button {
+    align-self: center;
 }
 
 .storybook-refinement-details > .left > a {

@@ -1,9 +1,9 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import { Input } from '../Input/Input'
-import './header.css';
-import { RefinementList } from '../RefinementList/RefinementList';
+import React from 'react';
+import { Input } from '../Input/Input';
 import { RefinementDetails } from '../RefinementDetails/RefinementDetails';
+import { RefinementList } from '../RefinementList/RefinementList';
+import './header.css';
 
 /**
  * 
@@ -18,6 +18,7 @@ import { RefinementDetails } from '../RefinementDetails/RefinementDetails';
  */
 export const Header = ({ 
   placeholder,
+  subSearch,
   isRefinementList,
   refinementList,
   refinementDetails,
@@ -29,16 +30,19 @@ export const Header = ({
       {...props}
     >
       {isRefinementList ? <>
-      <div className="search">
-        <Input
-          placeholder={placeholder}
-          onChange={e => props.onSearch(e.target.value)}
-          {...props}
-        />
-      </div>
-      <RefinementList {...refinementList} />
+        <div className="search">
+          <Input
+            allowClear
+            placeholder={placeholder}
+            onChange={e => {
+              return props.onSearch(e.target.value)}}
+            {...props}
+          />
+          {subSearch && <p>{subSearch}</p>}
+        </div>
+        <RefinementList {...refinementList} />
       </> :
-      <RefinementDetails {...refinementDetails} />}
+      <RefinementDetails {...refinementList}  {...refinementDetails} />}
     </div>
   );
 };

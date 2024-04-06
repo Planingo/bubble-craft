@@ -1,4 +1,4 @@
-.storybook-gallery {
+.storybook-gallery, .storybook-gallery-loading {
     display: flex;
     flex-wrap: wrap;
     row-gap: 1.5em;
@@ -7,10 +7,4 @@
     padding-right: 1em;
     padding-left: 1em;
     overflow: scroll;
-}
-
-.storybook-gallery-loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
