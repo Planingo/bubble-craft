@@ -1,11 +1,10 @@
 import React from 'react';
-import './gallery.css';
-import { Card } from '../Card/Card';
 import { useIntl } from 'react-intl';
-import { Spin } from '../Spin/Spin';
-import { NoData } from '../NoData/NoData';
 import { Link } from 'react-router-dom';
+import { Card } from '../Card/Card';
+import { NoData } from '../NoData/NoData';
 import { SkeletonImage } from '../Skeleton/SkeletonImage';
+import './gallery.css';
 
 /**
  * 
@@ -52,17 +51,18 @@ export const Gallery = ({
 
   return (
     <div className="storybook-gallery">
-      {datas && datas.map((data) => <div className="container" key={data.id}>
-        <Link to={`/${name}/${data.id}`}>
+      {datas && datas?.map((data) => <div className="container-gallery" key={data.id}>
+        <Link to={`/${name}/${data?.id}`}>
           <Card
-            tags={data.tags}
-            downloadTitle={data.actions.downloadTitle}
-            cloudTitle={data.actions.cloudTitle}
-            deleteTitle={data.actions.deleteTitle}
-            link={data.link}
-            title={data.name}
-            alt={data.alt}
-            src={data.src}
+            tags={data?.tags}
+            downloadTitle={data?.actions?.downloadTitle}
+            cloudTitle={data?.actions?.cloudTitle}
+            deleteTitle={data?.actions?.deleteTitle}
+            link={data?.link}
+            title={data?.name}
+            archived={data?.archived}
+            alt={data?.alt}
+            src={data?.photo}
           />
         </Link>
       </div>)}

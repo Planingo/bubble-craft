@@ -1,3 +1,25 @@
 .storybook-addItem {
     
 }
+
+form > div {
+  padding-top: 0.5em;
+}
+
+.apprentice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.size {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

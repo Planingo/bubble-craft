@@ -1,8 +1,9 @@
 import React from 'react';
+import { toCapitalized } from '../../utils/formatText';
 import { Button } from '../Button/Button';
 import { Modal } from '../Modal/Modal';
 import { Notif } from '../Notification/Notification';
-import './addFirstItem.css'
+import './addFirstItem.css';
 
 /**
  * 
@@ -22,7 +23,7 @@ export const AddFirstItem = ({ children, title, cta }) => {
 				OpenModal={
 					(showModal) =>
 					<>
-						{cta && <Button className="cta" onClick={showModal}>{cta}</Button>}
+						{cta && <Button className="cta" onClick={showModal}>{toCapitalized(cta)}</Button>}
 					</>
 			  	}
 				ValidateButton={

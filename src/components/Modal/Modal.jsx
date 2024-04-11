@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import { Modal as AntdModal } from 'antd';
-import './modal.css'
+import PropTypes from 'prop-types';
+import React, { useState } from 'react';
 import { Button } from '../Button/Button';
+import './modal.css';
 
 /**
  * 
@@ -31,12 +31,13 @@ export const Modal = ({children, ...props }) => {
   };
 
   return (<>
-   {props.OpenModal(showModal)}
+   {props?.OpenModal(showModal)}
    <AntdModal 
      className='storybook-modal' 
      mask={props?.mask}
      title={props?.title}
-     open={isModalVisible}
+     okText={props?.okText}
+     open={props.open || isModalVisible}
      onCancel={handleCancel}
      onOk={handleOk}
      footer={[

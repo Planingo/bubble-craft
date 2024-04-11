@@ -1,6 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import { Tooltip as AntdTooltip } from 'antd';
+import PropTypes from 'prop-types';
+import React from 'react';
+import { toCapitalized } from '../../utils/formatText';
 
 /**
  * 
@@ -14,10 +15,10 @@ import { Tooltip as AntdTooltip } from 'antd';
  * 
  */
 export const Tooltip = ({children, title, ...props }) => {
-  const capitalizeFirstLetter = (str) => str.charAt(0)?.toUpperCase() + str.slice(1);
+  // const capitalizeFirstLetter = (str) => str.charAt(0)?.toUpperCase() + str?.slice(1);
 
   return (
-      <AntdTooltip {...props} title={capitalizeFirstLetter(title)}>{children}</AntdTooltip>
+      <AntdTooltip {...props} title={toCapitalized(title)}>{children}</AntdTooltip>
   );
 };
 

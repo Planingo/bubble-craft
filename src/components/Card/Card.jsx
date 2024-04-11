@@ -1,9 +1,10 @@
+import { Card as AntdCard } from 'antd';
+import PropTypes from 'prop-types';
 import React from 'react';
-import { Card as AntdCard, Tabs } from 'antd';
-import './card.css'
-import PropTypes from 'prop-types'
-import { Tooltip } from '../Tooltip/Tooltip';
+import { useIntl } from 'react-intl';
 import { CloudUploadOutlined, DeleteOutlined, DownloadOutlined } from '../Icon/icon';
+import { Tooltip } from '../Tooltip/Tooltip';
+import './card.css';
 
 /**
  * 
@@ -11,19 +12,21 @@ import { CloudUploadOutlined, DeleteOutlined, DownloadOutlined } from '../Icon/i
  * 
  */
 export const Card = ({children, ...props }) => {
+  console.log(props)
+  const {formatMessage} = useIntl()
   return (
     <AntdCard
-      title={props.title}
+      title={<div className='breakline'><div>{props.title}</div>{props.archived && <p className='cloud'>{formatMessage({id: 'archived'})}</p>}</div>}
       cover={<img alt={props.alt} src={props.src} />}
       actions={[
-        <Tooltip title={props.downloadTitle || 'Télécharger'} placement='bottom'>
-          <DownloadOutlined className='download' />
+        <Tooltip title={formatMessage({id: props.downloadTitle.id}, {values: props.downloadTitle.values}) || formatMessage({id: 'download'})} placement='bottom'>
+            <DownloadOutlined className='download to-click' />
         </Tooltip>,
-        <Tooltip title={props.cloudTitle || 'Envoyer'} placement='bottom'>
-          <CloudUploadOutlined className='cloud' />
+        <Tooltip title={formatMessage({id: props.cloudTitle.id}, {values: props.cloudTitle.values}) || formatMessage({id: 'send'})} placement='bottom'>
+            <CloudUploadOutlined className='cloud to-click' />
         </Tooltip>,
-        <Tooltip title={props.deleteTitle || 'Supprimer'} placement='bottom'>
-          <DeleteOutlined className='delete' />
+        <Tooltip title={formatMessage({id: props.deleteTitle.id}, {values: props.deleteTitle.values}) || formatMessage({id: 'delete'})} placement='bottom'>
+            <DeleteOutlined className='delete to-click' onClick={props.deleteOnClick} />
         </Tooltip>
       ]}
     />

@@ -1,5 +1,5 @@
+import { Checkbox as AntdCheckbox } from 'antd';
 import React from 'react';
-import { Checkbox as AntdCheckbox } from 'antd'
 
 /**
  * 
@@ -13,12 +13,14 @@ import { Checkbox as AntdCheckbox } from 'antd'
  * 
  */
 export const Checkbox = ({
-  props,
+  
   onChange,
+  checked,
   children,
+  ...props
 }) => {
   return <AntdCheckbox
     aria-label='checkbox'
     onChange={onChange}
-    {...props} >{children}</AntdCheckbox>
+    {...props}>{children}</AntdCheckbox>
 }

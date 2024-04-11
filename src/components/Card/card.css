@@ -61,3 +61,26 @@ span[role='tag'] {
 .ant-card-head-title {
   padding-bottom: 1em;
 }
+
+.to-click {
+  cursor: pointer;
+}
+
+.breakline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 2.3em;
+}
+
+.breakline > div {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.breakline > p {
+  margin: 0;
+  font-size: small;
+  font-weight: 300;
+}

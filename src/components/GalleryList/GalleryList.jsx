@@ -1,10 +1,10 @@
 import React from 'react';
-import './galleryList.css';
-import { Spin } from '../Spin/Spin';
-import { NoData } from '../NoData/NoData';
-import { Table } from '../Table/Table';
 import { useIntl } from 'react-intl';
 import { toCapitalized } from '../../utils/formatText';
+import { NoData } from '../NoData/NoData';
+import { Spin } from '../Spin/Spin';
+import { Table } from '../Table/Table';
+import './galleryList.css';
 
 /**
  * 
@@ -53,9 +53,10 @@ return (
         pagination={false}
         rowKey={(record) => record.id}
         columns={columns.map((column) => ({
+          width: column.width,
           dataIndex: column.key,
           key: column.key,
-          title: toCapitalized(formatMessage({ id: `app.${column.key}`})),
+          title: `${((column?.haveLabel) && toCapitalized(formatMessage({ id: `app.${column.key}`}))) || ""}`,
           render: column.render,
           sorter: column.sorter,
           filters: column.filters,

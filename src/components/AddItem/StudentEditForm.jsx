@@ -8,13 +8,16 @@ import { Input } from "../Input/Input"
 import { Select } from "../Select/Select"
 import './addItem.css'
 
-export const StudentForm = ({onSubmit, companies,pathways,calendars}) => {
-    const [isChecked, setIsChecked] = useState(false)
+export const StudentEditForm = ({onSubmit, student, companies,pathways,calendars}) => {
+    const [isChecked, setIsChecked] = useState(student.companies.length > 0)
+    console.log(isChecked)
     const {formatMessage} = useIntl()
+    console.log(student)
     return <Bubble_CraftForm
             onSubmit={onSubmit}
+            initialValues={student}
             render={({handleSubmit, form, submitting, values}) => (
-                <form onSubmit={handleSubmit} id="student-form">
+                <form onSubmit={handleSubmit} id="student-edit-form">
                     <Field
                         name="email"
                         label={toCapitalized(formatMessage({id: "email"}))}
@@ -52,7 +55,7 @@ export const StudentForm = ({onSubmit, companies,pathways,calendars}) => {
                         )}
                     </Field>
                     <Field
-                            name="pathway_id"
+                            name="pathways"
                             label={toCapitalized(formatMessage({id: "pathway"}))}
                             rules={[{ required:true, message:"Merci de renseigner la formation" }]}
                         >
@@ -91,7 +94,7 @@ export const StudentForm = ({onSubmit, companies,pathways,calendars}) => {
                         >
                             {(props) => (
                                 <div>
-                                    <Checkbox {...props.input} onChange={() => setIsChecked(!isChecked)}>{props.label}</Checkbox>
+                                    <Checkbox {...props.input} checked={isChecked} onChange={() => setIsChecked(!isChecked)}>{props.label}</Checkbox>
                                 </div>
                             )}
                         </Field>
