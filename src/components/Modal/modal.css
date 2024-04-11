@@ -1,6 +1,6 @@
 .ant-modal-content {
   background: white;
-  padding: 1px;
+  padding: 2em !important;
 }
 
 .ant-modal-content > div {

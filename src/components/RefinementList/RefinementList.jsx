@@ -1,13 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import './refinementList.css';
 import { useIntl } from 'react-intl';
-import { RadioGroup } from '../Radio/RadioGroups/RadioGroup'
 import { Link } from 'react-router-dom';
-import { AppstoreOutlinedDS } from '../Icon/icon/AppstoreOutlined';
-import { UnorderedListOutlined } from '../Icon/icon/UnorderedListOutlined';
-import { CalendarOutlined } from '../Icon/icon/CalendarOutlined';
+import { toCapitalized } from '../../utils/formatText';
 import { AddItem } from '../AddItem/AddItem';
+import { AppstoreOutlinedDS } from '../Icon/icon/AppstoreOutlined';
+import { CalendarOutlined } from '../Icon/icon/CalendarOutlined';
+import { UnorderedListOutlined } from '../Icon/icon/UnorderedListOutlined';
+import { RadioGroup } from '../Radio/RadioGroups/RadioGroup';
+import './refinementList.css';
 
 /**
  * 
@@ -75,7 +75,7 @@ export const RefinementList = ({
           <AddItem
             mainActionButton={mainActionButton}
             icon={<FirstActionIcon />}
-            title={formatMessage({id: firstActionText})}
+            title={toCapitalized(formatMessage({id: firstActionText}))}
             Form={FirstForm}
             adding={firstActioning}
             onAdd={onFirstAction}
@@ -95,7 +95,7 @@ export const RefinementList = ({
             adding={addingCalendar}
             onAdd={addCalendar}
             icon={<CalendarOutlined />}
-            title={formatMessage({ id: 'app.add.calendar' })}
+            title={toCapitalized(formatMessage({ id: 'app.add.calendar' }))}
             formId={formId}
           />
         </Link>

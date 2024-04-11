@@ -1,27 +1,28 @@
-import { Link } from "react-router-dom"
-import { Tooltip } from "../Tooltip/Tooltip"
-import { CloudUploadOutlined, DeleteOutlined, DownloadOutlined, ExportOutlined } from "../Icon/icon"
 import { useIntl } from 'react-intl';
+import { Link } from "react-router-dom";
+import { CloudUploadOutlined, DeleteOutlined, DownloadOutlined, ExportOutlined } from "../Icon/icon";
+import { Tooltip } from "../Tooltip/Tooltip";
 
 export const Actions = ({to,
 downloadTitle,
 cloudTitle,
-deleteTitle}) => {
+deleteTitle,
+...props}) => {
     const { formatMessage } = useIntl()
     return <div className='actions'>
         <Link to={to} replace={true}>
-            <Tooltip title='Détail' placement='bottom'>
-                <ExportOutlined className='download' />
+            <Tooltip title={formatMessage({id: 'detail'})} placement='bottom'>
+                <ExportOutlined className='download to-click'/>
             </Tooltip>
         </Link>
-        <Tooltip title={formatMessage({id: downloadTitle}) || formatMessage({id: 'download'})} placement='bottom'>
-            <DownloadOutlined className='download' />
+        <Tooltip title={formatMessage({id: downloadTitle.id}, {values: downloadTitle.values}) || formatMessage({id: 'download'})} placement='bottom'>
+            <DownloadOutlined className='download to-click' />
         </Tooltip>
-        <Tooltip title={formatMessage({id: cloudTitle}) || formatMessage({id: 'send'})} placement='bottom'>
-            <CloudUploadOutlined className='cloud' />
+        <Tooltip title={formatMessage({id: cloudTitle.id}, {values: cloudTitle.values}) || formatMessage({id: 'send'})} placement='bottom'>
+            <CloudUploadOutlined className='cloud to-click' />
         </Tooltip>
-        <Tooltip title={formatMessage({id: deleteTitle}) || formatMessage({id: 'delete'})} placement='bottom'>
-            <DeleteOutlined className='delete' />
+        <Tooltip title={formatMessage({id: deleteTitle.id}, {values: deleteTitle.values}) || formatMessage({id: 'delete'})} placement='bottom'>
+            <DeleteOutlined className='delete to-click' onClick={props.deleteOnClick} />
         </Tooltip>
     </div>
 }

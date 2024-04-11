@@ -66,5 +66,13 @@
     "roles.planing.keeper": "planing keeper",
     "roles.student": "student",
     "roles.professor": "professor",
-    "roles.company": "company"
+    "roles.company": "company",
+    "detail": "détails",
+    "download.calendar.student": "télécharger le calendrier pour l'étudiant {values}",
+    "send.calendar.student": "envoyer le calendrier pour l'étudiant {values}",
+    "archived.student": "archiver l'étudiant {values}",
+    "email": "email",
+    "lastname": "nom de famille",
+    "firstname": "prénom",
+    "cancel": "annuler"
 }

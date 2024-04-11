@@ -1,0 +1,23 @@
+.container {
+  padding: 1em;
+  padding-top: 0;
+  height: max-content;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container > div {
+  display: flex;
+  column-gap: 0.5em;
+}
+
+.container > div > div {
+  min-width: 9em;
+}
+
+.container > p {
+  margin: 0;
+}

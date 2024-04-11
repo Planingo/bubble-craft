@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { useIntl } from 'react-intl';
+import { toCapitalized } from '../../utils/formatText';
 import { Input } from '../Input/Input';
 import { RefinementDetails } from '../RefinementDetails/RefinementDetails';
 import { RefinementList } from '../RefinementList/RefinementList';
@@ -23,7 +25,7 @@ export const Header = ({
   refinementList,
   refinementDetails,
    ...props }) => {
-
+  const {formatMessage} = useIntl()
   return (
     <div
       className='storybook-header'
@@ -33,12 +35,10 @@ export const Header = ({
         <div className="search">
           <Input
             allowClear
-            placeholder={placeholder}
-            onChange={e => {
-              return props.onSearch(e.target.value)}}
+            placeholder={toCapitalized(formatMessage({id: placeholder}))}
+            onChange={e => props.onSearch(e.target.value)}
             {...props}
           />
-          {subSearch && <p>{subSearch}</p>}
         </div>
         <RefinementList {...refinementList} />
       </> :

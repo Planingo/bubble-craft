@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import { TimePicker as AntdTimePicker } from 'antd';
+import dayjs from 'dayjs';
+import React, { useState } from 'react';
 import './timePicker.css';
 
 /**
@@ -15,13 +15,23 @@ import './timePicker.css';
  * 
  */
 export const TimePicker = ({ children, ...props }) => {
+  const format = 'HH:mm';
+  const [value, setValue] = useState(null);
+
+  const onChange = (time) => {
+    setValue(time);
+    const u = new Date(time)
+    console.log(u.toLocaleTimeString())
+  };
   return (
     <AntdTimePicker
       className='storybook-timePicker'
+      defaultValue={props?.date && dayjs(props?.date, 'HH:mm')}
+      format={format}
+      // onChange={onChange}
+      // value={value}
       {...props}
-    >
-      {children}
-    </AntdTimePicker>
+    />
   );
 };
 
