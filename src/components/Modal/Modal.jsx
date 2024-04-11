@@ -1,6 +1,7 @@
 import { Modal as AntdModal } from 'antd';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
+import { useIntl } from 'react-intl';
 import { Button } from '../Button/Button';
 import './modal.css';
 
@@ -16,6 +17,7 @@ import './modal.css';
  * 
  */
 export const Modal = ({children, ...props }) => {
+  const {formatMessage} = useIntl()
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const showModal = () => {
@@ -36,6 +38,7 @@ export const Modal = ({children, ...props }) => {
      className='storybook-modal' 
      mask={props?.mask}
      title={props?.title}
+     description={props?.descriptionNotif}
      okText={props?.okText}
      open={props.open || isModalVisible}
      onCancel={handleCancel}

@@ -1,12 +1,11 @@
+import { theme } from 'antd';
 import React from 'react';
-import PropTypes from 'prop-types';
-import './refinementDetails.css';
 import { useIntl } from 'react-intl';
-import { redirect, Link } from 'react-router-dom';
-import { AddItem } from '../AddItem/AddItem'
-import { ArrowLeftOutlined, CalendarOutlined } from '../Icon/icon';
-import { theme } from 'antd'
+import { Link } from 'react-router-dom';
+import { AddItem } from '../AddItem/AddItem';
 import { Button } from '../Button/Button';
+import { ArrowLeftOutlined, CalendarOutlined } from '../Icon/icon';
+import './refinementDetails.css';
 
 const { useToken } = theme
 
@@ -34,6 +33,7 @@ export const RefinementDetails = ({
 	secondActioning,
 	onSecondAction,
 	mainActionButton,
+  firstActionNotifText,
 	Info,
   AddCalendar,
   addingCalendar,
@@ -67,6 +67,7 @@ export const RefinementDetails = ({
             onAdd={onFirstAction}
             editing={secondActioning}
             onEdit={onSecondAction}
+            descriptionNotif={firstActionNotifText || ""}
           />
         ) : (
           <></>
