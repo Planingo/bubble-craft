@@ -1,7 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import { notification } from 'antd';
-import './notification.css'
+import PropTypes from 'prop-types';
+import React from 'react';
+import { useIntl } from 'react-intl';
+import './notification.css';
 
 const Context = React.createContext({ name: 'Default' });
 
@@ -17,14 +18,15 @@ const Context = React.createContext({ name: 'Default' });
  * 
  */
 export const Notif = ({...props }) => {
+  const {formatMessage} = useIntl()
   const [api, contextHolder] = notification.useNotification();
 
   const openNotification = (type) => {
     api[type]({
       message: <div className={`title ${type}-type`}>{props.title}</div>,
-      description: <Context.Consumer>{() => `${props.description}`}</Context.Consumer>,
+      description: <Context.Consumer>{() => `${formatMessage({id: props.description})}`}</Context.Consumer>,
       placement: 'topRight',
-      duration: 1003,
+      duration: 2.5,
       className:'storybook-notification',
       ...props
     })

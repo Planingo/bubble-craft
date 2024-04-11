@@ -30,6 +30,7 @@ export const AddItem = ({
 	editing,
 	mainActionButton,
   formId,
+  descriptionNotif,
   ...props 
 }) => {
 	const { id } = useParams()
@@ -42,7 +43,10 @@ export const AddItem = ({
           onOk={async () =>  onAdd ? await onAdd(item, id) : onEdit ? await onEdit(item, id) : null}
           title={title}
           OpenModal={(showModal) => <Button key="modal" ghost={secondary} size="large" icon={icon} onClick={showModal}>{toCapitalized(cta || title)}</Button>}
-          ValidateButton={(handleOk) => <Notif key="validate"
+          ValidateButton={(handleOk) => <Notif 
+            key="validate" 
+            title={toCapitalized(formatMessage({id: "success"}))}
+            description={descriptionNotif}
             OpenNotification={(openNotification) => 
               <Button key="validate" className="cta" htmlType='submit' form={formId} onClick={() => {
                 openNotification()

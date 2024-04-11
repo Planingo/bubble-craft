@@ -37,6 +37,7 @@ export const RefinementList = ({
 	mainActionButton,
 	onDelete,
 	onDeleteText,
+  firstActionNotifText,
 	Info,
   AddCalendar,
   addingCalendar,
@@ -82,6 +83,7 @@ export const RefinementList = ({
             editing={secondActioning}
             onEdit={onSecondAction}
             formId={formId}
+            descriptionNotif={firstActionNotifText}
           />
         ) : (
           <></>
