@@ -19,7 +19,7 @@ import { path } from './path';
  * 
  * 
  */
-export const Navigation = ({ roles, ...props }) => {
+export const Navigation = ({ roles, logout, ...props }) => {
   const { formatMessage } = useIntl()
   const location = useLocation();
   
@@ -42,7 +42,7 @@ export const Navigation = ({ roles, ...props }) => {
       getItem(<Link to='/my-account'>
         <p>{formatMessage({id: 'app.my.account'})}</p>
       </Link>, '2'),
-      getItem(<Link href='/logout'><p>{formatMessage({id: 'app.logout'})}</p></Link>, '3'),
+      getItem(<p onClick={logout}>{formatMessage({id: 'app.logout'})}</p>, '3'),
    ]),
   ]
 
