@@ -4120,7 +4120,7 @@ __metadata:
     "@storybook/addon-links": "npm:^7.6.17"
     "@storybook/addon-mdx-gfm": "npm:^7.6.17"
     "@storybook/addon-storysource": "npm:^7.6.17"
-    "@storybook/addon-viewport": "npm:^7.6.17"
+    "@storybook/addon-viewport": "npm:^8.0.8"
     "@storybook/addons": "npm:^7.6.17"
     "@storybook/api": "npm:^7.6.17"
     "@storybook/components": "npm:^7.6.17"
@@ -5260,12 +5260,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-viewport@npm:7.6.17, @storybook/addon-viewport@npm:^7.6.17":
+"@storybook/addon-viewport@npm:7.6.17":
   version: 7.6.17
   resolution: "@storybook/addon-viewport@npm:7.6.17"
   dependencies:
     memoizerific: "npm:^1.11.3"
   checksum: 10c0/d888954f45ab358189cf0172e1c9b8a1bd2b68aa99d5d6518abe7fc355bbfeb91cc1c21c64e461994f5987652d05944aaa270366e22475eaeccadc701419b0d7
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-viewport@npm:^8.0.8":
+  version: 8.0.8
+  resolution: "@storybook/addon-viewport@npm:8.0.8"
+  dependencies:
+    memoizerific: "npm:^1.11.3"
+  checksum: 10c0/7437306fe50d0a2831182400a02a6530a8a6bdd5c0cf9403be94b9b093c0f4e07752f1d1941d27c603867a71f296d0c508ca8f6dfb128e939a34db36a2657efc
   languageName: node
   linkType: hard
 
