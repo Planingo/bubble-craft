@@ -1,23 +1,20 @@
-@tailwind components;
-@tailwind utilities;
-
-
 * {
-    font-family: "Montserrat";
+    font-family: var(--FONT);
 }
 
 h1 {
-    font-family: "Montserrat-Bold";
+    font-family: var(--FONT-BOLD);
 }
 
 h2, h3, h4 {
-    font-family: "Montserrat-SemiBold";
+    font-family: var(--FONT-SEMIBOLD);
 }
 
 .light-text {
-    font-family: "Montserrat-Light" !important;
+    font-family:  var(--FONT-LIGHT) !important;
 }
 
 a {
     text-decoration: none !important;
+    font-family: var(--FONT-LIGHT) !important;
 }

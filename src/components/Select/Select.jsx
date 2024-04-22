@@ -1,6 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import { Select as AntdSelect } from 'antd';
+import React from 'react';
 import './select.css';
 
 /**
@@ -17,8 +16,10 @@ import './select.css';
 export const Select = ({ children, ...props }) => {
   return (
     <AntdSelect
-      className='storybook-select'
       {...props}
+      className='storybook-select'
+      showSearch
+      filterOption={(input, option) => (option?.label ?? '').includes(input)}
     >
       {children}
     </AntdSelect>

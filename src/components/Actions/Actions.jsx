@@ -7,6 +7,9 @@ export const Actions = ({to,
 downloadTitle,
 cloudTitle,
 deleteTitle,
+disabledDownload = false,
+disabledSend = false,
+downloadTitleOnClick,
 ...props}) => {
     const { formatMessage } = useIntl()
     return <div className='actions'>
@@ -16,10 +19,10 @@ deleteTitle,
             </Tooltip>
         </Link>
         <Tooltip title={formatMessage({id: downloadTitle.id}, {values: downloadTitle.values}) || formatMessage({id: 'download'})} placement='bottom'>
-            <DownloadOutlined className='download to-click' />
+            <DownloadOutlined className={`download ${disabledDownload ? 'disabled' : 'to-click'}`} onClick={downloadTitleOnClick} />
         </Tooltip>
         <Tooltip title={formatMessage({id: cloudTitle.id}, {values: cloudTitle.values}) || formatMessage({id: 'send'})} placement='bottom'>
-            <CloudUploadOutlined className='cloud to-click' />
+            <CloudUploadOutlined className={`cloud ${disabledSend ? 'disabled' : 'to-click'}`}/>
         </Tooltip>
         <Tooltip title={formatMessage({id: deleteTitle.id}, {values: deleteTitle.values}) || formatMessage({id: 'delete'})} placement='bottom'>
             <DeleteOutlined className='delete to-click' onClick={props.deleteOnClick} />
