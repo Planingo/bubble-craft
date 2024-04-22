@@ -3411,6 +3411,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fullcalendar/adaptive@npm:^6.1.11":
+  version: 6.1.11
+  resolution: "@fullcalendar/adaptive@npm:6.1.11"
+  dependencies:
+    "@fullcalendar/premium-common": "npm:~6.1.11"
+  peerDependencies:
+    "@fullcalendar/core": ~6.1.11
+  checksum: 10c0/12197e25f29903ed3d195e9ca666faf58a6a91cc8890982203e885665287bf3b780f4ee0820db05493b1ca37fb330237556386726f32a9cdfd365f1f914bbc1c
+  languageName: node
+  linkType: hard
+
 "@fullcalendar/core@npm:^6.1.11, @fullcalendar/core@npm:~6.1.11":
   version: 6.1.11
   resolution: "@fullcalendar/core@npm:6.1.11"
@@ -4105,6 +4116,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@pixel-brew/bubble-craft@workspace:."
   dependencies:
+    "@fullcalendar/adaptive": "npm:^6.1.11"
     "@fullcalendar/core": "npm:^6.1.11"
     "@fullcalendar/daygrid": "npm:^6.1.11"
     "@fullcalendar/react": "npm:^6.1.11"

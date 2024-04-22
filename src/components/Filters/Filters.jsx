@@ -14,6 +14,7 @@ export const Filters = ({selects, count}) => {
         options={select.options}
         allowClear={select.allowClear}
         onChange={select.onChange}
+        mode={select.mode}
       />)}
     </div>
     <p>{formatMessage({id: count.id}, {count: count.count})}</p>

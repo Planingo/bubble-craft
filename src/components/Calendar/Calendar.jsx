@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import FullCalendar from '@fullcalendar/react'
-import dayGridPlugin from '@fullcalendar/daygrid'
-import './calendar.css';
-import fr from '@fullcalendar/core/locales/fr';
+import adaptivePlugin from '@fullcalendar/adaptive';
 import en from '@fullcalendar/core/locales/en-gb';
-import timeGridPlugin from '@fullcalendar/timegrid'
+import fr from '@fullcalendar/core/locales/fr';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import FullCalendar from '@fullcalendar/react';
+import timeGridPlugin from '@fullcalendar/timegrid';
+import React from 'react';
 import { locale } from '../../translation/IntlProvider';
+import './calendar.css';
 
 
 /**
@@ -24,13 +24,14 @@ export const Calendar = ({ ...props }) => {
   return (
     <div className='storybook-calendar'>
       <FullCalendar
+        schedulerLicenseKey='CC-Attribution-NonCommercial-NoDerivatives'
         headerToolbar={{
           start: 'today prev,next',
           center: 'title',
           end: 'timeGridDay,timeGridWeek,dayGridMonth'
         }}
         locale={locale === 'fr' ? fr : en}
-        plugins={[ timeGridPlugin, dayGridPlugin ]}
+        plugins={[ timeGridPlugin, dayGridPlugin, adaptivePlugin ]}
         weekends={true}
         initialView="timeGridWeek"
         height="100%"

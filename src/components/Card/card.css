@@ -21,7 +21,7 @@ li > span > span > svg {
 }
 
 .delete {
-  color: var(--RED);
+  color: var(--DELETE);
   font-size: var(--TITLE);
 }
 
@@ -64,6 +64,11 @@ span[role='tag'] {
 
 .to-click {
   cursor: pointer;
+}
+
+.disabled {    
+  cursor: not-allowed !important;
+  color: lightgray !important;
 }
 
 .breakline {
