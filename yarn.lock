@@ -4123,7 +4123,7 @@ __metadata:
     "@fullcalendar/resource-timegrid": "npm:^6.1.11"
     "@fullcalendar/timegrid": "npm:^6.1.11"
     "@storybook/addon-actions": "npm:^7.6.17"
-    "@storybook/addon-backgrounds": "npm:^7.6.17"
+    "@storybook/addon-backgrounds": "npm:^8.0.9"
     "@storybook/addon-docs": "npm:^7.6.17"
     "@storybook/addon-essentials": "npm:^7.6.17"
     "@storybook/addon-interactions": "npm:^7.6.17"
@@ -5064,7 +5064,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-backgrounds@npm:7.6.17, @storybook/addon-backgrounds@npm:^7.6.17":
+"@storybook/addon-backgrounds@npm:7.6.17":
   version: 7.6.17
   resolution: "@storybook/addon-backgrounds@npm:7.6.17"
   dependencies:
@@ -5072,6 +5072,17 @@ __metadata:
     memoizerific: "npm:^1.11.3"
     ts-dedent: "npm:^2.0.0"
   checksum: 10c0/43518d762efa8dd140d029541e8e2bb748173a8428e3de67287ca132525e33e443282a2b06f3b381250d9557ada9ea3a07039aa69cf3de6b04aec02027fb9943
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-backgrounds@npm:^8.0.9":
+  version: 8.0.9
+  resolution: "@storybook/addon-backgrounds@npm:8.0.9"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+    memoizerific: "npm:^1.11.3"
+    ts-dedent: "npm:^2.0.0"
+  checksum: 10c0/dbf3a8521b97cd83a61e8fac8e21d1d60f386fd57e3a682d674f34fd0d001d74fddd471969eb70cd3c1d25238a13beb5784006c0e9362667a5b553850768521d
   languageName: node
   linkType: hard
 
