@@ -3989,6 +3989,7 @@ __metadata:
     "@storybook/addon-storysource": "npm:^8.0.9"
     "@storybook/addon-viewport": "npm:^8.0.9"
     "@storybook/blocks": "npm:^8.0.9"
+    "@storybook/builder-vite": "npm:^8.0.9"
     "@storybook/components": "npm:^8.0.9"
     "@storybook/core-events": "npm:^8.0.9"
     "@storybook/docs-tools": "npm:^8.0.9"
@@ -4717,7 +4718,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-vite@npm:8.0.9":
+"@storybook/builder-vite@npm:8.0.9, @storybook/builder-vite@npm:^8.0.9":
   version: 8.0.9
   resolution: "@storybook/builder-vite@npm:8.0.9"
   dependencies:
