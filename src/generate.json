@@ -1,7 +1,7 @@
 {
   "styles": [
     {
-      "id": "color",
+      "id": "colors",
       "title": "Couleurs",
       "descrition": "TODO la description de la couleur",
       "wip": false
@@ -48,6 +48,12 @@
       "id": "checkbox",
       "title": "Checkbox",
       "descrition": "TODO la description de checkbox",
+      "wip": true
+    },
+    {
+      "id": "checkboxgroup",
+      "title": "CheckboxGroup",
+      "descrition": "TODO la description de checkboxgroup",
       "wip": true
     },
     {
@@ -164,12 +170,6 @@
       "id": "card",
       "title": "Card",
       "descrition": "TODO la description de card",
-      "wip": true
-    },
-    {
-      "id": "checkboxgroup",
-      "title": "CheckboxGroup",
-      "descrition": "TODO la description de checkboxgroup",
       "wip": true
     },
     {
