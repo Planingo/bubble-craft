@@ -1,10 +1,10 @@
-import React from 'react';
-import { RefinementDetails } from '../components/RefinementDetails/RefinementDetails';
-import { UserOutlined } from '../components/Icon/icon';
-import { Form } from 'antd';
-import { Input } from '../components/Input/Input';
 import { withTests } from '@storybook/addon-jest';
+import { Form } from 'antd';
+import React from 'react';
 import results from '../../.jest-test-results.json';
+import { UserOutlined } from '../components/Icon/icon';
+import { Input } from '../components/Input/Input';
+import { RefinementDetails } from '../components/RefinementDetails/RefinementDetails';
 
 const meta = {
   title: 'Templates/RefinementDetails',

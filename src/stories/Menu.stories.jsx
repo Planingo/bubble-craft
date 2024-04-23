@@ -1,7 +1,8 @@
-import { Menu } from '../components/Menu/Menu';
-import { MailOutlined, SettingOutlined } from '../components/Icon/icon';
 import { withTests } from '@storybook/addon-jest';
+import React from 'react';
 import results from '../../.jest-test-results.json';
+import { MailOutlined, SettingOutlined } from '../components/Icon/icon';
+import { Menu } from '../components/Menu/Menu';
 
 const meta = {
   title: 'Organismes/Menu',

@@ -1,6 +1,7 @@
-import { Breadcrumb } from '../components/Breadcrumb/Breadcrumb';
 import { withTests } from '@storybook/addon-jest';
+import React from 'react';
 import results from '../../.jest-test-results.json';
+import { Breadcrumb } from '../components/Breadcrumb/Breadcrumb';
 
 const meta = {
   title: 'Atomes/Breadcrumb',

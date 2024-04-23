@@ -1,6 +1,7 @@
-import { Card } from '../components/Card/Card';
 import { withTests } from '@storybook/addon-jest';
+import React from 'react';
 import results from '../../.jest-test-results.json';
+import { Card } from '../components/Card/Card';
 
 const meta = {
   title: 'Molécules/Card',

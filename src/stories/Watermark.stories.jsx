@@ -1,7 +1,7 @@
-import { Watermark } from '../components/Watermark/Watermark';
-import { Upload } from '../components/Upload/Upload';
 import { withTests } from '@storybook/addon-jest';
+import React from 'react';
 import results from '../../.jest-test-results.json';
+import { Watermark } from '../components/Watermark/Watermark';
 
 const meta = {
   title: 'Atomes/Watermark',

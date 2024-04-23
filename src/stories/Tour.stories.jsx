@@ -1,6 +1,7 @@
-import { Tour } from '../components/Tour/Tour';
 import { withTests } from '@storybook/addon-jest';
+import React from 'react';
 import results from '../../.jest-test-results.json';
+import { Tour } from '../components/Tour/Tour';
 
 const meta = {
   title: 'Organismes/Tour',

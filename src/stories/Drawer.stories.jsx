@@ -1,6 +1,7 @@
-import { Drawer } from '../components/Drawer/Drawer';
 import { withTests } from '@storybook/addon-jest';
+import React from 'react';
 import results from '../../.jest-test-results.json';
+import { Drawer } from '../components/Drawer/Drawer';
 
 const meta = {
   title: 'Molécules/Drawer',

@@ -7,7 +7,7 @@ module.exports = {
     }
   }, '@storybook/addon-links', '@storybook/addon-essentials', 'storybook-addon-pseudo-states', '@storybook/addon-measure', '@storybook/addon-jest', '@storybook/addon-mdx-gfm'],
   framework: {
-    name: '@storybook/react-webpack5',
+    name: '@storybook/react-vite',
     options: {}
   },
   docs: {

@@ -1,6 +1,7 @@
-import { List } from '../components/List/List';
 import { withTests } from '@storybook/addon-jest';
+import React from 'react';
 import results from '../../.jest-test-results.json';
+import { List } from '../components/List/List';
 
 const meta = {
   title: 'Molécules/List',

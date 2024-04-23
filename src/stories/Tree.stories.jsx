@@ -1,6 +1,7 @@
-import { Tree } from '../components/Tree/Tree';
 import { withTests } from '@storybook/addon-jest';
+import React from 'react';
 import results from '../../.jest-test-results.json';
+import { Tree } from '../components/Tree/Tree';
 
 const meta = {
   title: 'Molécules/Tree',

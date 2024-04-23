@@ -1,7 +1,8 @@
+import { withTests } from '@storybook/addon-jest';
+import React from 'react';
+import results from '../../.jest-test-results.json';
 import { Dropdown } from '../components/Dropdown/Dropdown';
 import { SmileOutlined } from '../components/Icon/icon';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
 
 const meta = {
   title: 'Molécules/Dropdown',

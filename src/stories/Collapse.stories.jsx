@@ -1,7 +1,8 @@
+import { withTests } from '@storybook/addon-jest';
+import React from 'react';
+import results from '../../.jest-test-results.json';
 import { Collapse } from '../components/Collapse/Collapse';
 import { Panel } from '../components/Collapse/Panel/Panel';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
 
 const meta = {
   title: 'Molécules/Collapse',

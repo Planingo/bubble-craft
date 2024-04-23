@@ -1,6 +1,7 @@
-import { Popconfirm } from '../components/Popconfirm/Popconfirm';
 import { withTests } from '@storybook/addon-jest';
+import React from 'react';
 import results from '../../.jest-test-results.json';
+import { Popconfirm } from '../components/Popconfirm/Popconfirm';
 
 const meta = {
   title: 'Molécules/Popconfirm',
