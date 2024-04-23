@@ -1,7 +1,5 @@
-import { withTests } from '@storybook/addon-jest';
 import { Form } from 'antd';
 import React from 'react';
-import results from '../../.jest-test-results.json';
 import { UserOutlined } from '../components/Icon/icon';
 import { Input } from '../components/Input/Input';
 import { RefinementList } from '../components/RefinementList/RefinementList';
@@ -9,8 +7,6 @@ import { RefinementList } from '../components/RefinementList/RefinementList';
 const meta = {
   title: 'Templates/RefinementList',
   component: RefinementList,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['refinementList.test.jsx'] }
 };
 
 export default meta;

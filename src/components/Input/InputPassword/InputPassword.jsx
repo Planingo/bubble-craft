@@ -1,6 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import { Input as AntdInput } from 'antd';
+import React from 'react';
 import '../input.css';
 
 /**

@@ -1,14 +1,10 @@
-import { withTests } from '@storybook/addon-jest';
 import React from 'react';
-import results from '../../.jest-test-results.json';
 import { Collapse } from '../components/Collapse/Collapse';
 import { Panel } from '../components/Collapse/Panel/Panel';
 
 const meta = {
   title: 'Molécules/Collapse',
   component: Collapse,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['collapse.test.jsx'] }
 };
 
 export default meta;

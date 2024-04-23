@@ -1,13 +1,9 @@
-import { withTests } from '@storybook/addon-jest';
 import React from 'react';
-import results from '../../.jest-test-results.json';
 import { TreeSelect } from '../components/TreeSelect/TreeSelect';
 
 const meta = {
   title: 'Organismes/TreeSelect',
   component: TreeSelect,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['treeSelect.test.jsx'] }
 };
 
 export default meta;

@@ -1,12 +1,9 @@
 import { Tabs } from '../components/Tabs/Tabs';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
+
 
 const meta = {
   title: 'Atomes/Tabs',
   component: Tabs,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['tabs.test.jsx'] }
 };
 
 export default meta;

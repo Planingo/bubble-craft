@@ -1,14 +1,10 @@
-import { withTests } from '@storybook/addon-jest';
 import { Form } from 'antd';
 import React from 'react';
-import results from '../../.jest-test-results.json';
 import { Input, NoData } from '../components';
 
 const meta = {
   title: 'Molécules/NoData',
   component: NoData,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['noData.test.jsx'] }
 };
 
 export default meta;

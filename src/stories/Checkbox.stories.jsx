@@ -1,17 +1,11 @@
-import {Checkbox} from '../components/Checkbox/Checkbox';
-import results from '../../.jest-test-results.json';
-import { withTests } from '@storybook/addon-jest';
+import { Checkbox } from '../components/Checkbox/Checkbox';
 
 const meta = {
   title: 'Atomes/Checkbox',
   component: Checkbox,
-  decorators: [withTests({ results })],
 };
 
 export default meta;
-meta.parameters = {
-  jest: ['checkbox.test.jsx'],
-};
 
 export const Playground = {
   args: {

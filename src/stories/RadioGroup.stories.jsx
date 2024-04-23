@@ -1,13 +1,10 @@
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
+
 
 import { RadioGroup } from '../components/Radio/RadioGroups/RadioGroup';
 
 const meta = {
   title: 'Molécules/RadioGroup',
   component: RadioGroup,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['radioGroup.test.jsx'] }
 };
 
 export default meta;

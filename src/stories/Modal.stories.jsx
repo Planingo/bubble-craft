@@ -1,6 +1,4 @@
-import { withTests } from '@storybook/addon-jest';
 import React from 'react';
-import results from '../../.jest-test-results.json';
 import { Button } from '../components/Button/Button';
 import { Modal } from '../components/Modal/Modal';
 import { Notif } from '../components/Notification/Notification';
@@ -8,8 +6,6 @@ import { Notif } from '../components/Notification/Notification';
 const meta = {
   title: 'Molécules/Modal',
   component: Modal,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['modal.test.jsx'] }
 };
 
 export default meta;

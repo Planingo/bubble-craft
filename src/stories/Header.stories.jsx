@@ -1,16 +1,13 @@
-import React from 'react';
-import { UserOutlined } from '../components/Icon/icon';
 import { Form } from 'antd';
-import { Input } from '../components/Input/Input';
+import React from 'react';
 import { Header } from '../components/Header/Header';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
+import { UserOutlined } from '../components/Icon/icon';
+import { Input } from '../components/Input/Input';
+
 
 const meta = {
   title: 'Templates/Header',
   component: Header,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['header.test.jsx'] }
 };
 
 export default meta;
