@@ -12,7 +12,7 @@
 .storybook-navigation > .top > .main {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     row-gap: 0.5em;
     width: 100%;
     align-items: center;
