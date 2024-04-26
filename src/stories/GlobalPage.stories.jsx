@@ -1,17 +1,14 @@
-import React from 'react';
-import { UserOutlined } from '../components/Icon/icon';
 import { Form } from 'antd';
-import { Input } from '../components/Input/Input';
+import React from 'react';
 import { GlobalPage } from '../components/GlobalPage/GlobalPage';
+import { UserOutlined } from '../components/Icon/icon';
+import { Input } from '../components/Input/Input';
 import { Roles } from '../components/Roles/roles';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
+
 
 const meta = {
   title: 'Pages/GlobalPage',
   component: GlobalPage,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['globalPage.test.jsx'] }
 };
 
 export default meta;

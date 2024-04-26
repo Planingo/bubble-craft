@@ -1,16 +1,12 @@
-import React from 'react';
-import { RefinementDetails } from '../components/RefinementDetails/RefinementDetails';
-import { UserOutlined } from '../components/Icon/icon';
 import { Form } from 'antd';
+import React from 'react';
+import { UserOutlined } from '../components/Icon/icon';
 import { Input } from '../components/Input/Input';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
+import { RefinementDetails } from '../components/RefinementDetails/RefinementDetails';
 
 const meta = {
   title: 'Templates/RefinementDetails',
   component: RefinementDetails,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['refinementDetails.test.jsx'] }
 };
 
 export default meta;

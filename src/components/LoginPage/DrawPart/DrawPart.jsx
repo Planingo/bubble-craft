@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const DrawPart = ({...props}) => {
     return <svg id="visual" viewBox="0 0 600 900" xmlns="http://www.w3.org/2000/svg" version="1.1">
         <rect width="600" height="900" fill="#015C91"></rect>

@@ -1,27 +1,25 @@
-import { render } from '@testing-library/react';
-import React from 'react';
-import {RadioGroup} from '../components/Radio/RadioGroups/RadioGroup';
+import { render } from "@testing-library/react";
+import React from "react";
+import { RadioGroup } from "../components/Radio/RadioGroups/RadioGroup";
 
-describe('RadioGroup component', () => {
+describe("RadioGroup component", () => {
   const options = [
     {
-      label: 'Apple',
-      value: 'Apple',
+      label: "Apple",
+      value: "Apple",
     },
     {
-      label: 'Pear',
-      value: 'Pear',
+      label: "Pear",
+      value: "Pear",
     },
     {
-      label: 'Orange',
-      value: 'Orange',
+      label: "Orange",
+      value: "Orange",
     },
-  ]
-  const radioGroup = (
-    <RadioGroup options={options}/>
-  );
+  ];
+  const radioGroup = <RadioGroup options={options} />;
 
-  it('Snapshot RadioGroup', () => {
+  it("Snapshot RadioGroup", () => {
     const { baseElement } = render(radioGroup);
     expect(baseElement).toHaveTextContent("Apple");
   });

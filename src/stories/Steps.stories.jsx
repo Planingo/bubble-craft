@@ -1,12 +1,9 @@
 import { Steps } from '../components/Steps/Steps';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
+
 
 const meta = {
   title: 'Atomes/Steps',
   component: Steps,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['steps.test.jsx'] }
 };
 
 export default meta;

@@ -1,14 +1,11 @@
+import React from 'react';
 import { Button } from '../components/Button/Button';
-import { Notif } from '../components/Notification/Notification';
 import { Modal } from '../components/Modal/Modal';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
+import { Notif } from '../components/Notification/Notification';
 
 const meta = {
   title: 'Molécules/Modal',
   component: Modal,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['modal.test.jsx'] }
 };
 
 export default meta;
@@ -18,18 +15,17 @@ export const Playground = {
     children: "Ananas",
     title: "Envoyer le calendrier",
     footer: [
-      <Button key="back" onClick={handleCancel}>
+      <Button key="back" onClick={console.log}>
         Return
       </Button>,
-      <Button key="submit" type="primary" loading={loading} onClick={handleOk}>
+      <Button key="submit" type="primary" onClick={console.log}>
         Submit
       </Button>,
       <Button
         key="link"
         href="https://google.com"
         type="primary"
-        loading={loading}
-        onClick={handleOk}
+        onClick={console.log}
       >
         Search on Google
       </Button>,

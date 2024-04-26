@@ -1,4 +1,5 @@
-import {AiOutlineCalendar} from 'react-icons/ai'
+import React from 'react';
+import { AiOutlineCalendar } from 'react-icons/ai';
 
 export const CalendarOutlined = () => {
     return <AiOutlineCalendar />

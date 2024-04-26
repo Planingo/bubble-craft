@@ -1,12 +1,9 @@
+import React from 'react';
 import { Tour } from '../components/Tour/Tour';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
 
 const meta = {
   title: 'Organismes/Tour',
   component: Tour,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['tour.test.jsx'] }
 };
 
 export default meta;

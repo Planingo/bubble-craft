@@ -1,13 +1,10 @@
-import { Menu } from '../components/Menu/Menu';
+import React from 'react';
 import { MailOutlined, SettingOutlined } from '../components/Icon/icon';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
+import { Menu } from '../components/Menu/Menu';
 
 const meta = {
   title: 'Organismes/Menu',
   component: Menu,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['menu.test.jsx'] }
 };
 
 export default meta;

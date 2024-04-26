@@ -1,4 +1,5 @@
-import {AiOutlineTags} from 'react-icons/ai'
+import React from 'react';
+import { AiOutlineTags } from 'react-icons/ai';
 
 export const TagsOutlined = () => {
     return <AiOutlineTags/>

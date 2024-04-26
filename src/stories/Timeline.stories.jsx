@@ -1,12 +1,9 @@
 import { Timeline } from '../components/Timeline/Timeline';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
+
 
 const meta = {
   title: 'Molécules/Timeline',
   component: Timeline,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['timeline.test.jsx'] }
 };
 
 export default meta;

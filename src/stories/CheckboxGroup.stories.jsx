@@ -1,12 +1,9 @@
-import {CheckboxGroup} from '../components/Checkbox/CheckboxGroups/CheckboxGroup';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
+import { CheckboxGroup } from '../components/Checkbox/CheckboxGroups/CheckboxGroup';
+
 
 const meta = {
   title: 'Atomes/CheckboxGroup',
   component: CheckboxGroup,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['checkboxGroup.test.jsx'] }
 };
 
 export default meta;

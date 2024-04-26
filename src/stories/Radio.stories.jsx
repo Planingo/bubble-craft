@@ -1,7 +1,8 @@
-import { Switch } from "../components/Switch/Switch";
+import React from 'react';
+import { Radio } from "../components/Radio/Radio";
 
 export default {
-  title: "Atomes/Switch",
+  title: "Atomes/Radio",
 
   argTypes: {
     autoFocus: {
@@ -33,22 +34,6 @@ export default {
       },
     },
 
-    checkedChildren: {
-      description: "checkedChildren",
-
-      control: {
-        type: "text",
-      },
-    },
-
-    className: {
-      description: "className",
-
-      control: {
-        type: "text",
-      },
-    },
-
     defaultChecked: {
       description: "defaultChecked",
 
@@ -77,53 +62,16 @@ export default {
       },
     },
 
-    loading: {
-      description: "loading",
-
-      control: {
-        type: "boolean",
-      },
-
-      table: {
-        defaultValue: {
-          summary: "false",
-        },
-      },
-    },
-
-    size: {
-      description: "size",
-
-      control: {
-        type: "select",
-        options: ["default", "small"],
-      },
-
-      table: {
-        defaultValue: {
-          summary: "default",
-        },
-      },
-    },
-
-    unCheckedChildren: {
-      description: "unCheckedChildren",
+    value: {
+      description: "value",
 
       control: {
         type: "text",
       },
     },
 
-    onChange: {
-      description: "onChange",
-
-      control: {
-        type: "text",
-      },
-    },
-
-    onClick: {
-      description: "onClick",
+    children: {
+      description: "children",
 
       control: {
         type: "text",
@@ -134,7 +82,7 @@ export default {
 
 export const Default = {
   render: (args) => {
-    return <Switch {...args} />;
+    return <Radio {...args} />;
   },
 
   name: "Default",

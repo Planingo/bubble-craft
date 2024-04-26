@@ -1,12 +1,9 @@
+import React from 'react';
 import { Carousel } from '../components/Carousel/Carousel';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
 
 const meta = {
   title: 'Organismes/Carousel',
   component: Carousel,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['carousel.test.jsx'] }
 };
 
 export default meta;

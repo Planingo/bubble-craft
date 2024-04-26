@@ -1,4 +1,5 @@
 import { ConfigProvider, theme } from "antd";
+import React from "react";
 import { Colors } from "./Colors";
 import './index.css';
 

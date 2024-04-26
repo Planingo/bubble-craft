@@ -1,12 +1,9 @@
 import { Table } from '../components/Table/Table';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
+
 
 const meta = {
   title: 'Molécules/Table',
   component: Table,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['table.test.jsx'] }
 };
 
 export default meta;

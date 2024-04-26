@@ -1,14 +1,11 @@
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
-import { GalleryList } from '../components';
-import React from 'react';
+
 import { Form, Input } from 'antd';
+import React from 'react';
+import { GalleryList } from '../components';
 
 const meta = {
   title: 'Pages/GalleryList',
   component: GalleryList,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['galleryList.test.jsx'] }
 };
 
 export default meta;

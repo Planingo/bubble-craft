@@ -1,15 +1,15 @@
-import { Tooltip } from '../Tooltip/Tooltip'
-import { UserOutlined } from '../Icon/icon/UserOutlined'
-import { TeamOutlined } from '../Icon/icon/TeamOutlined'
+import React from 'react'
 import { CalendarOutlined } from '../Icon/icon/CalendarOutlined'
+import { CompanyOutlined } from '../Icon/icon/CompanyOutlined'
+import { ExperimentOutlined } from '../Icon/icon/ExperimentOutlined'
+import { ScheduleOutlined } from '../Icon/icon/ScheduleOutlined'
+import { SettingOutlined } from '../Icon/icon/SettingOutlined'
+import { ShopOutlined } from '../Icon/icon/ShopOutlined'
 import { TagOutlined } from '../Icon/icon/TagOutlined'
 import { TagsOutlined } from '../Icon/icon/TagsOutlined'
-import { ExperimentOutlined } from '../Icon/icon/ExperimentOutlined'
-import { ShopOutlined } from '../Icon/icon/ShopOutlined'
-import { CompanyOutlined } from '../Icon/icon/CompanyOutlined'
-import { SettingOutlined } from '../Icon/icon/SettingOutlined'
+import { TeamOutlined } from '../Icon/icon/TeamOutlined'
+import { UserOutlined } from '../Icon/icon/UserOutlined'
 import { Roles } from '../Roles/roles'
-import { ScheduleOutlined } from '../Icon/icon/ScheduleOutlined'
 
 export const path =[
         {

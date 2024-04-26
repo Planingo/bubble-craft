@@ -1,7 +1,8 @@
-import { BrowserRouter } from 'react-router-dom'
-import { IntlProvider } from '../src/translation/IntlProvider'
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from "../src";
 import '../src/Theme/index.css';
+import { IntlProvider } from '../src/translation/IntlProvider';
 
 export const parameters = {
     options: {

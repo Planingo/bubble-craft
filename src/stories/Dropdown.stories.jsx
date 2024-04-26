@@ -1,13 +1,10 @@
+import React from 'react';
 import { Dropdown } from '../components/Dropdown/Dropdown';
 import { SmileOutlined } from '../components/Icon/icon';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
 
 const meta = {
   title: 'Molécules/Dropdown',
   component: Dropdown,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['dropdown.test.jsx'] }
 };
 
 export default meta;

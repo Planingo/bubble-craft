@@ -1,12 +1,9 @@
 import { Transfer } from '../components/Transfer/Transfer';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
+
 
 const meta = {
   title: 'Organismes/Transfer',
   component: Transfer,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['transfert.test.jsx'] }
 };
 
 export default meta;

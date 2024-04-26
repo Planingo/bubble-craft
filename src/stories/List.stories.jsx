@@ -1,12 +1,9 @@
+import React from 'react';
 import { List } from '../components/List/List';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
 
 const meta = {
   title: 'Molécules/List',
   component: List,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['list.test.jsx'] }
 };
 
 export default meta;

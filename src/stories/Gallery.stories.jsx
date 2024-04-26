@@ -1,14 +1,11 @@
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
-import { Gallery } from '../components';
-import React from 'react';
+
 import { Form, Input } from 'antd';
+import React from 'react';
+import { Gallery } from '../components';
 
 const meta = {
   title: 'Pages/Gallery',
   component: Gallery,
-  decorators: [withTests({ results })],
-  parameters: { jest: ['gallery.test.jsx'] }
 };
 
 export default meta;
@@ -22,9 +19,18 @@ export const Playground = {
         id: '1',
         name: "Métamorphose",
         tags: ["Coucou", "Pouet"],
-        downloadTitle: `Télécharger le calendrier pour Métamorphose`,
-        cloudTitle: `Envoyer le calendrier à toutes les personnes programmées à Métamorphose`,
-        deleteTitle: `Supprimer le cours de Métamorphose`,
+        actions: {downloadTitle: {
+          id: "download.calendar.student",
+          values: `Anne`,
+        },
+        cloudTitle: {
+          id: "send.calendar.student",
+          values: `Anne`,
+        },
+        deleteTitle: {
+          id: "archived.student",
+          values: `Anne`,
+        }},
         link: `/lessons/1`,
         title: "Métamorphose",
         alt: "Métamorphose",
@@ -34,9 +40,18 @@ export const Playground = {
         id: '2',
         name: "Métamorphose",
         tags: ["Coucou", "Pouet"],
-        downloadTitle: `Télécharger le calendrier pour Métamorphose`,
-        cloudTitle: `Envoyer le calendrier à toutes les personnes programmées à Métamorphose`,
-        deleteTitle: `Supprimer le cours de Métamorphose`,
+        actions: {downloadTitle: {
+          id: "download.calendar.student",
+          values: `Anne`,
+        },
+        cloudTitle: {
+          id: "send.calendar.student",
+          values: `Anne`,
+        },
+        deleteTitle: {
+          id: "archived.student",
+          values: `Anne`,
+        }},
         link: `/lessons/1`,
         title: "Métamorphose",
         alt: "Métamorphose",
@@ -46,9 +61,18 @@ export const Playground = {
         id: '3',
         name: "Métamorphose",
         tags: ["Coucou", "Pouet"],
-        downloadTitle: `Télécharger le calendrier pour Métamorphose`,
-        cloudTitle: `Envoyer le calendrier à toutes les personnes programmées à Métamorphose`,
-        deleteTitle: `Supprimer le cours de Métamorphose`,
+        actions: {downloadTitle: {
+          id: "download.calendar.student",
+          values: `Anne`,
+        },
+        cloudTitle: {
+          id: "send.calendar.student",
+          values: `Anne`,
+        },
+        deleteTitle: {
+          id: "archived.student",
+          values: `Anne`,
+        }},
         link: `/lessons/1`,
         title: "Métamorphose",
         alt: "Métamorphose",
@@ -58,9 +82,18 @@ export const Playground = {
         id: '4',
         name: "Métamorphose",
         tags: ["Coucou", "Pouet"],
-        downloadTitle: `Télécharger le calendrier pour Métamorphose`,
-        cloudTitle: `Envoyer le calendrier à toutes les personnes programmées à Métamorphose`,
-        deleteTitle: `Supprimer le cours de Métamorphose`,
+        actions: {downloadTitle: {
+          id: "download.calendar.student",
+          values: `Anne`,
+        },
+        cloudTitle: {
+          id: "send.calendar.student",
+          values: `Anne`,
+        },
+        deleteTitle: {
+          id: "archived.student",
+          values: `Anne`,
+        }},
         link: `/lessons/1`,
         title: "Métamorphose",
         alt: "Métamorphose",
@@ -70,9 +103,18 @@ export const Playground = {
         id: '5',
         name: "Métamorphose",
         tags: ["Coucou", "Pouet"],
-        downloadTitle: `Télécharger le calendrier pour Métamorphose`,
-        cloudTitle: `Envoyer le calendrier à toutes les personnes programmées à Métamorphose`,
-        deleteTitle: `Supprimer le cours de Métamorphose`,
+        actions: {downloadTitle: {
+          id: "download.calendar.student",
+          values: `Anne`,
+        },
+        cloudTitle: {
+          id: "send.calendar.student",
+          values: `Anne`,
+        },
+        deleteTitle: {
+          id: "archived.student",
+          values: `Anne`,
+        }},
         link: `/lessons/1`,
         title: "Métamorphose",
         alt: "Métamorphose",
@@ -82,9 +124,18 @@ export const Playground = {
         id: '6',
         name: "Métamorphose",
         tags: ["Coucou", "Pouet"],
-        downloadTitle: `Télécharger le calendrier pour Métamorphose`,
-        cloudTitle: `Envoyer le calendrier à toutes les personnes programmées à Métamorphose`,
-        deleteTitle: `Supprimer le cours de Métamorphose`,
+        actions: {downloadTitle: {
+          id: "download.calendar.student",
+          values: `Anne`,
+        },
+        cloudTitle: {
+          id: "send.calendar.student",
+          values: `Anne`,
+        },
+        deleteTitle: {
+          id: "archived.student",
+          values: `Anne`,
+        }},
         link: `/lessons/1`,
         title: "Métamorphose",
         alt: "Métamorphose",
