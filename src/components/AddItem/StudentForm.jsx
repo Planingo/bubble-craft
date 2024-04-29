@@ -1,4 +1,4 @@
-import { useState } from "react"
+import React, { useState } from 'react'
 import { useIntl } from "react-intl"
 import { toCapitalized } from "../../utils/formatText"
 import { Checkbox } from "../Checkbox/Checkbox"
@@ -77,7 +77,7 @@ export const StudentForm = ({onSubmit, companies,pathways,calendars}) => {
                                     {props.label}
                                     <Select 
                                         placeholder="calendar"
-                                        options={calendars.map(calendar => ({value: calendar.id, label:calendar.name}))}
+                                        options={calendars?.map(calendar => ({value: calendar.id, label:calendar.name}))}
                                         {...props.input} 
                                     />
                                 </div>
@@ -105,7 +105,7 @@ export const StudentForm = ({onSubmit, companies,pathways,calendars}) => {
                                         {props.label}
                                         <Select 
                                             placeholder="company"
-                                            options={companies.map(company => ({value: company.id, label:company.name}))}
+                                            options={companies?.map(company => ({value: company.id, label:company.name}))}
                                             {...props.input} 
                                         />
                                     </div>

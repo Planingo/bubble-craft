@@ -1,3 +1,4 @@
+import React from 'react'
 import { useIntl } from "react-intl"
 import { toCapitalized } from "../../utils/formatText"
 import { Field } from "../Field/Field"

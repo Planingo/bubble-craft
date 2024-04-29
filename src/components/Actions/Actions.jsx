@@ -1,3 +1,4 @@
+import React from 'react';
 import { useIntl } from 'react-intl';
 import { Link } from "react-router-dom";
 import { CloudUploadOutlined, DeleteOutlined, DownloadOutlined, ExportOutlined } from "../Icon/icon";

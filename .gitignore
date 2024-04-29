@@ -9,6 +9,10 @@
 # testing
 /coverage
 
+runner-results
+
+tests-results
+
 # production
 /build
 

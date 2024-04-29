@@ -1,0 +1,13 @@
+{ 
+  "reporterEnabled": "mochawesome",
+  "mochaJunitReporterReporterOptions": { 
+    "mochaFile": "tests-results/results-[name].json" 
+  },
+  "mochawesomeReporterOptions": { 
+    "reportDir": "tests-results", 
+    "overwrite": false,
+    "html": false,
+    "json": true,
+    "reportFilename": "[name]-report" 
+  } 
+}

@@ -1,3 +1,4 @@
+import React from 'react'
 import { useIntl } from "react-intl"
 import { toCapitalized } from "../../utils/formatText"
 import { Field } from "../Field/Field"
@@ -32,7 +33,7 @@ export const PathwayForm = ({onSubmit, calendars}) => {
                                     {props.label}
                                     <Select 
                                         placeholder="calendar"
-                                        options={calendars.map(calendar => ({value: calendar.id, label:calendar.name}))}
+                                        options={calendars?.map(calendar => ({value: calendar.id, label:calendar.name}))}
                                         {...props.input} 
                                     />
                                 </div>
