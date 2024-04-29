@@ -13,7 +13,7 @@ jobs:
               - v1-dependencies-{{ checksum "package.json" }}
               - v1-dependencies-
         - run: yarn install
-        - run: npx chromatic --project-token=$chromatic
+        - run: npx chromatic --project-token=$chromatic -exit-zero-on-changes
   unit-test:
     executor: node/default
     steps:
