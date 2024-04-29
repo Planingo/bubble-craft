@@ -12,7 +12,6 @@ import './card.css';
  * 
  */
 export const Card = ({children, ...props }) => {
-  console.log(props)
   const {formatMessage} = useIntl()
   return (
     <AntdCard

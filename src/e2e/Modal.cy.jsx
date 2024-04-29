@@ -1,10 +1,11 @@
 import React from 'react'
 import { Button, Notif } from '../components'
 import { Modal } from '../components/Modal/Modal'
+import { IntlProvider } from '../translation/IntlProvider'
 
 describe('<Modal />', () => {
   it('renders', () => {
-    cy.mount(<Modal
+    cy.mount(<IntlProvider><Modal
     title="Envoyer le calendrier"
     OpenModal={(showModal) => <Button type="primary" onClick={showModal}>
       Ouvrir la modale
@@ -19,6 +20,6 @@ describe('<Modal />', () => {
       title="C'est un titre"
       description="C'est une description !"
       />}
-      >Ananas</Modal>)
+      >Ananas</Modal></IntlProvider>)
   })
 })
