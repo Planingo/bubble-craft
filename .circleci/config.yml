@@ -123,7 +123,7 @@ workflows:
       - e2e-report:
           requires:
             - e2e-test
-          filters: *filters-tag
+          filters: *filters-all
       - publish :
           requires:
             - unit-test
