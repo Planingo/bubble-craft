@@ -68,7 +68,7 @@ jobs:
             - ~/.cache
             - ~/.config
             - ./node_modules
-      - run: yarn merge:report && yarn to:html
+      - run: yarn test:e2e:with:report
   publish:
     executor: node/default
     steps:
