@@ -1,6 +1,7 @@
-import { Field } from "../Field/Field"
-import { Form as Bubble_CraftForm } from "../Form/Form"
-import { Input } from "../Input/Input"
+import React from 'react';
+import { Field } from "../Field/Field";
+import { Form as Bubble_CraftForm } from "../Form/Form";
+import { Input } from "../Input/Input";
 
 export const ProfessorForm = ({onSubmit}) => {
     return <Bubble_CraftForm

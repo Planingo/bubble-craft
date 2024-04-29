@@ -1,4 +1,4 @@
-import { useState } from "react"
+import React, { useState } from "react"
 import { useIntl } from "react-intl"
 import { toCapitalized } from "../../utils/formatText"
 import { Checkbox } from "../Checkbox/Checkbox"
@@ -8,8 +8,8 @@ import { Input } from "../Input/Input"
 import { Select } from "../Select/Select"
 import './addItem.css'
 
-export const StudentEditForm = ({onSubmit, student, companies,pathways,calendars}) => {
-    const [isChecked, setIsChecked] = useState(student.companies.length > 0)
+export const StudentEditForm = ({onSubmit, student, companies, pathways,calendars}) => {
+    const [isChecked, setIsChecked] = useState(student?.companies?.length > 0)
     const {formatMessage} = useIntl()
     return <Bubble_CraftForm
             onSubmit={onSubmit}
@@ -78,7 +78,7 @@ export const StudentEditForm = ({onSubmit, student, companies,pathways,calendars
                                     {props.label}
                                     <Select 
                                         placeholder="calendar"
-                                        options={calendars.map(calendar => ({value: calendar.id, label:calendar.name}))}
+                                        options={calendars?.map(calendar => ({value: calendar.id, label:calendar.name}))}
                                         {...props.input} 
                                     />
                                 </div>
@@ -106,7 +106,7 @@ export const StudentEditForm = ({onSubmit, student, companies,pathways,calendars
                                         {props.label}
                                         <Select 
                                             placeholder="company"
-                                            options={companies.map(company => ({value: company.id, label:company.name}))}
+                                            options={companies?.map(company => ({value: company.id, label:company.name}))}
                                             {...props.input} 
                                         />
                                     </div>
