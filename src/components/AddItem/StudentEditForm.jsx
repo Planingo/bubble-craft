@@ -10,9 +10,7 @@ import './addItem.css'
 
 export const StudentEditForm = ({onSubmit, student, companies,pathways,calendars}) => {
     const [isChecked, setIsChecked] = useState(student.companies.length > 0)
-    console.log(isChecked)
     const {formatMessage} = useIntl()
-    console.log(student)
     return <Bubble_CraftForm
             onSubmit={onSubmit}
             initialValues={student}

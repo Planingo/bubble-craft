@@ -21,7 +21,6 @@ export const TimePicker = ({ children, ...props }) => {
   const onChange = (time) => {
     setValue(time);
     const u = new Date(time)
-    console.log(u.toLocaleTimeString())
   };
   return (
     <AntdTimePicker

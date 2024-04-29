@@ -1,6 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import { Collapse as AntdCollapse } from 'antd';
+import React from 'react';
 import './collapse.css';
 
 /**
@@ -19,9 +18,7 @@ export const Collapse = ({ children, ...props }) => {
     <AntdCollapse
       className='storybook-collapse'
       {...props}
-    >
-      {children}
-    </AntdCollapse>
+    />
   );
 };
 

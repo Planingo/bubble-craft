@@ -1,6 +1,5 @@
 import React from 'react';
 import { Collapse } from '../components/Collapse/Collapse';
-import { Panel } from '../components/Collapse/Panel/Panel';
 
 const meta = {
   title: 'Molécules/Collapse',
@@ -13,28 +12,34 @@ export const Playground = {
   args: {
     defaultActiveKey: ['1'],
     onChange: (key) => console.log(key),
-    children: <>
-      <Panel header="This is panel header 1" key="1">
-        <p>
+    items: [
+      {
+        key: "1",
+        label: "This is panel header 1",
+        children: <p>
           A dog is a type of domesticated animal.
           Known for its loyalty and faithfulness,
           it can be found as a welcome guest in many households across the world.
         </p>
-      </Panel>
-      <Panel header="This is panel header 2" key="2">
-        <p>
+      },
+      {
+        key: "2",
+        label: "This is panel header 2",
+        children: <p>
           A dog is a type of domesticated animal.
           Known for its loyalty and faithfulness,
           it can be found as a welcome guest in many households across the world.
         </p>
-      </Panel>
-      <Panel header="This is panel header 3" key="3">
-        <p>
-          A dog is a type of domesticated animal.
+      },
+      {
+        key: "3",
+        label: "This is panel header 3",
+        children: <p>
+           A dog is a type of domesticated animal.
           Known for its loyalty and faithfulness,
-          it can be found as a welcome guest in many households across the world.
+          it can be found as a welcome guest in many households across the world
         </p>
-      </Panel>
-    </>
+      }
+    ]
   },
 };

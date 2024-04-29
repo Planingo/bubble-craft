@@ -1,39 +1,50 @@
-import { render } from "@testing-library/react";
-import React from "react";
-import { Collapse } from "../components";
-import { Panel } from "../components/Collapse/Panel/Panel";
 
-describe("Collapse component", () => {
+import { render } from '@testing-library/react';
+import React from 'react';
+import { Collapse } from '../components/Collapse/Collapse';
+
+describe('Collapse component', () => {
   const collapse = (
-    <Collapse defaultActiveKey={["1"]} onChange={() => {}}>
-      <Panel header="This is panel header 1">
-        <p>
-          A dog is a type of domesticated animal. Known for its loyalty and
-          faithfulness, it can be found as a welcome guest in many households
-          across the world.
-        </p>
-      </Panel>
-      <Panel header="This is panel header 2">
-        <p>
-          A dog is a type of domesticated animal. Known for its loyalty and
-          faithfulness, it can be found as a welcome guest in many households
-          across the world.
-        </p>
-      </Panel>
-      <Panel header="This is panel header 3">
-        <p>
-          A dog is a type of domesticated animal. Known for its loyalty and
-          faithfulness, it can be found as a welcome guest in many households
-          across the world.
-        </p>
-      </Panel>
-    </Collapse>
+    <Collapse
+      defaultActiveKey={[
+        '1'
+      ]}
+      onChange={() => {}}
+      items={[
+        {
+          key: "1",
+          label: "This is panel header 1",
+          children: <p>
+            A dog is a type of domesticated animal.
+            Known for its loyalty and faithfulness,
+            it can be found as a welcome guest in many households across the world.
+          </p>
+        },
+        {
+          key: "2",
+          label: "This is panel header 2",
+          children: <p>
+            A dog is a type of domesticated animal.
+            Known for its loyalty and faithfulness,
+            it can be found as a welcome guest in many households across the world.
+          </p>
+        },
+        {
+          key: "3",
+          label: "This is panel header 3",
+          children: <p>
+             A dog is a type of domesticated animal.
+            Known for its loyalty and faithfulness,
+            it can be found as a welcome guest in many households across the world
+          </p>
+        }
+      ]}
+    />
   );
 
-  it("Collapse content text", () => {
+  it('Collapse content text', () => {
     const { baseElement } = render(collapse);
-    expect(baseElement).toHaveTextContent(
-      "A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.",
-    );
+    expect(baseElement).toHaveTextContent("A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.");
   });
+
 });
