@@ -94,13 +94,12 @@ workflows:
     jobs:
       - cypress/run:
           cypress-command: npx cypress run --component
-      - install-and-persist:
-          name: Install & Persist To Workspace
+      - install-and-persist
       - e2e-test:
-          filters: *filters-all
           name: Run Tests in Parallel
           requires:
-            - Install & Persist To Workspace
+            - install-and-persist
+          filters: *filters-all
       - unit-test :
           filters: *filters-all
       - chromatic :
