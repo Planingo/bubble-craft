@@ -85,6 +85,8 @@ workflows:
   common:
     jobs:
       - install-and-persist:
+          package-manager: yarn
+          start-command: yarn start
           filters: *filters-all
       - unit-test :
           filters: *filters-all
