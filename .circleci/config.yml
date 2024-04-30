@@ -74,8 +74,8 @@ jobs:
             - ~/.cache
             - ~/.config
             - ./node_modules
-      - run: yarn test:e2e
-
+      - cypress/run:
+          cypress-command: 'npx cypress run --browser chrome'
 
 filters-tag: &filters-tag
   branches:
