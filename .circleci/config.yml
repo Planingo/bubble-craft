@@ -89,6 +89,8 @@ workflows:
           start-command: yarn start
       - install-and-persist:
           name: Install & Persist To Workspace
+          requires:
+            - cypress/run
       - unit-test :
           filters: *filters-all
       - chromatic :
