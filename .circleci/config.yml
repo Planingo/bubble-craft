@@ -47,6 +47,12 @@ jobs:
   #         at: ~/
   #     - cypress/run-tests:
   #         cypress-command: npx cypress run --component --parallel --record
+  cypress/run:
+    executor: cypress/install
+    steps:
+      - checkout
+      - package-manager: yarn
+      - start-command: yarn start
   publish:
     executor: node/default
     steps:
@@ -93,8 +99,7 @@ workflows:
   common:
     jobs:
       - cypress/run:
-          package-manager: yarn
-          start-command: yarn start
+          filters: *filters-all
       # - install-and-persist:
       #     name: Install & Persist To Workspace
       #     filters: *filters-all
