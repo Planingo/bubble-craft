@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   discord: antonioned/discord@0.1.0
   node: circleci/node@5.0.2
-  cypress: cypress-io/cypress@3
+  cypress: cypress-io/cypress@3.1.1
 
 jobs:
   chromatic:
@@ -47,12 +47,6 @@ jobs:
   #         at: ~/
   #     - cypress/run-tests:
   #         cypress-command: npx cypress run --component --parallel --record
-  cypress/run:
-    executor: cypress/default
-    steps:
-      - checkout
-      - package: yarn
-      - run: yarn
   publish:
     executor: node/default
     steps:
@@ -99,6 +93,10 @@ workflows:
   common:
     jobs:
       - cypress/run:
+          package-manager: yarn
+          install-browsers: true
+          start-command: yarn start
+          cypress-command: 'yarn cypress run --parallel --record --group 4 machines --browser chrome'
           filters: *filters-all
       # - install-and-persist:
       #     name: Install & Persist To Workspace
