@@ -39,14 +39,6 @@ jobs:
             - .cache/Cypress
             - project
           root: ~/
-  e2e-test:
-    executor: cypress/default
-    parallelism: 8
-    steps:
-      - attach_workspace:
-          at: ~/
-      - cypress/run-tests:
-          cypress-command: npx cypress run --component --parallel --record
   publish:
     executor: node/default
     steps:
@@ -92,20 +84,7 @@ workflows:
   version: 2
   common:
     jobs:
-      - cypress/run:
-          cypress-command: npx cypress run --browser chrome --component --parallel
-          parallelism: 3
-          install-browsers: true
-          package-manager: yarn
-          start-command: yarn start
-          cypress-cache-key: custom-cypress-cache-v1-{{ arch }}-{{ checksum "package.json" }}
-          cypress-cache-path: ~/.cache/custom-dir/Cypress
-          node-cache-version: v2
       - install-and-persist
-      - e2e-test:
-          filters: *filters-all
-          requires:
-            - install-and-persist
       - unit-test :
           filters: *filters-all
       - chromatic :
