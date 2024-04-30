@@ -85,7 +85,7 @@ workflows:
   common:
     jobs:
       - cypress/run:
-          package-manager: yarn
+          package-manager: yarn install
           start-command: yarn start
       - install-and-persist:
           name: Install & Persist To Workspace
