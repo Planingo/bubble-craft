@@ -51,7 +51,6 @@ jobs:
     executor: cypress/default
     steps:
       - checkout
-      - run: yarn set version stable
   publish:
     executor: node/default
     steps:
@@ -99,6 +98,7 @@ workflows:
     jobs:
       - cypress/run:
           package-manager: yarn
+          commande: yarn set version stable && yarn install
           filters: *filters-all
       # - install-and-persist:
       #     name: Install & Persist To Workspace
