@@ -64,7 +64,10 @@ jobs:
     executor: cypress/default
     steps:
       - checkout
-      - install-browsers: true
+      - restore_cache:
+          keys:
+            - dependencies-{{ checksum "yarn.lock" }}
+
 
 filters-tag: &filters-tag
   branches:
