@@ -81,6 +81,8 @@ workflows:
   common:
     jobs:
       - cypress/run:
+          package-manager: yarn
+          start-command: yarn start
           filters: *filters-all
       - unit-test :
           filters: *filters-all
