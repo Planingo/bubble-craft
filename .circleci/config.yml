@@ -94,7 +94,7 @@ workflows:
     jobs:
       - cypress/run:
           package-manager: yarn
-          install-browsers: true
+          broswer: chrome
           start-command: yarn start
           cypress-command: 'yarn cypress run --parallel --record --group 4 machines --browser chrome'
           filters: *filters-all
