@@ -84,7 +84,8 @@ workflows:
   version: 2
   common:
     jobs:
-      - install-and-persist
+      - install-and-persist:
+          name: Install & Persist To Workspace
       - unit-test :
           filters: *filters-all
       - chromatic :
