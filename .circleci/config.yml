@@ -68,6 +68,13 @@ jobs:
           keys:
             - dependencies-{{ checksum "yarn.lock" }}
       - run: yarn
+      - save_cache:
+          key: dependencies-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache
+            - ~/.config
+            - ./node_modules
+      - run: yarn test:e2e
 
 
 filters-tag: &filters-tag
