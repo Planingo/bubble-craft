@@ -98,6 +98,8 @@ workflows:
       - install-and-persist:
           name: Install & Persist To Workspace
           filters: *filters-all
+          requires:
+            - cypress/run
       - run-tests-in-parallel:
           name: Run Tests in Parallel
           filters: *filters-all
