@@ -80,6 +80,7 @@ workflows:
   common:
     jobs:
       - e2e-test:
+          install-browsers: true
           filters: *filters-all
       - unit-test :
           filters: *filters-all
