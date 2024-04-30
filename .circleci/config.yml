@@ -80,7 +80,6 @@ workflows:
   common:
     jobs:
       - e2e-test:
-          package-manager: yarn
           filters: *filters-all
       - unit-test :
           filters: *filters-all
