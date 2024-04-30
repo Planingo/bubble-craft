@@ -64,6 +64,7 @@ jobs:
     executor: cypress/default
     steps:
       - checkout
+      - install-browsers: true
 
 filters-tag: &filters-tag
   branches:
@@ -80,7 +81,6 @@ workflows:
   common:
     jobs:
       - e2e-test:
-          install-browsers: true
           filters: *filters-all
       - unit-test :
           filters: *filters-all
