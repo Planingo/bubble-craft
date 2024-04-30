@@ -34,7 +34,7 @@ jobs:
     executor: cypress/default
     steps:
       - checkout
-      - run: yarn
+      - run: yarn install
   publish:
     executor: node/default
     steps:
@@ -82,7 +82,6 @@ workflows:
     jobs:
       - cypress/run:
           package-manager: yarn
-          start-command: yarn start
           filters: *filters-all
       - unit-test :
           filters: *filters-all
