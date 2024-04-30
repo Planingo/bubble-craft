@@ -30,11 +30,15 @@ jobs:
             - ~/.config
             - ./node_modules
       - run: yarn test
-  cypress-run:
+  install-and-persist:
     executor: cypress/default
     steps:
-      - checkout
-      - run: yarn install
+      - cypress/install
+      - persist_to_workspace:
+          paths:
+            - .cache/Cypress
+            - project
+          root: ~/
   publish:
     executor: node/default
     steps:
@@ -80,8 +84,7 @@ workflows:
   version: 2
   common:
     jobs:
-      - cypress/run:
-          package-manager: yarn
+      - install-and-persist:
           filters: *filters-all
       - unit-test :
           filters: *filters-all
