@@ -91,8 +91,9 @@ workflows:
     jobs:
       - cypress/run:
           install-browsers: true
+          package-manager: yarn
           start-command: 'yarn start'
-          cypress-command: 'npx cypress run --browser chrome'
+          cypress-command: 'yarn cypress run --browser chrome'
           filters: *filters-all
       - unit-test :
           filters: *filters-all
