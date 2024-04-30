@@ -74,8 +74,6 @@ jobs:
             - ~/.cache
             - ~/.config
             - ./node_modules
-      - cypress/run:
-          cypress-command: 'npx cypress run --browser chrome'
 
 filters-tag: &filters-tag
   branches:
@@ -92,6 +90,9 @@ workflows:
   common:
     jobs:
       - e2e-test:
+          install-browsers: true
+          start-command: 'yarn start'
+          cypress-command: 'npx cypress run --browser chrome'
           filters: *filters-all
       - unit-test :
           filters: *filters-all
