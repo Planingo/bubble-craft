@@ -60,6 +60,10 @@ jobs:
           name: Deploy to Cloud Run
           command: |
             gcloud run deploy $REPO_NAME --image=$_AR_HOSTNAME/$GCLOUD_PROJECT_ID/$_SERVICE_NAME/$REPO_NAME:$CIRCLE_SHA1 --platform=$PLATFORM --region=$REGION --allow-$ALLOW
+  e2e-test:
+    executor: cypress/install
+    steps:
+      - checkout
 
 filters-tag: &filters-tag
   branches:
@@ -75,9 +79,8 @@ workflows:
   version: 2
   common:
     jobs:
-      - cypress/run:
+      - e2e-test:
           package-manager: 'yarn'
-          start-command: 'yarn install && yarn start'
       - unit-test :
           filters: *filters-all
       - chromatic :
