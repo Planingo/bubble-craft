@@ -60,7 +60,7 @@ jobs:
           name: Deploy to Cloud Run
           command: |
             gcloud run deploy $REPO_NAME --image=$_AR_HOSTNAME/$GCLOUD_PROJECT_ID/$_SERVICE_NAME/$REPO_NAME:$CIRCLE_SHA1 --platform=$PLATFORM --region=$REGION --allow-$ALLOW
-  e2e-test:
+  cypress/run:
     executor: cypress/run
     steps:
       - checkout
@@ -89,7 +89,7 @@ workflows:
   version: 2
   common:
     jobs:
-      - e2e-test:
+      - cypress/run:
           install-browsers: true
           start-command: 'yarn start'
           cypress-command: 'npx cypress run --browser chrome'
