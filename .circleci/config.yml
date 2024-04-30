@@ -34,13 +34,19 @@ jobs:
     executor: cypress/default
     steps:
       - cypress/install
-      - package-manager: yarn
-      - start-command: yarn start
       - persist_to_workspace:
           paths:
             - .cache/Cypress
             - project
           root: ~/
+  run-tests-in-parallel:
+    executor: cypress/default
+    parallelism: 8
+    steps:
+      - attach_workspace:
+          at: ~/
+      - cypress/run-tests:
+          cypress-command: npx cypress run --component --parallel --record
   publish:
     executor: node/default
     steps:
@@ -87,7 +93,13 @@ workflows:
   common:
     jobs:
       - install-and-persist:
+          name: Install & Persist To Workspace
           filters: *filters-all
+      - run-tests-in-parallel:
+          name: Run Tests in Parallel
+          filters: *filters-all
+          requires:
+            - Install & Persist To Workspace
       - unit-test :
           filters: *filters-all
       - chromatic :
