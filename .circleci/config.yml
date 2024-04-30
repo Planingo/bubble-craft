@@ -34,7 +34,7 @@ jobs:
     executor: cypress/default
     steps:
       - cypress/install
-      - run: yarn
+      - run: yarn install
       - persist_to_workspace:
           paths:
             - .cache/Cypress
