@@ -105,10 +105,6 @@ workflows:
           filters: *filters-all
       - chromatic :
           filters: *filters-all
-      - e2e-report:
-          requires:
-            - e2e-test
-          filters: *filters-all
       - publish :
           requires:
             - unit-test
