@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   discord: antonioned/discord@0.1.0
   node: circleci/node@5.0.2
-  cypress: cypress-io/cypress@3.1.1
+  cypress: cypress-io/cypress@3
 
 jobs:
   chromatic:
@@ -30,23 +30,6 @@ jobs:
             - ~/.config
             - ./node_modules
       - run: yarn test
-  # install-and-persist:
-  #   executor: cypress/default
-  #   steps:
-  #     - cypress/install
-  #     - persist_to_workspace:
-  #         paths:
-  #           - .cache/Cypress
-  #           - project
-  #         root: ~/
-  # run-tests-in-parallel:
-  #   executor: cypress/default
-  #   parallelism: 8
-  #   steps:
-  #     - attach_workspace:
-  #         at: ~/
-  #     - cypress/run-tests:
-  #         cypress-command: npx cypress run --component --parallel --record
   publish:
     executor: node/default
     steps:
@@ -93,21 +76,8 @@ workflows:
   common:
     jobs:
       - cypress/run:
-          package-manager: yarn
-          broswer: chrome
-          start-command: yarn start
-          cypress-command: 'yarn cypress run --parallel --record --group 4 machines --browser chrome'
-          filters: *filters-all
-      # - install-and-persist:
-      #     name: Install & Persist To Workspace
-      #     filters: *filters-all
-      #     requires:
-      #       - cypress/run
-      # - run-tests-in-parallel:
-      #     name: Run Tests in Parallel
-      #     filters: *filters-all
-      #     requires:
-      #       - Install & Persist To Workspace
+          package-manager: 'yarn'
+          start-command: 'yarn start'
       - unit-test :
           filters: *filters-all
       - chromatic :
