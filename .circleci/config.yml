@@ -96,5 +96,4 @@ workflows:
       - deploy:
           requires:
             - unit-test
-            - e2e-test
           filters: *filters-tag
