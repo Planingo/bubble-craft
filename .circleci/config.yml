@@ -34,6 +34,7 @@ jobs:
     executor: cypress/default
     steps:
       - cypress/install
+      - run: yarn
       - persist_to_workspace:
           paths:
             - .cache/Cypress
@@ -86,7 +87,7 @@ workflows:
     jobs:
       - cypress/run:
           package-manager: yarn
-          start-command: yarn install && yarn start
+          start-command: yarn start
       - install-and-persist:
           name: Install & Persist To Workspace
           requires:
