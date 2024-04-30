@@ -61,7 +61,7 @@ jobs:
           command: |
             gcloud run deploy $REPO_NAME --image=$_AR_HOSTNAME/$GCLOUD_PROJECT_ID/$_SERVICE_NAME/$REPO_NAME:$CIRCLE_SHA1 --platform=$PLATFORM --region=$REGION --allow-$ALLOW
   e2e-test:
-    executor: cypress/default
+    executor: cypress/run
     steps:
       - checkout
       - restore_cache:
