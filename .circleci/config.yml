@@ -51,6 +51,7 @@ jobs:
     executor: cypress/default
     steps:
       - checkout
+      - run: yarn set version stable
   publish:
     executor: node/default
     steps:
