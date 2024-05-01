@@ -19,9 +19,6 @@ jobs:
     executor: node/default
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: yarn
-          version: 4.1.1
       - restore_cache:
           keys:
             - dependencies-{{ checksum "yarn.lock" }}
@@ -67,6 +64,7 @@ jobs:
     executor: cypress/run
     steps:
       - checkout
+      - run: yarn set version latest
       - restore_cache:
           keys:
             - dependencies-{{ checksum "yarn.lock" }}
