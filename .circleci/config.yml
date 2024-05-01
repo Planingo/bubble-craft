@@ -64,6 +64,7 @@ jobs:
     executor: cypress/run
     steps:
       - checkout
+      - run: yarn set version latest
       - restore_cache:
           keys:
             - dependencies-{{ checksum "yarn.lock" }}
@@ -74,6 +75,7 @@ jobs:
             - ~/.cache
             - ~/.config
             - ./node_modules
+      - run: yarn cypress run --browser chrome
 
 filters-tag: &filters-tag
   branches:
@@ -90,10 +92,6 @@ workflows:
   common:
     jobs:
       - e2e-test:
-          install-browsers: true
-          package-manager: yarn
-          start-command: 'yarn set version latest && yarn start'
-          cypress-command: 'yarn cypress run --browser chrome'
           filters: *filters-all
       - unit-test :
           filters: *filters-all
