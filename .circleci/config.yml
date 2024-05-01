@@ -91,7 +91,7 @@ workflows:
   version: 2
   common:
     jobs:
-      - e2e-test:
+      - cypress/run:
           install-browsers: true
           package-manager: yarn
           start-command: 'yarn set version latest && yarn start'
