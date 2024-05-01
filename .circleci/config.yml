@@ -3,6 +3,7 @@ orbs:
   discord: antonioned/discord@0.1.0
   node: circleci/node@5.0.2
   cypress: cypress-io/cypress@3
+  yarn: itinerisltd/yarn@4.1.1
 
 jobs:
   chromatic:
