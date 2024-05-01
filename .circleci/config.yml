@@ -60,22 +60,22 @@ jobs:
           name: Deploy to Cloud Run
           command: |
             gcloud run deploy $REPO_NAME --image=$_AR_HOSTNAME/$GCLOUD_PROJECT_ID/$_SERVICE_NAME/$REPO_NAME:$CIRCLE_SHA1 --platform=$PLATFORM --region=$REGION --allow-$ALLOW
-  e2e-test:
-    executor: cypress/run
-    steps:
-      - checkout
-      - run: yarn set version latest
-      - restore_cache:
-          keys:
-            - dependencies-{{ checksum "yarn.lock" }}
-      - run: yarn
-      - save_cache:
-          key: dependencies-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache
-            - ~/.config
-            - ./node_modules
-      - run: yarn cypress run --browser chrome
+  # e2e-test:
+  #   executor: cypress/run
+  #   steps:
+  #     - checkout
+  #     - run: yarn set version latest && 
+  #     - restore_cache:
+  #         keys:
+  #           - dependencies-{{ checksum "yarn.lock" }}
+  #     - run: yarn
+  #     - save_cache:
+  #         key: dependencies-{{ checksum "yarn.lock" }}
+  #         paths:
+  #           - ~/.cache
+  #           - ~/.config
+  #           - ./node_modules
+  #     - run: 
 
 filters-tag: &filters-tag
   branches:
@@ -92,6 +92,10 @@ workflows:
   common:
     jobs:
       - e2e-test:
+          install-browsers: true
+          package-manager: yarn
+          start-command: 'yarn set version latest && yarn start'
+          cypress-command: 'yarn cypress run --browser chrome'
           filters: *filters-all
       - unit-test :
           filters: *filters-all
