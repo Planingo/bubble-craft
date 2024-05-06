@@ -4956,12 +4956,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core-events@npm:8.0.9, @storybook/core-events@npm:^8.0.9":
+"@storybook/core-events@npm:8.0.9":
   version: 8.0.9
   resolution: "@storybook/core-events@npm:8.0.9"
   dependencies:
     ts-dedent: "npm:^2.0.0"
   checksum: 10c0/505ad47f2c130495b49b3b550636d18c33e07003c75d89fc83228f9895bbfb5693aeeeaa074f7d2b9326d0f6f50b557badd083be9b2bada0fcbdbfa1b755e51e
+  languageName: node
+  linkType: hard
+
+"@storybook/core-events@npm:^8.0.9":
+  version: 8.0.10
+  resolution: "@storybook/core-events@npm:8.0.10"
+  dependencies:
+    ts-dedent: "npm:^2.0.0"
+  checksum: 10c0/8b7b8e20c5b7f3e93adf24ab298775c36f316f5e71a98504e141c70136c4e94cd3451873b37c52b896dc2365a1bb48eb1bcb6b8c4231f7ba99f602c4001d96b6
   languageName: node
   linkType: hard
 
