@@ -21158,9 +21158,9 @@ __metadata:
   linkType: hard
 
 "storybook-addon-pseudo-states@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "storybook-addon-pseudo-states@npm:3.0.1"
-  checksum: 10c0/2db49e2a3fd99f9e66ee3088029e0f39a16ef6fda03a82a433611ed7778f4b9ca75f28ef145099b8d799ef755e33a70186108c4125d7938f38570e6b5863b478
+  version: 3.1.0
+  resolution: "storybook-addon-pseudo-states@npm:3.1.0"
+  checksum: 10c0/1eb3dd4e3ea3ef9e3a0c9df1118dd8425d562e5cd8e86011284529848ac387082adf8e5dbe392e91cf31b51cd2ce0dda93b568df01cd051248c181360a5582fb
   languageName: node
   linkType: hard
 
