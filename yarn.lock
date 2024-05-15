@@ -5766,39 +5766,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/types@npm:8.0.10":
-  version: 8.0.10
-  resolution: "@storybook/types@npm:8.0.10"
-  dependencies:
-    "@storybook/channels": "npm:8.0.10"
-    "@types/express": "npm:^4.7.0"
-    file-system-cache: "npm:2.3.0"
-  checksum: 10c0/3074ea605442cbd1acc2853a13ea8ff9fb04a17a52ffbfee1078e7af635547cf2a72849562d907a62942dd4c1f3db304f2e7bf71357ae999fc763afc1af9e025
-  languageName: node
-  linkType: hard
-
-"@storybook/types@npm:8.0.10":
-  version: 8.0.10
-  resolution: "@storybook/types@npm:8.0.10"
-  dependencies:
-    "@storybook/channels": "npm:8.0.10"
-    "@types/express": "npm:^4.7.0"
-    file-system-cache: "npm:2.3.0"
-  checksum: 10c0/3074ea605442cbd1acc2853a13ea8ff9fb04a17a52ffbfee1078e7af635547cf2a72849562d907a62942dd4c1f3db304f2e7bf71357ae999fc763afc1af9e025
-  languageName: node
-  linkType: hard
-
-"@storybook/types@npm:8.0.10":
-  version: 8.0.10
-  resolution: "@storybook/types@npm:8.0.10"
-  dependencies:
-    "@storybook/channels": "npm:8.0.10"
-    "@types/express": "npm:^4.7.0"
-    file-system-cache: "npm:2.3.0"
-  checksum: 10c0/3074ea605442cbd1acc2853a13ea8ff9fb04a17a52ffbfee1078e7af635547cf2a72849562d907a62942dd4c1f3db304f2e7bf71357ae999fc763afc1af9e025
-  languageName: node
-  linkType: hard
-
 "@storybook/types@npm:8.0.9":
   version: 8.0.9
   resolution: "@storybook/types@npm:8.0.9"
