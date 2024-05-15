@@ -33,6 +33,6 @@ export default create({
 
   brandTitle: 'Bubble-craft design system',
   brandUrl: 'bubble-craft.bugsyaya.dev',
-  brandImage: 'https://cdn.custom-cursor.com/packs/5292/pokemon-bubble-craft-cursor-pack.png',
+  brandImage: '../public/bubble-craft.png',
   brandTarget: '_self',
 });
