@@ -5714,7 +5714,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/docs-tools@npm:8.0.9, @storybook/docs-tools@npm:^8.0.9":
+"@storybook/docs-tools@npm:8.0.9":
   version: 8.0.9
   resolution: "@storybook/docs-tools@npm:8.0.9"
   dependencies:
@@ -5727,6 +5727,22 @@ __metadata:
     doctrine: "npm:^3.0.0"
     lodash: "npm:^4.17.21"
   checksum: 10c0/a96c75b51271a219d626c6a3de177b24e5595bae6ccb8efc39a226883946470d83848e8b41a1e2a80652e03f094a21ec503a7fee024073d7d753f44093553db2
+  languageName: node
+  linkType: hard
+
+"@storybook/docs-tools@npm:^8.0.9":
+  version: 8.1.1
+  resolution: "@storybook/docs-tools@npm:8.1.1"
+  dependencies:
+    "@storybook/core-common": "npm:8.1.1"
+    "@storybook/core-events": "npm:8.1.1"
+    "@storybook/preview-api": "npm:8.1.1"
+    "@storybook/types": "npm:8.1.1"
+    "@types/doctrine": "npm:^0.0.3"
+    assert: "npm:^2.1.0"
+    doctrine: "npm:^3.0.0"
+    lodash: "npm:^4.17.21"
+  checksum: 10c0/eba49573e1b0214cddc5ac00072dd8f9b42bfd1e4cedd802a1d7cf995727fe32434f75f6cf55dbfb70425b1eaede4cd419df29aa8181bbb99b11bbe35dad1c69
   languageName: node
   linkType: hard
 
