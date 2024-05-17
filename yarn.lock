@@ -5066,7 +5066,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:8.0.9, @storybook/blocks@npm:^8.0.9":
+"@storybook/blocks@npm:8.0.9":
   version: 8.0.9
   resolution: "@storybook/blocks@npm:8.0.9"
   dependencies:
@@ -5103,6 +5103,46 @@ __metadata:
     react-dom:
       optional: true
   checksum: 10c0/9ba543b92e100ada1f50d86327fc6d7680d79e51a491bf8ec718241b341d7d0e0c35c1c0e0a611326f966d178b24d7532e5896052815190fac7d4785b556c346
+  languageName: node
+  linkType: hard
+
+"@storybook/blocks@npm:^8.0.9":
+  version: 8.1.1
+  resolution: "@storybook/blocks@npm:8.1.1"
+  dependencies:
+    "@storybook/channels": "npm:8.1.1"
+    "@storybook/client-logger": "npm:8.1.1"
+    "@storybook/components": "npm:8.1.1"
+    "@storybook/core-events": "npm:8.1.1"
+    "@storybook/csf": "npm:^0.1.7"
+    "@storybook/docs-tools": "npm:8.1.1"
+    "@storybook/global": "npm:^5.0.0"
+    "@storybook/icons": "npm:^1.2.5"
+    "@storybook/manager-api": "npm:8.1.1"
+    "@storybook/preview-api": "npm:8.1.1"
+    "@storybook/theming": "npm:8.1.1"
+    "@storybook/types": "npm:8.1.1"
+    "@types/lodash": "npm:^4.14.167"
+    color-convert: "npm:^2.0.1"
+    dequal: "npm:^2.0.2"
+    lodash: "npm:^4.17.21"
+    markdown-to-jsx: "npm:7.3.2"
+    memoizerific: "npm:^1.11.3"
+    polished: "npm:^4.2.2"
+    react-colorful: "npm:^5.1.2"
+    telejson: "npm:^7.2.0"
+    tocbot: "npm:^4.20.1"
+    ts-dedent: "npm:^2.0.0"
+    util-deprecate: "npm:^1.0.2"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/dea1712aeb3ceb902353f94b83661b5fc4968641f02715197a619dcb00f1497c083f2c827264c575ba62ced030e87dfdc58038d107d7dba2443eeb9126ab71a8
   languageName: node
   linkType: hard
 
@@ -5378,7 +5418,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/components@npm:^8.0.9":
+"@storybook/components@npm:8.1.1, @storybook/components@npm:^8.0.9":
   version: 8.1.1
   resolution: "@storybook/components@npm:8.1.1"
   dependencies:
@@ -5730,7 +5770,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/docs-tools@npm:^8.0.9":
+"@storybook/docs-tools@npm:8.1.1, @storybook/docs-tools@npm:^8.0.9":
   version: 8.1.1
   resolution: "@storybook/docs-tools@npm:8.1.1"
   dependencies:
@@ -5839,7 +5879,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/manager-api@npm:^8.0.9":
+"@storybook/manager-api@npm:8.1.1, @storybook/manager-api@npm:^8.0.9":
   version: 8.1.1
   resolution: "@storybook/manager-api@npm:8.1.1"
   dependencies:
