@@ -5823,18 +5823,18 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-links@npm:^8.0.9":
-  version: 8.0.10
-  resolution: "@storybook/addon-links@npm:8.0.10"
+  version: 8.1.1
+  resolution: "@storybook/addon-links@npm:8.1.1"
   dependencies:
-    "@storybook/csf": "npm:^0.1.4"
+    "@storybook/csf": "npm:^0.1.7"
     "@storybook/global": "npm:^5.0.0"
     ts-dedent: "npm:^2.0.0"
   peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
   peerDependenciesMeta:
     react:
       optional: true
-  checksum: 10c0/aa5dd7c85a176e6e00db6453851658d2e291325b97ca24a6cd8c2bce54fdd77ab00d6bcd1a0114bead577b28dc2576598ad1ef91f5c5f72361dc7445612b3d77
+  checksum: 10c0/32115e738a06d6890eb0cabdd32240d0fde55f597f7d36816b57e5abba256044d123648dbeadfd64e4ed6f327df861a0dc81bd51e6a634fe324790325ec597ac
   languageName: node
   linkType: hard
 
