@@ -4682,9 +4682,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@joshwooding/vite-plugin-react-docgen-typescript@npm:0.3.0":
-  version: 0.3.0
-  resolution: "@joshwooding/vite-plugin-react-docgen-typescript@npm:0.3.0"
+"@joshwooding/vite-plugin-react-docgen-typescript@npm:0.3.1":
+  version: 0.3.1
+  resolution: "@joshwooding/vite-plugin-react-docgen-typescript@npm:0.3.1"
   dependencies:
     glob: "npm:^7.2.0"
     glob-promise: "npm:^4.2.0"
@@ -4696,7 +4696,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10c0/31098ad8fcc2440437534599c111d9f2951dd74821e8ba46c521b969bae4c918d830b7bb0484efbad29a51711bb62d3bc623d5a1ed5b1695b5b5594ea9dd4ca0
+  checksum: 10c0/a9c7a03d7d1daf5bd64949255516ba64c88d5600366c8c74dcdb6f37c2a6099daaec02860b7587d2220e61afa47a0b2de17ef70d723c2db02f24e0890edfd9f3
   languageName: node
   linkType: hard
 
@@ -5969,44 +5969,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-vite@npm:8.0.10":
-  version: 8.0.10
-  resolution: "@storybook/builder-vite@npm:8.0.10"
-  dependencies:
-    "@storybook/channels": "npm:8.0.10"
-    "@storybook/client-logger": "npm:8.0.10"
-    "@storybook/core-common": "npm:8.0.10"
-    "@storybook/core-events": "npm:8.0.10"
-    "@storybook/csf-plugin": "npm:8.0.10"
-    "@storybook/node-logger": "npm:8.0.10"
-    "@storybook/preview": "npm:8.0.10"
-    "@storybook/preview-api": "npm:8.0.10"
-    "@storybook/types": "npm:8.0.10"
-    "@types/find-cache-dir": "npm:^3.2.1"
-    browser-assert: "npm:^1.2.1"
-    es-module-lexer: "npm:^0.9.3"
-    express: "npm:^4.17.3"
-    find-cache-dir: "npm:^3.0.0"
-    fs-extra: "npm:^11.1.0"
-    magic-string: "npm:^0.30.0"
-    ts-dedent: "npm:^2.0.0"
-  peerDependencies:
-    "@preact/preset-vite": "*"
-    typescript: ">= 4.3.x"
-    vite: ^4.0.0 || ^5.0.0
-    vite-plugin-glimmerx: "*"
-  peerDependenciesMeta:
-    "@preact/preset-vite":
-      optional: true
-    typescript:
-      optional: true
-    vite-plugin-glimmerx:
-      optional: true
-  checksum: 10c0/fa7a50000ee2167666ae44a8556440f5123e02f32396a8ef17384ddaefbce81ad7e7810d076957a2280224e2472d395d4c697c23d9586bdc438b78f597759ef4
-  languageName: node
-  linkType: hard
-
-"@storybook/builder-vite@npm:^8.0.9":
+"@storybook/builder-vite@npm:8.1.1, @storybook/builder-vite@npm:^8.0.9":
   version: 8.1.1
   resolution: "@storybook/builder-vite@npm:8.1.1"
   dependencies:
@@ -6575,13 +6538,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/preview@npm:8.0.10":
-  version: 8.0.10
-  resolution: "@storybook/preview@npm:8.0.10"
-  checksum: 10c0/78e224be3edb8fa717c40033d3831700c5d80f21b44ad2da9e4605f9b07739eb7579587b0a6c4a307ced740d36bec13917144d420a55c6d8506f5c84d7cb9ab3
-  languageName: node
-  linkType: hard
-
 "@storybook/preview@npm:8.1.1":
   version: 8.1.1
   resolution: "@storybook/preview@npm:8.1.1"
@@ -6610,64 +6566,29 @@ __metadata:
   linkType: hard
 
 "@storybook/react-vite@npm:^8.0.9":
-  version: 8.0.10
-  resolution: "@storybook/react-vite@npm:8.0.10"
+  version: 8.1.1
+  resolution: "@storybook/react-vite@npm:8.1.1"
   dependencies:
-    "@joshwooding/vite-plugin-react-docgen-typescript": "npm:0.3.0"
+    "@joshwooding/vite-plugin-react-docgen-typescript": "npm:0.3.1"
     "@rollup/pluginutils": "npm:^5.0.2"
-    "@storybook/builder-vite": "npm:8.0.10"
-    "@storybook/node-logger": "npm:8.0.10"
-    "@storybook/react": "npm:8.0.10"
+    "@storybook/builder-vite": "npm:8.1.1"
+    "@storybook/node-logger": "npm:8.1.1"
+    "@storybook/react": "npm:8.1.1"
+    "@storybook/types": "npm:8.1.1"
     find-up: "npm:^5.0.0"
     magic-string: "npm:^0.30.0"
     react-docgen: "npm:^7.0.0"
     resolve: "npm:^1.22.8"
     tsconfig-paths: "npm:^4.2.0"
   peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
     vite: ^4.0.0 || ^5.0.0
-  checksum: 10c0/ec05e5d9d7b41b123d8c37c9e0d89a94ddca8dd4c84151319018ec85f471fc59fd3f12adfbb6ed6cffbb6a2687e91e9bfd13e781267c09206a568468be25ecfa
+  checksum: 10c0/64da7ff3774d6974ab56a884b70a1406f4e8d28b18f53415910f72217af35edd5eddabec5f47f7e771d723bb3c5d70f87b1f0c481ac8e28b411e6c79aed29326
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:8.0.10":
-  version: 8.0.10
-  resolution: "@storybook/react@npm:8.0.10"
-  dependencies:
-    "@storybook/client-logger": "npm:8.0.10"
-    "@storybook/docs-tools": "npm:8.0.10"
-    "@storybook/global": "npm:^5.0.0"
-    "@storybook/preview-api": "npm:8.0.10"
-    "@storybook/react-dom-shim": "npm:8.0.10"
-    "@storybook/types": "npm:8.0.10"
-    "@types/escodegen": "npm:^0.0.6"
-    "@types/estree": "npm:^0.0.51"
-    "@types/node": "npm:^18.0.0"
-    acorn: "npm:^7.4.1"
-    acorn-jsx: "npm:^5.3.1"
-    acorn-walk: "npm:^7.2.0"
-    escodegen: "npm:^2.1.0"
-    html-tags: "npm:^3.1.0"
-    lodash: "npm:^4.17.21"
-    prop-types: "npm:^15.7.2"
-    react-element-to-jsx-string: "npm:^15.0.0"
-    semver: "npm:^7.3.7"
-    ts-dedent: "npm:^2.0.0"
-    type-fest: "npm:~2.19"
-    util-deprecate: "npm:^1.0.2"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-    typescript: ">= 4.2.x"
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: 10c0/b8d83f80254a8bf9d7ef64bf0b8a46d753aec9973bc6c35d5ad1a9f3d61bc02555d9bf16457ef0495fac7eca8f2b232209569b2cbc7d2bb7290b7d9de0b07d7c
-  languageName: node
-  linkType: hard
-
-"@storybook/react@npm:^8.0.9":
+"@storybook/react@npm:8.1.1, @storybook/react@npm:^8.0.9":
   version: 8.1.1
   resolution: "@storybook/react@npm:8.1.1"
   dependencies:
@@ -11957,13 +11878,6 @@ __metadata:
     iterator.prototype: "npm:^1.1.2"
     safe-array-concat: "npm:^1.1.0"
   checksum: 10c0/d0f281257e7165f068fd4fc3beb63d07ae4f18fbef02a2bbe4a39272b764164c1ce3311ae7c5429ac30003aef290fcdf569050e4a9ba3560e044440f68e9a47c
-  languageName: node
-  linkType: hard
-
-"es-module-lexer@npm:^0.9.3":
-  version: 0.9.3
-  resolution: "es-module-lexer@npm:0.9.3"
-  checksum: 10c0/be77d73aee709fdc68d22b9938da81dfee3bc45e8d601629258643fe5bfdab253d6e2540035e035cfa8cf52a96366c1c19b46bcc23b4507b1d44e5907d2e7f6c
   languageName: node
   linkType: hard
 
