@@ -4257,16 +4257,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/daygrid@npm:^6.1.11, @fullcalendar/daygrid@npm:~6.1.11":
-  version: 6.1.13
-  resolution: "@fullcalendar/daygrid@npm:6.1.13"
-  peerDependencies:
-    "@fullcalendar/core": ~6.1.13
-  checksum: 10c0/a00292ebcea289c4921bca22270b1c52a6b83770537f6977c24093bd0d4ea01555888ffa09f477d43b135e8d10834338e6459035b47813754daec0f8b9f7b7e6
-  languageName: node
-  linkType: hard
-
-"@fullcalendar/daygrid@npm:~6.1.13":
+"@fullcalendar/daygrid@npm:^6.1.11, @fullcalendar/daygrid@npm:~6.1.11, @fullcalendar/daygrid@npm:~6.1.13":
   version: 6.1.13
   resolution: "@fullcalendar/daygrid@npm:6.1.13"
   peerDependencies:
@@ -6738,7 +6729,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:8.1.1, @storybook/theming@npm:^8.0.9":
+"@storybook/theming@npm:8.1.1":
   version: 8.1.1
   resolution: "@storybook/theming@npm:8.1.1"
   dependencies:
@@ -6758,7 +6749,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:8.1.4":
+"@storybook/theming@npm:8.1.4, @storybook/theming@npm:^8.0.9":
   version: 8.1.4
   resolution: "@storybook/theming@npm:8.1.4"
   dependencies:
