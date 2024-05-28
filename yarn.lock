@@ -4248,7 +4248,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/core@npm:^6.1.11, @fullcalendar/core@npm:~6.1.11":
+"@fullcalendar/core@npm:^6.1.11, @fullcalendar/core@npm:~6.1.13":
   version: 6.1.13
   resolution: "@fullcalendar/core@npm:6.1.13"
   dependencies:
@@ -4257,7 +4257,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/daygrid@npm:^6.1.11, @fullcalendar/daygrid@npm:~6.1.11, @fullcalendar/daygrid@npm:~6.1.13":
+"@fullcalendar/daygrid@npm:^6.1.11, @fullcalendar/daygrid@npm:~6.1.13":
   version: 6.1.13
   resolution: "@fullcalendar/daygrid@npm:6.1.13"
   peerDependencies:
@@ -4266,32 +4266,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/interaction@npm:~6.1.11":
-  version: 6.1.11
-  resolution: "@fullcalendar/interaction@npm:6.1.11"
+"@fullcalendar/interaction@npm:~6.1.13":
+  version: 6.1.13
+  resolution: "@fullcalendar/interaction@npm:6.1.13"
   peerDependencies:
-    "@fullcalendar/core": ~6.1.11
-  checksum: 10c0/1e21aa0a9befea6293fd5ecf2c6c2d712e1fd9fda31dfdc12299cfbc3e007853dd2e0e1a23c73184596f790ae23d352ad03cba3eaec402f62dcd09aad668139d
+    "@fullcalendar/core": ~6.1.13
+  checksum: 10c0/b4e79d0bdc26867e82fe6686aa08b0f6286ea45e31ed32a329012c47fb228bc76bfe3a502fd4f32cdb121566f02f700e19b3fdaeb510d77bbabbf9e093296a5e
   languageName: node
   linkType: hard
 
-"@fullcalendar/list@npm:~6.1.11":
-  version: 6.1.11
-  resolution: "@fullcalendar/list@npm:6.1.11"
+"@fullcalendar/list@npm:~6.1.13":
+  version: 6.1.13
+  resolution: "@fullcalendar/list@npm:6.1.13"
   peerDependencies:
-    "@fullcalendar/core": ~6.1.11
-  checksum: 10c0/7098924f4ffa4c723eb769acef1ffbba44f38d545416bb584d65a2d60cebff8cc6bd407bf6fcccf0de51f61763f695dceb4c2e044a837a65244d0d81068c66c7
+    "@fullcalendar/core": ~6.1.13
+  checksum: 10c0/6f55192c4f128227fa10adab20330fed0022a3a4eb96cbc92d0f462a5c9a766235f2a8b72e6c5e3638186730ec86cc6078747765552e7efee3f1f6373b36dfe1
   languageName: node
   linkType: hard
 
-"@fullcalendar/multimonth@npm:~6.1.11":
-  version: 6.1.11
-  resolution: "@fullcalendar/multimonth@npm:6.1.11"
+"@fullcalendar/multimonth@npm:~6.1.13":
+  version: 6.1.13
+  resolution: "@fullcalendar/multimonth@npm:6.1.13"
   dependencies:
-    "@fullcalendar/daygrid": "npm:~6.1.11"
+    "@fullcalendar/daygrid": "npm:~6.1.13"
   peerDependencies:
-    "@fullcalendar/core": ~6.1.11
-  checksum: 10c0/7232ab65eea35ecff82e94aecd1cd1df92e8699ab49d3699fa2df98942dc6026964eeec85164c8ed31c7fdfc858b75e698104e64d6d17fbd0f478c848b60b298
+    "@fullcalendar/core": ~6.1.13
+  checksum: 10c0/1575cddd667c626336fae2c7b67a410c1193cb55b6396fe27f836d3a866acc9f019487b93fdf78c9bdd665151ce233325e0573e561adc43207dce37b603b48e4
   languageName: node
   linkType: hard
 
@@ -4342,7 +4342,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/timegrid@npm:^6.1.11, @fullcalendar/timegrid@npm:~6.1.11, @fullcalendar/timegrid@npm:~6.1.13":
+"@fullcalendar/timegrid@npm:^6.1.11, @fullcalendar/timegrid@npm:~6.1.13":
   version: 6.1.13
   resolution: "@fullcalendar/timegrid@npm:6.1.13"
   dependencies:
@@ -13468,16 +13468,16 @@ __metadata:
   linkType: hard
 
 "fullcalendar@npm:^6.1.11":
-  version: 6.1.11
-  resolution: "fullcalendar@npm:6.1.11"
+  version: 6.1.13
+  resolution: "fullcalendar@npm:6.1.13"
   dependencies:
-    "@fullcalendar/core": "npm:~6.1.11"
-    "@fullcalendar/daygrid": "npm:~6.1.11"
-    "@fullcalendar/interaction": "npm:~6.1.11"
-    "@fullcalendar/list": "npm:~6.1.11"
-    "@fullcalendar/multimonth": "npm:~6.1.11"
-    "@fullcalendar/timegrid": "npm:~6.1.11"
-  checksum: 10c0/6bc07b77ff1d85d68b3ec59e5cbe519c34ec3051158afbb043cc965b9ff9205c5c2a748c4c647309427b10807b2089a4989953caa5b953cb9a783cf2cfeab9a0
+    "@fullcalendar/core": "npm:~6.1.13"
+    "@fullcalendar/daygrid": "npm:~6.1.13"
+    "@fullcalendar/interaction": "npm:~6.1.13"
+    "@fullcalendar/list": "npm:~6.1.13"
+    "@fullcalendar/multimonth": "npm:~6.1.13"
+    "@fullcalendar/timegrid": "npm:~6.1.13"
+  checksum: 10c0/b40f552b041ede742cc0314991abc038c7f1aca84f3bb92736b4aa389ee3424c571e80c99b32786247df8634a9a6d625e87ac3c7a0f03dafcb5fff9034b70bb0
   languageName: node
   linkType: hard
 
