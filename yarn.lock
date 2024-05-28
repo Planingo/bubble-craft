@@ -4257,16 +4257,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/daygrid@npm:^6.1.11, @fullcalendar/daygrid@npm:~6.1.11":
-  version: 6.1.13
-  resolution: "@fullcalendar/daygrid@npm:6.1.13"
-  peerDependencies:
-    "@fullcalendar/core": ~6.1.13
-  checksum: 10c0/a00292ebcea289c4921bca22270b1c52a6b83770537f6977c24093bd0d4ea01555888ffa09f477d43b135e8d10834338e6459035b47813754daec0f8b9f7b7e6
-  languageName: node
-  linkType: hard
-
-"@fullcalendar/daygrid@npm:~6.1.13":
+"@fullcalendar/daygrid@npm:^6.1.11, @fullcalendar/daygrid@npm:~6.1.11, @fullcalendar/daygrid@npm:~6.1.13":
   version: 6.1.13
   resolution: "@fullcalendar/daygrid@npm:6.1.13"
   peerDependencies:
@@ -5925,7 +5916,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:8.1.1, @storybook/blocks@npm:^8.0.9":
+"@storybook/blocks@npm:8.1.1":
   version: 8.1.1
   resolution: "@storybook/blocks@npm:8.1.1"
   dependencies:
@@ -5962,6 +5953,46 @@ __metadata:
     react-dom:
       optional: true
   checksum: 10c0/dea1712aeb3ceb902353f94b83661b5fc4968641f02715197a619dcb00f1497c083f2c827264c575ba62ced030e87dfdc58038d107d7dba2443eeb9126ab71a8
+  languageName: node
+  linkType: hard
+
+"@storybook/blocks@npm:^8.0.9":
+  version: 8.1.4
+  resolution: "@storybook/blocks@npm:8.1.4"
+  dependencies:
+    "@storybook/channels": "npm:8.1.4"
+    "@storybook/client-logger": "npm:8.1.4"
+    "@storybook/components": "npm:8.1.4"
+    "@storybook/core-events": "npm:8.1.4"
+    "@storybook/csf": "npm:^0.1.7"
+    "@storybook/docs-tools": "npm:8.1.4"
+    "@storybook/global": "npm:^5.0.0"
+    "@storybook/icons": "npm:^1.2.5"
+    "@storybook/manager-api": "npm:8.1.4"
+    "@storybook/preview-api": "npm:8.1.4"
+    "@storybook/theming": "npm:8.1.4"
+    "@storybook/types": "npm:8.1.4"
+    "@types/lodash": "npm:^4.14.167"
+    color-convert: "npm:^2.0.1"
+    dequal: "npm:^2.0.2"
+    lodash: "npm:^4.17.21"
+    markdown-to-jsx: "npm:7.3.2"
+    memoizerific: "npm:^1.11.3"
+    polished: "npm:^4.2.2"
+    react-colorful: "npm:^5.1.2"
+    telejson: "npm:^7.2.0"
+    tocbot: "npm:^4.20.1"
+    ts-dedent: "npm:^2.0.0"
+    util-deprecate: "npm:^1.0.2"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/01d6fcfd902782eed2ccd0310bd9cdafbe35163156a681f82c6969a171ba6f3f266c0d0333f90a1275ee2f6f1124767f89b27049a064660f85d47cb6113a7db6
   languageName: node
   linkType: hard
 
@@ -6159,7 +6190,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/components@npm:^8.0.9":
+"@storybook/components@npm:8.1.4, @storybook/components@npm:^8.0.9":
   version: 8.1.4
   resolution: "@storybook/components@npm:8.1.4"
   dependencies:
@@ -6495,7 +6526,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/manager-api@npm:^8.0.9":
+"@storybook/manager-api@npm:8.1.4, @storybook/manager-api@npm:^8.0.9":
   version: 8.1.4
   resolution: "@storybook/manager-api@npm:8.1.4"
   dependencies:
