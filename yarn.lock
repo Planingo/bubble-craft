@@ -4249,24 +4249,15 @@ __metadata:
   linkType: hard
 
 "@fullcalendar/core@npm:^6.1.11, @fullcalendar/core@npm:~6.1.11":
-  version: 6.1.11
-  resolution: "@fullcalendar/core@npm:6.1.11"
+  version: 6.1.13
+  resolution: "@fullcalendar/core@npm:6.1.13"
   dependencies:
     preact: "npm:~10.12.1"
-  checksum: 10c0/24f945d359aa8813496176a29690559842f542a56f91cf89d35261ab98efdeecee506aa0b64d6f561cf2cd9e86259c1997164515c2d593f6067e99b578eb94d3
+  checksum: 10c0/876c5f539e1a5ac41cd4db7f170e1a4e9f47debabc5416e38efbd817ea2e99232e20689fb98b1f0703e3dbd11f3b92cad8d70ae93414e6f2dde5fd9a9503a5ed
   languageName: node
   linkType: hard
 
-"@fullcalendar/daygrid@npm:^6.1.11, @fullcalendar/daygrid@npm:~6.1.11":
-  version: 6.1.13
-  resolution: "@fullcalendar/daygrid@npm:6.1.13"
-  peerDependencies:
-    "@fullcalendar/core": ~6.1.13
-  checksum: 10c0/a00292ebcea289c4921bca22270b1c52a6b83770537f6977c24093bd0d4ea01555888ffa09f477d43b135e8d10834338e6459035b47813754daec0f8b9f7b7e6
-  languageName: node
-  linkType: hard
-
-"@fullcalendar/daygrid@npm:~6.1.13":
+"@fullcalendar/daygrid@npm:^6.1.11, @fullcalendar/daygrid@npm:~6.1.11, @fullcalendar/daygrid@npm:~6.1.13":
   version: 6.1.13
   resolution: "@fullcalendar/daygrid@npm:6.1.13"
   peerDependencies:
