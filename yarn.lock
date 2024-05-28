@@ -6415,7 +6415,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/docs-tools@npm:8.1.1, @storybook/docs-tools@npm:^8.0.9":
+"@storybook/docs-tools@npm:8.1.1":
   version: 8.1.1
   resolution: "@storybook/docs-tools@npm:8.1.1"
   dependencies:
@@ -6431,7 +6431,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/docs-tools@npm:8.1.4":
+"@storybook/docs-tools@npm:8.1.4, @storybook/docs-tools@npm:^8.0.9":
   version: 8.1.4
   resolution: "@storybook/docs-tools@npm:8.1.4"
   dependencies:
