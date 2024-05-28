@@ -6166,7 +6166,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/components@npm:8.1.1, @storybook/components@npm:^8.0.9":
+"@storybook/components@npm:8.1.1":
   version: 8.1.1
   resolution: "@storybook/components@npm:8.1.1"
   dependencies:
@@ -6184,6 +6184,27 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
   checksum: 10c0/347b09c608aa1137de2e3491ac4cd79086a02b2ea8c76f4dab3472493bf4db6bff62119992f6086082e4a131276f1fdf2c99064e7e4d02c3933aa4fe39a75e52
+  languageName: node
+  linkType: hard
+
+"@storybook/components@npm:^8.0.9":
+  version: 8.1.4
+  resolution: "@storybook/components@npm:8.1.4"
+  dependencies:
+    "@radix-ui/react-dialog": "npm:^1.0.5"
+    "@radix-ui/react-slot": "npm:^1.0.2"
+    "@storybook/client-logger": "npm:8.1.4"
+    "@storybook/csf": "npm:^0.1.7"
+    "@storybook/global": "npm:^5.0.0"
+    "@storybook/icons": "npm:^1.2.5"
+    "@storybook/theming": "npm:8.1.4"
+    "@storybook/types": "npm:8.1.4"
+    memoizerific: "npm:^1.11.3"
+    util-deprecate: "npm:^1.0.2"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+  checksum: 10c0/bf59b84fb8f8324e7e1a80474b6509db5e6277cb44dc45c9fec0e7d2fbf97d5ecc6d19f0bc1bf4162ae9936bc552ad7e249e62ffff800aa4ea0690b10e605ecd
   languageName: node
   linkType: hard
 
