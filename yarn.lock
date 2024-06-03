@@ -6060,7 +6060,44 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-vite@npm:8.1.4, @storybook/builder-vite@npm:^8.0.9":
+"@storybook/builder-vite@npm:8.1.5":
+  version: 8.1.5
+  resolution: "@storybook/builder-vite@npm:8.1.5"
+  dependencies:
+    "@storybook/channels": "npm:8.1.5"
+    "@storybook/client-logger": "npm:8.1.5"
+    "@storybook/core-common": "npm:8.1.5"
+    "@storybook/core-events": "npm:8.1.5"
+    "@storybook/csf-plugin": "npm:8.1.5"
+    "@storybook/node-logger": "npm:8.1.5"
+    "@storybook/preview": "npm:8.1.5"
+    "@storybook/preview-api": "npm:8.1.5"
+    "@storybook/types": "npm:8.1.5"
+    "@types/find-cache-dir": "npm:^3.2.1"
+    browser-assert: "npm:^1.2.1"
+    es-module-lexer: "npm:^1.5.0"
+    express: "npm:^4.17.3"
+    find-cache-dir: "npm:^3.0.0"
+    fs-extra: "npm:^11.1.0"
+    magic-string: "npm:^0.30.0"
+    ts-dedent: "npm:^2.0.0"
+  peerDependencies:
+    "@preact/preset-vite": "*"
+    typescript: ">= 4.3.x"
+    vite: ^4.0.0 || ^5.0.0
+    vite-plugin-glimmerx: "*"
+  peerDependenciesMeta:
+    "@preact/preset-vite":
+      optional: true
+    typescript:
+      optional: true
+    vite-plugin-glimmerx:
+      optional: true
+  checksum: 10c0/9a7482b7d4fd59afcfd115ffe04e2ec1f403819543275aa55f80dd23e6454e5be22f83986ceb18ce061cf756e11b86735b095a7f35916046d1ad29a317b0949b
+  languageName: node
+  linkType: hard
+
+"@storybook/builder-vite@npm:^8.0.9":
   version: 8.1.4
   resolution: "@storybook/builder-vite@npm:8.1.4"
   dependencies:
@@ -6717,6 +6754,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/preview@npm:8.1.5":
+  version: 8.1.5
+  resolution: "@storybook/preview@npm:8.1.5"
+  checksum: 10c0/acca17c97c1e91af7292592bd678e808089634c402f8b3a9b5db9e1aaa8028584304d88a173079f2688d51a1ef5990928eb61f15d1994d1821d011419bc036c1
+  languageName: node
+  linkType: hard
+
 "@storybook/react-dom-shim@npm:8.1.4":
   version: 8.1.4
   resolution: "@storybook/react-dom-shim@npm:8.1.4"
@@ -6738,15 +6782,15 @@ __metadata:
   linkType: hard
 
 "@storybook/react-vite@npm:^8.0.9":
-  version: 8.1.4
-  resolution: "@storybook/react-vite@npm:8.1.4"
+  version: 8.1.5
+  resolution: "@storybook/react-vite@npm:8.1.5"
   dependencies:
     "@joshwooding/vite-plugin-react-docgen-typescript": "npm:0.3.1"
     "@rollup/pluginutils": "npm:^5.0.2"
-    "@storybook/builder-vite": "npm:8.1.4"
-    "@storybook/node-logger": "npm:8.1.4"
-    "@storybook/react": "npm:8.1.4"
-    "@storybook/types": "npm:8.1.4"
+    "@storybook/builder-vite": "npm:8.1.5"
+    "@storybook/node-logger": "npm:8.1.5"
+    "@storybook/react": "npm:8.1.5"
+    "@storybook/types": "npm:8.1.5"
     find-up: "npm:^5.0.0"
     magic-string: "npm:^0.30.0"
     react-docgen: "npm:^7.0.0"
@@ -6756,11 +6800,47 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
     vite: ^4.0.0 || ^5.0.0
-  checksum: 10c0/fd0abbf7d61333f11a48a4b9979151d0871097ba9539e6effa7562b00be9c7f86c74a9484cea9fea0eaedd29477a7632635c589d9c82084eb7d700ae642d85e1
+  checksum: 10c0/0781a979f5c37c776f1222925421acff7f2c3094ef490b80582827cea76293429b20ac8a593787c91bdf1eb5e69aed3c9cbea9807a965fbe99aa08cb3b269e54
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:8.1.4, @storybook/react@npm:^8.0.9":
+"@storybook/react@npm:8.1.5":
+  version: 8.1.5
+  resolution: "@storybook/react@npm:8.1.5"
+  dependencies:
+    "@storybook/client-logger": "npm:8.1.5"
+    "@storybook/docs-tools": "npm:8.1.5"
+    "@storybook/global": "npm:^5.0.0"
+    "@storybook/preview-api": "npm:8.1.5"
+    "@storybook/react-dom-shim": "npm:8.1.5"
+    "@storybook/types": "npm:8.1.5"
+    "@types/escodegen": "npm:^0.0.6"
+    "@types/estree": "npm:^0.0.51"
+    "@types/node": "npm:^18.0.0"
+    acorn: "npm:^7.4.1"
+    acorn-jsx: "npm:^5.3.1"
+    acorn-walk: "npm:^7.2.0"
+    escodegen: "npm:^2.1.0"
+    html-tags: "npm:^3.1.0"
+    lodash: "npm:^4.17.21"
+    prop-types: "npm:^15.7.2"
+    react-element-to-jsx-string: "npm:^15.0.0"
+    semver: "npm:^7.3.7"
+    ts-dedent: "npm:^2.0.0"
+    type-fest: "npm:~2.19"
+    util-deprecate: "npm:^1.0.2"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    typescript: ">= 4.2.x"
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 10c0/f46e43ef2c4cb033814460491efe27b2846a2f785785a185248bde25ce1c2a2a4185d71a686826bf323c5eb06a5fa99c0901fb06dc48739358e6954c576240da
+  languageName: node
+  linkType: hard
+
+"@storybook/react@npm:^8.0.9":
   version: 8.1.4
   resolution: "@storybook/react@npm:8.1.4"
   dependencies:
