@@ -5940,21 +5940,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-viewport@npm:8.1.5":
+"@storybook/addon-viewport@npm:8.1.5, @storybook/addon-viewport@npm:^8.0.9":
   version: 8.1.5
   resolution: "@storybook/addon-viewport@npm:8.1.5"
   dependencies:
     memoizerific: "npm:^1.11.3"
   checksum: 10c0/8787ca59e60e9a555cb4bcb8e59b2c5a203a02aa81adfae2f070dde30ba3ef792be682431adfdab19ae413dfff063660ccdbfc9ac7dce157c4ad359ca70c4669
-  languageName: node
-  linkType: hard
-
-"@storybook/addon-viewport@npm:^8.0.9":
-  version: 8.1.4
-  resolution: "@storybook/addon-viewport@npm:8.1.4"
-  dependencies:
-    memoizerific: "npm:^1.11.3"
-  checksum: 10c0/5344b6e447da4cbd4c75cd08f06abeec3215269624e1f86ebb81eda8466ec665d307fca78412649bc3d389678d3de755aa1c3ce68d466aab15a0200493c86fee
   languageName: node
   linkType: hard
 
