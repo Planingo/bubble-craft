@@ -5876,8 +5876,8 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-links@npm:^8.0.9":
-  version: 8.1.4
-  resolution: "@storybook/addon-links@npm:8.1.4"
+  version: 8.1.5
+  resolution: "@storybook/addon-links@npm:8.1.5"
   dependencies:
     "@storybook/csf": "npm:^0.1.7"
     "@storybook/global": "npm:^5.0.0"
@@ -5887,7 +5887,7 @@ __metadata:
   peerDependenciesMeta:
     react:
       optional: true
-  checksum: 10c0/710675143cfb534258dd76efd7cba5007dad8cce021f086b817eb08fbfbeada52b0428636d8f67cb9765ea183a7da9979c497b34ba747925f3813499b12b9347
+  checksum: 10c0/9feaf2213ac1bd95bdf18ea679edca8fd2dcd68b5185aadaa3d943df0fae0e2f3b3db3cb65b2c32e50fb59a505e584653dbce5e0a6b658d56c535edecc95c626
   languageName: node
   linkType: hard
 
