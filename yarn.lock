@@ -6054,7 +6054,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-vite@npm:8.1.5":
+"@storybook/builder-vite@npm:8.1.5, @storybook/builder-vite@npm:^8.0.9":
   version: 8.1.5
   resolution: "@storybook/builder-vite@npm:8.1.5"
   dependencies:
@@ -6088,43 +6088,6 @@ __metadata:
     vite-plugin-glimmerx:
       optional: true
   checksum: 10c0/9a7482b7d4fd59afcfd115ffe04e2ec1f403819543275aa55f80dd23e6454e5be22f83986ceb18ce061cf756e11b86735b095a7f35916046d1ad29a317b0949b
-  languageName: node
-  linkType: hard
-
-"@storybook/builder-vite@npm:^8.0.9":
-  version: 8.1.4
-  resolution: "@storybook/builder-vite@npm:8.1.4"
-  dependencies:
-    "@storybook/channels": "npm:8.1.4"
-    "@storybook/client-logger": "npm:8.1.4"
-    "@storybook/core-common": "npm:8.1.4"
-    "@storybook/core-events": "npm:8.1.4"
-    "@storybook/csf-plugin": "npm:8.1.4"
-    "@storybook/node-logger": "npm:8.1.4"
-    "@storybook/preview": "npm:8.1.4"
-    "@storybook/preview-api": "npm:8.1.4"
-    "@storybook/types": "npm:8.1.4"
-    "@types/find-cache-dir": "npm:^3.2.1"
-    browser-assert: "npm:^1.2.1"
-    es-module-lexer: "npm:^1.5.0"
-    express: "npm:^4.17.3"
-    find-cache-dir: "npm:^3.0.0"
-    fs-extra: "npm:^11.1.0"
-    magic-string: "npm:^0.30.0"
-    ts-dedent: "npm:^2.0.0"
-  peerDependencies:
-    "@preact/preset-vite": "*"
-    typescript: ">= 4.3.x"
-    vite: ^4.0.0 || ^5.0.0
-    vite-plugin-glimmerx: "*"
-  peerDependenciesMeta:
-    "@preact/preset-vite":
-      optional: true
-    typescript:
-      optional: true
-    vite-plugin-glimmerx:
-      optional: true
-  checksum: 10c0/610f627f6bc0a1840b1ba544466b1503943c7e02127af270128841d45347be9c57d854621103f7a411a2e7627e8e7113623a3e05f7637fe6a336791579e198a2
   languageName: node
   linkType: hard
 
@@ -6684,13 +6647,6 @@ __metadata:
     ts-dedent: "npm:^2.0.0"
     util-deprecate: "npm:^1.0.2"
   checksum: 10c0/50d17bbc437d8f3902e6aee13086a97588f92a529673f5d45c6ed271e4a3ee4e3d17dd4c42d4639bee667a2df951227cb0b2342e4dc68d90aa2064ca783d8c74
-  languageName: node
-  linkType: hard
-
-"@storybook/preview@npm:8.1.4":
-  version: 8.1.4
-  resolution: "@storybook/preview@npm:8.1.4"
-  checksum: 10c0/e7383348c16eb030e6a8b4a929a65f2b8a4244d1dd7e55a42ce767183a941fba92f84b702660e5734de013a3aed75ff2011174f8156e54eb116c1caaa8e730f7
   languageName: node
   linkType: hard
 
