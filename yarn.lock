@@ -6561,21 +6561,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/instrumenter@npm:8.1.4":
-  version: 8.1.4
-  resolution: "@storybook/instrumenter@npm:8.1.4"
-  dependencies:
-    "@storybook/channels": "npm:8.1.4"
-    "@storybook/client-logger": "npm:8.1.4"
-    "@storybook/core-events": "npm:8.1.4"
-    "@storybook/global": "npm:^5.0.0"
-    "@storybook/preview-api": "npm:8.1.4"
-    "@vitest/utils": "npm:^1.3.1"
-    util: "npm:^0.12.4"
-  checksum: 10c0/015a311fd73198198fa388386242568adb1c51567646d8c9ad49b41539fb318ae09cd8eba31c0aa6a857ab4ea0bcd67c61564b66e505934884c919d3e565ee73
-  languageName: node
-  linkType: hard
-
 "@storybook/instrumenter@npm:8.1.5":
   version: 8.1.5
   resolution: "@storybook/instrumenter@npm:8.1.5"
@@ -6882,7 +6867,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/test@npm:8.1.5":
+"@storybook/test@npm:8.1.5, @storybook/test@npm:^8.0.9":
   version: 8.1.5
   resolution: "@storybook/test@npm:8.1.5"
   dependencies:
@@ -6897,24 +6882,6 @@ __metadata:
     "@vitest/spy": "npm:^1.3.1"
     util: "npm:^0.12.4"
   checksum: 10c0/e061ba17083a5119917debb314c696e5480159a23d379314cb7a2615e6f720ff54766ac004087a0d80862aa72c84ead310215c11a92306319f667794b30f13c5
-  languageName: node
-  linkType: hard
-
-"@storybook/test@npm:^8.0.9":
-  version: 8.1.4
-  resolution: "@storybook/test@npm:8.1.4"
-  dependencies:
-    "@storybook/client-logger": "npm:8.1.4"
-    "@storybook/core-events": "npm:8.1.4"
-    "@storybook/instrumenter": "npm:8.1.4"
-    "@storybook/preview-api": "npm:8.1.4"
-    "@testing-library/dom": "npm:^9.3.4"
-    "@testing-library/jest-dom": "npm:^6.4.2"
-    "@testing-library/user-event": "npm:^14.5.2"
-    "@vitest/expect": "npm:1.3.1"
-    "@vitest/spy": "npm:^1.3.1"
-    util: "npm:^0.12.4"
-  checksum: 10c0/4e5834519d12b28254818b70262e801113b6b1d8efeb1a29eeb74e2bbcb53605789d46bf1ce484c18fca285186a7ca85dbf3d21cfc40bf0a31f1079a3351dec9
   languageName: node
   linkType: hard
 
