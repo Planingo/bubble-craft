@@ -6582,7 +6582,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/preview-api@npm:8.1.5, @storybook/preview-api@npm:^8.0.9":
+"@storybook/preview-api@npm:8.1.5":
   version: 8.1.5
   resolution: "@storybook/preview-api@npm:8.1.5"
   dependencies:
@@ -6604,7 +6604,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/preview-api@npm:8.1.6":
+"@storybook/preview-api@npm:8.1.6, @storybook/preview-api@npm:^8.0.9":
   version: 8.1.6
   resolution: "@storybook/preview-api@npm:8.1.6"
   dependencies:
