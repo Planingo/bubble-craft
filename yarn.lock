@@ -6777,7 +6777,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:8.1.6":
+"@storybook/react@npm:8.1.6, @storybook/react@npm:^8.0.9":
   version: 8.1.6
   resolution: "@storybook/react@npm:8.1.6"
   dependencies:
@@ -6810,42 +6810,6 @@ __metadata:
     typescript:
       optional: true
   checksum: 10c0/adf5b694496cc2ab144b634bed774499d200b05d59844a52e6d8a7daeb43569077c0ab1da8c8ca27b1822c495e456223bd0e1d93ddff29bf1c387c394cba24b3
-  languageName: node
-  linkType: hard
-
-"@storybook/react@npm:^8.0.9":
-  version: 8.1.5
-  resolution: "@storybook/react@npm:8.1.5"
-  dependencies:
-    "@storybook/client-logger": "npm:8.1.5"
-    "@storybook/docs-tools": "npm:8.1.5"
-    "@storybook/global": "npm:^5.0.0"
-    "@storybook/preview-api": "npm:8.1.5"
-    "@storybook/react-dom-shim": "npm:8.1.5"
-    "@storybook/types": "npm:8.1.5"
-    "@types/escodegen": "npm:^0.0.6"
-    "@types/estree": "npm:^0.0.51"
-    "@types/node": "npm:^18.0.0"
-    acorn: "npm:^7.4.1"
-    acorn-jsx: "npm:^5.3.1"
-    acorn-walk: "npm:^7.2.0"
-    escodegen: "npm:^2.1.0"
-    html-tags: "npm:^3.1.0"
-    lodash: "npm:^4.17.21"
-    prop-types: "npm:^15.7.2"
-    react-element-to-jsx-string: "npm:^15.0.0"
-    semver: "npm:^7.3.7"
-    ts-dedent: "npm:^2.0.0"
-    type-fest: "npm:~2.19"
-    util-deprecate: "npm:^1.0.2"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    typescript: ">= 4.2.x"
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: 10c0/f46e43ef2c4cb033814460491efe27b2846a2f785785a185248bde25ce1c2a2a4185d71a686826bf323c5eb06a5fa99c0901fb06dc48739358e6954c576240da
   languageName: node
   linkType: hard
 
