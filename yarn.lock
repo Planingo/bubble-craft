@@ -4360,18 +4360,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/timegrid@npm:^6.1.11, @fullcalendar/timegrid@npm:~6.1.13":
-  version: 6.1.13
-  resolution: "@fullcalendar/timegrid@npm:6.1.13"
-  dependencies:
-    "@fullcalendar/daygrid": "npm:~6.1.13"
-  peerDependencies:
-    "@fullcalendar/core": ~6.1.13
-  checksum: 10c0/8a83a9532730ddeec0337fb0b91c20da6fd77d4f93128e1c963b9455b6574211cbbfa8ff431656a0ad99a48ae697c0f2376d9e1c527ce0956af4ee82be0abe3f
-  languageName: node
-  linkType: hard
-
-"@fullcalendar/timegrid@npm:~6.1.14":
+"@fullcalendar/timegrid@npm:^6.1.11, @fullcalendar/timegrid@npm:~6.1.13, @fullcalendar/timegrid@npm:~6.1.14":
   version: 6.1.14
   resolution: "@fullcalendar/timegrid@npm:6.1.14"
   dependencies:
