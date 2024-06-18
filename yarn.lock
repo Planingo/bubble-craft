@@ -6186,7 +6186,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/components@npm:8.1.10":
+"@storybook/components@npm:8.1.10, @storybook/components@npm:^8.0.9":
   version: 8.1.10
   resolution: "@storybook/components@npm:8.1.10"
   dependencies:
@@ -6207,7 +6207,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/components@npm:8.1.6, @storybook/components@npm:^8.0.9":
+"@storybook/components@npm:8.1.6":
   version: 8.1.6
   resolution: "@storybook/components@npm:8.1.6"
   dependencies:
