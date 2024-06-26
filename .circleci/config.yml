@@ -1,11 +1,11 @@
 version: 2.1
 orbs:
   discord: antonioned/discord@0.1.0
-  node: circleci/node@5.0.2
+  node: circleci/node@5.2.0
 
 jobs:
   chromatic:
-      executor: node/default
+      executor: node/22
       steps:
         - checkout
         - restore_cache:
@@ -15,7 +15,7 @@ jobs:
         - run: yarn install
         - run: npx chromatic --project-token=$chromatic --exit-zero-on-changes
   unit-test:
-    executor: node/default
+    executor: node/22
     steps:
       - checkout
       - restore_cache:
@@ -30,7 +30,7 @@ jobs:
             - ./node_modules
       - run: yarn test
   e2e-test:
-    executor: node/default
+    executor: node/22
     steps:
       - checkout
       - restore_cache:
@@ -55,7 +55,7 @@ jobs:
             sudo apt-get install google-chrome-stable
       - run: yarn test:e2e
   publish:
-    executor: node/default
+    executor: node/22
     steps:
       - checkout
       - run:
