@@ -7039,7 +7039,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:8.1.10, @storybook/theming@npm:^8.0.9":
+"@storybook/theming@npm:8.1.10":
   version: 8.1.10
   resolution: "@storybook/theming@npm:8.1.10"
   dependencies:
@@ -7059,7 +7059,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:8.1.11":
+"@storybook/theming@npm:8.1.11, @storybook/theming@npm:^8.0.9":
   version: 8.1.11
   resolution: "@storybook/theming@npm:8.1.11"
   dependencies:
