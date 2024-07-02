@@ -6712,7 +6712,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/manager-api@npm:8.1.10, @storybook/manager-api@npm:^8.0.9":
+"@storybook/manager-api@npm:8.1.10":
   version: 8.1.10
   resolution: "@storybook/manager-api@npm:8.1.10"
   dependencies:
@@ -6735,7 +6735,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/manager-api@npm:8.1.11":
+"@storybook/manager-api@npm:8.1.11, @storybook/manager-api@npm:^8.0.9":
   version: 8.1.11
   resolution: "@storybook/manager-api@npm:8.1.11"
   dependencies:
