@@ -7073,7 +7073,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:8.1.10, @storybook/theming@npm:^8.0.9":
+"@storybook/theming@npm:8.1.10":
   version: 8.1.10
   resolution: "@storybook/theming@npm:8.1.10"
   dependencies:
@@ -7110,6 +7110,15 @@ __metadata:
     react-dom:
       optional: true
   checksum: 10c0/67246798c0c19d50f82e035fede067c1ef6a01529a283939ebd284c451073d3e2442483ae8524ff8102aad9d3994f6b5ee621347cf344e7f4bbd5d0d05eb4ff8
+  languageName: node
+  linkType: hard
+
+"@storybook/theming@npm:^8.0.9":
+  version: 8.2.1
+  resolution: "@storybook/theming@npm:8.2.1"
+  peerDependencies:
+    storybook: ^8.2.1
+  checksum: 10c0/070be7957da60afacaf6e212578496bff62fbd67de13997f1ae26cefd196d9ccb24b99b3f4400f0b3b4f440fbe05f6927874ecfdf54d483f0ba68bdc6c06db81
   languageName: node
   linkType: hard
 
