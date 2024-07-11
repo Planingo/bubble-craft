@@ -6413,7 +6413,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/components@npm:8.1.10, @storybook/components@npm:^8.0.9":
+"@storybook/components@npm:8.1.10":
   version: 8.1.10
   resolution: "@storybook/components@npm:8.1.10"
   dependencies:
@@ -6452,6 +6452,15 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
   checksum: 10c0/c9b40f5daf41c97fd5e601f8bc6df906241e6442daa571eb35cce7680582ae336a35db154071f62b1c38c06cb27f889f482c90145cd861484f79a604f4a73fd0
+  languageName: node
+  linkType: hard
+
+"@storybook/components@npm:^8.0.9":
+  version: 8.2.1
+  resolution: "@storybook/components@npm:8.2.1"
+  peerDependencies:
+    storybook: ^8.2.1
+  checksum: 10c0/e97481c81f303a33479a2edf58f5ff0b522878f6bca1675662388470343814c638a769e90ccedbbf36c73caa4af256c46e7ae49d1914d33cf1ba94ebf4e07250
   languageName: node
   linkType: hard
 
