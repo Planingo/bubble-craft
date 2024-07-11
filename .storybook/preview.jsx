@@ -24,5 +24,7 @@ export const decorators = [
         );
     },
   ];
+
+export const tags = ['autodocs'];
   
   
