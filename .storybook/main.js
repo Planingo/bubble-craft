@@ -13,9 +13,7 @@ module.exports = {
   core: {
     builder: '@storybook/builder-vite',
   },
-  docs: {
-    autodocs: true
-  },
+  docs: {},
   async viteFinal(config) {
     // Merge custom configuration into the default config
     const { mergeConfig } = await import('vite');
