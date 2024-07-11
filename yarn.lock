@@ -6729,7 +6729,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/preview-api@npm:8.1.10, @storybook/preview-api@npm:^8.0.9":
+"@storybook/preview-api@npm:8.1.10":
   version: 8.1.10
   resolution: "@storybook/preview-api@npm:8.1.10"
   dependencies:
@@ -6770,6 +6770,15 @@ __metadata:
     ts-dedent: "npm:^2.0.0"
     util-deprecate: "npm:^1.0.2"
   checksum: 10c0/4987b4ffb51993ef50f343b6fd7be2ecd4abd9757a5ec2b2b1c009b3013088d2ca456b596bde13f01d8c1fccae036ba66f006c2b0705232fdb11ee39047468f3
+  languageName: node
+  linkType: hard
+
+"@storybook/preview-api@npm:^8.0.9":
+  version: 8.2.1
+  resolution: "@storybook/preview-api@npm:8.2.1"
+  peerDependencies:
+    storybook: ^8.2.1
+  checksum: 10c0/9f13bcb92c66917f96229523549b1dcd91d949fd489cd8be2792622e1e9625b0173275e3f409a7fec4abad54f422a5194344fedd1d6c49d29bef8ea72ee19a70
   languageName: node
   linkType: hard
 
