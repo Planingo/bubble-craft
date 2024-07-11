@@ -6770,7 +6770,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/manager-api@npm:8.1.10, @storybook/manager-api@npm:^8.0.9":
+"@storybook/manager-api@npm:8.1.10":
   version: 8.1.10
   resolution: "@storybook/manager-api@npm:8.1.10"
   dependencies:
@@ -6813,6 +6813,15 @@ __metadata:
     telejson: "npm:^7.2.0"
     ts-dedent: "npm:^2.0.0"
   checksum: 10c0/6fbd5c878dea80d7a3b4ee7d2b244c321c4893efa59e9de2257d4c74c688968b70e9008d2694af08c2a5cfaf373a69aea21c7fca096c43aa1962b77b9a2008b3
+  languageName: node
+  linkType: hard
+
+"@storybook/manager-api@npm:^8.0.9":
+  version: 8.2.1
+  resolution: "@storybook/manager-api@npm:8.2.1"
+  peerDependencies:
+    storybook: ^8.2.1
+  checksum: 10c0/badd824fcd09d4bf9dd7aaab0f6e5ec15a2ee4661b112e3c6b2eada2257d38262f15211534f8afa9d2062c1f33fb2ed0c370c1cd6f81d07541d6e0f591ce2222
   languageName: node
   linkType: hard
 
