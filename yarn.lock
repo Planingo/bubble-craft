@@ -5976,7 +5976,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-docs@npm:8.1.10, @storybook/addon-docs@npm:^8.0.9":
+"@storybook/addon-docs@npm:8.1.10":
   version: 8.1.10
   resolution: "@storybook/addon-docs@npm:8.1.10"
   dependencies:
@@ -6001,6 +6001,29 @@ __metadata:
     rehype-slug: "npm:^6.0.0"
     ts-dedent: "npm:^2.0.0"
   checksum: 10c0/b0b2405225957d833dbce711308757120318bd181e0122b8c810f46b1ce4a82acf377f68cd74f7e07e8e9afecf2c69e0e82733195dec64ef5343b5899507be45
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-docs@npm:^8.0.9":
+  version: 8.2.1
+  resolution: "@storybook/addon-docs@npm:8.2.1"
+  dependencies:
+    "@babel/core": "npm:^7.24.4"
+    "@mdx-js/react": "npm:^3.0.0"
+    "@storybook/blocks": "npm:8.2.1"
+    "@storybook/csf-plugin": "npm:8.2.1"
+    "@storybook/global": "npm:^5.0.0"
+    "@storybook/react-dom-shim": "npm:8.2.1"
+    "@types/react": "npm:^16.8.0 || ^17.0.0 || ^18.0.0"
+    fs-extra: "npm:^11.1.0"
+    react: "npm:^16.8.0 || ^17.0.0 || ^18.0.0"
+    react-dom: "npm:^16.8.0 || ^17.0.0 || ^18.0.0"
+    rehype-external-links: "npm:^3.0.0"
+    rehype-slug: "npm:^6.0.0"
+    ts-dedent: "npm:^2.0.0"
+  peerDependencies:
+    storybook: ^8.2.1
+  checksum: 10c0/8927c9bded076869f77ef6a5d9caa5b00c11e6adca0d12e396c9f3cf6ea2bb1fd4da05f357585a807599ce63918ae740e415b76bc7d37d6b9633f535ba494d26
   languageName: node
   linkType: hard
 
@@ -6173,6 +6196,37 @@ __metadata:
     react-dom:
       optional: true
   checksum: 10c0/7f80199d7433ad9a824cfa7cd9786ca5a6f30b7f47e82b1dafffcb195aecf6db877a929ceb1a57b4d8e1688caabb806ec74367e63727e06f6cd4e3f073cc1099
+  languageName: node
+  linkType: hard
+
+"@storybook/blocks@npm:8.2.1":
+  version: 8.2.1
+  resolution: "@storybook/blocks@npm:8.2.1"
+  dependencies:
+    "@storybook/csf": "npm:0.1.11"
+    "@storybook/global": "npm:^5.0.0"
+    "@storybook/icons": "npm:^1.2.5"
+    "@types/lodash": "npm:^4.14.167"
+    color-convert: "npm:^2.0.1"
+    dequal: "npm:^2.0.2"
+    lodash: "npm:^4.17.21"
+    markdown-to-jsx: "npm:^7.4.5"
+    memoizerific: "npm:^1.11.3"
+    polished: "npm:^4.2.2"
+    react-colorful: "npm:^5.1.2"
+    telejson: "npm:^7.2.0"
+    ts-dedent: "npm:^2.0.0"
+    util-deprecate: "npm:^1.0.2"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^8.2.1
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/d96cab2a73f2a43f2ddcd9618d1b2f4efda894d00e2316f795ad988c33dafae72c9361fb9b76d7cb2c8602913f823648d4f25458b08f7549f62247d75c145f94
   languageName: node
   linkType: hard
 
@@ -6663,6 +6717,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/csf-plugin@npm:8.2.1":
+  version: 8.2.1
+  resolution: "@storybook/csf-plugin@npm:8.2.1"
+  dependencies:
+    unplugin: "npm:^1.3.1"
+  peerDependencies:
+    storybook: ^8.2.1
+  checksum: 10c0/7127790508f6cf2e1c515981c02e019fd34849b4e74b7312194638d44d6cc5a69d1d09396b128f23144ab92262bf2bb46a157d4552d9f51979ffe52d1ce7a787
+  languageName: node
+  linkType: hard
+
 "@storybook/csf-tools@npm:8.1.10":
   version: 8.1.10
   resolution: "@storybook/csf-tools@npm:8.1.10"
@@ -6959,6 +7024,17 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
   checksum: 10c0/2f3e58b020a7ddab9987e514c2bbd45f0c8fcd72da585ec3590a31e408fbca536f52fdc3247a82138b606ee2c02660fa17af5656aa8b3620a64050844f09ada7
+  languageName: node
+  linkType: hard
+
+"@storybook/react-dom-shim@npm:8.2.1":
+  version: 8.2.1
+  resolution: "@storybook/react-dom-shim@npm:8.2.1"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^8.2.1
+  checksum: 10c0/89d9c508925ac5b8f3c9f2fee8ea68da879eb96f2d3a47db6848044678578bed56f18d8f5f13652e187f2a785c4b253bb3447128027f144d4e1b483c99120526
   languageName: node
   linkType: hard
 
@@ -17283,6 +17359,15 @@ __metadata:
   peerDependencies:
     react: ">= 0.14.0"
   checksum: 10c0/191b9a9defeed02e12dd340cebf279f577266dac7b34574fa44ce4d64ee8536f9967d455b8303c853f84413feb473118290a6160d8221eeaf3b9e4961b8980e3
+  languageName: node
+  linkType: hard
+
+"markdown-to-jsx@npm:^7.4.5":
+  version: 7.4.7
+  resolution: "markdown-to-jsx@npm:7.4.7"
+  peerDependencies:
+    react: ">= 0.14.0"
+  checksum: 10c0/7dab3e2c8d7374c45e6ca34fd12b40453533a5b89749eff3359975b1d296c553ff7675f56be7c9d1fb3b97b7b7d143d1b3237137d5c262322e0534eea72e2800
   languageName: node
   linkType: hard
 
