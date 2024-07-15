@@ -5791,6 +5791,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/react-dom-shim@npm:8.2.3":
+  version: 8.2.3
+  resolution: "@storybook/react-dom-shim@npm:8.2.3"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^8.2.3
+  checksum: 10c0/7f3160b2ba134aa1a96fb74852833c08f8592089718da1104a48eb47276b70bf47c617012a87a17a04677aed9174d9ae93a968176dbb0d9e6b36e89d9aeef2b3
+  languageName: node
+  linkType: hard
+
 "@storybook/react-vite@npm:^8.2.1":
   version: 8.2.1
   resolution: "@storybook/react-vite@npm:8.2.1"
@@ -5813,7 +5824,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:8.2.1, @storybook/react@npm:^8.2.1":
+"@storybook/react@npm:8.2.1":
   version: 8.2.1
   resolution: "@storybook/react@npm:8.2.1"
   dependencies:
@@ -5843,6 +5854,39 @@ __metadata:
     typescript:
       optional: true
   checksum: 10c0/4e54fb6a0f812308a24e092e9f0cef63c310694b8456221c5407a48bef5bf59483f86ffdcdba16acb274a9a4679fc87e6072e6ea1db38b232c5497f3e172771d
+  languageName: node
+  linkType: hard
+
+"@storybook/react@npm:^8.2.1":
+  version: 8.2.3
+  resolution: "@storybook/react@npm:8.2.3"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+    "@storybook/react-dom-shim": "npm:8.2.3"
+    "@types/escodegen": "npm:^0.0.6"
+    "@types/estree": "npm:^0.0.51"
+    "@types/node": "npm:^18.0.0"
+    acorn: "npm:^7.4.1"
+    acorn-jsx: "npm:^5.3.1"
+    acorn-walk: "npm:^7.2.0"
+    escodegen: "npm:^2.1.0"
+    html-tags: "npm:^3.1.0"
+    lodash: "npm:^4.17.21"
+    prop-types: "npm:^15.7.2"
+    react-element-to-jsx-string: "npm:^15.0.0"
+    semver: "npm:^7.3.7"
+    ts-dedent: "npm:^2.0.0"
+    type-fest: "npm:~2.19"
+    util-deprecate: "npm:^1.0.2"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^8.2.3
+    typescript: ">= 4.2.x"
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 10c0/8ad8923760263e86ae5165e798b3f18572c341b02093dc03166456b86cb5e72d79b68b0672b803fb38ced8d7e3bd7dec3aaa251859b503c721b7d0ad63426f8b
   languageName: node
   linkType: hard
 
