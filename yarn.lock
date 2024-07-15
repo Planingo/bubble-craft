@@ -5762,6 +5762,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/instrumenter@npm:8.2.3":
+  version: 8.2.3
+  resolution: "@storybook/instrumenter@npm:8.2.3"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+    "@vitest/utils": "npm:^1.3.1"
+    util: "npm:^0.12.4"
+  peerDependencies:
+    storybook: ^8.2.3
+  checksum: 10c0/6d84490a260a8fdb77367e47ece6836be17913d8bcbe1f9cfc6158502ed7e64b4ca30a5ec682493ca6fdef5b10f1e54099c71f2195b601765a97f558c34878ce
+  languageName: node
+  linkType: hard
+
 "@storybook/manager-api@npm:^8.2.1":
   version: 8.2.1
   resolution: "@storybook/manager-api@npm:8.2.1"
@@ -5861,11 +5874,11 @@ __metadata:
   linkType: hard
 
 "@storybook/test@npm:^8.2.1":
-  version: 8.2.1
-  resolution: "@storybook/test@npm:8.2.1"
+  version: 8.2.3
+  resolution: "@storybook/test@npm:8.2.3"
   dependencies:
     "@storybook/csf": "npm:0.1.11"
-    "@storybook/instrumenter": "npm:8.2.1"
+    "@storybook/instrumenter": "npm:8.2.3"
     "@testing-library/dom": "npm:10.1.0"
     "@testing-library/jest-dom": "npm:6.4.5"
     "@testing-library/user-event": "npm:14.5.2"
@@ -5873,8 +5886,8 @@ __metadata:
     "@vitest/spy": "npm:1.6.0"
     util: "npm:^0.12.4"
   peerDependencies:
-    storybook: ^8.2.1
-  checksum: 10c0/7aac13ed6cd863a667c421f7d9b1e9b789760179173c4b40d3b3d2f3ec87ced545f9fc00b9412d70105d457c5c56d1b801649005df3a4af1e7970137736f9915
+    storybook: ^8.2.3
+  checksum: 10c0/d09fe9219836a12c5a52dd93b95bbed607d08e74965454ff4b5fe9a3d7795dc6f2022a5025a3f83c5c30462b645c38e5fd2c6a01ee4069575847d97c69ab40f3
   languageName: node
   linkType: hard
 
