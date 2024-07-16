@@ -5851,11 +5851,11 @@ __metadata:
   linkType: hard
 
 "@storybook/manager-api@npm:^8.2.1":
-  version: 8.2.3
-  resolution: "@storybook/manager-api@npm:8.2.3"
+  version: 8.2.4
+  resolution: "@storybook/manager-api@npm:8.2.4"
   peerDependencies:
-    storybook: ^8.2.3
-  checksum: 10c0/fece893a45a58e12a9712176eafae263abfcedfd072472d2dd8c390cca703247574ddf037db80de64c9d2b9ab115b86d41185ab8eeddd8337f7a8928f2bf84bf
+    storybook: ^8.2.4
+  checksum: 10c0/c118b7693c5412137207a3ef075f402d80d88078b56d4f3649ee5ed3d8b4d4af5c3e0b24a0980044621bc3878acb3293daa4187c2e8e99d34aae87337ef3fae6
   languageName: node
   linkType: hard
 
