@@ -4201,13 +4201,13 @@ __metadata:
   linkType: hard
 
 "@fullcalendar/adaptive@npm:^6.1.11":
-  version: 6.1.14
-  resolution: "@fullcalendar/adaptive@npm:6.1.14"
+  version: 6.1.15
+  resolution: "@fullcalendar/adaptive@npm:6.1.15"
   dependencies:
-    "@fullcalendar/premium-common": "npm:~6.1.14"
+    "@fullcalendar/premium-common": "npm:~6.1.15"
   peerDependencies:
-    "@fullcalendar/core": ~6.1.14
-  checksum: 10c0/bf1fef1a7782304f3b74d83f0d697f47bea801830cba83309000e3b77c81af11f68cb38a500f1082fb60dd614bd1e34d5e87dbc925def7118b891e88d5d8ed6b
+    "@fullcalendar/core": ~6.1.15
+  checksum: 10c0/06ab38d0eaefa49780770b488569824a45561729635475cf31759e90307c8446754b164db1bc30fd2f5a5bb5db498e68a8eb5f408cfc4223d963779af813cb78
   languageName: node
   linkType: hard
 
@@ -4267,15 +4267,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/premium-common@npm:~6.1.14":
-  version: 6.1.14
-  resolution: "@fullcalendar/premium-common@npm:6.1.14"
-  peerDependencies:
-    "@fullcalendar/core": ~6.1.14
-  checksum: 10c0/0ae14629c2f9eba3e4fe24b966b216c69d52b56b376c4e8e683ce5fea2c567eeea3cfd93c10d0e775918d319e86680b56d6349163135ae864a6f199a31d848bc
-  languageName: node
-  linkType: hard
-
 "@fullcalendar/premium-common@npm:~6.1.15":
   version: 6.1.15
   resolution: "@fullcalendar/premium-common@npm:6.1.15"
@@ -4323,18 +4314,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/timegrid@npm:^6.1.11, @fullcalendar/timegrid@npm:~6.1.14":
-  version: 6.1.15
-  resolution: "@fullcalendar/timegrid@npm:6.1.15"
-  dependencies:
-    "@fullcalendar/daygrid": "npm:~6.1.15"
-  peerDependencies:
-    "@fullcalendar/core": ~6.1.15
-  checksum: 10c0/0ad1012fdbd8dbd3b4f71e015186393863d3d7b627ac8306049263c7814137ffd6bab80732071f4750ee63e7e2a97fa935be7fc54970d6edabda14f26a59e076
-  languageName: node
-  linkType: hard
-
-"@fullcalendar/timegrid@npm:~6.1.15":
+"@fullcalendar/timegrid@npm:^6.1.11, @fullcalendar/timegrid@npm:~6.1.14, @fullcalendar/timegrid@npm:~6.1.15":
   version: 6.1.15
   resolution: "@fullcalendar/timegrid@npm:6.1.15"
   dependencies:
