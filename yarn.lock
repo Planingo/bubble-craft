@@ -4220,16 +4220,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/daygrid@npm:^6.1.11, @fullcalendar/daygrid@npm:~6.1.14":
-  version: 6.1.14
-  resolution: "@fullcalendar/daygrid@npm:6.1.14"
-  peerDependencies:
-    "@fullcalendar/core": ~6.1.14
-  checksum: 10c0/4ef6aea9b08c03ca017ebc82449b3855181bfc4f34299f63f582719eaa8944493d4dabf171c5d28e90c39132c60e6761c6b66c2fd63a0f6d75fcec8c4c2387c8
-  languageName: node
-  linkType: hard
-
-"@fullcalendar/daygrid@npm:~6.1.15":
+"@fullcalendar/daygrid@npm:^6.1.11, @fullcalendar/daygrid@npm:~6.1.14, @fullcalendar/daygrid@npm:~6.1.15":
   version: 6.1.15
   resolution: "@fullcalendar/daygrid@npm:6.1.15"
   peerDependencies:
