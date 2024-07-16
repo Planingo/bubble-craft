@@ -4323,18 +4323,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/timegrid@npm:^6.1.11, @fullcalendar/timegrid@npm:~6.1.14":
-  version: 6.1.15
-  resolution: "@fullcalendar/timegrid@npm:6.1.15"
-  dependencies:
-    "@fullcalendar/daygrid": "npm:~6.1.15"
-  peerDependencies:
-    "@fullcalendar/core": ~6.1.15
-  checksum: 10c0/0ad1012fdbd8dbd3b4f71e015186393863d3d7b627ac8306049263c7814137ffd6bab80732071f4750ee63e7e2a97fa935be7fc54970d6edabda14f26a59e076
-  languageName: node
-  linkType: hard
-
-"@fullcalendar/timegrid@npm:~6.1.15":
+"@fullcalendar/timegrid@npm:^6.1.11, @fullcalendar/timegrid@npm:~6.1.14, @fullcalendar/timegrid@npm:~6.1.15":
   version: 6.1.15
   resolution: "@fullcalendar/timegrid@npm:6.1.15"
   dependencies:
@@ -5581,15 +5570,15 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-storysource@npm:^8.2.1":
-  version: 8.2.1
-  resolution: "@storybook/addon-storysource@npm:8.2.1"
+  version: 8.2.4
+  resolution: "@storybook/addon-storysource@npm:8.2.4"
   dependencies:
-    "@storybook/source-loader": "npm:8.2.1"
+    "@storybook/source-loader": "npm:8.2.4"
     estraverse: "npm:^5.2.0"
     tiny-invariant: "npm:^1.3.1"
   peerDependencies:
-    storybook: ^8.2.1
-  checksum: 10c0/af63518182ff4fdf510d27a28a4bf31edd8b232b091231367b4c8b036cc10d50f3fab49a10c45286be63c5394691649123a7e4bfd00d7d50a2e8a51c9c1bd051
+    storybook: ^8.2.4
+  checksum: 10c0/91b4135ec72195c92066c2f1363d815699a7ce41555de5f89bc02356975466f06ed06f4d8433de3782fc8a448ff46f00fbee06788bb38e3c5717ca598d0a3b61
   languageName: node
   linkType: hard
 
@@ -5973,17 +5962,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/source-loader@npm:8.2.1":
-  version: 8.2.1
-  resolution: "@storybook/source-loader@npm:8.2.1"
+"@storybook/source-loader@npm:8.2.4":
+  version: 8.2.4
+  resolution: "@storybook/source-loader@npm:8.2.4"
   dependencies:
     "@storybook/csf": "npm:0.1.11"
     estraverse: "npm:^5.2.0"
     lodash: "npm:^4.17.21"
     prettier: "npm:^3.1.1"
   peerDependencies:
-    storybook: ^8.2.1
-  checksum: 10c0/7d4ed8a8ee9cb723ba2ee1a177d1befba7ed97eddb93c358a8b76026b5d69ce5e4c177ffd4f2f24125a3dfa9197d2a8366884c1111c161dbe732de9d5c061585
+    storybook: ^8.2.4
+  checksum: 10c0/87e7e8a77c836fbf536793f24fc7afd1a93240625809374d149426a482512c9cb625620d8eea52427632d2761b80cc6983cbb5cac924dba2a6c8d28f7aed4e66
   languageName: node
   linkType: hard
 
