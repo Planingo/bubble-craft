@@ -4323,18 +4323,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/timegrid@npm:^6.1.11, @fullcalendar/timegrid@npm:~6.1.14":
-  version: 6.1.15
-  resolution: "@fullcalendar/timegrid@npm:6.1.15"
-  dependencies:
-    "@fullcalendar/daygrid": "npm:~6.1.15"
-  peerDependencies:
-    "@fullcalendar/core": ~6.1.15
-  checksum: 10c0/0ad1012fdbd8dbd3b4f71e015186393863d3d7b627ac8306049263c7814137ffd6bab80732071f4750ee63e7e2a97fa935be7fc54970d6edabda14f26a59e076
-  languageName: node
-  linkType: hard
-
-"@fullcalendar/timegrid@npm:~6.1.15":
+"@fullcalendar/timegrid@npm:^6.1.11, @fullcalendar/timegrid@npm:~6.1.14, @fullcalendar/timegrid@npm:~6.1.15":
   version: 6.1.15
   resolution: "@fullcalendar/timegrid@npm:6.1.15"
   dependencies:
@@ -5448,7 +5437,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-backgrounds@npm:8.2.1, @storybook/addon-backgrounds@npm:^8.2.1":
+"@storybook/addon-backgrounds@npm:8.2.1":
   version: 8.2.1
   resolution: "@storybook/addon-backgrounds@npm:8.2.1"
   dependencies:
@@ -5458,6 +5447,19 @@ __metadata:
   peerDependencies:
     storybook: ^8.2.1
   checksum: 10c0/df08d508189caeb22c630b56230de131f0c4665467104c040a9824548b73d587f95b753e8fc274e7877d41c403fd8386b60e5be64ee379e3e80a4cd5798976ea
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-backgrounds@npm:^8.2.1":
+  version: 8.2.4
+  resolution: "@storybook/addon-backgrounds@npm:8.2.4"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+    memoizerific: "npm:^1.11.3"
+    ts-dedent: "npm:^2.0.0"
+  peerDependencies:
+    storybook: ^8.2.4
+  checksum: 10c0/45c34c8fa3f1946735bf8f0d55c72d31b28fcc18849bbf3ad30cba5ecf0e8f0a12748b8326cfcdc100ba04774e6f60ba5c9b9fe0cd4f321e11f23767bdd01f7c
   languageName: node
   linkType: hard
 
