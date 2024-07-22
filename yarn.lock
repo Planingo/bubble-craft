@@ -5689,10 +5689,10 @@ __metadata:
   linkType: hard
 
 "@storybook/builder-vite@npm:^8.2.1":
-  version: 8.2.3
-  resolution: "@storybook/builder-vite@npm:8.2.3"
+  version: 8.2.5
+  resolution: "@storybook/builder-vite@npm:8.2.5"
   dependencies:
-    "@storybook/csf-plugin": "npm:8.2.3"
+    "@storybook/csf-plugin": "npm:8.2.5"
     "@types/find-cache-dir": "npm:^3.2.1"
     browser-assert: "npm:^1.2.1"
     es-module-lexer: "npm:^1.5.0"
@@ -5703,7 +5703,7 @@ __metadata:
     ts-dedent: "npm:^2.0.0"
   peerDependencies:
     "@preact/preset-vite": "*"
-    storybook: ^8.2.3
+    storybook: ^8.2.5
     typescript: ">= 4.3.x"
     vite: ^4.0.0 || ^5.0.0
     vite-plugin-glimmerx: "*"
@@ -5714,7 +5714,7 @@ __metadata:
       optional: true
     vite-plugin-glimmerx:
       optional: true
-  checksum: 10c0/fcdbd02102c8820b0bbdf3a8f3da6ca10cb8bfbaefac5c22ff365ec66ccf88286ea44ab2c2815eee896b490d8fe8146ae83a7d9fdfd71575c35ecb51b0ddb48d
+  checksum: 10c0/93a00b49828a2a0f3d0354d620dd7e80bb295a462863aa53501087bb3cec2a2ead3b0b2d1c0fac343a5af527e56d1dcb83616f21fa88bfab92ae91dcee10fd3d
   languageName: node
   linkType: hard
 
@@ -5787,17 +5787,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/csf-plugin@npm:8.2.3":
-  version: 8.2.3
-  resolution: "@storybook/csf-plugin@npm:8.2.3"
-  dependencies:
-    unplugin: "npm:^1.3.1"
-  peerDependencies:
-    storybook: ^8.2.3
-  checksum: 10c0/f1ad746963e024d4b9e85253c2a56fbcf28e032dc344b6f538bb7c321ec51a2077514a94876e29df4f9828de9595a4bb7b109645719052e96eb830d316ce0df7
-  languageName: node
-  linkType: hard
-
 "@storybook/csf-plugin@npm:8.2.4":
   version: 8.2.4
   resolution: "@storybook/csf-plugin@npm:8.2.4"
@@ -5806,6 +5795,17 @@ __metadata:
   peerDependencies:
     storybook: ^8.2.4
   checksum: 10c0/d05fcd05fe7c75d0d2e9046799e67a750e8d593d44a1f8bb8f14f6debe35d288523c954b70582ac6df15abe5f3d28a93d695604fb002746e3c84ae95a01446ff
+  languageName: node
+  linkType: hard
+
+"@storybook/csf-plugin@npm:8.2.5":
+  version: 8.2.5
+  resolution: "@storybook/csf-plugin@npm:8.2.5"
+  dependencies:
+    unplugin: "npm:^1.3.1"
+  peerDependencies:
+    storybook: ^8.2.5
+  checksum: 10c0/c9d7b16fc7ddef3ef30a56f617e263a86b9a114266d221354fd9b52078958f58a6cc0761cb375dcd517b43fd0be2b612bf6e692f4e2cdc1c5081d52d1c44b077
   languageName: node
   linkType: hard
 
