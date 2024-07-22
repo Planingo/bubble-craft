@@ -5844,19 +5844,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/instrumenter@npm:8.2.3":
-  version: 8.2.3
-  resolution: "@storybook/instrumenter@npm:8.2.3"
-  dependencies:
-    "@storybook/global": "npm:^5.0.0"
-    "@vitest/utils": "npm:^1.3.1"
-    util: "npm:^0.12.4"
-  peerDependencies:
-    storybook: ^8.2.3
-  checksum: 10c0/6d84490a260a8fdb77367e47ece6836be17913d8bcbe1f9cfc6158502ed7e64b4ca30a5ec682493ca6fdef5b10f1e54099c71f2195b601765a97f558c34878ce
-  languageName: node
-  linkType: hard
-
 "@storybook/instrumenter@npm:8.2.4":
   version: 8.2.4
   resolution: "@storybook/instrumenter@npm:8.2.4"
@@ -5867,6 +5854,19 @@ __metadata:
   peerDependencies:
     storybook: ^8.2.4
   checksum: 10c0/64f084fa760d36d4090af9ff6176120136743535fcb0df34dfeb4bc08643dc95e8c3aad9bcdd796dea0d790786a58eb4c06250213e01ce05fbb850eeddec11f2
+  languageName: node
+  linkType: hard
+
+"@storybook/instrumenter@npm:8.2.5":
+  version: 8.2.5
+  resolution: "@storybook/instrumenter@npm:8.2.5"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+    "@vitest/utils": "npm:^1.3.1"
+    util: "npm:^0.12.4"
+  peerDependencies:
+    storybook: ^8.2.5
+  checksum: 10c0/0cc5feca3c761568efc1d49d6f734b391186979f3f1819b334a2b0691d0c3e4d78113b1dbc63199aca4b7b8be39f5bcd295a749be0ac469ae352fdf94e9c0254
   languageName: node
   linkType: hard
 
@@ -6042,11 +6042,11 @@ __metadata:
   linkType: hard
 
 "@storybook/test@npm:^8.2.1":
-  version: 8.2.3
-  resolution: "@storybook/test@npm:8.2.3"
+  version: 8.2.5
+  resolution: "@storybook/test@npm:8.2.5"
   dependencies:
     "@storybook/csf": "npm:0.1.11"
-    "@storybook/instrumenter": "npm:8.2.3"
+    "@storybook/instrumenter": "npm:8.2.5"
     "@testing-library/dom": "npm:10.1.0"
     "@testing-library/jest-dom": "npm:6.4.5"
     "@testing-library/user-event": "npm:14.5.2"
@@ -6054,8 +6054,8 @@ __metadata:
     "@vitest/spy": "npm:1.6.0"
     util: "npm:^0.12.4"
   peerDependencies:
-    storybook: ^8.2.3
-  checksum: 10c0/d09fe9219836a12c5a52dd93b95bbed607d08e74965454ff4b5fe9a3d7795dc6f2022a5025a3f83c5c30462b645c38e5fd2c6a01ee4069575847d97c69ab40f3
+    storybook: ^8.2.5
+  checksum: 10c0/bad422717ad46820ca978b130e17b50da1ebae8b1d0b551bbd3d8f8aeb4e202cdff60645506cc26efa75bf8f8c8f941c2e4ca2a9be02cf4edef1b5d64b4c7df7
   languageName: node
   linkType: hard
 
