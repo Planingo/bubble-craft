@@ -4218,16 +4218,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/core@npm:^6.1.11":
-  version: 6.1.14
-  resolution: "@fullcalendar/core@npm:6.1.14"
-  dependencies:
-    preact: "npm:~10.12.1"
-  checksum: 10c0/bbee61fb287341dc5ef4fac900f2ae7e2101c88a16e53c44a4140eee0b5272c44c92fee3cf079fba507b31350facf3b8f1f62d60dbf24ae3072c3b1c8463f7c3
-  languageName: node
-  linkType: hard
-
-"@fullcalendar/core@npm:~6.1.15":
+"@fullcalendar/core@npm:^6.1.11, @fullcalendar/core@npm:~6.1.15":
   version: 6.1.15
   resolution: "@fullcalendar/core@npm:6.1.15"
   dependencies:
