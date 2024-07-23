@@ -5883,25 +5883,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/manager-api@npm:^8.2.1":
-  version: 8.2.5
-  resolution: "@storybook/manager-api@npm:8.2.5"
-  peerDependencies:
-    storybook: ^8.2.5
-  checksum: 10c0/22e628f7bd6e67e8a71da7368548dc29b957e0796a39d1f735c87b5c65fc57232066977ab0ecb857ae1381445303a0f4b620d859ce54ade99b678688a1d9bcd3
-  languageName: node
-  linkType: hard
-
-"@storybook/manager-api@npm:^8.2.5":
-  version: 8.2.5
-  resolution: "@storybook/manager-api@npm:8.2.5"
-  peerDependencies:
-    storybook: ^8.2.5
-  checksum: 10c0/22e628f7bd6e67e8a71da7368548dc29b957e0796a39d1f735c87b5c65fc57232066977ab0ecb857ae1381445303a0f4b620d859ce54ade99b678688a1d9bcd3
-  languageName: node
-  linkType: hard
-
-"@storybook/manager-api@npm:^8.2.5":
+"@storybook/manager-api@npm:^8.2.1, @storybook/manager-api@npm:^8.2.5":
   version: 8.2.5
   resolution: "@storybook/manager-api@npm:8.2.5"
   peerDependencies:
@@ -5911,15 +5893,6 @@ __metadata:
   linkType: hard
 
 "@storybook/preview-api@npm:^8.2.1, @storybook/preview-api@npm:^8.2.5":
-  version: 8.2.5
-  resolution: "@storybook/preview-api@npm:8.2.5"
-  peerDependencies:
-    storybook: ^8.2.5
-  checksum: 10c0/e3cb3cb3bc99e0faf145a11fa294745812dde307e7f02d3b73346920a5fe3e9d4502eda355261779cfb39c4f1b386b7948371b5833535a48a5786edeb7ef8792
-  languageName: node
-  linkType: hard
-
-"@storybook/preview-api@npm:^8.2.5":
   version: 8.2.5
   resolution: "@storybook/preview-api@npm:8.2.5"
   peerDependencies:
@@ -5972,44 +5945,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:8.2.5":
-  version: 8.2.5
-  resolution: "@storybook/react@npm:8.2.5"
-  dependencies:
-    "@storybook/components": "npm:^8.2.5"
-    "@storybook/global": "npm:^5.0.0"
-    "@storybook/manager-api": "npm:^8.2.5"
-    "@storybook/preview-api": "npm:^8.2.5"
-    "@storybook/react-dom-shim": "npm:8.2.5"
-    "@storybook/theming": "npm:^8.2.5"
-    "@types/escodegen": "npm:^0.0.6"
-    "@types/estree": "npm:^0.0.51"
-    "@types/node": "npm:^18.0.0"
-    acorn: "npm:^7.4.1"
-    acorn-jsx: "npm:^5.3.1"
-    acorn-walk: "npm:^7.2.0"
-    escodegen: "npm:^2.1.0"
-    html-tags: "npm:^3.1.0"
-    lodash: "npm:^4.17.21"
-    prop-types: "npm:^15.7.2"
-    react-element-to-jsx-string: "npm:^15.0.0"
-    semver: "npm:^7.3.7"
-    ts-dedent: "npm:^2.0.0"
-    type-fest: "npm:~2.19"
-    util-deprecate: "npm:^1.0.2"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    storybook: ^8.2.5
-    typescript: ">= 4.2.x"
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: 10c0/97791854c5eadffec6a03d270e9c7dc11d34450ea89a4dd5d0db6201f488d5e44846b6492d57a41639512a174380c10a4166fed33e443c65cce8850e5ae2c36a
-  languageName: node
-  linkType: hard
-
-"@storybook/react@npm:^8.2.1":
+"@storybook/react@npm:8.2.5, @storybook/react@npm:^8.2.1":
   version: 8.2.5
   resolution: "@storybook/react@npm:8.2.5"
   dependencies:
@@ -6078,25 +6014,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:^8.2.1":
-  version: 8.2.5
-  resolution: "@storybook/theming@npm:8.2.5"
-  peerDependencies:
-    storybook: ^8.2.5
-  checksum: 10c0/87f4a461e6a2d8f1a0f77eb32eb480d7099ec0120cae1cb2faaa54a2520a7e6af12629c6da68237453722a4c7225a6a76691a7983d431146146b11ddf45991f3
-  languageName: node
-  linkType: hard
-
-"@storybook/theming@npm:^8.2.5":
-  version: 8.2.5
-  resolution: "@storybook/theming@npm:8.2.5"
-  peerDependencies:
-    storybook: ^8.2.5
-  checksum: 10c0/87f4a461e6a2d8f1a0f77eb32eb480d7099ec0120cae1cb2faaa54a2520a7e6af12629c6da68237453722a4c7225a6a76691a7983d431146146b11ddf45991f3
-  languageName: node
-  linkType: hard
-
-"@storybook/theming@npm:^8.2.5":
+"@storybook/theming@npm:^8.2.1, @storybook/theming@npm:^8.2.5":
   version: 8.2.5
   resolution: "@storybook/theming@npm:8.2.5"
   peerDependencies:
