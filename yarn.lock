@@ -5785,11 +5785,11 @@ __metadata:
   linkType: hard
 
 "@storybook/components@npm:^8.2.1":
-  version: 8.2.3
-  resolution: "@storybook/components@npm:8.2.3"
+  version: 8.2.5
+  resolution: "@storybook/components@npm:8.2.5"
   peerDependencies:
-    storybook: ^8.2.3
-  checksum: 10c0/32008e0797a2b04b8e62d1fe353f26f04d799f35f11ecd2898d7d1c4302e757f01722bd1f5a15232757e734886c60592fbe49bc16916cb49fa63ae8f9854347f
+    storybook: ^8.2.5
+  checksum: 10c0/fde82ae9a337df410134b473c5fdaccf03ea1c22d99684cac4d677fc81fc65362c5f2ec0a0a9589858fa47911c7f1820acd78d21a003fe256d9bbe44829504b5
   languageName: node
   linkType: hard
 
