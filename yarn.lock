@@ -5663,7 +5663,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:8.2.4, @storybook/blocks@npm:^8.2.1":
+"@storybook/blocks@npm:8.2.4":
   version: 8.2.4
   resolution: "@storybook/blocks@npm:8.2.4"
   dependencies:
@@ -5694,7 +5694,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:8.2.5":
+"@storybook/blocks@npm:8.2.5, @storybook/blocks@npm:^8.2.1":
   version: 8.2.5
   resolution: "@storybook/blocks@npm:8.2.5"
   dependencies:
