@@ -5435,7 +5435,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-backgrounds@npm:8.2.4, @storybook/addon-backgrounds@npm:^8.2.1":
+"@storybook/addon-backgrounds@npm:8.2.4":
   version: 8.2.4
   resolution: "@storybook/addon-backgrounds@npm:8.2.4"
   dependencies:
@@ -5445,6 +5445,19 @@ __metadata:
   peerDependencies:
     storybook: ^8.2.4
   checksum: 10c0/45c34c8fa3f1946735bf8f0d55c72d31b28fcc18849bbf3ad30cba5ecf0e8f0a12748b8326cfcdc100ba04774e6f60ba5c9b9fe0cd4f321e11f23767bdd01f7c
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-backgrounds@npm:^8.2.1":
+  version: 8.2.5
+  resolution: "@storybook/addon-backgrounds@npm:8.2.5"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+    memoizerific: "npm:^1.11.3"
+    ts-dedent: "npm:^2.0.0"
+  peerDependencies:
+    storybook: ^8.2.5
+  checksum: 10c0/c9493b5b27194d9f1169ba0545aa8361fd454a68387305f1205cfafc28d1b3d50b9db119cc6ccd412a57a2fd64936c616066c2dd8b452e62de72b93491a1b735
   languageName: node
   linkType: hard
 
