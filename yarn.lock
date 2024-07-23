@@ -6138,11 +6138,11 @@ __metadata:
   linkType: hard
 
 "@storybook/theming@npm:^8.2.1":
-  version: 8.2.3
-  resolution: "@storybook/theming@npm:8.2.3"
+  version: 8.2.5
+  resolution: "@storybook/theming@npm:8.2.5"
   peerDependencies:
-    storybook: ^8.2.3
-  checksum: 10c0/f86dba40280d83ef814a38ba805ac02f5dfaa250d28e7818d3ba50010438e33440d97bb7640d5d00e298fdb460b6d75e57d340d86bf73ceb224985d52f12226f
+    storybook: ^8.2.5
+  checksum: 10c0/87f4a461e6a2d8f1a0f77eb32eb480d7099ec0120cae1cb2faaa54a2520a7e6af12629c6da68237453722a4c7225a6a76691a7983d431146146b11ddf45991f3
   languageName: node
   linkType: hard
 
