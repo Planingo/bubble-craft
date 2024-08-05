@@ -5618,7 +5618,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-viewport@npm:8.2.7":
+"@storybook/addon-viewport@npm:8.2.7, @storybook/addon-viewport@npm:^8.2.1":
   version: 8.2.7
   resolution: "@storybook/addon-viewport@npm:8.2.7"
   dependencies:
@@ -5626,17 +5626,6 @@ __metadata:
   peerDependencies:
     storybook: ^8.2.7
   checksum: 10c0/6aa05d07c46c2639a380933b1e27188513bf7e1acc57fd256a4f85f80e5460ebd17a6f984a661082527972d023f79fa15f683a1f3c9637bbffc3d274bcde992b
-  languageName: node
-  linkType: hard
-
-"@storybook/addon-viewport@npm:^8.2.1":
-  version: 8.2.6
-  resolution: "@storybook/addon-viewport@npm:8.2.6"
-  dependencies:
-    memoizerific: "npm:^1.11.3"
-  peerDependencies:
-    storybook: ^8.2.6
-  checksum: 10c0/95bb3015c70add29495f7177ecf86ffd80ceb6c81d6893cad3849468ddb0cf0bdb1fae09a626bd3ab03db253f20ebee0872515b62364ad91715368cbfb630a9a
   languageName: node
   linkType: hard
 
