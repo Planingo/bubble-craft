@@ -5861,11 +5861,11 @@ __metadata:
   linkType: hard
 
 "@storybook/docs-tools@npm:^8.2.1":
-  version: 8.2.6
-  resolution: "@storybook/docs-tools@npm:8.2.6"
+  version: 8.2.7
+  resolution: "@storybook/docs-tools@npm:8.2.7"
   peerDependencies:
-    storybook: ^8.2.6
-  checksum: 10c0/b2764a34ae64a3ddf8eaaa78541de0aefd1472d637f66cd5a06da3adccd1e0224c645967ed5707428eb487b47c90cf61ae25e2efa09240da4a44d5cacabb5fbe
+    storybook: ^8.2.7
+  checksum: 10c0/4986ef29e7bf3524f48991c0ebfa87e1e04977308e55238c2c22143203bfc0588ccce505c9317a3346dc234beebab63739ac14cc72bc7ac1c40d967ab1d5ee3b
   languageName: node
   linkType: hard
 
