@@ -5930,16 +5930,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/preview-api@npm:^8.2.1, @storybook/preview-api@npm:^8.2.6":
-  version: 8.2.6
-  resolution: "@storybook/preview-api@npm:8.2.6"
-  peerDependencies:
-    storybook: ^8.2.6
-  checksum: 10c0/063b371536a8098fcba3bd898997c6aaa72a4aacd470e19ea0e681c6a7e57df3af5bf22d07c8e9096a38b19850005bf8082ae82bf14a4bf16d49b8b6f8167388
-  languageName: node
-  linkType: hard
-
-"@storybook/preview-api@npm:^8.2.7":
+"@storybook/preview-api@npm:^8.2.1, @storybook/preview-api@npm:^8.2.6, @storybook/preview-api@npm:^8.2.7":
   version: 8.2.7
   resolution: "@storybook/preview-api@npm:8.2.7"
   peerDependencies:
