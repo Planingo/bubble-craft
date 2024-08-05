@@ -5561,14 +5561,14 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-mdx-gfm@npm:^8.2.1":
-  version: 8.2.6
-  resolution: "@storybook/addon-mdx-gfm@npm:8.2.6"
+  version: 8.2.7
+  resolution: "@storybook/addon-mdx-gfm@npm:8.2.7"
   dependencies:
     remark-gfm: "npm:^4.0.0"
     ts-dedent: "npm:^2.0.0"
   peerDependencies:
-    storybook: ^8.2.6
-  checksum: 10c0/d87a921153db99172a9d36594c88b91970b763de291a81b9b657d6770d8f5e192f6e7a4f7189d3e98bd8074bdce739153788a3ace471792493d9c7402fddd6f4
+    storybook: ^8.2.7
+  checksum: 10c0/cd5c0dc79c41261e1ca6060b7e5c2afeb78786ab476e6cbfdc4e8fe27802001291402d10e71c932f73d4a5b9118e518edb7c4338c1c9acabf43bf08fb5b13e72
   languageName: node
   linkType: hard
 
