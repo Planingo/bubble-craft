@@ -5783,16 +5783,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/components@npm:^8.2.1, @storybook/components@npm:^8.2.6":
-  version: 8.2.6
-  resolution: "@storybook/components@npm:8.2.6"
-  peerDependencies:
-    storybook: ^8.2.6
-  checksum: 10c0/7474532276be285b0553bb2c7ed14128db85b258832d03ab562721196d74b357a3b5da16338d2c5a217e6a6e1f1c8378e9cd1b2964be65e2156f7b910081e916
-  languageName: node
-  linkType: hard
-
-"@storybook/components@npm:^8.2.7":
+"@storybook/components@npm:^8.2.1, @storybook/components@npm:^8.2.6, @storybook/components@npm:^8.2.7":
   version: 8.2.7
   resolution: "@storybook/components@npm:8.2.7"
   peerDependencies:
