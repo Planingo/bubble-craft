@@ -5449,15 +5449,15 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-backgrounds@npm:^8.2.1":
-  version: 8.2.6
-  resolution: "@storybook/addon-backgrounds@npm:8.2.6"
+  version: 8.2.8
+  resolution: "@storybook/addon-backgrounds@npm:8.2.8"
   dependencies:
     "@storybook/global": "npm:^5.0.0"
     memoizerific: "npm:^1.11.3"
     ts-dedent: "npm:^2.0.0"
   peerDependencies:
-    storybook: ^8.2.6
-  checksum: 10c0/267fb9fa75e0cd482b04ad4d4ed3722ef408d4b18981a07d702f479404fac2ca3aebbd8a7bc6124e3a9adde410b1fa2e523cb4a7a1471223f93b26fc79322b67
+    storybook: ^8.2.8
+  checksum: 10c0/1ae8bd8d5daf25e583b4d803f3fe7d67939ff4bcb6a7ca8fba84fff46ba1dfda23e8241d4c516bc420e201b40fb458f84a23c9863a5d97a8eaf4463874f672a2
   languageName: node
   linkType: hard
 
