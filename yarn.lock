@@ -5802,11 +5802,11 @@ __metadata:
   linkType: hard
 
 "@storybook/core-events@npm:^8.2.1":
-  version: 8.2.6
-  resolution: "@storybook/core-events@npm:8.2.6"
+  version: 8.2.8
+  resolution: "@storybook/core-events@npm:8.2.8"
   peerDependencies:
-    storybook: ^8.2.6
-  checksum: 10c0/1470716c9e2e77dff01b51e00e483df860f325846d2dd0f3ccca28c1707bf637956d36813e6ef2c51a1d5d3bbced67d334a4eed30929bc382b5b512e9a92820b
+    storybook: ^8.2.8
+  checksum: 10c0/971cbb6ded2cbc136f54a61f539a4c45b44c640126ee83ecf96fe657d3029cda44eb3ae31164beca6ef8d623cb06d0e7bd698377522479a9ab0f4c1b0f5596c6
   languageName: node
   linkType: hard
 
