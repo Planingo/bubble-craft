@@ -5912,21 +5912,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/manager-api@npm:^8.2.1, @storybook/manager-api@npm:^8.2.6":
-  version: 8.2.6
-  resolution: "@storybook/manager-api@npm:8.2.6"
+"@storybook/manager-api@npm:^8.2.1, @storybook/manager-api@npm:^8.2.6, @storybook/manager-api@npm:^8.2.7":
+  version: 8.2.8
+  resolution: "@storybook/manager-api@npm:8.2.8"
   peerDependencies:
-    storybook: ^8.2.6
-  checksum: 10c0/8d39d24e2b78627c616552b334de4b37100e7ed4b79cea4bf6edbd7f29bbca18bfef76d7775aa7b3a528947f27982b18caeda4d3d036943d4bc0c5e8657432ad
-  languageName: node
-  linkType: hard
-
-"@storybook/manager-api@npm:^8.2.7":
-  version: 8.2.7
-  resolution: "@storybook/manager-api@npm:8.2.7"
-  peerDependencies:
-    storybook: ^8.2.7
-  checksum: 10c0/39a35dad2cb96d145ed8442fce8906516f5d960e7c0babc8b7c253e64f6ca7f30808e3209ca68a20ee6fda28ca5656e13e3092d2f234af71c3314ea64e785127
+    storybook: ^8.2.8
+  checksum: 10c0/0c0f3a5337fc8efa965aa6232d2b2a1bb864c5ebaca85bcd124f83644e6d19ad6eecf9556974b04803a4856def17db801dcce4944a9830b8e9c7a8482df6842e
   languageName: node
   linkType: hard
 
