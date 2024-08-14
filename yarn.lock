@@ -5630,13 +5630,13 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-viewport@npm:^8.2.1":
-  version: 8.2.6
-  resolution: "@storybook/addon-viewport@npm:8.2.6"
+  version: 8.2.8
+  resolution: "@storybook/addon-viewport@npm:8.2.8"
   dependencies:
     memoizerific: "npm:^1.11.3"
   peerDependencies:
-    storybook: ^8.2.6
-  checksum: 10c0/95bb3015c70add29495f7177ecf86ffd80ceb6c81d6893cad3849468ddb0cf0bdb1fae09a626bd3ab03db253f20ebee0872515b62364ad91715368cbfb630a9a
+    storybook: ^8.2.8
+  checksum: 10c0/b434e15eee122ae3d00489350f62ec1eacf831ce6522657b443204370607f33910bbe2920d062a98206d446995d84ec34dbd0a994f15c0eb2a10c59f52975bec
   languageName: node
   linkType: hard
 
