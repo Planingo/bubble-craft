@@ -5428,22 +5428,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-actions@npm:8.2.8":
-  version: 8.2.8
-  resolution: "@storybook/addon-actions@npm:8.2.8"
-  dependencies:
-    "@storybook/global": "npm:^5.0.0"
-    "@types/uuid": "npm:^9.0.1"
-    dequal: "npm:^2.0.2"
-    polished: "npm:^4.2.2"
-    uuid: "npm:^9.0.0"
-  peerDependencies:
-    storybook: ^8.2.8
-  checksum: 10c0/d96f304743b6cf31e99f2ddbdc572ac12cabc0451788183e06fc07ccdb3de83c55b7bf2daace5a2a4a6e63a6ff73f99eabde018383ec11e8e3834420081f8933
-  languageName: node
-  linkType: hard
-
-"@storybook/addon-actions@npm:^8.2.1":
+"@storybook/addon-actions@npm:8.2.8, @storybook/addon-actions@npm:^8.2.1":
   version: 8.2.8
   resolution: "@storybook/addon-actions@npm:8.2.8"
   dependencies:
@@ -5590,19 +5575,19 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-links@npm:^8.2.1":
-  version: 8.2.8
-  resolution: "@storybook/addon-links@npm:8.2.8"
+  version: 8.2.9
+  resolution: "@storybook/addon-links@npm:8.2.9"
   dependencies:
     "@storybook/csf": "npm:0.1.11"
     "@storybook/global": "npm:^5.0.0"
     ts-dedent: "npm:^2.0.0"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    storybook: ^8.2.8
+    storybook: ^8.2.9
   peerDependenciesMeta:
     react:
       optional: true
-  checksum: 10c0/3e304e6e903f8615a73b2d53757d39b51e1db0395e3944ab1b0c6144ce541716be96648171b4e049fbcd2a8a5cd222e75bc11add350566aa92d8f5b93fb2b933
+  checksum: 10c0/ec850cbdcbe3c9f234c25d57a184745d3dd05f97b7278420e27ef350646c1a5439f0582f669ca4bcf58435c14767f21ff27b88904ce70dc1254335219b2b5b5f
   languageName: node
   linkType: hard
 
@@ -5664,18 +5649,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-viewport@npm:8.2.8":
-  version: 8.2.8
-  resolution: "@storybook/addon-viewport@npm:8.2.8"
-  dependencies:
-    memoizerific: "npm:^1.11.3"
-  peerDependencies:
-    storybook: ^8.2.8
-  checksum: 10c0/b434e15eee122ae3d00489350f62ec1eacf831ce6522657b443204370607f33910bbe2920d062a98206d446995d84ec34dbd0a994f15c0eb2a10c59f52975bec
-  languageName: node
-  linkType: hard
-
-"@storybook/addon-viewport@npm:^8.2.1":
+"@storybook/addon-viewport@npm:8.2.8, @storybook/addon-viewport@npm:^8.2.1":
   version: 8.2.8
   resolution: "@storybook/addon-viewport@npm:8.2.8"
   dependencies:
