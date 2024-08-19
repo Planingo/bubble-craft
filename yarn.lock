@@ -5428,22 +5428,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-actions@npm:8.2.8":
-  version: 8.2.8
-  resolution: "@storybook/addon-actions@npm:8.2.8"
-  dependencies:
-    "@storybook/global": "npm:^5.0.0"
-    "@types/uuid": "npm:^9.0.1"
-    dequal: "npm:^2.0.2"
-    polished: "npm:^4.2.2"
-    uuid: "npm:^9.0.0"
-  peerDependencies:
-    storybook: ^8.2.8
-  checksum: 10c0/d96f304743b6cf31e99f2ddbdc572ac12cabc0451788183e06fc07ccdb3de83c55b7bf2daace5a2a4a6e63a6ff73f99eabde018383ec11e8e3834420081f8933
-  languageName: node
-  linkType: hard
-
-"@storybook/addon-actions@npm:^8.2.1":
+"@storybook/addon-actions@npm:8.2.8, @storybook/addon-actions@npm:^8.2.1":
   version: 8.2.8
   resolution: "@storybook/addon-actions@npm:8.2.8"
   dependencies:
@@ -5664,18 +5649,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-viewport@npm:8.2.8":
-  version: 8.2.8
-  resolution: "@storybook/addon-viewport@npm:8.2.8"
-  dependencies:
-    memoizerific: "npm:^1.11.3"
-  peerDependencies:
-    storybook: ^8.2.8
-  checksum: 10c0/b434e15eee122ae3d00489350f62ec1eacf831ce6522657b443204370607f33910bbe2920d062a98206d446995d84ec34dbd0a994f15c0eb2a10c59f52975bec
-  languageName: node
-  linkType: hard
-
-"@storybook/addon-viewport@npm:^8.2.1":
+"@storybook/addon-viewport@npm:8.2.8, @storybook/addon-viewport@npm:^8.2.1":
   version: 8.2.8
   resolution: "@storybook/addon-viewport@npm:8.2.8"
   dependencies:
@@ -5860,21 +5834,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/components@npm:^8.2.1, @storybook/components@npm:^8.2.6":
-  version: 8.2.6
-  resolution: "@storybook/components@npm:8.2.6"
+"@storybook/components@npm:^8.2.1, @storybook/components@npm:^8.2.6, @storybook/components@npm:^8.2.7":
+  version: 8.2.9
+  resolution: "@storybook/components@npm:8.2.9"
   peerDependencies:
-    storybook: ^8.2.6
-  checksum: 10c0/7474532276be285b0553bb2c7ed14128db85b258832d03ab562721196d74b357a3b5da16338d2c5a217e6a6e1f1c8378e9cd1b2964be65e2156f7b910081e916
-  languageName: node
-  linkType: hard
-
-"@storybook/components@npm:^8.2.7":
-  version: 8.2.7
-  resolution: "@storybook/components@npm:8.2.7"
-  peerDependencies:
-    storybook: ^8.2.7
-  checksum: 10c0/b789c3682c484cd55a79037b8dd9d47bb602096d00e65c81b6e3710860d7b217d2e59e558f19068d14f293be716062bb3289a3657b75629f978b065eba0b55ab
+    storybook: ^8.2.9
+  checksum: 10c0/2f7be8d238aefc833a3ae355ff19569701a8b13c14b4a73ce25a8a23f3b283ac814fe0ed857b9724897177fd66cbb4fb2294149e7b041c7f11ed273ebe161a31
   languageName: node
   linkType: hard
 
