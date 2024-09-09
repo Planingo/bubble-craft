@@ -1,39 +1,39 @@
 .storybook-login-page {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    column-gap: 1em;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  column-gap: 1em;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .form-login {
-    width: 50%;
-    margin: auto;
+  width: 50%;
+  margin: auto;
 }
 
 .title {
-    text-align: center;
+  text-align: center;
 }
 
 .create-forget {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 button {
-    align-self: end;
-    width: fit-content;
-    margin-top: 1.5em;
+  align-self: end;
+  width: fit-content;
+  margin-top: 1.5em;
 }
 
 .draw-part {
-    height: 100vh;
+  height: 100vh;
 }

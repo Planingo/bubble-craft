@@ -1,23 +1,21 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Skeleton as AntdSkeleton } from 'antd';
-import './skeleton.css';
+import { Skeleton as AntdSkeleton } from "antd";
+import "./skeleton.css";
 
 /**
- * 
+ *
  * # 🚧 _Composant en construction_ 🚧
- * 
+ *
  * # TODO
- * 
+ *
  * ## Description
- * 
+ *
  * Documentations andt du composant : https://ant.design/components/skeleton/
- * 
+ *
  */
-export const SkeletonImage = ({ children, ...props }) => {
+export const SkeletonImage = ({ ...props }) => {
   return (
     <AntdSkeleton.Image
-      className='storybook-skeleton'
+      className="storybook-skeleton"
       active={true}
       {...props}
     />
@@ -25,12 +23,9 @@ export const SkeletonImage = ({ children, ...props }) => {
 };
 
 SkeletonImage.propTypes = {
-    /**
-     * TODO property
-     */
-     
+  /**
+   * TODO property
+   */
 };
 
-SkeletonImage.defaultProps = {
-  
-};
+SkeletonImage.defaultProps = {};

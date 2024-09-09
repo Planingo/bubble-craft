@@ -1,8 +1,7 @@
-import React from 'react'
-import { Upload } from '../components/Upload/Upload'
+import { Upload } from "../components/Upload/Upload";
 
-describe('<Upload />', () => {
-  it('renders', () => {
-    cy.mount(<Upload />)
-  })
-})
+describe("<Upload />", () => {
+  it("renders", () => {
+    cy.mount(<Upload />);
+  });
+});

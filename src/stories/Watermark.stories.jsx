@@ -1,8 +1,7 @@
-import React from 'react';
-import { Watermark } from '../components/Watermark/Watermark';
+import { Watermark } from "../components/Watermark/Watermark";
 
 const meta = {
-  title: 'Atomes/Watermark',
+  title: "Atomes/Watermark",
   component: Watermark,
 };
 
@@ -10,11 +9,13 @@ export default meta;
 
 export const Playground = {
   args: {
-    children: <div
-      style={{
-        height: 500,
-      }}
-    />,
-    content: "Planin'go"
+    children: (
+      <div
+        style={{
+          height: 500,
+        }}
+      />
+    ),
+    content: "Planin'go",
   },
 };

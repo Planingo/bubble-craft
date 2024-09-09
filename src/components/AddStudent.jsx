@@ -1,33 +1,36 @@
-import { Form } from "react-final-form"
-import { Input } from "./Input/Input"
+import { Form } from "react-final-form";
+import { Input } from "./Input/Input";
 
 export const AddStudent = () => {
-    return <div className="addStudent">
-        <Form
-            initialValues={null}
-            onValuesChange={(values) => {
-                setItem((item) => ({ ...student, ...item, ...values }))
-            }}
-            layout="vertical"
-            hideRequiredMark
-        >
-            <div className="add-student-form">
-                <Form.Item
-                    name="lastName"
-                    label="Nom"
-                    rules={[{ required: true, message: 'Merci de renseigner le nom' }]}
-                >
-                    <Input placeholder="Potter" />
-                </Form.Item>
-                <Form.Item
-                    name="firstName"
-                    label="Prénom"
-                    rules={[{ required: true, message: 'Merci de renseigner le prénom' }]}
-                >
-                    <Input placeholder="Harry" />
-                </Form.Item>
-            </div>
-            {/* <Form.Item
+  return (
+    <div className="addStudent">
+      <Form
+        initialValues={null}
+        onValuesChange={(values) => {
+          // setItem((item) => ({ ...student, ...item, ...values }));
+        }}
+        layout="vertical"
+        hideRequiredMark
+      >
+        <div className="add-student-form">
+          <Form.Item
+            name="lastName"
+            label="Nom"
+            rules={[{ required: true, message: "Merci de renseigner le nom" }]}
+          >
+            <Input placeholder="Potter" />
+          </Form.Item>
+          <Form.Item
+            name="firstName"
+            label="Prénom"
+            rules={[
+              { required: true, message: "Merci de renseigner le prénom" },
+            ]}
+          >
+            <Input placeholder="Harry" />
+          </Form.Item>
+        </div>
+        {/* <Form.Item
                 name="pathwayId"
                 label="Formation"
                 rules={[{ required: true, message: 'Please choose a pathway' }]}
@@ -39,7 +42,7 @@ export const AddStudent = () => {
                         ))}
                 </Select>
             </Form.Item> */}
-            {/* <Form.Item
+        {/* <Form.Item
                 name="apprentice"
                 label="Apprentissage"
             >
@@ -50,7 +53,7 @@ export const AddStudent = () => {
                         onChange={() => setApprentice(!apprentice)}
                     />
             </Form.Item> */}
-            {/* {apprentice && 
+        {/* {apprentice && 
                 <Form.Item
                     name="compagnies"
                     label="Entreprise"
@@ -64,6 +67,7 @@ export const AddStudent = () => {
                     </Select>
                 </Form.Item>
             } */}
-        </Form>
+      </Form>
     </div>
-}
+  );
+};

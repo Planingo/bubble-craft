@@ -1,59 +1,55 @@
-import React from 'react';
-import './loginpage.css';
-import { useIntl } from 'react-intl';
-import { DrawPart } from './DrawPart/DrawPart';
-import { Form as FinalForm, Field } from 'react-final-form'
-import { Form } from 'antd';
-import { Link } from 'react-router-dom'
-import { Input } from '../Input/Input';
-import { Button } from '../Button/Button';
-import { InputPassword } from '../Input/InputPassword/InputPassword';
-import { toCapitalized } from '../../utils/formatText';
+import { Form } from "antd";
+import { Field, Form as FinalForm } from "react-final-form";
+import { useIntl } from "react-intl";
+import { Link } from "react-router-dom";
+import { toCapitalized } from "../../utils/formatText";
+import { Button } from "../Button/Button";
+import { Input } from "../Input/Input";
+import { InputPassword } from "../Input/InputPassword/InputPassword";
+import { DrawPart } from "./DrawPart/DrawPart";
+import "./loginpage.css";
 
 /**
- * 
+ *
  * # 🚧 _Composant en construction_ 🚧
- * 
+ *
  * # TODO
- * 
+ *
  * ## Description
- * 
- * 
- * 
+ *
+ *
+ *
  */
-export const SignupPage = ({
-  children,
-  onSubmit,
-  loading,
-  ...props }) => {
+export const SignupPage = ({ onSubmit, loading, ...props }) => {
+  const { formatMessage } = useIntl();
 
-  const { formatMessage } = useIntl()
+  const requiredEmail = (value) =>
+    value ? undefined : formatMessage({ id: "error.required" });
 
-	const requiredEmail = value =>
-		value ? undefined : formatMessage({ id: 'error.required' })
+  const requiredPassword = (value) => {
+    if (!value) return formatMessage({ id: "error.required" });
 
-	const requiredPassword = value => {
-		if (!value) return formatMessage({ id: 'error.required' })
+    if (value.length < 9)
+      return formatMessage({ id: "error.password.character" });
 
-		if (value.length < 9)
-			return formatMessage({ id: 'error.password.character' })
+    return undefined;
+  };
 
-		return undefined
-	}
+  const requiredPasswordConfirm = (value) => {
+    if (!value) return formatMessage({ id: "error.required" });
 
-	const requiredPasswordConfirm = value => {
-		if (!value) return formatMessage({ id: 'error.required' })
+    if (value.length < 9)
+      return formatMessage({ id: "error.password.character" });
 
-		if (value.length < 9)
-			return formatMessage({ id: 'error.password.character' })
-
-		return undefined
-	}
+    return undefined;
+  };
 
   return (
-    <div className='storybook-login-page' {...props} >
-      <div className='form-login'>
-        <h1 className="title">{formatMessage({ id: 'form.signup' }).toUpperCase()}</h1>
+    <div className="storybook-login-page" {...props}>
+      <div className="form-login">
+        <h1 className="title">
+          {formatMessage({ id: "form.signup" }).toUpperCase()}
+        </h1>
         <FinalForm
           onSubmit={onSubmit}
           render={({ handleSubmit, valid }) => (
@@ -61,9 +57,11 @@ export const SignupPage = ({
               <Field name="email" validate={requiredEmail}>
                 {({ input, meta }) => (
                   <Form.Item
-                    label={toCapitalized(formatMessage({ id: 'form.signup.username' }))}
+                    label={toCapitalized(
+                      formatMessage({ id: "form.signup.username" }),
+                    )}
                     validateStatus={
-                      meta.touched && meta.error ? 'error' : undefined
+                      meta.touched && meta.error ? "error" : undefined
                     }
                     help={meta.touched && meta.error}
                   >
@@ -71,7 +69,7 @@ export const SignupPage = ({
                       {...input}
                       type="email"
                       placeholder={formatMessage({
-                        id: 'form.signup.username.placeholder',
+                        id: "form.signup.username.placeholder",
                       })}
                     />
                   </Form.Item>
@@ -80,16 +78,18 @@ export const SignupPage = ({
               <Field name="password" validate={requiredPassword}>
                 {({ input, meta }) => (
                   <Form.Item
-                    label={toCapitalized(formatMessage({ id: 'form.signup.password' }))}
+                    label={toCapitalized(
+                      formatMessage({ id: "form.signup.password" }),
+                    )}
                     validateStatus={
-                      meta.touched && meta.error ? 'error' : undefined
+                      meta.touched && meta.error ? "error" : undefined
                     }
                     help={meta.touched && meta.error}
                   >
                     <InputPassword
                       {...input}
                       placeholder={formatMessage({
-                        id: 'form.signup.password.placeholder',
+                        id: "form.signup.password.placeholder",
                       })}
                     />
                   </Form.Item>
@@ -97,10 +97,10 @@ export const SignupPage = ({
               </Field>
               <div className="create-forget">
                 <Link className="light-text" to="/reset">
-                  {toCapitalized(formatMessage({id: 'form.login.forget'}))}
+                  {toCapitalized(formatMessage({ id: "form.login.forget" }))}
                 </Link>
                 <Link className="light-text" to="/login">
-                  {toCapitalized(formatMessage({id: 'form.login.login'}))}
+                  {toCapitalized(formatMessage({ id: "form.login.login" }))}
                 </Link>
               </div>
               <Button
@@ -110,21 +110,19 @@ export const SignupPage = ({
                 shape="round"
                 size="large"
               >
-                {toCapitalized(formatMessage({ id: 'form.create' }))}
+                {toCapitalized(formatMessage({ id: "form.create" }))}
               </Button>
             </Form>
           )}
         />
       </div>
-      <div className='draw-part'>
+      <div className="draw-part">
         <DrawPart />
       </div>
     </div>
   );
 };
 
-SignupPage.propTypes = {
-};
+SignupPage.propTypes = {};
 
-SignupPage.defaultProps = {
-};
+SignupPage.defaultProps = {};

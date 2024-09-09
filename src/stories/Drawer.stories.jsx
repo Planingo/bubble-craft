@@ -1,8 +1,7 @@
-import React from 'react';
-import { Drawer } from '../components/Drawer/Drawer';
+import { Drawer } from "../components/Drawer/Drawer";
 
 const meta = {
-  title: 'Molécules/Drawer',
+  title: "Molécules/Drawer",
   component: Drawer,
 };
 
@@ -12,11 +11,13 @@ export const Playground = {
   args: {
     title: "Basic Drawer",
     placement: "right",
-    children: <>
-      <p>Some contents...</p>
-      <p>Some contents...</p>
-      <p>Some contents...</p>
-    </>,
-    open: true
+    children: (
+      <>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+      </>
+    ),
+    open: true,
   },
 };

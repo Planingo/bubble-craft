@@ -1,8 +1,7 @@
-import React from 'react'
-import { Tag } from '../components/Tag/Tag'
+import { Tag } from "../components/Tag/Tag";
 
-describe('<Tag />', () => {
-  it('renders', () => {
-    cy.mount(<Tag />)
-  })
-})
+describe("<Tag />", () => {
+  it("renders", () => {
+    cy.mount(<Tag />);
+  });
+});

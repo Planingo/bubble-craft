@@ -1,14 +1,21 @@
-import {Meta} from '@storybook/blocks';
-import {linkTo} from '@storybook/addon-links';
-import * as Components from './components';
-import { styles, atomes, molecules, organisms, templates, pages } from './generate.json'
+import { Meta } from "@storybook/blocks";
+import {
+  styles,
+  atomes,
+  molecules,
+  organisms,
+  templates,
+  pages,
+} from "./generate.json";
 
-export const COMPONENTS_EXCLUDE = ['CardGrid'];
+export const COMPONENTS_EXCLUDE = ["CardGrid"];
 
-export const getComponentLink = componentName => `Composants/${componentName}`;
-export const getComponentLinkAtomes = componentName => `Atomes/${componentName}`;
+export const getComponentLink = (componentName) =>
+  `Composants/${componentName}`;
+export const getComponentLinkAtomes = (componentName) =>
+  `Atomes/${componentName}`;
 
-export const COMPONENTS = ['Card', 'Modal', 'Notif', 'Empty']
+export const COMPONENTS = ["Card", "Modal", "Notif", "Empty"];
 
 <Meta title="Bubble-craft - Introduction" />
 
@@ -135,107 +142,107 @@ export const COMPONENTS = ['Card', 'Modal', 'Notif', 'Empty']
 ## Styles
 
 <div className="link-list">
-  {styles.map(style =>
-      <a
-        key={style.id}
-        className="link-item"
-        href={`?path=/docs/styles-${style.id}--docs`}
-      >
-        <div className="info-status">{style.wip ? '🚧' : '🚀'}</div>
-        <span>
-          <strong>{style.title}</strong>
-          {style.descrition}
-        </span>
-      </a>
-    )}
+  {styles.map((style) => (
+    <a
+      key={style.id}
+      className="link-item"
+      href={`?path=/docs/styles-${style.id}--docs`}
+    >
+      <div className="info-status">{style.wip ? "🚧" : "🚀"}</div>
+      <span>
+        <strong>{style.title}</strong>
+        {style.descrition}
+      </span>
+    </a>
+  ))}
 </div>
 
 ## Atomes
 
 <div className="link-list">
-  {atomes.map(atome =>
-      <a
-        key={atome.id}
-        className="link-item"
-        href={`?path=/docs/atomes-${atome.id}--docs`}
-      >
-        <div className="info-status">{atome.wip ? '🚧' : '🚀'}</div>
-        <span>
-          <strong>{atome.title}</strong>
-          {atome.descrition}
-        </span>
-      </a>
-    )}
+  {atomes.map((atome) => (
+    <a
+      key={atome.id}
+      className="link-item"
+      href={`?path=/docs/atomes-${atome.id}--docs`}
+    >
+      <div className="info-status">{atome.wip ? "🚧" : "🚀"}</div>
+      <span>
+        <strong>{atome.title}</strong>
+        {atome.descrition}
+      </span>
+    </a>
+  ))}
 </div>
 
 ## Molécules
 
 <div className="link-list">
-  {molecules.map(molecule =>
-      <a
-        key={molecule.id}
-        className="link-item"
-        href={`?path=/docs/molécules-${molecule.id}--docs`}
-      >
-        <div className="info-status">{molecule.wip ? '🚧' : '🚀'}</div>
-        <span>
-          <strong>{molecule.title}</strong>
-          {molecule.descrition}
-        </span>
-      </a>
-    )}
+  {molecules.map((molecule) => (
+    <a
+      key={molecule.id}
+      className="link-item"
+      href={`?path=/docs/molécules-${molecule.id}--docs`}
+    >
+      <div className="info-status">{molecule.wip ? "🚧" : "🚀"}</div>
+      <span>
+        <strong>{molecule.title}</strong>
+        {molecule.descrition}
+      </span>
+    </a>
+  ))}
 </div>
 
 ## Organismes
 
 <div className="link-list">
-  {organisms.map(organism =>
-      <a
-        key={organism.id}
-        className="link-item"
-        href={`?path=/docs/organismes-${organism.id}--docs`}
-      >
-        <div className="info-status">{organism.wip ? '🚧' : '🚀'}</div>
-        <span>
-          <strong>{organism.title}</strong>
-          {organism.descrition}
-        </span>
-      </a>
-    )}
+  {organisms.map((organism) => (
+    <a
+      key={organism.id}
+      className="link-item"
+      href={`?path=/docs/organismes-${organism.id}--docs`}
+    >
+      <div className="info-status">{organism.wip ? "🚧" : "🚀"}</div>
+      <span>
+        <strong>{organism.title}</strong>
+        {organism.descrition}
+      </span>
+    </a>
+  ))}
 </div>
 
 ## Templates
 
 <div className="link-list">
-  {templates.map(template =>
-      <a
-        key={template.id}
-        className="link-item"
-        href={`?path=/docs/templates-${template.id}--docs`}
-      >
-        <div className="info-status">{template.wip ? '🚧' : '🚀'}</div>
-        <span>
-          <strong>{template.title}</strong>
-          {template.descrition}
-        </span>
-      </a>
-    )}
+  {templates.map((template) => (
+    <a
+      key={template.id}
+      className="link-item"
+      href={`?path=/docs/templates-${template.id}--docs`}
+    >
+      <div className="info-status">{template.wip ? "🚧" : "🚀"}</div>
+      <span>
+        <strong>{template.title}</strong>
+        {template.descrition}
+      </span>
+    </a>
+  ))}
 </div>
 
 ## Pages
 
 <div className="link-list">
-  {pages.map(page =>
-      <a
-        key={page.id}
-        className="link-item"
-        href={`?path=/docs/pages-${page.id}--docs`}
-      >
-        <div className="info-status">{page.wip ? '🚧' : '🚀'}</div>
-        <span>
-          <strong>{page.title}</strong>
-          {page.descrition}
-        </span>
-      </a>
-    )}
+  {pages.map((page) => (
+    <a
+      key={page.id}
+      className="link-item"
+      href={`?path=/docs/pages-${page.id}--docs`}
+    >
+      <div className="info-status">{page.wip ? "🚧" : "🚀"}</div>
+      <span>
+        <strong>{page.title}</strong>
+        {page.descrition}
+      </span>
+    </a>
+  ))}
 </div>

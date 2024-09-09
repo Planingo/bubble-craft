@@ -1,8 +1,7 @@
-import { SignupPage } from '../components/LoginPage/SignupPage';
-
+import { SignupPage } from "../components/LoginPage/SignupPage";
 
 const meta = {
-  title: 'Pages/SignupPage',
+  title: "Pages/SignupPage",
   component: SignupPage,
 };
 
@@ -11,6 +10,6 @@ export default meta;
 export const Playground = {
   args: {
     onSubmit: () => console.log(),
-    loading: false
+    loading: false,
   },
 };

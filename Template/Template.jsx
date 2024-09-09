@@ -1,36 +1,28 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './template.css';
+import "./template.css";
 
 /**
- * 
+ *
  * # 🚧 _Composant en construction_ 🚧
- * 
+ *
  * # TODO
- * 
+ *
  * ## Description
- * 
- * 
- * 
+ *
+ *
+ *
  */
 export const Template = ({ children, ...props }) => {
   return (
-    <template
-      className='storybook-template'
-      {...props}
-    >
+    <template className="storybook-template" {...props}>
       {children}
     </template>
   );
 };
 
 Template.propTypes = {
-    /**
-     * TODO property
-     */
-    
+  /**
+   * TODO property
+   */
 };
 
-Template.defaultProps = {
-  
-};
+Template.defaultProps = {};

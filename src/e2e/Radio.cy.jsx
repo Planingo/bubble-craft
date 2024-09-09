@@ -1,8 +1,7 @@
-import React from 'react'
-import { Radio } from '../components/Radio/Radio'
+import { Radio } from "../components/Radio/Radio";
 
-describe('<Radio />', () => {
-  it('renders', () => {
-    cy.mount(<Radio />)
-  })
-})
+describe("<Radio />", () => {
+  it("renders", () => {
+    cy.mount(<Radio />);
+  });
+});

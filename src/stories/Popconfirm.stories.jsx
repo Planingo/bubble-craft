@@ -1,8 +1,7 @@
-import React from 'react';
-import { Popconfirm } from '../components/Popconfirm/Popconfirm';
+import { Popconfirm } from "../components/Popconfirm/Popconfirm";
 
 const meta = {
-  title: 'Molécules/Popconfirm',
+  title: "Molécules/Popconfirm",
   component: Popconfirm,
 };
 
@@ -16,6 +15,6 @@ export const Playground = {
     cancelText: "Non",
     children: <a href="/">Delete</a>,
     onConfirm: (e) => console.log(e),
-    onCancel: (e) => console.log(e) 
+    onCancel: (e) => console.log(e),
   },
 };

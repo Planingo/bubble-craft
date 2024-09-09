@@ -1,3 +1,11 @@
+import react from "@vitejs/plugin-react";
+
+/** @type {import('vite').UserConfig} */
 export default {
-  // config options
-}
+  plugins: [react()],
+  test: {
+    environment: "jsdom",
+    setupFiles: ["src/setupTests.js"],
+    globals: true,
+  },
+};

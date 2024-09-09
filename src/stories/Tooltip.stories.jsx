@@ -1,8 +1,7 @@
-import { Tooltip } from '../components/Tooltip/Tooltip';
-
+import { Tooltip } from "../components/Tooltip/Tooltip";
 
 const meta = {
-  title: 'Atomes/Tooltip',
+  title: "Atomes/Tooltip",
   component: Tooltip,
 };
 

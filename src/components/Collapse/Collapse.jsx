@@ -1,34 +1,26 @@
-import { Collapse as AntdCollapse } from 'antd';
-import React from 'react';
-import './collapse.css';
+import { Collapse as AntdCollapse } from "antd";
+
+import "./collapse.css";
 
 /**
- * 
+ *
  * # 🚧 _Composant en construction_ 🚧
- * 
+ *
  * # TODO
- * 
+ *
  * ## Description
- * 
+ *
  * Documentations andt du composant : https://ant.design/components/collapse/
- * 
+ *
  */
 export const Collapse = ({ children, ...props }) => {
-  return (
-    <AntdCollapse
-      className='storybook-collapse'
-      {...props}
-    />
-  );
+  return <AntdCollapse className="storybook-collapse" {...props} />;
 };
 
 Collapse.propTypes = {
-    /**
-     * TODO property
-     */
-     
+  /**
+   * TODO property
+   */
 };
 
-Collapse.defaultProps = {
-  
-};
+Collapse.defaultProps = {};

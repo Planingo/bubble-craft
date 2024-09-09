@@ -1,6 +1,5 @@
-import React from 'react'
-import { Form as FormReact } from "react-final-form"
+import { Form as FormReact } from "react-final-form";
 
 export const Form = (props) => {
-    return <FormReact {...props} />
-}
+  return <FormReact {...props} />;
+};

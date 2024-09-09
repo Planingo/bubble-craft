@@ -16,6 +16,24 @@ jobs:
               - v1-dependencies-
         - run: yarn install
         - run: npx chromatic --project-token=$chromatic --exit-zero-on-changes
+  lint-and-format:
+    executor: 
+      name: node/default
+      tag: current
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - dependencies-{{ checksum "yarn.lock" }}
+      - run: yarn
+      - save_cache:
+          key: dependencies-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache
+            - ~/.config
+            - ./node_modules
+      - run: yarn lint
+      - run: yarn format:check
   unit-test:
     executor: 
       name: node/default
@@ -60,6 +78,8 @@ jobs:
             sudo apt-key export D38B4796 | sudo gpg --dearmour -o /etc/apt/trusted.gpg.d/chrome.gpg
             sudo apt-get install google-chrome-stable
       - run: yarn test:e2e
+      - store_artifacts:
+          path: mochawesome-report
   publish:
     executor: 
       name: node/default
@@ -105,8 +125,10 @@ filters-all: &filters-all
 
 workflows:
   version: 2
-  common:
+  ci:
     jobs:
+      - lint-and-format:
+          filters: *filters-all
       - unit-test :
           filters: *filters-all
       - e2e-test :
@@ -116,9 +138,11 @@ workflows:
       - publish :
           requires:
             - unit-test
+            - lint-and-format
           filters: *filters-tag
       - deploy:
           requires:
+            - lint-and-format
             - unit-test
             - e2e-test
           filters: *filters-tag

@@ -1,10 +1,10 @@
 .storybook-refinement-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .storybook-refinement-list > .refinement-item {
-    display: flex;
-    column-gap: 2em;
+  display: flex;
+  column-gap: 2em;
 }

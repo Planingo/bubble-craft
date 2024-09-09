@@ -1,58 +1,46 @@
-import React from 'react';
-import { useIntl } from 'react-intl';
-import { Link } from 'react-router-dom';
-import { toCapitalized } from '../../utils/formatText';
-import { AddItem } from '../AddItem/AddItem';
-import { AppstoreOutlinedDS } from '../Icon/icon/AppstoreOutlined';
-import { CalendarOutlined } from '../Icon/icon/CalendarOutlined';
-import { UnorderedListOutlined } from '../Icon/icon/UnorderedListOutlined';
-import { RadioGroup } from '../Radio/RadioGroups/RadioGroup';
-import './refinementList.css';
+import { useIntl } from "react-intl";
+import { Link } from "react-router-dom";
+import { toCapitalized } from "../../utils/formatText";
+import { AddItem } from "../AddItem/AddItem";
+import { AppstoreOutlinedDS } from "../Icon/icon/AppstoreOutlined";
+import { CalendarOutlined } from "../Icon/icon/CalendarOutlined";
+import { UnorderedListOutlined } from "../Icon/icon/UnorderedListOutlined";
+import { RadioGroup } from "../Radio/RadioGroups/RadioGroup";
+import "./refinementList.css";
 
 /**
- * 
+ *
  * # 🚧 _Composant en construction_ 🚧
- * 
+ *
  * # TODO
- * 
+ *
  * ## Description
- * 
- * 
- * 
+ *
+ *
+ *
  */
-export const RefinementList = ({ 
-	options,
-	setIsGrid,
-	isGrid,
-	FirstActionIcon,
-	firstActionText,
-	FirstForm,
-	firstActioning,
-	onFirstAction,
-	SecondActionIcon,
-	secondActionText,
-	SecondForm,
-	secondActioning,
-	onSecondAction,
-	mainActionButton,
-	onDelete,
-	onDeleteText,
+export const RefinementList = ({
+  setIsGrid,
+  isGrid,
+  FirstActionIcon,
+  firstActionText,
+  FirstForm,
+  firstActioning,
+  onFirstAction,
+  secondActioning,
+  onSecondAction,
+  mainActionButton,
   firstActionNotifText,
-	Info,
   AddCalendar,
   addingCalendar,
   addCalendar,
   formId,
-  ...props }) => {
-
-
-  const { formatMessage } = useIntl()
+  ...props
+}) => {
+  const { formatMessage } = useIntl();
 
   return (
-    <div
-      className='storybook-refinement-list'
-      {...props}
-    >
+    <div className="storybook-refinement-list" {...props}>
       <RadioGroup
         onChange={() => setIsGrid(!isGrid)}
         optionType="button"
@@ -60,15 +48,15 @@ export const RefinementList = ({
         options={[
           {
             label: <AppstoreOutlinedDS />,
-            value: 'Grid'
+            value: "Grid",
           },
           {
             label: <UnorderedListOutlined />,
-            value: 'List'
+            value: "List",
           },
-          ]}
-          size="large"
-          value={isGrid ? "Grid" : "List"}
+        ]}
+        size="large"
+        value={isGrid ? "Grid" : "List"}
       />
 
       <div className="refinement-item">
@@ -76,7 +64,7 @@ export const RefinementList = ({
           <AddItem
             mainActionButton={mainActionButton}
             icon={<FirstActionIcon />}
-            title={toCapitalized(formatMessage({id: firstActionText}))}
+            title={toCapitalized(formatMessage({ id: firstActionText }))}
             Form={FirstForm}
             adding={firstActioning}
             onAdd={onFirstAction}
@@ -97,7 +85,7 @@ export const RefinementList = ({
             adding={addingCalendar}
             onAdd={addCalendar}
             icon={<CalendarOutlined />}
-            title={toCapitalized(formatMessage({ id: 'app.add.calendar' }))}
+            title={toCapitalized(formatMessage({ id: "app.add.calendar" }))}
             formId={formId}
           />
         </Link>
@@ -106,8 +94,6 @@ export const RefinementList = ({
   );
 };
 
-RefinementList.propTypes = {
-};
+RefinementList.propTypes = {};
 
-RefinementList.defaultProps = {
-};
+RefinementList.defaultProps = {};

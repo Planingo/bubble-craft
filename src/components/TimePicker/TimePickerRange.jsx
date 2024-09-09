@@ -1,23 +1,23 @@
-import { TimePicker as AntdTimePicker } from 'antd';
-import React from 'react';
-import './timePicker.css';
+import { TimePicker as AntdTimePicker } from "antd";
+
+import "./timePicker.css";
 
 /**
- * 
+ *
  * # 🚧 _Composant en construction_ 🚧
- * 
+ *
  * # TODO
- * 
+ *
  * ## Description
- * 
+ *
  * Documentations andt du composant : https://ant.design/components/timePicker/
- * 
+ *
  */
 export const TimePickerRange = ({ children, ...props }) => {
-  const format = 'HH:mm';
+  const format = "HH:mm";
   return (
     <AntdTimePicker.RangePicker
-      className='storybook-timePicker'
+      className="storybook-timePicker"
       format={format}
       {...props}
     >
@@ -27,12 +27,9 @@ export const TimePickerRange = ({ children, ...props }) => {
 };
 
 TimePickerRange.propTypes = {
-    /**
-     * TODO property
-     */
-     
+  /**
+   * TODO property
+   */
 };
 
-TimePickerRange.defaultProps = {
-  
-};
+TimePickerRange.defaultProps = {};

@@ -1,35 +1,25 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Table as AntdTable } from 'antd';
-import './table.css';
+import { Table as AntdTable } from "antd";
+import "./table.css";
 
 /**
- * 
+ *
  * # 🚧 _Composant en construction_ 🚧
- * 
+ *
  * # TODO
- * 
+ *
  * ## Description
- * 
+ *
  * Documentations andt du composant : https://ant.design/components/table/
- * 
+ *
  */
 export const Table = ({ ...props }) => {
-  return (
-    <AntdTable
-      className='storybook-table'
-      {...props}
-    />
-  );
+  return <AntdTable className="storybook-table" {...props} />;
 };
 
 Table.propTypes = {
-    /**
-     * TODO property
-     */
-     
+  /**
+   * TODO property
+   */
 };
 
-Table.defaultProps = {
-  
-};
+Table.defaultProps = {};

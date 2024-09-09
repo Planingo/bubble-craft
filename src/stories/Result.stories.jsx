@@ -1,9 +1,7 @@
-
-import { Result } from '../components/Result/Result';
-
+import { Result } from "../components/Result/Result";
 
 const meta = {
-  title: 'Organismes/Result',
+  title: "Organismes/Result",
   component: Result,
 };
 
@@ -11,6 +9,6 @@ export default meta;
 
 export const Playground = {
   args: {
-    children: "Result"
+    children: "Result",
   },
 };
