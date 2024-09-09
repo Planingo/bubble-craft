@@ -1,8 +1,7 @@
-import React from 'react'
-import { CompanyForm } from '../components/AddItem/CompanyForm'
+import { CompanyForm } from "../components/AddItem/CompanyForm";
 
-describe('<CompanyForm />', () => {
-  it('renders', () => {
-    cy.mount(<CompanyForm onSubmit={console.log}/>)
-  })
-})
+describe("<CompanyForm />", () => {
+  it("renders", () => {
+    cy.mount(<CompanyForm onSubmit={console.log} />);
+  });
+});

@@ -1,25 +1,25 @@
-import { Select as AntdSelect } from 'antd';
-import React from 'react';
-import './select.css';
+import { Select as AntdSelect } from "antd";
+
+import "./select.css";
 
 /**
- * 
+ *
  * # 🚧 _Composant en construction_ 🚧
- * 
+ *
  * # TODO
- * 
+ *
  * ## Description
- * 
+ *
  * Documentations andt du composant : https://ant.design/components/select/
- * 
+ *
  */
 export const Select = ({ children, ...props }) => {
   return (
     <AntdSelect
       {...props}
-      className='storybook-select'
+      className="storybook-select"
       showSearch
-      filterOption={(input, option) => (option?.label ?? '').includes(input)}
+      filterOption={(input, option) => (option?.label ?? "").includes(input)}
     >
       {children}
     </AntdSelect>
@@ -27,12 +27,9 @@ export const Select = ({ children, ...props }) => {
 };
 
 Select.propTypes = {
-    /**
-     * TODO property
-     */
-     
+  /**
+   * TODO property
+   */
 };
 
-Select.defaultProps = {
-  
-};
+Select.defaultProps = {};

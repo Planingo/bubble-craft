@@ -1,17 +1,15 @@
-import React from 'react'
-import { SignupPage } from '../components/LoginPage/SignupPage'
-import { IntlProvider } from '../translation/IntlProvider'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from "react-router-dom";
+import { SignupPage } from "../components/LoginPage/SignupPage";
+import { IntlProvider } from "../translation/IntlProvider";
 
-describe('<SignupPage />', () => {
-  it('renders', () => {
-    cy.mount(<IntlProvider>
-      <BrowserRouter>
-        <SignupPage
-          onSubmit={console.log}
-          loading={false}
-        />
-      </BrowserRouter>
-    </IntlProvider>)
-  })
-})
+describe("<SignupPage />", () => {
+  it("renders", () => {
+    cy.mount(
+      <IntlProvider>
+        <BrowserRouter>
+          <SignupPage onSubmit={console.log} loading={false} />
+        </BrowserRouter>
+      </IntlProvider>
+    );
+  });
+});

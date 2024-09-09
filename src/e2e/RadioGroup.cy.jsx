@@ -1,8 +1,7 @@
-import React from 'react'
-import { RadioGroup } from '../components/Radio/RadioGroups/RadioGroup'
+import { RadioGroup } from "../components/Radio/RadioGroups/RadioGroup";
 
-describe('<RadioGroup />', () => {
-  it('renders', () => {
-    cy.mount(<RadioGroup />)
-  })
-})
+describe("<RadioGroup />", () => {
+  it("renders", () => {
+    cy.mount(<RadioGroup />);
+  });
+});

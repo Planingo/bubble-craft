@@ -1,6 +1,5 @@
-import React from 'react';
-import { AiOutlineDownload } from 'react-icons/ai';
+import { AiOutlineDownload } from "react-icons/ai";
 
-export const DownloadOutlined = ({...props}) => {
-    return <AiOutlineDownload {...props} />
-}
+export const DownloadOutlined = ({ ...props }) => {
+  return <AiOutlineDownload {...props} />;
+};

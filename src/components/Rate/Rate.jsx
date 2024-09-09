@@ -1,18 +1,15 @@
-import React from 'react'
-import { Rate as AntdRate } from 'antd'
-import PropTypes from 'prop-types'
-import { StarOutlined } from '../Icon/icon'
+import { Rate as AntdRate } from "antd";
+import PropTypes from "prop-types";
+import { StarOutlined } from "../Icon/icon";
 
 /**
- * 
+ *
  * Documentations andt du composant : https://ant.design/components/rate/
- * 
+ *
  */
-export const Rate = ({
-  ...props
-}) => {
-  return <AntdRate {...props} />
-}
+export const Rate = ({ ...props }) => {
+  return <AntdRate {...props} />;
+};
 
 Rate.propTypes = {
   /**
@@ -21,65 +18,65 @@ Rate.propTypes = {
   allowClear: PropTypes.bool,
   /**
    * S'il faut autoriser la semi-sélection
-  */
+   */
   allowHalf: PropTypes.bool,
   /**
-    * Si vous focusez lorsque le composant est monté
-    */
+   * Si vous focusez lorsque le composant est monté
+   */
   autoFocus: PropTypes.bool,
   /**
-    * Le caractère personnalisé du taux
-    */
+   * Le caractère personnalisé du taux
+   */
   character: PropTypes.node,
   /**
-    * Le nom de la classe personnalisée du taux
-    */
+   * Le nom de la classe personnalisée du taux
+   */
   className: PropTypes.string,
   /**
-    * Nombre d'étoiles
-    */
+   * Nombre d'étoiles
+   */
   count: PropTypes.number,
   /**
-    * La valeur par défaut
-    */
+   * La valeur par défaut
+   */
   defaultValue: PropTypes.number,
   /**
-    * Si en lecture seule, impossible d'interagir
-    */
+   * Si en lecture seule, impossible d'interagir
+   */
   disabled: PropTypes.bool,
   /**
-    * L'objet de style personnalisé de taux
-    */
+   * L'objet de style personnalisé de taux
+   */
   style: PropTypes.string,
   /**
-    * Personnaliser l'info-bulle par chaque caractère
-    */
+   * Personnaliser l'info-bulle par chaque caractère
+   */
   tooltips: PropTypes.array,
   /**
-    * La valeur actuelle
-    */
+   * La valeur actuelle
+   */
   value: PropTypes.number,
   /**
-    * Callback lorsque le composant perd le focus
-    */
+   * Callback lorsque le composant perd le focus
+   */
   onBlur: PropTypes.func,
   /**
-    * Callback lors de la sélection de la valeur
-    */
+   * Callback lors de la sélection de la valeur
+   */
   onChange: PropTypes.func,
   /**
-    * Callback quand le composant obtient le focus
-    */
+   * Callback quand le composant obtient le focus
+   */
   onFocus: PropTypes.func,
   /**
-    * Callback lors du survole d'un item
-    */
+   * Callback lors du survole d'un item
+   */
   onHoverChange: PropTypes.func,
   /**
-    * Callback lorsque keydown sur le composant
-    */
-  onKeyDown: PropTypes.func
-}
+   * Callback lorsque keydown sur le composant
+   */
+  onKeyDown: PropTypes.func,
+};
 
 Rate.defaultProps = {
   allowClear: true,
@@ -89,4 +86,4 @@ Rate.defaultProps = {
   count: 5,
   defaultValue: 0,
   disabled: false,
-}
+};

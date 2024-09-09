@@ -1,37 +1,29 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Drawer as AntdDrawer } from 'antd';
-import './drawer.css';
+import { Drawer as AntdDrawer } from "antd";
+import "./drawer.css";
 
 /**
- * 
+ *
  * # 🚧 _Composant en construction_ 🚧
- * 
+ *
  * # TODO
- * 
+ *
  * ## Description
- * 
+ *
  * Documentations andt du composant : https://ant.design/components/drawer/
- * 
+ *
  */
 export const Drawer = ({ children, ...props }) => {
   return (
-    <AntdDrawer
-      className='storybook-drawer'
-      {...props}
-    >
+    <AntdDrawer className="storybook-drawer" {...props}>
       {children}
     </AntdDrawer>
   );
 };
 
 Drawer.propTypes = {
-    /**
-     * TODO property
-     */
-     
+  /**
+   * TODO property
+   */
 };
 
-Drawer.defaultProps = {
-  
-};
+Drawer.defaultProps = {};

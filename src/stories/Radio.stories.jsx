@@ -1,4 +1,3 @@
-import React from 'react';
 import { Radio } from "../components/Radio/Radio";
 
 export default {

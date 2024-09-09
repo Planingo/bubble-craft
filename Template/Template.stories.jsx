@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 import { Template } from './Template';
 
@@ -10,6 +10,7 @@ export default {
 const TemplateGlobal = (args) => <Template {...args} />;
 
 export const Default = TemplateGlobal.bind({});
+
 
 Default.args = {
     children: "Template"

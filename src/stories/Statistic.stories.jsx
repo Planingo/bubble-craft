@@ -1,8 +1,7 @@
-import { Statistic } from '../components/Statistic/Statistic';
-
+import { Statistic } from "../components/Statistic/Statistic";
 
 const meta = {
-  title: 'Organismes/Statistic',
+  title: "Organismes/Statistic",
   component: Statistic,
 };
 
@@ -11,6 +10,6 @@ export default meta;
 export const Playground = {
   args: {
     title: "Active users",
-    value: 123456
+    value: 123456,
   },
 };

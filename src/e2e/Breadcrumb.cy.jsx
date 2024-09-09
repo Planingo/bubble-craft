@@ -1,8 +1,7 @@
-import React from 'react'
-import { Breadcrumb } from '../components/Breadcrumb/Breadcrumb'
+import { Breadcrumb } from "../components/Breadcrumb/Breadcrumb";
 
-describe('<Breadcrumb />', () => {
-  it('renders', () => {
-    cy.mount(<Breadcrumb />)
-  })
-})
+describe("<Breadcrumb />", () => {
+  it("renders", () => {
+    cy.mount(<Breadcrumb />);
+  });
+});

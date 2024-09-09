@@ -1,50 +1,47 @@
-import { Form } from 'antd';
-import React from 'react';
-import { Field, Form as FinalForm } from 'react-final-form';
-import { useIntl } from 'react-intl';
-import { Link } from 'react-router-dom';
-import { toCapitalized } from '../../utils/formatText';
-import { Button } from '../Button/Button';
-import { Input } from '../Input/Input';
-import { InputPassword } from '../Input/InputPassword/InputPassword';
-import { DrawPart } from './DrawPart/DrawPart';
-import './loginpage.css';
+import { Form } from "antd";
+
+import { Field, Form as FinalForm } from "react-final-form";
+import { useIntl } from "react-intl";
+import { Link } from "react-router-dom";
+import { toCapitalized } from "../../utils/formatText";
+import { Button } from "../Button/Button";
+import { Input } from "../Input/Input";
+import { InputPassword } from "../Input/InputPassword/InputPassword";
+import { DrawPart } from "./DrawPart/DrawPart";
+import "./loginpage.css";
 
 /**
- * 
+ *
  * # 🚧 _Composant en construction_ 🚧
- * 
+ *
  * # TODO
- * 
+ *
  * ## Description
- * 
- * 
- * 
+ *
+ *
+ *
  */
-export const LoginPage = ({
-  children,
-  onSubmit,
-  loading,
-  ...props }) => {
+export const LoginPage = ({ children, onSubmit, loading, ...props }) => {
+  const { formatMessage } = useIntl();
 
-  const { formatMessage } = useIntl()
+  const requiredEmail = (value) =>
+    value ? undefined : formatMessage({ id: "error.required" });
 
-	const requiredEmail = value =>
-		value ? undefined : formatMessage({ id: 'error.required' })
+  const requiredPassword = (value) => {
+    if (!value) return formatMessage({ id: "error.required" });
 
-	const requiredPassword = value => {
-		if (!value) return formatMessage({ id: 'error.required' })
+    if (value.length < 9)
+      return formatMessage({ id: "error.password.character" });
 
-		if (value.length < 9)
-			return formatMessage({ id: 'error.password.character' })
-
-		return undefined
-	}
+    return undefined;
+  };
 
   return (
-    <div className='storybook-login-page' {...props} >
-      <div className='form-login'>
-        <h1 className="title">{formatMessage({ id: 'form.login' }).toUpperCase()}</h1>
+    <div className="storybook-login-page" {...props}>
+      <div className="form-login">
+        <h1 className="title">
+          {formatMessage({ id: "form.login" }).toUpperCase()}
+        </h1>
         <FinalForm
           onSubmit={onSubmit}
           render={({ handleSubmit, valid }) => (
@@ -52,9 +49,11 @@ export const LoginPage = ({
               <Field name="email" validate={requiredEmail}>
                 {({ input, meta }) => (
                   <Form.Item
-                    label={toCapitalized(formatMessage({ id: 'form.login.username' }))}
+                    label={toCapitalized(
+                      formatMessage({ id: "form.login.username" })
+                    )}
                     validateStatus={
-                      meta.touched && meta.error ? 'error' : undefined
+                      meta.touched && meta.error ? "error" : undefined
                     }
                     help={meta.touched && meta.error}
                   >
@@ -62,7 +61,7 @@ export const LoginPage = ({
                       {...input}
                       type="email"
                       placeholder={formatMessage({
-                        id: 'form.login.username.placeholder',
+                        id: "form.login.username.placeholder",
                       })}
                     />
                   </Form.Item>
@@ -71,16 +70,18 @@ export const LoginPage = ({
               <Field name="password" validate={requiredPassword}>
                 {({ input, meta }) => (
                   <Form.Item
-                    label={toCapitalized(formatMessage({ id: 'form.login.password' }))}
+                    label={toCapitalized(
+                      formatMessage({ id: "form.login.password" })
+                    )}
                     validateStatus={
-                      meta.touched && meta.error ? 'error' : undefined
+                      meta.touched && meta.error ? "error" : undefined
                     }
                     help={meta.touched && meta.error}
                   >
                     <InputPassword
                       {...input}
                       placeholder={formatMessage({
-                        id: 'form.login.password.placeholder',
+                        id: "form.login.password.placeholder",
                       })}
                     />
                   </Form.Item>
@@ -88,10 +89,10 @@ export const LoginPage = ({
               </Field>
               <div className="create-forget">
                 <Link className="light-text" to="/reset">
-                  {toCapitalized(formatMessage({id: 'form.login.forget'}))}
+                  {toCapitalized(formatMessage({ id: "form.login.forget" }))}
                 </Link>
                 <Link className="light-text" to="/signup">
-                  {toCapitalized(formatMessage({id: 'form.login.signup'}))}
+                  {toCapitalized(formatMessage({ id: "form.login.signup" }))}
                 </Link>
               </div>
               <Button
@@ -101,21 +102,19 @@ export const LoginPage = ({
                 shape="round"
                 size="large"
               >
-                {toCapitalized(formatMessage({ id: 'form.login.login' }))}
+                {toCapitalized(formatMessage({ id: "form.login.login" }))}
               </Button>
             </Form>
           )}
         />
       </div>
-      <div className='draw-part'>
+      <div className="draw-part">
         <DrawPart />
       </div>
     </div>
   );
 };
 
-LoginPage.propTypes = {
-};
+LoginPage.propTypes = {};
 
-LoginPage.defaultProps = {
-};
+LoginPage.defaultProps = {};

@@ -1,6 +1,5 @@
-import React from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
+import { AiOutlineMail } from "react-icons/ai";
 
 export const MailOutlined = () => {
-    return <AiOutlineMail/>
-}
+  return <AiOutlineMail />;
+};

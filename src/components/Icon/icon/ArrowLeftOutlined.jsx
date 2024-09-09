@@ -1,6 +1,5 @@
-import React from 'react';
-import { AiOutlineArrowLeft } from 'react-icons/ai';
+import { AiOutlineArrowLeft } from "react-icons/ai";
 
-export const ArrowLeftOutlined = ({...props}) => {
-    return <AiOutlineArrowLeft {...props}/>
-}
+export const ArrowLeftOutlined = ({ ...props }) => {
+  return <AiOutlineArrowLeft {...props} />;
+};

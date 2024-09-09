@@ -1,12 +1,11 @@
-import { Form } from 'antd';
-import React from 'react';
-import { Header } from '../components/Header/Header';
-import { UserOutlined } from '../components/Icon/icon';
-import { Input } from '../components/Input/Input';
+import { Form } from "antd";
 
+import { Header } from "../components/Header/Header";
+import { UserOutlined } from "../components/Icon/icon";
+import { Input } from "../components/Input/Input";
 
 const meta = {
-  title: 'Templates/Header',
+  title: "Templates/Header",
   component: Header,
 };
 
@@ -17,79 +16,88 @@ export const Playground = {
     placeholder: "Rechercher",
     isRefinementList: true,
     refinementList: {
-    isGrid: true,
-    firstActionText: "ajouter un truc",
-    setIsGrid: console.log,
-    FirstActionIcon: UserOutlined,
-    FirstForm: <Form
-      onValuesChange={(values) => console.log(values)}
-      layout="vertical"
-      hideRequiredMark
-    >
-        <Form.Item
-          name="lastName"
-          label="Nom"
-          rules={[{ required: true, message: 'Merci de renseigner le nom' }]}
+      isGrid: true,
+      firstActionText: "ajouter un truc",
+      setIsGrid: console.log,
+      FirstActionIcon: UserOutlined,
+      FirstForm: (
+        <Form
+          onValuesChange={(values) => console.log(values)}
+          layout="vertical"
+          hideRequiredMark
         >
-          <Input placeholder="Potter" />
-        </Form.Item>
-    </Form>,
-    onFirstAction: console.log,
-    firstActioning: console.log,
-    secondActionText: "editer un truc",
-    SecondActionIcon: UserOutlined,
-    SecondForm: <Form
-      onValuesChange={(values) => console.log(values)}
-      layout="vertical"
-      hideRequiredMark
-    >
-        <Form.Item
-          name="lastName"
-          label="Nom"
-          rules={[{ required: true, message: 'Merci de renseigner le nom' }]}
+          <Form.Item
+            name="lastName"
+            label="Nom"
+            rules={[{ required: true, message: "Merci de renseigner le nom" }]}
+          >
+            <Input placeholder="Potter" />
+          </Form.Item>
+        </Form>
+      ),
+      onFirstAction: console.log,
+      firstActioning: console.log,
+      secondActionText: "editer un truc",
+      SecondActionIcon: UserOutlined,
+      SecondForm: (
+        <Form
+          onValuesChange={(values) => console.log(values)}
+          layout="vertical"
+          hideRequiredMark
         >
-          <Input placeholder="Potter" />
-        </Form.Item>
-    </Form>,
-    onSecondAction: console.log,
-    secondActioning: console.log,},
+          <Form.Item
+            name="lastName"
+            label="Nom"
+            rules={[{ required: true, message: "Merci de renseigner le nom" }]}
+          >
+            <Input placeholder="Potter" />
+          </Form.Item>
+        </Form>
+      ),
+      onSecondAction: console.log,
+      secondActioning: console.log,
+    },
     refinementDetails: {
       isGrid: true,
       firstActionText: "ajouter un truc",
       setIsGrid: console.log,
       FirstActionIcon: UserOutlined,
-      FirstForm: <Form
-        onValuesChange={(values) => console.log(values)}
-        layout="vertical"
-        hideRequiredMark
-      >
+      FirstForm: (
+        <Form
+          onValuesChange={(values) => console.log(values)}
+          layout="vertical"
+          hideRequiredMark
+        >
           <Form.Item
             name="lastName"
             label="Nom"
-            rules={[{ required: true, message: 'Merci de renseigner le nom' }]}
+            rules={[{ required: true, message: "Merci de renseigner le nom" }]}
           >
             <Input placeholder="Potter" />
           </Form.Item>
-      </Form>,
+        </Form>
+      ),
       onFirstAction: console.log,
       firstActioning: console.log,
       secondActionText: "editer un truc",
       SecondActionIcon: UserOutlined,
-      SecondForm: <Form
-        onValuesChange={(values) => console.log(values)}
-        layout="vertical"
-        hideRequiredMark
-      >
+      SecondForm: (
+        <Form
+          onValuesChange={(values) => console.log(values)}
+          layout="vertical"
+          hideRequiredMark
+        >
           <Form.Item
             name="lastName"
             label="Nom"
-            rules={[{ required: true, message: 'Merci de renseigner le nom' }]}
+            rules={[{ required: true, message: "Merci de renseigner le nom" }]}
           >
             <Input placeholder="Potter" />
           </Form.Item>
-      </Form>,
+        </Form>
+      ),
       onSecondAction: console.log,
       secondActioning: console.log,
-    }
+    },
   },
 };

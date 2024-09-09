@@ -1,8 +1,7 @@
-import React from 'react'
-import { Switch } from '../components/Switch/Switch'
+import { Switch } from "../components/Switch/Switch";
 
-describe('<Switch />', () => {
-  it('renders', () => {
-    cy.mount(<Switch />)
-  })
-})
+describe("<Switch />", () => {
+  it("renders", () => {
+    cy.mount(<Switch />);
+  });
+});

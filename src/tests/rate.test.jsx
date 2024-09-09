@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import React from "react";
+
 import { Rate } from "../components/Rate/Rate";
 
 describe("Rate component", () => {
@@ -7,8 +7,8 @@ describe("Rate component", () => {
 
   it("Count rate", () => {
     const { baseElement } = render(rate);
-    expect(baseElement.getElementsByClassName("ant-rate-star ").length).toEqual(
-      7,
+    expect(baseElement.getElementsByClassName("ant-rate-star ")).toHaveLength(
+      7
     );
   });
 });

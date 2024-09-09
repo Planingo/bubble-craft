@@ -1,7 +1,7 @@
-import { Badge } from '../components/Badge/Badge';
+import { Badge } from "../components/Badge/Badge";
 
 const meta = {
-  title: 'Atomes/Badge',
+  title: "Atomes/Badge",
   component: Badge,
 };
 

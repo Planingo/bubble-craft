@@ -1,6 +1,5 @@
-import React from 'react';
-import { AiOutlineCloudUpload } from 'react-icons/ai';
+import { AiOutlineCloudUpload } from "react-icons/ai";
 
-export const CloudUploadOutlined = ({...props}) => {
-    return <AiOutlineCloudUpload {...props}/>
-}
+export const CloudUploadOutlined = ({ ...props }) => {
+  return <AiOutlineCloudUpload {...props} />;
+};
