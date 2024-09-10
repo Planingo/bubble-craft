@@ -5,6 +5,7 @@
   "description": "Design system de Pixel Brew",
   "main": "src/index.js",
   "module": "src",
+  "type": "module",
   "author": {
     "name": "Bugsyaya"
   },
@@ -99,6 +100,7 @@
     "react-is": "^18.3.1",
     "react-router-dom": "^6.26.1",
     "react-scripts": "5.0.1",
+    "remark-gfm": "^4.0.0",
     "storybook": "^8.2.9",
     "storybook-addon-pseudo-states": "^3.1.1",
     "typescript-proptypes-generator": "^0.0.6",
