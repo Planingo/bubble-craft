@@ -3,6 +3,7 @@ import cypress from "eslint-plugin-cypress/flat";
 import * as mdx from "eslint-plugin-mdx";
 import react from "eslint-plugin-react";
 import globals from "globals";
+import { readFileSync } from "node:fs";
 
 const jsxFiles = [
   "{src,Template}/**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}",
@@ -11,7 +12,17 @@ const jsxFiles = [
 
 export default [
   {
-    ignores: ["mochawesome-report/**", "storybook-static/**"],
+    ignores: [
+      ".yarn",
+      // Ignore gitignored files
+      ...readFileSync(".gitignore")
+        .toString("utf-8")
+        .split("\n")
+        .filter(
+          (line) => line && !line.startsWith("!") && !line.startsWith("#")
+        )
+        .map((line) => (line.startsWith("/") ? line.substring(1) : line)),
+    ],
   },
   js.configs.recommended,
   {
