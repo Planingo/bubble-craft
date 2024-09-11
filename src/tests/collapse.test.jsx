@@ -48,7 +48,7 @@ describe("Collapse component", () => {
   it("Collapse content text", () => {
     const { baseElement } = render(collapse);
     expect(baseElement).toHaveTextContent(
-      "A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world."
+      "A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.",
     );
   });
 });

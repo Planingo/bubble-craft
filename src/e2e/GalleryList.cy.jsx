@@ -33,7 +33,7 @@ describe("<GalleryList />", () => {
           ]}
           name="lesson"
         />
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

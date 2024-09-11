@@ -29,7 +29,7 @@ describe("<NoData />", () => {
             </Form>
           }
         />
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

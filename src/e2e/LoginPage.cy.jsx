@@ -9,7 +9,7 @@ describe("<LoginPage />", () => {
         <BrowserRouter>
           <LoginPage onSubmit={console.log} loading={false} />
         </BrowserRouter>
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

@@ -6,7 +6,7 @@ describe("<ModuleForm />", () => {
     cy.mount(
       <IntlProvider>
         <ModuleForm onSubmit={console.log} />
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

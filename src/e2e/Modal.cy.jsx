@@ -34,7 +34,7 @@ describe("<Modal />", () => {
         >
           Ananas
         </Modal>
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

@@ -58,7 +58,7 @@ export const SignupPage = ({ onSubmit, loading, ...props }) => {
                 {({ input, meta }) => (
                   <Form.Item
                     label={toCapitalized(
-                      formatMessage({ id: "form.signup.username" })
+                      formatMessage({ id: "form.signup.username" }),
                     )}
                     validateStatus={
                       meta.touched && meta.error ? "error" : undefined
@@ -79,7 +79,7 @@ export const SignupPage = ({ onSubmit, loading, ...props }) => {
                 {({ input, meta }) => (
                   <Form.Item
                     label={toCapitalized(
-                      formatMessage({ id: "form.signup.password" })
+                      formatMessage({ id: "form.signup.password" }),
                     )}
                     validateStatus={
                       meta.touched && meta.error ? "error" : undefined

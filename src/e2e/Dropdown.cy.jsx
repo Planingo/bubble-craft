@@ -55,7 +55,7 @@ describe("<Dropdown />", () => {
         }}
       >
         <p>Hover me</p>
-      </Dropdown>
+      </Dropdown>,
     );
   });
 });

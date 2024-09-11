@@ -10,7 +10,7 @@ describe("<Navigation />", () => {
         <BrowserRouter>
           <Navigation roles={[Roles.PLANING_KEEPER]} />
         </BrowserRouter>
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

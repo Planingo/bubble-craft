@@ -19,11 +19,11 @@ export const Colors = () => {
     document.body.style.setProperty("--FONT-BOLD", `${token.fontFamily}-Bold`);
     document.body.style.setProperty(
       "--FONT-SEMIBOLD",
-      `${token.fontFamily}-SemiBold`
+      `${token.fontFamily}-SemiBold`,
     );
     document.body.style.setProperty(
       "--FONT-LIGHT",
-      `${token.fontFamily}-Light`
+      `${token.fontFamily}-Light`,
     );
   }, [token.colorPrimary]);
 

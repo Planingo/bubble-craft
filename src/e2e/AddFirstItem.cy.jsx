@@ -6,7 +6,7 @@ describe("<AddFirstItem />", () => {
     cy.mount(
       <IntlProvider>
         <AddFirstItem />
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

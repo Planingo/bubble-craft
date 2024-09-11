@@ -118,7 +118,7 @@ describe("<GlobalPage />", () => {
             }}
           />
         </BrowserRouter>
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

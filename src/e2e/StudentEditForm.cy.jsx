@@ -6,7 +6,7 @@ describe("<StudentEditForm />", () => {
     cy.mount(
       <IntlProvider>
         <StudentEditForm companies={[]} onSubmit={console.log} />
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

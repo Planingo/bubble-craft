@@ -54,7 +54,7 @@ describe("<RefinementDetails />", () => {
             secondActioning={console.log}
           />
         </BrowserRouter>
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

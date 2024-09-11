@@ -50,7 +50,7 @@ export const LoginPage = ({ children, onSubmit, loading, ...props }) => {
                 {({ input, meta }) => (
                   <Form.Item
                     label={toCapitalized(
-                      formatMessage({ id: "form.login.username" })
+                      formatMessage({ id: "form.login.username" }),
                     )}
                     validateStatus={
                       meta.touched && meta.error ? "error" : undefined
@@ -71,7 +71,7 @@ export const LoginPage = ({ children, onSubmit, loading, ...props }) => {
                 {({ input, meta }) => (
                   <Form.Item
                     label={toCapitalized(
-                      formatMessage({ id: "form.login.password" })
+                      formatMessage({ id: "form.login.password" }),
                     )}
                     validateStatus={
                       meta.touched && meta.error ? "error" : undefined

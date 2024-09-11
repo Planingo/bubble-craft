@@ -13,7 +13,7 @@ export const Filters = ({ selects, count }) => {
             key={select.placeholder}
             defaultValue={select.defaultValue}
             placeholder={toCapitalized(
-              formatMessage({ id: select.placeholder })
+              formatMessage({ id: select.placeholder }),
             )}
             options={select.options}
             allowClear={select.allowClear}

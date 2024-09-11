@@ -33,7 +33,7 @@ describe.skip("<Gallery />", () => {
           ]}
           name="lesson"
         />
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

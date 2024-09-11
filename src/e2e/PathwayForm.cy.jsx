@@ -6,7 +6,7 @@ describe("<PathwayForm />", () => {
     cy.mount(
       <IntlProvider>
         <PathwayForm onSubmit={console.log} />
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

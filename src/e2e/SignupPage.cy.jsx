@@ -9,7 +9,7 @@ describe("<SignupPage />", () => {
         <BrowserRouter>
           <SignupPage onSubmit={console.log} loading={false} />
         </BrowserRouter>
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

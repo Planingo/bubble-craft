@@ -22,7 +22,7 @@ describe("<Actions />", () => {
             }}
           />
         </BrowserRouter>
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

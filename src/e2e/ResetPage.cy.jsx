@@ -9,7 +9,7 @@ describe("<ResetPage />", () => {
         <BrowserRouter>
           <ResetPage onSubmit={console.log} loading={false} />
         </BrowserRouter>
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

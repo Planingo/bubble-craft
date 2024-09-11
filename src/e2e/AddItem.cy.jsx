@@ -6,7 +6,7 @@ describe.skip("<AddItem />", () => {
     cy.mount(
       <IntlProvider>
         <AddItem />
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

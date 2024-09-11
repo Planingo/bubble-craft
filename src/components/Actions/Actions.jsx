@@ -30,7 +30,7 @@ export const Actions = ({
         title={
           formatMessage(
             { id: downloadTitle.id },
-            { values: downloadTitle.values }
+            { values: downloadTitle.values },
           ) || formatMessage({ id: "download" })
         }
         placement="bottom"
@@ -55,7 +55,7 @@ export const Actions = ({
         title={
           formatMessage(
             { id: deleteTitle.id },
-            { values: deleteTitle.values }
+            { values: deleteTitle.values },
           ) || formatMessage({ id: "delete" })
         }
         placement="bottom"

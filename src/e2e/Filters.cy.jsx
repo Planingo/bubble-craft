@@ -6,7 +6,7 @@ describe("<Filters />", () => {
     cy.mount(
       <IntlProvider>
         <Filters count={{ id: "students", count: 2 }} />
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

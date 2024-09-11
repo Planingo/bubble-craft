@@ -8,7 +8,7 @@ describe("Rate component", () => {
   it("Count rate", () => {
     const { baseElement } = render(rate);
     expect(baseElement.getElementsByClassName("ant-rate-star ")).toHaveLength(
-      7
+      7,
     );
   });
 });

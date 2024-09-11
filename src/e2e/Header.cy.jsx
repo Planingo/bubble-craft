@@ -14,7 +14,7 @@ describe("<Header />", () => {
             refinementDetails={null}
           />
         </BrowserRouter>
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

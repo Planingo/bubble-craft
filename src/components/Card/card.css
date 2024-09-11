@@ -33,7 +33,7 @@ li > span > span > svg {
   width: 100%;
 }
 
-.ant-card-head-title{
+.ant-card-head-title {
   padding: 0.5em;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -53,7 +53,7 @@ li > span > span > svg {
   overflow: hidden;
 }
 
-span[role='tag'] {
+span[role="tag"] {
   margin-bottom: 1em;
   min-width: 70px;
 }
@@ -66,7 +66,7 @@ span[role='tag'] {
   cursor: pointer;
 }
 
-.disabled {    
+.disabled {
   cursor: not-allowed !important;
   color: lightgray !important;
 }

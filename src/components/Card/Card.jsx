@@ -34,7 +34,7 @@ export const Card = ({ children, ...props }) => {
           title={
             formatMessage(
               { id: props.downloadTitle.id },
-              { values: props.downloadTitle.values }
+              { values: props.downloadTitle.values },
             ) || formatMessage({ id: "download" })
           }
           placement="bottom"
@@ -46,7 +46,7 @@ export const Card = ({ children, ...props }) => {
           title={
             formatMessage(
               { id: props.cloudTitle.id },
-              { values: props.cloudTitle.values }
+              { values: props.cloudTitle.values },
             ) || formatMessage({ id: "send" })
           }
           placement="bottom"
@@ -58,7 +58,7 @@ export const Card = ({ children, ...props }) => {
           title={
             formatMessage(
               { id: props.deleteTitle.id },
-              { values: props.deleteTitle.values }
+              { values: props.deleteTitle.values },
             ) || formatMessage({ id: "delete" })
           }
           placement="bottom"

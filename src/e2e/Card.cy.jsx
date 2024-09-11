@@ -25,7 +25,7 @@ describe("<Card />", () => {
             values: `Anne`,
           }}
         />
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

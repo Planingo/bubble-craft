@@ -15,7 +15,7 @@ describe("<Notif />", () => {
             </Button>
           )}
         />
-      </IntlProvider>
+      </IntlProvider>,
     );
   });
 });

@@ -1,37 +1,37 @@
 .storybook-global-page {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 1em;
-    height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 1em;
+  height: 100vh;
 }
 
 .storybook-global-page > .right-part {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    row-gap: 1em;
-    height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  row-gap: 1em;
+  height: 100vh;
 }
 
 .storybook-global-page > .right-part > .bottom-part {
-    overflow: auto;
-    margin-bottom: 1.7em;
+  overflow: auto;
+  margin-bottom: 1.7em;
 }
 
 .storybook-global-page > .right-part > .footer {
-    width: 100%;
-    background-color: white;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .storybook-global-page > .right-part > .footer > p {
-    width: fit-content !important;
-    padding: 0;
-    margin: 0;
-    height: 1.5em;
-    font-weight: 300;
-    font-size: smaller;
+  width: fit-content !important;
+  padding: 0;
+  margin: 0;
+  height: 1.5em;
+  font-weight: 300;
+  font-size: smaller;
 }

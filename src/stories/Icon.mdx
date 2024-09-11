@@ -14,7 +14,8 @@ import * as icons from "../components/Icon/icon";
   {Object.entries(icons)
     .filter(
       ([iconName]) =>
-        iconName.toUpperCase()[0] === iconName[0] && iconName !== "IconProvider"
+        iconName.toUpperCase()[0] === iconName[0] &&
+        iconName !== "IconProvider",
     )
     .map(([iconName, Icon]) => (
       <div

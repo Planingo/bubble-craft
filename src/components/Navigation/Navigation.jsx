@@ -44,19 +44,19 @@ export const Navigation = ({ roles, logout, ...props }) => {
       [
         getItem(
           <p className="email">{`${props?.email || "bubble-craft-support@bugsyaya.dev"}`}</p>,
-          "email"
+          "email",
         ),
         getItem(
           <Link to="/my-account">
             <p>{formatMessage({ id: "app.my.account" })}</p>
           </Link>,
-          "2"
+          "2",
         ),
         getItem(
           <p onClick={logout}>{formatMessage({ id: "app.logout" })}</p>,
-          "3"
+          "3",
         ),
-      ]
+      ],
     ),
   ];
 
@@ -94,7 +94,7 @@ Navigation.propTypes = {
       Roles.STUDENT,
       Roles.PROFESSOR,
       Roles.COMPANY,
-    ])
+    ]),
   ),
 };
 
