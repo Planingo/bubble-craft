@@ -1,0 +1,5 @@
+storybook-static
+mochawesome-report
+build
+node_modules
+**/*.mdx
