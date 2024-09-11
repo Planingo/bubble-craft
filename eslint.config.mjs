@@ -1,7 +1,13 @@
 import js from "@eslint/js";
 import cypress from "eslint-plugin-cypress/flat";
+import * as mdx from "eslint-plugin-mdx";
 import react from "eslint-plugin-react";
 import globals from "globals";
+
+const jsxFiles = [
+  "{src,Template}/**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}",
+  "**/*.mdx",
+];
 
 export default [
   {
@@ -9,18 +15,19 @@ export default [
   },
   js.configs.recommended,
   {
-    files: ["{src,Template}/**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}"],
+    files: jsxFiles,
     ...react.configs.flat.recommended,
   },
   {
-    files: ["{src,Template}/**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}"],
+    files: jsxFiles,
     ...react.configs.flat["jsx-runtime"],
   },
   {
-    files: ["{src,Template}/**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}"],
+    files: jsxFiles,
     rules: {
       "react/prop-types": "off",
       "no-unused-vars": "warn",
+      "react/no-unescaped-entities": "off",
     },
     languageOptions: {
       globals: {
@@ -101,4 +108,11 @@ export default [
       },
     },
   },
+  {
+    ...mdx.flat,
+    processor: mdx.createRemarkProcessor({
+      lintCodeBlocks: true,
+    }),
+  },
+  mdx.flatCodeBlocks,
 ];
