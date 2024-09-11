@@ -1,17 +1,17 @@
-const { defineConfig } = require("cypress");
+import { defineConfig } from "cypress";
 
-module.exports = defineConfig({
-  reporter: 'mochawesome',
+export default defineConfig({
+  reporter: "mochawesome",
   reporterOptions: {
-    reportDir: 'runner-results',
+    reportDir: "runner-results",
     overwrite: false,
     html: false,
     json: true,
-    reportFilename: "[name]-report"
+    reportFilename: "[name]-report",
   },
   component: {
     devServer: {
-      framework: "create-react-app",
+      framework: "react",
       bundler: "vite",
     },
     specPattern: "./**/**/*.cy.jsx",

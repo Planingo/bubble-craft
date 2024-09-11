@@ -1,7 +1,7 @@
-import { Checkbox } from '../components/Checkbox/Checkbox';
+import { Checkbox } from "../components/Checkbox/Checkbox";
 
 const meta = {
-  title: 'Atomes/Checkbox',
+  title: "Atomes/Checkbox",
   component: Checkbox,
 };
 

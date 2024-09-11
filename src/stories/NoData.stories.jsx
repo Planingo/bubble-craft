@@ -1,9 +1,9 @@
-import { Form } from 'antd';
-import React from 'react';
-import { Input, NoData } from '../components';
+import { Form } from "antd";
+
+import { Input, NoData } from "../components";
 
 const meta = {
-  title: 'Molécules/NoData',
+  title: "Molécules/NoData",
   component: NoData,
 };
 
@@ -14,8 +14,9 @@ export const Playground = {
     description: "C'est vide ici !",
     title: "Ajouter une lesson",
     cta: "Ajouter une lesson",
-    Add: () => <Form
-        name='Formulaire lesson'
+    Add: () => (
+      <Form
+        name="Formulaire lesson"
         onValuesChange={console.log}
         layout="vertical"
         requiredMark
@@ -23,10 +24,11 @@ export const Playground = {
         <Form.Item
           name="name"
           label="Nom"
-          rules={[{ required: true, message: 'Please enter user name' }]}
+          rules={[{ required: true, message: "Please enter user name" }]}
         >
           <Input placeholder="Please enter user name" />
         </Form.Item>
-      </Form>,
+      </Form>
+    ),
   },
 };

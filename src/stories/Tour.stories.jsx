@@ -1,8 +1,7 @@
-import React from 'react';
-import { Tour } from '../components/Tour/Tour';
+import { Tour } from "../components/Tour/Tour";
 
 const meta = {
-  title: 'Organismes/Tour',
+  title: "Organismes/Tour",
   component: Tour,
 };
 
@@ -13,8 +12,8 @@ export const Playground = {
     open: "Tour",
     steps: [
       {
-        title: 'Upload File',
-        description: 'Put your files here.',
+        title: "Upload File",
+        description: "Put your files here.",
         cover: (
           <img
             alt="tour.png"
@@ -24,15 +23,15 @@ export const Playground = {
         target: () => console.log(),
       },
       {
-        title: 'Save',
-        description: 'Save your changes.',
+        title: "Save",
+        description: "Save your changes.",
         target: () => console.log(),
       },
       {
-        title: 'Other Actions',
-        description: 'Click to see other actions.',
+        title: "Other Actions",
+        description: "Click to see other actions.",
         target: () => console.log(),
       },
-    ]
+    ],
   },
 };

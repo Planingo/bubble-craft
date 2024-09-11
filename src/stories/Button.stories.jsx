@@ -1,9 +1,8 @@
-import React from 'react';
-import { Button } from '../components/Button/Button';
-import { PoweroffOutlined } from '../components/Icon/icon';
+import { Button } from "../components/Button/Button";
+import { PoweroffOutlined } from "../components/Icon/icon";
 
 const meta = {
-  title: 'Atomes/Button',
+  title: "Atomes/Button",
   component: Button,
 };
 
@@ -12,6 +11,6 @@ export default meta;
 export const Playground = {
   args: {
     children: "Ananas",
-    icon: <PoweroffOutlined />
+    icon: <PoweroffOutlined />,
   },
 };

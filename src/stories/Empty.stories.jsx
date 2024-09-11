@@ -1,8 +1,7 @@
-import React from 'react';
-import { Empty } from '../components/Empty/Empty';
+import { Empty } from "../components/Empty/Empty";
 
 const meta = {
-  title: 'Molécules/Empty',
+  title: "Molécules/Empty",
   component: Empty,
 };
 
@@ -10,6 +9,6 @@ export default meta;
 
 export const Playground = {
   args: {
-    description: <p>Ceci est une super description !</p>
+    description: <p>Ceci est une super description !</p>,
   },
 };

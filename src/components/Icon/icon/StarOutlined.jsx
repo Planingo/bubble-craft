@@ -1,6 +1,5 @@
-import React from 'react';
-import { AiOutlineStar } from 'react-icons/ai';
+import { AiOutlineStar } from "react-icons/ai";
 
 export const StarOutlined = () => {
-    return <AiOutlineStar/>
-}
+  return <AiOutlineStar />;
+};

@@ -1,6 +1,5 @@
-import React from 'react';
-import { AiOutlineUser } from 'react-icons/ai';
+import { AiOutlineUser } from "react-icons/ai";
 
 export const UserOutlined = () => {
-    return <AiOutlineUser/>
-}
+  return <AiOutlineUser />;
+};

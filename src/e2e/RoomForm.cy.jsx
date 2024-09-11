@@ -1,8 +1,7 @@
-import React from 'react'
-import { RoomForm } from '../components/AddItem/RoomForm'
+import { RoomForm } from "../components/AddItem/RoomForm";
 
-describe('<RoomForm />', () => {
-  it('renders', () => {
-    cy.mount(<RoomForm onSubmit={console.log}/>)
-  })
-})
+describe("<RoomForm />", () => {
+  it("renders", () => {
+    cy.mount(<RoomForm onSubmit={console.log} />);
+  });
+});

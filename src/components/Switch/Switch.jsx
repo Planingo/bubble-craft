@@ -1,21 +1,18 @@
-import React from 'react';
-import { Switch as AntdSwitch } from 'antd'
-
+import { Switch as AntdSwitch } from "antd";
 
 /**
- * 
+ *
  * # 🚧 _Composant en construction_ 🚧
- * 
+ *
  * # TODO
- * 
+ *
  * ## Description
- * 
+ *
  * Documentations andt du composant : https://ant.design/components/switch/
- * 
+ *
  */
 const Switch = ({
   props,
-  children,
   autoFocus,
   checked,
   checkedChildren,
@@ -26,22 +23,25 @@ const Switch = ({
   size,
   unCheckedChildren,
   onChange,
-  onClick
+  onClick,
 }) => {
-  return <AntdSwitch
-    aria-label='switch'
-    autoFocus={autoFocus}
-    checked={checked}
-    checkedChildren={checkedChildren}
-    className={className}
-    defaultChecked={defaultChecked}
-    disabled={disabled}
-    loading={loading}
-    size={size}
-    unCheckedChildren={unCheckedChildren}
-    onChange={onChange}
-    onClick={onClick}
-    {...props} />
-}
+  return (
+    <AntdSwitch
+      aria-label="switch"
+      autoFocus={autoFocus}
+      checked={checked}
+      checkedChildren={checkedChildren}
+      className={className}
+      defaultChecked={defaultChecked}
+      disabled={disabled}
+      loading={loading}
+      size={size}
+      unCheckedChildren={unCheckedChildren}
+      onChange={onChange}
+      onClick={onClick}
+      {...props}
+    />
+  );
+};
 
 export { Switch };

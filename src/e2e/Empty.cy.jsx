@@ -1,8 +1,7 @@
-import React from 'react'
-import { Empty } from '../components/Empty/Empty'
+import { Empty } from "../components/Empty/Empty";
 
-describe('<Empty />', () => {
-  it('renders', () => {
-    cy.mount(<Empty />)
-  })
-})
+describe("<Empty />", () => {
+  it("renders", () => {
+    cy.mount(<Empty />);
+  });
+});

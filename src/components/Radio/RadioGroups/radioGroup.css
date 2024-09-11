@@ -1,12 +1,12 @@
 .storybook-radiogroup > div {
-    display: flex;
+  display: flex;
 }
 
 .storybook-radiogroup > div > label {
-    display: flex;
+  display: flex;
 }
 
 .storybook-radiogroup > div > label > span:nth-last-child(1) {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }

@@ -1,20 +1,22 @@
 * {
-    font-family: var(--FONT);
+  font-family: var(--FONT);
 }
 
 h1 {
-    font-family: var(--FONT-BOLD);
+  font-family: var(--FONT-BOLD);
 }
 
-h2, h3, h4 {
-    font-family: var(--FONT-SEMIBOLD);
+h2,
+h3,
+h4 {
+  font-family: var(--FONT-SEMIBOLD);
 }
 
 .light-text {
-    font-family:  var(--FONT-LIGHT) !important;
+  font-family: var(--FONT-LIGHT) !important;
 }
 
 a {
-    text-decoration: none !important;
-    font-family: var(--FONT-LIGHT) !important;
+  text-decoration: none !important;
+  font-family: var(--FONT-LIGHT) !important;
 }
