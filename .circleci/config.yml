@@ -78,6 +78,8 @@ jobs:
             sudo apt-key export D38B4796 | sudo gpg --dearmour -o /etc/apt/trusted.gpg.d/chrome.gpg
             sudo apt-get install google-chrome-stable
       - run: yarn test:e2e
+      - store_artifacts:
+          path: mochawesome-report
   publish:
     executor: 
       name: node/default
