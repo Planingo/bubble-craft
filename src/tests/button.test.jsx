@@ -4,7 +4,7 @@ import { Button } from "../components/Button/Button";
 
 describe("Button component", () => {
   const textContent = "LOGIN";
-  const onClick = jest.fn();
+  const onClick = vi.fn();
 
   const button = (
     <Button onClick={() => onClick()} label="test" danger={false}>

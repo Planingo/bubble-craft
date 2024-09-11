@@ -2,8 +2,8 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { Switch } from "../components/Switch/Switch";
 
 describe("Switch component", () => {
-  const onChange = jest.fn();
-  const onClick = jest.fn();
+  const onChange = vi.fn();
+  const onClick = vi.fn();
   const swi = <Switch onChange={onChange} onClick={onClick} />;
 
   it("should render given children", () => {

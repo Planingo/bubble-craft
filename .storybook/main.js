@@ -17,10 +17,6 @@ export default {
         },
       },
     },
-    {
-      name: "@storybook/addon-docs",
-      options: {},
-    },
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "storybook-addon-pseudo-states",

@@ -3,7 +3,7 @@ import { Tag } from "../components/Tag/Tag";
 
 describe("Tag component", () => {
   const textContent = "C'est un super tag";
-  const onClose = jest.fn();
+  const onClose = vi.fn();
   const tag = (
     <Tag onClose={() => onClose()} closable={true}>
       {textContent}

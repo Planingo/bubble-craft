@@ -1,14 +1,13 @@
 import js from "@eslint/js";
 import cypress from "eslint-plugin-cypress/flat";
-import jest from "eslint-plugin-jest";
 import react from "eslint-plugin-react";
 import globals from "globals";
 
 export default [
   {
-    ignores: ["mochawesome-report/**"],
-    ...js.configs.recommended,
+    ignores: ["mochawesome-report/**", "storybook-static/**"],
   },
+  js.configs.recommended,
   {
     files: ["{src,Template}/**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}"],
     ...react.configs.flat.recommended,
@@ -52,7 +51,32 @@ export default [
   },
   {
     files: ["{src,Template}/**/*.test.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}"],
-    ...jest.configs["flat/style"],
+    languageOptions: {
+      globals: {
+        // suite
+        suite: true,
+        test: true,
+        describe: true,
+        it: true,
+        // chai
+        chai: true,
+        expect: true,
+        assert: true,
+        // typecheck
+        expectTypeOf: true,
+        assertType: true,
+        // utils
+        vitest: true,
+        vi: true,
+        // hooks
+        beforeAll: true,
+        afterAll: true,
+        beforeEach: true,
+        afterEach: true,
+        onTestFinished: true,
+        onTestFailed: true,
+      },
+    },
   },
   {
     files: [

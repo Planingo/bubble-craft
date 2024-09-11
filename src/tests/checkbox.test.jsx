@@ -3,7 +3,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { Checkbox } from "../components/Checkbox/Checkbox";
 
 describe("Checkbox component", () => {
-  const onChange = jest.fn();
+  const onChange = vi.fn();
   const textContent = "Coucou";
   const checkbox = <Checkbox onChange={onChange}>{textContent}</Checkbox>;
 
