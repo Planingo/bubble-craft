@@ -45,3 +45,4 @@ cypress/results/*
 cypress/screenshots/*
 
 /mochawesome-report
+parallel-weights.json
