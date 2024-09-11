@@ -21,11 +21,11 @@
     "storybook": "storybook dev -p 9009",
     "test": "vitest",
     "test:e2e:run": "yarn cypress run --component --browser chrome",
-    "test:e2e": "cypress-parallel -s test:e2e:run -t 3 -d src/e2e -a '\"--config baseUrl=http://localhost:3000\"' --reporter cypress-multi-reporters --reporter-options configFile=multi-reporter.config.json",
+    "test:e2e:parallel": "cypress-parallel -s test:e2e:run -t 3 -d src/e2e -a '\"--config baseUrl=http://localhost:3000\"' --reporter cypress-multi-reporters --reporter-options configFile=multi-reporter.config.json",
     "test:e2e:open": "yarn cypress open",
-    "merge:report": "npx mochawesome-merge 'tests-results/*-report.json' > report.json && rm -f tests-results/*.json",
-    "to:html": "npx marge report.json && rm -f report.json",
-    "test:e2e:with:report": "yarn test:e2e && yarn merge:report && yarn to:html"
+    "test:e2e:merge-report": "npx mochawesome-merge 'runner-results/*-report.json' > runner-results/report.json && rm -f runner-results/*-report.json",
+    "test:e2e:to-html": "npx marge runner-results/report.json && rm -f runner-results/report.json",
+    "test:e2e": "yarn test:e2e:parallel && yarn test:e2e:merge-report && yarn test:e2e:to-html"
   },
   "peerDependencies": {
     "mocha": "^10.7.3",

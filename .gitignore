@@ -43,3 +43,5 @@ build-storybook.log
 
 cypress/results/*
 cypress/screenshots/*
+
+/mochawesome-report
