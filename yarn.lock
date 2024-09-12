@@ -3749,11 +3749,11 @@ __metadata:
   linkType: hard
 
 "@storybook/preview-api@npm:^8.2.9":
-  version: 8.2.9
-  resolution: "@storybook/preview-api@npm:8.2.9"
+  version: 8.3.0
+  resolution: "@storybook/preview-api@npm:8.3.0"
   peerDependencies:
-    storybook: ^8.2.9
-  checksum: 10c0/159cd0b70076a76de217c3820d4c826cfe1a89cc42c47c23394a8d38c0470397b768d24c67c8f982d097dfb0bfda85631d57969e0978483f64f81bb8488039d9
+    storybook: ^8.3.0
+  checksum: 10c0/930fe08555d4226d95ac600e2439e2213ee3feb9c036e0a9aebfe80b2814e3c3634d24211515ae4416daf6413c2fd9f19e69bcf0e114dc7bc62b710fdf7686ae
   languageName: node
   linkType: hard
 
