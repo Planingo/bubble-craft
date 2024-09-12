@@ -3640,11 +3640,11 @@ __metadata:
   linkType: hard
 
 "@storybook/core-events@npm:^8.2.9":
-  version: 8.2.9
-  resolution: "@storybook/core-events@npm:8.2.9"
+  version: 8.3.0
+  resolution: "@storybook/core-events@npm:8.3.0"
   peerDependencies:
-    storybook: ^8.2.9
-  checksum: 10c0/a6e25d7964d39eb77435b0af09cef8f8a1aab6aa0de111e0ff9bd349026cc23c4259dce9f17790b9a2e8eaf324b658c5767f2cf70c706d47718111b823f66ffd
+    storybook: ^8.3.0
+  checksum: 10c0/7852613c2fcde393ae84e1ab1ef41008f001f3486389e6901fc35f0dd0a8106045a8b43e628d8251974805ac289da27ab3642c2bab864b541f8cdcb6515dc315
   languageName: node
   linkType: hard
 
