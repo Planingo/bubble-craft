@@ -3574,7 +3574,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:8.2.9, @storybook/blocks@npm:^8.2.9":
+"@storybook/blocks@npm:8.2.9":
   version: 8.2.9
   resolution: "@storybook/blocks@npm:8.2.9"
   dependencies:
@@ -3602,6 +3602,37 @@ __metadata:
     react-dom:
       optional: true
   checksum: 10c0/7804e61d2c92c0ef7032ad1f4cbe166341bc4c18b73c6a16ef377b447b88412ee1aa22e886af9493f6f5d50a59c3166e7eedef839d53424a832782f36127cea8
+  languageName: node
+  linkType: hard
+
+"@storybook/blocks@npm:^8.2.9":
+  version: 8.3.0
+  resolution: "@storybook/blocks@npm:8.3.0"
+  dependencies:
+    "@storybook/csf": "npm:^0.1.11"
+    "@storybook/global": "npm:^5.0.0"
+    "@storybook/icons": "npm:^1.2.10"
+    "@types/lodash": "npm:^4.14.167"
+    color-convert: "npm:^2.0.1"
+    dequal: "npm:^2.0.2"
+    lodash: "npm:^4.17.21"
+    markdown-to-jsx: "npm:^7.4.5"
+    memoizerific: "npm:^1.11.3"
+    polished: "npm:^4.2.2"
+    react-colorful: "npm:^5.1.2"
+    telejson: "npm:^7.2.0"
+    ts-dedent: "npm:^2.0.0"
+    util-deprecate: "npm:^1.0.2"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^8.3.0
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/ed624593ff2313bbe3e6e3b0018d1305b79e87d35aaa89173f7cba655a7917317b3a722e18677d31c5c7b47caea3cbb423d6cc65ff3f84deac941bddb476939f
   languageName: node
   linkType: hard
 
@@ -3726,6 +3757,16 @@ __metadata:
   version: 5.0.0
   resolution: "@storybook/global@npm:5.0.0"
   checksum: 10c0/8f1b61dcdd3a89584540896e659af2ecc700bc740c16909a7be24ac19127ea213324de144a141f7caf8affaed017d064fea0618d453afbe027cf60f54b4a6d0b
+  languageName: node
+  linkType: hard
+
+"@storybook/icons@npm:^1.2.10":
+  version: 1.2.10
+  resolution: "@storybook/icons@npm:1.2.10"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/aadde2efd5c471b78096f29a6393db111ee95174cab94ade0d2859d476262f080aa8ffb414f82932afd81d5c57bed813193a04e92086962bde2224774dac9060
   languageName: node
   linkType: hard
 
