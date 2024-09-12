@@ -5805,9 +5805,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromatic@npm:^11.4.0":
-  version: 11.5.6
-  resolution: "chromatic@npm:11.5.6"
+"chromatic@npm:^11.4.0, chromatic@npm:^11.7.1":
+  version: 11.9.0
+  resolution: "chromatic@npm:11.9.0"
   peerDependencies:
     "@chromatic-com/cypress": ^0.*.* || ^1.0.0
     "@chromatic-com/playwright": ^0.*.* || ^1.0.0
@@ -5820,26 +5820,7 @@ __metadata:
     chroma: dist/bin.js
     chromatic: dist/bin.js
     chromatic-cli: dist/bin.js
-  checksum: 10c0/fabfa96be99802f849fd1ec030914bfd3583e2f380b3d5857c527c906514b8a3250b816d3ceff6975fb69730cf981b087ad7ec6cb469f824c27929e46123cb83
-  languageName: node
-  linkType: hard
-
-"chromatic@npm:^11.7.1":
-  version: 11.7.1
-  resolution: "chromatic@npm:11.7.1"
-  peerDependencies:
-    "@chromatic-com/cypress": ^0.*.* || ^1.0.0
-    "@chromatic-com/playwright": ^0.*.* || ^1.0.0
-  peerDependenciesMeta:
-    "@chromatic-com/cypress":
-      optional: true
-    "@chromatic-com/playwright":
-      optional: true
-  bin:
-    chroma: dist/bin.js
-    chromatic: dist/bin.js
-    chromatic-cli: dist/bin.js
-  checksum: 10c0/367dd36994062a82114859a746b84607fa3b3f5783dca28c015d0b490c4bff58f58ef3247be6b4c3f9be57ac7f91a6ead3261bac75befa1707c083415f36dc55
+  checksum: 10c0/84d64c04c4ef01080977bd13dd16c552ecdd03a3f7ea1f7235961c561d4d5252990fefc0131a49b1e504e3e52e5769779abd3ccf544751b651108f90ded34ac5
   languageName: node
   linkType: hard
 
