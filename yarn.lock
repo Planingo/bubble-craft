@@ -2325,7 +2325,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-vite@npm:8.3.1":
+"@storybook/builder-vite@npm:8.3.1, @storybook/builder-vite@npm:^8.2.9":
   version: 8.3.1
   resolution: "@storybook/builder-vite@npm:8.3.1"
   dependencies:
@@ -2352,36 +2352,6 @@ __metadata:
     vite-plugin-glimmerx:
       optional: true
   checksum: 10c0/7a3d8e35aa050f892ad1e567c58f10ef50a0970f6d74aa514266450c4753756c64cfd2de63d85c81249575dfa11a87922ebc0b76746a765db70dd572009e6138
-  languageName: node
-  linkType: hard
-
-"@storybook/builder-vite@npm:^8.2.9":
-  version: 8.2.9
-  resolution: "@storybook/builder-vite@npm:8.2.9"
-  dependencies:
-    "@storybook/csf-plugin": "npm:8.2.9"
-    "@types/find-cache-dir": "npm:^3.2.1"
-    browser-assert: "npm:^1.2.1"
-    es-module-lexer: "npm:^1.5.0"
-    express: "npm:^4.19.2"
-    find-cache-dir: "npm:^3.0.0"
-    fs-extra: "npm:^11.1.0"
-    magic-string: "npm:^0.30.0"
-    ts-dedent: "npm:^2.0.0"
-  peerDependencies:
-    "@preact/preset-vite": "*"
-    storybook: ^8.2.9
-    typescript: ">= 4.3.x"
-    vite: ^4.0.0 || ^5.0.0
-    vite-plugin-glimmerx: "*"
-  peerDependenciesMeta:
-    "@preact/preset-vite":
-      optional: true
-    typescript:
-      optional: true
-    vite-plugin-glimmerx:
-      optional: true
-  checksum: 10c0/c40972e41144476741da74ca6d678564faab99cf16b08b5cfcaeaad8ae4b775b448ff7ca5a53c82b514d2f9c50ddb724945a73858e7783362c526e154d2f851e
   languageName: node
   linkType: hard
 
@@ -2428,17 +2398,6 @@ __metadata:
     util: "npm:^0.12.5"
     ws: "npm:^8.2.3"
   checksum: 10c0/514efe6393c06b927839072367749633c3317b19294a76e2046dbbc116e5aadffc505a19e10aac1e91450ceee3a58066a9d6205ad192aa47d719916289437561
-  languageName: node
-  linkType: hard
-
-"@storybook/csf-plugin@npm:8.2.9":
-  version: 8.2.9
-  resolution: "@storybook/csf-plugin@npm:8.2.9"
-  dependencies:
-    unplugin: "npm:^1.3.1"
-  peerDependencies:
-    storybook: ^8.2.9
-  checksum: 10c0/5075e0676cbe3b48755073fc1f75aa9d2654a8300339b296bd86983760bb5857d0c1b15eca1019c746749ac3fec5a8a83beab91bb8ed1d0f958bf7b348a67d8b
   languageName: node
   linkType: hard
 
