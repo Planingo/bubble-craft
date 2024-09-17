@@ -2489,11 +2489,11 @@ __metadata:
   linkType: hard
 
 "@storybook/preview-api@npm:^8.2.9, @storybook/preview-api@npm:^8.3.0":
-  version: 8.3.0
-  resolution: "@storybook/preview-api@npm:8.3.0"
+  version: 8.3.1
+  resolution: "@storybook/preview-api@npm:8.3.1"
   peerDependencies:
-    storybook: ^8.3.0
-  checksum: 10c0/930fe08555d4226d95ac600e2439e2213ee3feb9c036e0a9aebfe80b2814e3c3634d24211515ae4416daf6413c2fd9f19e69bcf0e114dc7bc62b710fdf7686ae
+    storybook: ^8.3.1
+  checksum: 10c0/2c2a99542b5f0c1342224e980ed35f3561717e2f2629444357d89d48c45b91b8f4c327d2ff339042af1e881185d5e0e33df46e567244694e1c6007a6eda12764
   languageName: node
   linkType: hard
 
