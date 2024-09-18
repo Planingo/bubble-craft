@@ -1788,7 +1788,7 @@ __metadata:
     react-router-dom: "npm:^6.26.1"
     remark-gfm: "npm:^4.0.0"
     storybook: "npm:^8.2.9"
-    storybook-addon-pseudo-states: "npm:^3.1.1"
+    storybook-addon-pseudo-states: "npm:^4.0.2"
     vite: "npm:^5.4.3"
     vitest: "npm:^2.0.5"
   peerDependencies:
@@ -11870,10 +11870,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook-addon-pseudo-states@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "storybook-addon-pseudo-states@npm:3.1.1"
-  checksum: 10c0/ed70ebacee76f433482e44a12e0e29d3f048ae8ef4fab7f02edd348b5a9917003e2626d78f3f86654ab6abb60a153370ae0fa6577d1a12805e2a1fec2bb1ec74
+"storybook-addon-pseudo-states@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "storybook-addon-pseudo-states@npm:4.0.2"
+  dependencies:
+    "@storybook/icons": "npm:^1.2.10"
+  peerDependencies:
+    storybook: ^8.2.0
+  checksum: 10c0/47ddb902ac61b7132795603228f087fc933d10eca8c4f310cae19e20835d46f2a20481aaf6d440d52d9e87d47606c810977bf636a1140b1f6efd0e8108f265be
   languageName: node
   linkType: hard
 
