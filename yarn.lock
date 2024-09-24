@@ -2446,11 +2446,11 @@ __metadata:
   linkType: hard
 
 "@storybook/manager-api@npm:^8.2.9, @storybook/manager-api@npm:^8.3.1":
-  version: 8.3.1
-  resolution: "@storybook/manager-api@npm:8.3.1"
+  version: 8.3.2
+  resolution: "@storybook/manager-api@npm:8.3.2"
   peerDependencies:
-    storybook: ^8.3.1
-  checksum: 10c0/01fb12103352cd14e31749bb2a612dd9ebde39288430be1d2d94d28a94963e27a480f00e61a3f3064b952328cef5d212e8bb97fe2061bcaebbdde2dea6abf682
+    storybook: ^8.3.2
+  checksum: 10c0/1ed88fa6323ffc0158373c6173ae76f3a66c66ddb47b5a3ffebb3d5f6cf3fbe27e36e41881136489060b40319032e72c3bf34a8c38daee725ce169a7ccddd8ef
   languageName: node
   linkType: hard
 
