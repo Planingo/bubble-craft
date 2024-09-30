@@ -2588,11 +2588,11 @@ __metadata:
   linkType: hard
 
 "@storybook/theming@npm:^8.3.0, @storybook/theming@npm:^8.3.3":
-  version: 8.3.3
-  resolution: "@storybook/theming@npm:8.3.3"
+  version: 8.3.4
+  resolution: "@storybook/theming@npm:8.3.4"
   peerDependencies:
-    storybook: ^8.3.3
-  checksum: 10c0/7b322a1e85ba493844f2a7e36ff950931bbea8cf09642c7a5a244ee8f077ec68cf2f9df7f2b1d5dc46aa8409ad9c4157934594f49fa99639cb9bca136a0d856b
+    storybook: ^8.3.4
+  checksum: 10c0/8dc1675bbc0109e0dbaf4d4f1f49df87dcb61c4425c064b5aceeea167f797d77b0828e85bbbf5bfacbb95c2e434454e87957c51200b5ea65b9764a5b6c6cbfe0
   languageName: node
   linkType: hard
 
