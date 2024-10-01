@@ -2441,11 +2441,11 @@ __metadata:
   linkType: hard
 
 "@storybook/docs-tools@npm:^8.3.0":
-  version: 8.3.3
-  resolution: "@storybook/docs-tools@npm:8.3.3"
+  version: 8.3.4
+  resolution: "@storybook/docs-tools@npm:8.3.4"
   peerDependencies:
-    storybook: ^8.3.3
-  checksum: 10c0/d16808551bac6f53eead3d621882bc4b7048c3c5629e956e5de8931f9a9ba6c07d2d970ce7930ff9eb97ffa73deaede18a06d43352987af87423909079df05ed
+    storybook: ^8.3.4
+  checksum: 10c0/69573ab5c04063f83538d8effaee7b27d75db8b7de8352c38d3a528025c200d259ac796fc3b55c073567c6ac15312b9c82b11640b13fc212762bbc1d977aab57
   languageName: node
   linkType: hard
 
