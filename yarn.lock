@@ -2384,9 +2384,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core@npm:8.3.3":
-  version: 8.3.3
-  resolution: "@storybook/core@npm:8.3.3"
+"@storybook/core@npm:8.3.4":
+  version: 8.3.4
+  resolution: "@storybook/core@npm:8.3.4"
   dependencies:
     "@storybook/csf": "npm:^0.1.11"
     "@types/express": "npm:^4.17.21"
@@ -2401,7 +2401,7 @@ __metadata:
     semver: "npm:^7.6.2"
     util: "npm:^0.12.5"
     ws: "npm:^8.2.3"
-  checksum: 10c0/af666abe526a8a7143f1377781060caf519b5a91b3b0b023d1fab5f843f700ba5e03e3f4a428481eed6bf2ee7596470bbab60d003b16963a93811b344a1831bb
+  checksum: 10c0/048ea9232f4b217a90d89bcbce58a443b7aee6ed98754bf502b4477bb1a5a2069440dc4173a9afe360bab5abcd3efe5423c41248de473c1e6b2c160b0923cbef
   languageName: node
   linkType: hard
 
@@ -11913,15 +11913,15 @@ __metadata:
   linkType: hard
 
 "storybook@npm:^8.3.0":
-  version: 8.3.3
-  resolution: "storybook@npm:8.3.3"
+  version: 8.3.4
+  resolution: "storybook@npm:8.3.4"
   dependencies:
-    "@storybook/core": "npm:8.3.3"
+    "@storybook/core": "npm:8.3.4"
   bin:
     getstorybook: ./bin/index.cjs
     sb: ./bin/index.cjs
     storybook: ./bin/index.cjs
-  checksum: 10c0/67c52f5245e860d57fd9879eaa9d952ff40e87293915a32f03dfe2197f78aa666f1bf897babd91fe9d97aaebc23f75726ac39dd798a5c836f68d5579fba887ef
+  checksum: 10c0/9c1d4f100e32dd89b91c71803f26970d758f575af56ede4dbd4142df3f2f2f0ecb66bb3e08a09c7a474962ee491c9412fcb0812c3aeaab96c419c7ca959dde1e
   languageName: node
   linkType: hard
 
