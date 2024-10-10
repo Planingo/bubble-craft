@@ -2344,7 +2344,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-vite@npm:8.3.4, @storybook/builder-vite@npm:^8.3.0":
+"@storybook/builder-vite@npm:8.3.4":
   version: 8.3.4
   resolution: "@storybook/builder-vite@npm:8.3.4"
   dependencies:
@@ -2371,6 +2371,36 @@ __metadata:
     vite-plugin-glimmerx:
       optional: true
   checksum: 10c0/27c6ef364d6b51d69fd839f6f56e1f05bec97526bdbbb4c2a86c516bba20090d5f7e2ed835deb1d6c18d9625cac7c4992ab66294bb3b098ec85e78393e49d6f1
+  languageName: node
+  linkType: hard
+
+"@storybook/builder-vite@npm:^8.3.0":
+  version: 8.3.5
+  resolution: "@storybook/builder-vite@npm:8.3.5"
+  dependencies:
+    "@storybook/csf-plugin": "npm:8.3.5"
+    "@types/find-cache-dir": "npm:^3.2.1"
+    browser-assert: "npm:^1.2.1"
+    es-module-lexer: "npm:^1.5.0"
+    express: "npm:^4.19.2"
+    find-cache-dir: "npm:^3.0.0"
+    fs-extra: "npm:^11.1.0"
+    magic-string: "npm:^0.30.0"
+    ts-dedent: "npm:^2.0.0"
+  peerDependencies:
+    "@preact/preset-vite": "*"
+    storybook: ^8.3.5
+    typescript: ">= 4.3.x"
+    vite: ^4.0.0 || ^5.0.0
+    vite-plugin-glimmerx: "*"
+  peerDependenciesMeta:
+    "@preact/preset-vite":
+      optional: true
+    typescript:
+      optional: true
+    vite-plugin-glimmerx:
+      optional: true
+  checksum: 10c0/7f597c1f0ae252e408863b34011f9210dc4247f96c4790836efb004081d426131ff9bfa23d4b69da7479a4ec8cb81f430b9538ce62b87621747ffd389741c296
   languageName: node
   linkType: hard
 
