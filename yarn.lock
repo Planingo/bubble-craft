@@ -2721,16 +2721,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:^8.3.0, @storybook/theming@npm:^8.3.5":
-  version: 8.3.5
-  resolution: "@storybook/theming@npm:8.3.5"
-  peerDependencies:
-    storybook: ^8.3.5
-  checksum: 10c0/25455033b2b3bdb86083f759df77df42bfff71405c6abd301963dd7596003b462a0960a86c5cec3503dc9e1eba565eeb82a897002c6823f9ee361155b9ddfd23
-  languageName: node
-  linkType: hard
-
-"@storybook/theming@npm:^8.3.6":
+"@storybook/theming@npm:^8.3.0, @storybook/theming@npm:^8.3.5, @storybook/theming@npm:^8.3.6":
   version: 8.3.6
   resolution: "@storybook/theming@npm:8.3.6"
   peerDependencies:
@@ -6935,14 +6926,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^15.11.0":
-  version: 15.11.0
-  resolution: "globals@npm:15.11.0"
-  checksum: 10c0/861e39bb6bd9bd1b9f355c25c962e5eb4b3f0e1567cf60fa6c06e8c502b0ec8706b1cce055d69d84d0b7b8e028bec5418cf629a54e7047e116538d1c1c1a375c
-  languageName: node
-  linkType: hard
-
-"globals@npm:^15.9.0":
+"globals@npm:^15.11.0, globals@npm:^15.9.0":
   version: 15.11.0
   resolution: "globals@npm:15.11.0"
   checksum: 10c0/861e39bb6bd9bd1b9f355c25c962e5eb4b3f0e1567cf60fa6c06e8c502b0ec8706b1cce055d69d84d0b7b8e028bec5418cf629a54e7047e116538d1c1c1a375c
