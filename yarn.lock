@@ -1794,7 +1794,7 @@ __metadata:
     babel-plugin-transform-class-properties: "npm:^6.24.1"
     chromatic: "npm:^11.7.1"
     cypress: "npm:^13.14.2"
-    cypress-multi-reporters: "npm:^1.6.4"
+    cypress-multi-reporters: "npm:^2.0.4"
     cypress-parallel: "npm:^0.14.0"
     eslint: "npm:^9.10.0"
     eslint-plugin-cypress: "npm:^4.0.0"
@@ -4683,15 +4683,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress-multi-reporters@npm:^1.6.4":
-  version: 1.6.4
-  resolution: "cypress-multi-reporters@npm:1.6.4"
+"cypress-multi-reporters@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "cypress-multi-reporters@npm:2.0.4"
   dependencies:
-    debug: "npm:^4.3.4"
+    debug: "npm:^4.3.7"
     lodash: "npm:^4.17.21"
   peerDependencies:
     mocha: ">=3.1.2"
-  checksum: 10c0/5872176582068d15273412090afc0a504920c34aadb5f0d2b9afcbbdc6c94cd16f97661751c1f7d177b915ccafc13fdc691908ebfc1c058e09728dceea9e8599
+  checksum: 10c0/8b8c6c6e647c88b2e5f001d08f234b8c69ef1b8fc7779eb8a5163d64a3fad901d3a9b889388831c3dac5b85af201f9d12338df808fbca84f19a02277d2426191
   languageName: node
   linkType: hard
 
@@ -4883,7 +4883,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:^4.3.5, debug@npm:^4.3.6":
+"debug@npm:^4.3.5, debug@npm:^4.3.6, debug@npm:^4.3.7":
   version: 4.3.7
   resolution: "debug@npm:4.3.7"
   dependencies:
