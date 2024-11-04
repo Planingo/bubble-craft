@@ -2379,11 +2379,11 @@ __metadata:
   linkType: hard
 
 "@storybook/components@npm:^8.3.0, @storybook/components@npm:^8.3.6":
-  version: 8.3.6
-  resolution: "@storybook/components@npm:8.3.6"
+  version: 8.4.1
+  resolution: "@storybook/components@npm:8.4.1"
   peerDependencies:
-    storybook: ^8.3.6
-  checksum: 10c0/65badbad5143c6585c94b08d7f3496dad42de256cb077c60dade0ca3b0fa03eb4dc5917fe4c3df03df35b7cf39001b8898794747951ac4b7594ed278ea01e4b0
+    storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+  checksum: 10c0/1cc7fb2e16b329277411960db2b6ae1aa4244c729670a1d55dfc5124031beba369056533983b3e5245d9b5648f878f4134a86dcc98cf499cd16b70f1ad17d6f8
   languageName: node
   linkType: hard
 
