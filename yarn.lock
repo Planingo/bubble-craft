@@ -2415,11 +2415,11 @@ __metadata:
   linkType: hard
 
 "@storybook/core-events@npm:^8.3.0":
-  version: 8.4.2
-  resolution: "@storybook/core-events@npm:8.4.2"
+  version: 8.4.4
+  resolution: "@storybook/core-events@npm:8.4.4"
   peerDependencies:
     storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
-  checksum: 10c0/2c424651b6eb4622b06af51710cf11d856b0e911ff83ba14f1ca423fe0c60d1f7a6183e2a8c9ec44167cde9e1cb3b64425e83eb15428a5c294b5892784bd7be2
+  checksum: 10c0/9890f022602bac02783af3ef2704697254502a6806b49a6a6755cac13002b59b9cc39afcd33f76a1276cf40cde48daffd76328e4208811a41bba8ced07566357
   languageName: node
   linkType: hard
 
