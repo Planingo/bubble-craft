@@ -96,7 +96,7 @@
     "react-dom": "^18.3.1",
     "react-intl": "^7.0.1",
     "react-is": "^18.3.1",
-    "react-router-dom": "^6.26.1",
+    "react-router-dom": "^7.0.1",
     "remark-gfm": "^4.0.0",
     "storybook": "^8.3.0",
     "storybook-addon-pseudo-states": "^4.0.2",
