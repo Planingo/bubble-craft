@@ -100,7 +100,7 @@
     "remark-gfm": "^4.0.0",
     "storybook": "^8.3.0",
     "storybook-addon-pseudo-states": "^4.0.2",
-    "vite": "^5.4.3",
+    "vite": "^6.0.2",
     "vitest": "^2.0.5"
   },
   "dependencies": {
