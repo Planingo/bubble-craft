@@ -2547,19 +2547,19 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-links@npm:^8.3.0":
-  version: 8.4.4
-  resolution: "@storybook/addon-links@npm:8.4.4"
+  version: 8.4.7
+  resolution: "@storybook/addon-links@npm:8.4.7"
   dependencies:
     "@storybook/csf": "npm:^0.1.11"
     "@storybook/global": "npm:^5.0.0"
     ts-dedent: "npm:^2.0.0"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    storybook: ^8.4.4
+    storybook: ^8.4.7
   peerDependenciesMeta:
     react:
       optional: true
-  checksum: 10c0/4a50a66130063e10f2e587d17ed948a83a392a1a509d651f5d47679c67d93530f1f057f187eebad34068f257fe7cad1ed4f4b6cf4b717152699f4df88b81b35c
+  checksum: 10c0/475d3231ac6c6531cfa5d01e8816b90cbf51e993c1575fa7bf541540bf76af52d7f1087e929b87d771ce41ae4fd7762df1e25c9d8543200630f8618d85b16520
   languageName: node
   linkType: hard
 
