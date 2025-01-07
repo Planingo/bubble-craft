@@ -2466,7 +2466,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-docs@npm:8.4.4, @storybook/addon-docs@npm:^8.3.0":
+"@storybook/addon-docs@npm:8.4.4":
   version: 8.4.4
   resolution: "@storybook/addon-docs@npm:8.4.4"
   dependencies:
@@ -2480,6 +2480,23 @@ __metadata:
   peerDependencies:
     storybook: ^8.4.4
   checksum: 10c0/121dbc3a04e3b7ebd210bc28f47cbc50dcc27dba7c7e749c846a51bc3a7c2142686e0e6deff1084fcf0eda081856b4b00563f22fa599b25b1d6bf87d3a595b54
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-docs@npm:^8.3.0":
+  version: 8.4.7
+  resolution: "@storybook/addon-docs@npm:8.4.7"
+  dependencies:
+    "@mdx-js/react": "npm:^3.0.0"
+    "@storybook/blocks": "npm:8.4.7"
+    "@storybook/csf-plugin": "npm:8.4.7"
+    "@storybook/react-dom-shim": "npm:8.4.7"
+    react: "npm:^16.8.0 || ^17.0.0 || ^18.0.0"
+    react-dom: "npm:^16.8.0 || ^17.0.0 || ^18.0.0"
+    ts-dedent: "npm:^2.0.0"
+  peerDependencies:
+    storybook: ^8.4.7
+  checksum: 10c0/0eb1854ddb6dbef1b32f89746944ee7a16db986403fe0a3712f43d39faa6335e0bce4ac21a8c20d09955ae73cccd1962f3b45037ab1144f61c1317d686e8695f
   languageName: node
   linkType: hard
 
@@ -2620,6 +2637,26 @@ __metadata:
     react-dom:
       optional: true
   checksum: 10c0/6d32ade4acbe3eec89010af8093ee09ed1a74ddc3126ba1daa03d58e86a09f57df73de29432e7635e536a383a496002d9142543178825a665cd58f313731c364
+  languageName: node
+  linkType: hard
+
+"@storybook/blocks@npm:8.4.7":
+  version: 8.4.7
+  resolution: "@storybook/blocks@npm:8.4.7"
+  dependencies:
+    "@storybook/csf": "npm:^0.1.11"
+    "@storybook/icons": "npm:^1.2.12"
+    ts-dedent: "npm:^2.0.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^8.4.7
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/1cb87811f9c7bad087dca752fb0d6483c237cb5776abea59cb555d8fce9ca14f4d5487725f5d8679a49f7e3f38bbe84189703498a31f2a9aa306f9fb3c8e65c8
   languageName: node
   linkType: hard
 
