@@ -85,7 +85,7 @@
     "eslint-plugin-react": "^7.35.2",
     "globals": "^15.9.0",
     "jiti": "^2.0.0",
-    "jsdom": "^25.0.0",
+    "jsdom": "^26.0.0",
     "mocha": "^11.0.1",
     "mocha-junit-reporter": "^2.2.1",
     "mochawesome": "^7.1.3",
