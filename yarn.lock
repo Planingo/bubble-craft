@@ -2822,12 +2822,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/preview-api@npm:8.4.7, @storybook/preview-api@npm:^8.3.0":
+"@storybook/preview-api@npm:8.4.7":
   version: 8.4.7
   resolution: "@storybook/preview-api@npm:8.4.7"
   peerDependencies:
     storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
   checksum: 10c0/86e8dd8e46b20a4cab99655ded093a76ae5a2b2b9ab03af57292022c8143d76e0f76a137f8768b8f6847fd1b522abf3dee8504f0ba5ff16b5779120d3875967c
+  languageName: node
+  linkType: hard
+
+"@storybook/preview-api@npm:^8.3.0":
+  version: 8.5.0
+  resolution: "@storybook/preview-api@npm:8.5.0"
+  peerDependencies:
+    storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+  checksum: 10c0/5aee35e8daf2c0dc0ee317e997cf0131e9c5c92759d74d0e9183093e1bd25bab29956a39e2b01f2b2968cca7bcdd8c51b819602ecff543786603028f39b8d03d
   languageName: node
   linkType: hard
 
