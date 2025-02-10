@@ -2208,15 +2208,15 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-backgrounds@npm:^8.3.0":
-  version: 8.5.0
-  resolution: "@storybook/addon-backgrounds@npm:8.5.0"
+  version: 8.5.3
+  resolution: "@storybook/addon-backgrounds@npm:8.5.3"
   dependencies:
     "@storybook/global": "npm:^5.0.0"
     memoizerific: "npm:^1.11.3"
     ts-dedent: "npm:^2.0.0"
   peerDependencies:
-    storybook: ^8.5.0
-  checksum: 10c0/b8dc09a0afa4132388c38d27107f3c2ab5365643b8df59d4342b5aa796f0bc41706e196336abcb6b16184a9972906298962b23317f68556c5331102107a03720
+    storybook: ^8.5.3
+  checksum: 10c0/77b0a456c5c0fcf0f8e992ca713f9c286b1b3494b36f76cde25adf0a338cc64f9c6afa9059458735630c15e9f977776fb192518570dae2d9f0628479bab52ac7
   languageName: node
   linkType: hard
 
@@ -2418,27 +2418,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:8.5.2":
-  version: 8.5.2
-  resolution: "@storybook/blocks@npm:8.5.2"
-  dependencies:
-    "@storybook/csf": "npm:0.1.12"
-    "@storybook/icons": "npm:^1.2.12"
-    ts-dedent: "npm:^2.0.0"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    storybook: ^8.5.2
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: 10c0/a8345cdd2805aeaf1c6798ed91f34aa4b9edfcd25f55cbb0dd2bf027a30b23b9ee10f9e199d3022760df7b9d78357b7a2d3ed2f587e8bfa9aa456e5a77960926
-  languageName: node
-  linkType: hard
-
-"@storybook/blocks@npm:^8.3.0":
+"@storybook/blocks@npm:8.5.2, @storybook/blocks@npm:^8.3.0":
   version: 8.5.2
   resolution: "@storybook/blocks@npm:8.5.2"
   dependencies:
