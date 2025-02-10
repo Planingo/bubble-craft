@@ -2355,15 +2355,15 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-storysource@npm:^8.3.0":
-  version: 8.5.2
-  resolution: "@storybook/addon-storysource@npm:8.5.2"
+  version: 8.5.3
+  resolution: "@storybook/addon-storysource@npm:8.5.3"
   dependencies:
-    "@storybook/source-loader": "npm:8.5.2"
+    "@storybook/source-loader": "npm:8.5.3"
     estraverse: "npm:^5.2.0"
     tiny-invariant: "npm:^1.3.1"
   peerDependencies:
-    storybook: ^8.5.2
-  checksum: 10c0/455014916d249789ef9d3096143a8cb3fdc0eac581f17063930f47bcb44a369fe7e2bd70512c0e4ef9442d5f3aa1b5464cbc99a460ca0f8367879c08385ecaac
+    storybook: ^8.5.3
+  checksum: 10c0/48e3aa1b804ac23aabcad9b0459d1590a1d0eb0a8726bc380e69ccaf8ee61fa3bce7f6223fde3fd2bd363d458ea4236d754d13a7b716e83463600141bf976c3d
   languageName: node
   linkType: hard
 
@@ -2418,27 +2418,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:8.5.2":
-  version: 8.5.2
-  resolution: "@storybook/blocks@npm:8.5.2"
-  dependencies:
-    "@storybook/csf": "npm:0.1.12"
-    "@storybook/icons": "npm:^1.2.12"
-    ts-dedent: "npm:^2.0.0"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    storybook: ^8.5.2
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: 10c0/a8345cdd2805aeaf1c6798ed91f34aa4b9edfcd25f55cbb0dd2bf027a30b23b9ee10f9e199d3022760df7b9d78357b7a2d3ed2f587e8bfa9aa456e5a77960926
-  languageName: node
-  linkType: hard
-
-"@storybook/blocks@npm:^8.3.0":
+"@storybook/blocks@npm:8.5.2, @storybook/blocks@npm:^8.3.0":
   version: 8.5.2
   resolution: "@storybook/blocks@npm:8.5.2"
   dependencies:
@@ -2719,17 +2699,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/source-loader@npm:8.5.2":
-  version: 8.5.2
-  resolution: "@storybook/source-loader@npm:8.5.2"
+"@storybook/source-loader@npm:8.5.3":
+  version: 8.5.3
+  resolution: "@storybook/source-loader@npm:8.5.3"
   dependencies:
     "@storybook/csf": "npm:0.1.12"
     es-toolkit: "npm:^1.22.0"
     estraverse: "npm:^5.2.0"
     prettier: "npm:^3.1.1"
   peerDependencies:
-    storybook: ^8.5.2
-  checksum: 10c0/c865fbf6a3e7062cc1d533b7b28f8381d70e7301792a7bfc7575c2ba251556c379f3cdc60a90c10f572f6a8da60770464ea3adf13eb65ecf6374d01cb5545f98
+    storybook: ^8.5.3
+  checksum: 10c0/76d6be7790f58e6f150d3623d0f8fe254b2712365c27df2056d9c119d4efa033405558ff100688817a0ea4d4825e98145841173aeb1037f974e68172de165f81
   languageName: node
   linkType: hard
 
