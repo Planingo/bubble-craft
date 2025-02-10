@@ -2180,8 +2180,8 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-actions@npm:^8.3.0":
-  version: 8.5.0
-  resolution: "@storybook/addon-actions@npm:8.5.0"
+  version: 8.5.3
+  resolution: "@storybook/addon-actions@npm:8.5.3"
   dependencies:
     "@storybook/global": "npm:^5.0.0"
     "@types/uuid": "npm:^9.0.1"
@@ -2189,8 +2189,8 @@ __metadata:
     polished: "npm:^4.2.2"
     uuid: "npm:^9.0.0"
   peerDependencies:
-    storybook: ^8.5.0
-  checksum: 10c0/153e808afb6b13e24bc3ef916bf7324c050c8deac83b8e1a2cbea82de627f4d6c99cffbe735d5f47b38f9c07dda3a5921aca1c2333d9d9a5df2e4872d1de7f8a
+    storybook: ^8.5.3
+  checksum: 10c0/9cccb19a2a5d354112f185c45e997ef7ce1a2b06c8005901480ecc4b97cccdae98ce9b20644c3e9112accc29db7b970bd5682c539161ce386ac374ac20d6a5e6
   languageName: node
   linkType: hard
 
@@ -2418,27 +2418,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:8.5.2":
-  version: 8.5.2
-  resolution: "@storybook/blocks@npm:8.5.2"
-  dependencies:
-    "@storybook/csf": "npm:0.1.12"
-    "@storybook/icons": "npm:^1.2.12"
-    ts-dedent: "npm:^2.0.0"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    storybook: ^8.5.2
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: 10c0/a8345cdd2805aeaf1c6798ed91f34aa4b9edfcd25f55cbb0dd2bf027a30b23b9ee10f9e199d3022760df7b9d78357b7a2d3ed2f587e8bfa9aa456e5a77960926
-  languageName: node
-  linkType: hard
-
-"@storybook/blocks@npm:^8.3.0":
+"@storybook/blocks@npm:8.5.2, @storybook/blocks@npm:^8.3.0":
   version: 8.5.2
   resolution: "@storybook/blocks@npm:8.5.2"
   dependencies:
