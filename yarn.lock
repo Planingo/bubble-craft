@@ -2251,19 +2251,19 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-docs@npm:^8.3.0":
-  version: 8.5.2
-  resolution: "@storybook/addon-docs@npm:8.5.2"
+  version: 8.5.3
+  resolution: "@storybook/addon-docs@npm:8.5.3"
   dependencies:
     "@mdx-js/react": "npm:^3.0.0"
-    "@storybook/blocks": "npm:8.5.2"
-    "@storybook/csf-plugin": "npm:8.5.2"
-    "@storybook/react-dom-shim": "npm:8.5.2"
+    "@storybook/blocks": "npm:8.5.3"
+    "@storybook/csf-plugin": "npm:8.5.3"
+    "@storybook/react-dom-shim": "npm:8.5.3"
     react: "npm:^16.8.0 || ^17.0.0 || ^18.0.0"
     react-dom: "npm:^16.8.0 || ^17.0.0 || ^18.0.0"
     ts-dedent: "npm:^2.0.0"
   peerDependencies:
-    storybook: ^8.5.2
-  checksum: 10c0/9de7187aca2e4fafdcebab283ff8910fbb9eb7bd0bb488106d544b3683e5508b826e87d7d08505128a0ec5780087cac1a6689e18dd58a88c5c0d728a51a398bf
+    storybook: ^8.5.3
+  checksum: 10c0/5dd90a5c04cca4fe1938a7e91452dadde39923b13b0a326ac8b7a7e31f64c0648b924ac90a3bacd4d1f18ca37e234b97ce72e3ce58f95d1de815d2eac7cfbfc0
   languageName: node
   linkType: hard
 
@@ -2418,9 +2418,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:8.5.2":
-  version: 8.5.2
-  resolution: "@storybook/blocks@npm:8.5.2"
+"@storybook/blocks@npm:8.5.3":
+  version: 8.5.3
+  resolution: "@storybook/blocks@npm:8.5.3"
   dependencies:
     "@storybook/csf": "npm:0.1.12"
     "@storybook/icons": "npm:^1.2.12"
@@ -2428,13 +2428,13 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    storybook: ^8.5.2
+    storybook: ^8.5.3
   peerDependenciesMeta:
     react:
       optional: true
     react-dom:
       optional: true
-  checksum: 10c0/a8345cdd2805aeaf1c6798ed91f34aa4b9edfcd25f55cbb0dd2bf027a30b23b9ee10f9e199d3022760df7b9d78357b7a2d3ed2f587e8bfa9aa456e5a77960926
+  checksum: 10c0/28060f451045f80e90d7288f4c50a02c4283d0250dc6e669e05d81f2ae36c46c61997932a60ea3f200c1364ab9e5b61942cabc7788f5766f733f554e86668a8c
   languageName: node
   linkType: hard
 
@@ -2534,14 +2534,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/csf-plugin@npm:8.5.2":
-  version: 8.5.2
-  resolution: "@storybook/csf-plugin@npm:8.5.2"
+"@storybook/csf-plugin@npm:8.5.3":
+  version: 8.5.3
+  resolution: "@storybook/csf-plugin@npm:8.5.3"
   dependencies:
     unplugin: "npm:^1.3.1"
   peerDependencies:
-    storybook: ^8.5.2
-  checksum: 10c0/fb1fa5ddf821fbfc98387b58e5fa7847b6b2fff9014f49b352c4b60a4601229b1f087a87fa94bb0663189e5e57ec462264b22b8f147cfe80533d132994c550c6
+    storybook: ^8.5.3
+  checksum: 10c0/f7f221b6311a016dff18192730cfb85c89574fc0beebaa6ab7d1db0436c4bcc5a268caf48e99dc70c4f00f073b451ee3760d1dd39caf187394b806b30f93ae52
   languageName: node
   linkType: hard
 
@@ -2661,14 +2661,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react-dom-shim@npm:8.5.2":
-  version: 8.5.2
-  resolution: "@storybook/react-dom-shim@npm:8.5.2"
+"@storybook/react-dom-shim@npm:8.5.3":
+  version: 8.5.3
+  resolution: "@storybook/react-dom-shim@npm:8.5.3"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    storybook: ^8.5.2
-  checksum: 10c0/6091c1dd4c5664963674aa5b96030256adf88c9a37b78a192363be975f09ac3f59b0562fcb89683266a28552a35dd3c87b329a333f45eb74a1014aa3f0115c53
+    storybook: ^8.5.3
+  checksum: 10c0/355abc67e1b1ac237aac2e3731f6df9636e5a201f4721212b34862ae514527783a446cfcb2616c1b0ff711dc10efd00e33ba24d18427bbb3ed1eab1d07ea933d
   languageName: node
   linkType: hard
 
