@@ -79,9 +79,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/cssinjs@npm:^1.22.0":
-  version: 1.22.1
-  resolution: "@ant-design/cssinjs@npm:1.22.1"
+"@ant-design/cssinjs@npm:^1.23.0":
+  version: 1.23.0
+  resolution: "@ant-design/cssinjs@npm:1.23.0"
   dependencies:
     "@babel/runtime": "npm:^7.11.1"
     "@emotion/hash": "npm:^0.8.0"
@@ -93,7 +93,7 @@ __metadata:
   peerDependencies:
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
-  checksum: 10c0/2c97d6ed9e701232b9c86c8139ef0c2760552c8a257bf85d03dadc057d945ec93b7a9946b06aecfe7ad5e28763ac4ca00765a4338ac4f4526b9b1c37da6d1a36
+  checksum: 10c0/c06877e6d005af86c3ce3c4d61ac3331801ad2e8d4ca4a6b1b34c401c13bfbf36afbe3b5459c415d92bcba60602662d7ae100baf74a1786cd47b27ef579126df
   languageName: node
   linkType: hard
 
@@ -113,9 +113,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/icons@npm:^5.5.2":
-  version: 5.5.2
-  resolution: "@ant-design/icons@npm:5.5.2"
+"@ant-design/icons@npm:^5.6.0":
+  version: 5.6.1
+  resolution: "@ant-design/icons@npm:5.6.1"
   dependencies:
     "@ant-design/colors": "npm:^7.0.0"
     "@ant-design/icons-svg": "npm:^4.4.0"
@@ -125,7 +125,7 @@ __metadata:
   peerDependencies:
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
-  checksum: 10c0/e7003113dc872880d5a6f9cd05dcfabb0d6486cd9dedb687821f3b1ed91505c9550653554a0dafca121ac340167e37a70ec27e89d4931347625be6f732a79c32
+  checksum: 10c0/7a9d9fd388c5c66d92818fd0eb794a54ef0b0dc3d75f15ac24c7cfde21c5c836c220cf35423768fd1faa28d55443a6917bf4260469c1485be83f799daa351976
   languageName: node
   linkType: hard
 
@@ -2418,27 +2418,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:8.5.2":
-  version: 8.5.2
-  resolution: "@storybook/blocks@npm:8.5.2"
-  dependencies:
-    "@storybook/csf": "npm:0.1.12"
-    "@storybook/icons": "npm:^1.2.12"
-    ts-dedent: "npm:^2.0.0"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    storybook: ^8.5.2
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: 10c0/a8345cdd2805aeaf1c6798ed91f34aa4b9edfcd25f55cbb0dd2bf027a30b23b9ee10f9e199d3022760df7b9d78357b7a2d3ed2f587e8bfa9aa456e5a77960926
-  languageName: node
-  linkType: hard
-
-"@storybook/blocks@npm:^8.3.0":
+"@storybook/blocks@npm:8.5.2, @storybook/blocks@npm:^8.3.0":
   version: 8.5.2
   resolution: "@storybook/blocks@npm:8.5.2"
   dependencies:
@@ -3514,14 +3494,14 @@ __metadata:
   linkType: hard
 
 "antd@npm:^5.14.2":
-  version: 5.23.1
-  resolution: "antd@npm:5.23.1"
+  version: 5.23.4
+  resolution: "antd@npm:5.23.4"
   dependencies:
     "@ant-design/colors": "npm:^7.2.0"
-    "@ant-design/cssinjs": "npm:^1.22.0"
+    "@ant-design/cssinjs": "npm:^1.23.0"
     "@ant-design/cssinjs-utils": "npm:^1.1.3"
     "@ant-design/fast-color": "npm:^2.0.6"
-    "@ant-design/icons": "npm:^5.5.2"
+    "@ant-design/icons": "npm:^5.6.0"
     "@ant-design/react-slick": "npm:~1.1.2"
     "@babel/runtime": "npm:^7.26.0"
     "@rc-component/color-picker": "npm:~2.0.1"
@@ -3546,13 +3526,13 @@ __metadata:
     rc-menu: "npm:~9.16.0"
     rc-motion: "npm:^2.9.5"
     rc-notification: "npm:~5.6.2"
-    rc-pagination: "npm:~5.0.0"
+    rc-pagination: "npm:~5.1.0"
     rc-picker: "npm:~4.9.2"
     rc-progress: "npm:~4.0.0"
     rc-rate: "npm:~2.13.0"
     rc-resize-observer: "npm:^1.4.3"
     rc-segmented: "npm:~2.7.0"
-    rc-select: "npm:~14.16.5"
+    rc-select: "npm:~14.16.6"
     rc-slider: "npm:~11.1.8"
     rc-steps: "npm:~6.0.1"
     rc-switch: "npm:~4.1.0"
@@ -3569,7 +3549,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 10c0/3bea4ced54161ff6ffdd4f5f2bea2bbeced6197d5c836b5427a21a96d0c9b7717d16baf49e88ec966ed3e181e7ff0a71819c71d99e1ba2ee60939aeaeacc03d8
+  checksum: 10c0/d73ac23403966f8849f78c0bda60ddeab692010a34729fb05d1ff8e95d0a0cb57498b9ca8adfa2d835b986b7932dc8a3f6bce7697aa3d4fa780910bcc9d6bd32
   languageName: node
   linkType: hard
 
@@ -10644,9 +10624,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-pagination@npm:~5.0.0":
-  version: 5.0.0
-  resolution: "rc-pagination@npm:5.0.0"
+"rc-pagination@npm:~5.1.0":
+  version: 5.1.0
+  resolution: "rc-pagination@npm:5.1.0"
   dependencies:
     "@babel/runtime": "npm:^7.10.1"
     classnames: "npm:^2.3.2"
@@ -10654,7 +10634,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 10c0/62d54fd43b549f63ee7ef8ab8b8b378b8ceb2508ca6e081364fb36868a60047bc90ad5407e1fc4095b4bdbdef41967238a59a17a2a960809c663ded3049d0e0d
+  checksum: 10c0/6cc6f0fa591c3d9f1cd0abcc1f918ddf18d6b5c71fefb97a6c3888b8492505e8e8951903de2bae7c64c0947cf1d53bc70f52577a3f6b38bdb3e9140a7bb5a32e
   languageName: node
   linkType: hard
 
@@ -10779,9 +10759,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-select@npm:~14.16.5":
-  version: 14.16.5
-  resolution: "rc-select@npm:14.16.5"
+"rc-select@npm:~14.16.6":
+  version: 14.16.6
+  resolution: "rc-select@npm:14.16.6"
   dependencies:
     "@babel/runtime": "npm:^7.10.1"
     "@rc-component/trigger": "npm:^2.1.1"
@@ -10793,7 +10773,7 @@ __metadata:
   peerDependencies:
     react: "*"
     react-dom: "*"
-  checksum: 10c0/de03c9397cb7d3f8e317389deb933ab91988266e72d13b4bcf27bf94512dc83b9747102e8db6f84e0be202c3332e105338a962ce180943e6fd7b02cd034d1cdf
+  checksum: 10c0/a0aa16e611bfe48bc26612a95189a33e7bed38f12a1c41f34b74778b5d83437d74f7b0b304ce27eda2f5797b330f35fc73f1ddc3e85efff56a3089da22a0a3bf
   languageName: node
   linkType: hard
 
