@@ -2447,7 +2447,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-vite@npm:8.4.7, @storybook/builder-vite@npm:^8.3.0":
+"@storybook/builder-vite@npm:8.4.7":
   version: 8.4.7
   resolution: "@storybook/builder-vite@npm:8.4.7"
   dependencies:
@@ -2458,6 +2458,20 @@ __metadata:
     storybook: ^8.4.7
     vite: ^4.0.0 || ^5.0.0 || ^6.0.0
   checksum: 10c0/138651b9042356972580a121eb3116c745f9fbc8b188ae0a5e543070dc54fcb6c1f14d35bc0cd1294ee763993a5f0e3a30cbe92508e74d183fed04a4d4125591
+  languageName: node
+  linkType: hard
+
+"@storybook/builder-vite@npm:^8.3.0":
+  version: 8.6.3
+  resolution: "@storybook/builder-vite@npm:8.6.3"
+  dependencies:
+    "@storybook/csf-plugin": "npm:8.6.3"
+    browser-assert: "npm:^1.2.1"
+    ts-dedent: "npm:^2.0.0"
+  peerDependencies:
+    storybook: ^8.6.3
+    vite: ^4.0.0 || ^5.0.0 || ^6.0.0
+  checksum: 10c0/31751fbb187842b95c4036a2997b49d9dfd2c727b113019804627e188417541ebf0a35ef5df5b4626b8e747123883a5b844d2f2d6545789a75404d5c31961112
   languageName: node
   linkType: hard
 
@@ -2531,6 +2545,17 @@ __metadata:
   peerDependencies:
     storybook: ^8.5.2
   checksum: 10c0/fb1fa5ddf821fbfc98387b58e5fa7847b6b2fff9014f49b352c4b60a4601229b1f087a87fa94bb0663189e5e57ec462264b22b8f147cfe80533d132994c550c6
+  languageName: node
+  linkType: hard
+
+"@storybook/csf-plugin@npm:8.6.3":
+  version: 8.6.3
+  resolution: "@storybook/csf-plugin@npm:8.6.3"
+  dependencies:
+    unplugin: "npm:^1.3.1"
+  peerDependencies:
+    storybook: ^8.6.3
+  checksum: 10c0/3cdfd8acc6f6e67cae063a3108875764b023d60eda4d38eb33adfd4b1887db579447e1d792f95ffe9581897fcc4713bb351e43a56d7242c7ee39141c9567ecdc
   languageName: node
   linkType: hard
 
