@@ -4746,14 +4746,15 @@ __metadata:
   linkType: hard
 
 "cypress-multi-reporters@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "cypress-multi-reporters@npm:2.0.4"
+  version: 2.0.5
+  resolution: "cypress-multi-reporters@npm:2.0.5"
   dependencies:
-    debug: "npm:^4.3.7"
+    debug: "npm:^4.4.0"
     lodash: "npm:^4.17.21"
+    semver: "npm:^7.6.3"
   peerDependencies:
     mocha: ">=3.1.2"
-  checksum: 10c0/8b8c6c6e647c88b2e5f001d08f234b8c69ef1b8fc7779eb8a5163d64a3fad901d3a9b889388831c3dac5b85af201f9d12338df808fbca84f19a02277d2426191
+  checksum: 10c0/92512daee7f552562854be98d59fbad7eeaf4b3770d4ddeed0e31250df5bd35f7c7a8d720634428e3ea23de73015943bb7862dba0e9bafe43c3185497f0d331c
   languageName: node
   linkType: hard
 
@@ -4979,7 +4980,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:^4.3.5, debug@npm:^4.3.7":
+"debug@npm:^4.3.5":
   version: 4.3.7
   resolution: "debug@npm:4.3.7"
   dependencies:
@@ -11776,6 +11777,15 @@ __metadata:
   bin:
     semver: bin/semver.js
   checksum: 10c0/88f33e148b210c153873cb08cfe1e281d518aaa9a666d4d148add6560db5cd3c582f3a08ccb91f38d5f379ead256da9931234ed122057f40bb5766e65e58adaf
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.6.3":
+  version: 7.7.1
+  resolution: "semver@npm:7.7.1"
+  bin:
+    semver: bin/semver.js
+  checksum: 10c0/fd603a6fb9c399c6054015433051bdbe7b99a940a8fb44b85c2b524c4004b023d7928d47cb22154f8d054ea7ee8597f586605e05b52047f048278e4ac56ae958
   languageName: node
   linkType: hard
 
