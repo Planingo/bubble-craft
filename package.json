@@ -78,7 +78,7 @@
     "chromatic": "^11.7.1",
     "cypress": "^13.14.2",
     "cypress-multi-reporters": "^2.0.4",
-    "cypress-parallel": "^0.14.0",
+    "cypress-parallel": "^0.15.0",
     "eslint": "^9.10.0",
     "eslint-plugin-cypress": "^4.0.0",
     "eslint-plugin-mdx": "^3.1.5",
