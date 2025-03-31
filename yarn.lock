@@ -2325,16 +2325,16 @@ __metadata:
   linkType: hard
 
 "@storybook/builder-vite@npm:^8.3.0":
-  version: 8.6.9
-  resolution: "@storybook/builder-vite@npm:8.6.9"
+  version: 8.6.11
+  resolution: "@storybook/builder-vite@npm:8.6.11"
   dependencies:
-    "@storybook/csf-plugin": "npm:8.6.9"
+    "@storybook/csf-plugin": "npm:8.6.11"
     browser-assert: "npm:^1.2.1"
     ts-dedent: "npm:^2.0.0"
   peerDependencies:
-    storybook: ^8.6.9
+    storybook: ^8.6.11
     vite: ^4.0.0 || ^5.0.0 || ^6.0.0
-  checksum: 10c0/c2aa1b247c584ff8fcbfaa47f6adbc85c7759ec3beff81a98a1148b7d46dcd0e871a0121b8f7a7ebc641a5e54488066370ce09c127680ca72bae4f581e340497
+  checksum: 10c0/c93e2c948c4b306f53e8da50688b71a500f08e8904448f273db054fbbcaae100bad55d4a4075ee99932d4fad00d37001ccbbe146bbca820ede9c5ead922b49ce
   languageName: node
   linkType: hard
 
@@ -2411,14 +2411,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/csf-plugin@npm:8.6.9":
-  version: 8.6.9
-  resolution: "@storybook/csf-plugin@npm:8.6.9"
+"@storybook/csf-plugin@npm:8.6.11":
+  version: 8.6.11
+  resolution: "@storybook/csf-plugin@npm:8.6.11"
   dependencies:
     unplugin: "npm:^1.3.1"
   peerDependencies:
-    storybook: ^8.6.9
-  checksum: 10c0/c975683c586f9332853befd4bcad78496c34ef65cfde722c32970cb604bfa0799870aef8eb345ffdabbad0a846702edc311651f5b119e6a549152ce172bbefd9
+    storybook: ^8.6.11
+  checksum: 10c0/2dcb028299a20c317f1baac403510c221dc286e7883c501f61b35ce7a06728bb3130b057cc79541d161ccb218c22b3522ff845d7fe6e77021ed69410d793beb5
   languageName: node
   linkType: hard
 
