@@ -2652,7 +2652,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:8.4.7, @storybook/theming@npm:^8.3.0":
+"@storybook/theming@npm:8.4.7":
   version: 8.4.7
   resolution: "@storybook/theming@npm:8.4.7"
   peerDependencies:
@@ -2667,6 +2667,15 @@ __metadata:
   peerDependencies:
     storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
   checksum: 10c0/628faef6d65c9b1da7725b55d5bcbab9ad76d28aca586873d95f9c60979501d4d9e9788804c9355761aa813d5b8e1d33a65256bacce681b5374d58d2ed6183a0
+  languageName: node
+  linkType: hard
+
+"@storybook/theming@npm:^8.3.0":
+  version: 8.6.11
+  resolution: "@storybook/theming@npm:8.6.11"
+  peerDependencies:
+    storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+  checksum: 10c0/625172f789baf265e7260e4e3113b1be5d4104d70bd9599dbe2e5061889a9d0382e3154b1ff2a3ad550c78e8b80fc6b271f394ee2d632ec7cd22cdf82e48ee10
   languageName: node
   linkType: hard
 
