@@ -2270,26 +2270,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:8.6.11":
-  version: 8.6.11
-  resolution: "@storybook/blocks@npm:8.6.11"
-  dependencies:
-    "@storybook/icons": "npm:^1.2.12"
-    ts-dedent: "npm:^2.0.0"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-    storybook: ^8.6.11
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: 10c0/3bed2a65fa9bf0550cd074e0fa1936daa0a4b9509296f945b5ba485713f00db6faead36e73d7e246a41c29c847ec292a89bbd58e7c34675e0f36412682a7979a
-  languageName: node
-  linkType: hard
-
-"@storybook/blocks@npm:^8.3.0":
+"@storybook/blocks@npm:8.6.11, @storybook/blocks@npm:^8.3.0":
   version: 8.6.11
   resolution: "@storybook/blocks@npm:8.6.11"
   dependencies:
@@ -2406,26 +2387,6 @@ __metadata:
   peerDependencies:
     storybook: ^8.6.11
   checksum: 10c0/2dcb028299a20c317f1baac403510c221dc286e7883c501f61b35ce7a06728bb3130b057cc79541d161ccb218c22b3522ff845d7fe6e77021ed69410d793beb5
-  languageName: node
-  linkType: hard
-
-"@storybook/csf-plugin@npm:8.6.11":
-  version: 8.6.11
-  resolution: "@storybook/csf-plugin@npm:8.6.11"
-  dependencies:
-    unplugin: "npm:^1.3.1"
-  peerDependencies:
-    storybook: ^8.6.11
-  checksum: 10c0/2dcb028299a20c317f1baac403510c221dc286e7883c501f61b35ce7a06728bb3130b057cc79541d161ccb218c22b3522ff845d7fe6e77021ed69410d793beb5
-  languageName: node
-  linkType: hard
-
-"@storybook/csf@npm:0.1.12":
-  version: 0.1.12
-  resolution: "@storybook/csf@npm:0.1.12"
-  dependencies:
-    type-fest: "npm:^2.19.0"
-  checksum: 10c0/3d96a976ada67eb683279338d1eb6aa730b228107d4c4f6616ea7b94061899c1fdc11957a756e7bc0708d18cb39af0010c865d124efd84559cd82dcb2d8bc959
   languageName: node
   linkType: hard
 
