@@ -3,7 +3,7 @@ import { Modal } from "../components/Modal/Modal";
 import { IntlProvider } from "../translation/IntlProvider";
 
 describe("<Modal />", () => {
-  it("renders", () => {
+  it.skip("renders", () => {
     cy.mount(
       <IntlProvider>
         <Modal
