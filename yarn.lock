@@ -1314,6 +1314,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fullcalendar/premium-common@npm:~6.1.17":
+  version: 6.1.17
+  resolution: "@fullcalendar/premium-common@npm:6.1.17"
+  peerDependencies:
+    "@fullcalendar/core": ~6.1.17
+  checksum: 10c0/3a656ddfd98203c5000c5b3add18943e102ceff9a89d918474563b16cbed8f367a8e9cf740f447d4fe104ebcaef1e05ad22976f0c8bd496facd1a8ab2eb47f07
+  languageName: node
+  linkType: hard
+
 "@fullcalendar/react@npm:^6.1.15":
   version: 6.1.15
   resolution: "@fullcalendar/react@npm:6.1.15"
@@ -1353,13 +1362,13 @@ __metadata:
   linkType: hard
 
 "@fullcalendar/resource@npm:^6.1.15":
-  version: 6.1.15
-  resolution: "@fullcalendar/resource@npm:6.1.15"
+  version: 6.1.17
+  resolution: "@fullcalendar/resource@npm:6.1.17"
   dependencies:
-    "@fullcalendar/premium-common": "npm:~6.1.15"
+    "@fullcalendar/premium-common": "npm:~6.1.17"
   peerDependencies:
-    "@fullcalendar/core": ~6.1.15
-  checksum: 10c0/22375f2184cb417dfec8b5d54304f17e3bf37988061e54d46cded3d63835b674fe79908ae7a6782ae4ec197d9d568779127b51b0502b6c169431f6eae2001986
+    "@fullcalendar/core": ~6.1.17
+  checksum: 10c0/ca6772850880e7a187dd681f357a0b46aa42fc0b75ce4fb80967b78fd687c2294e1a572eee23905af5e5b12eb9a552f3a3ea21ea566d2ccef62119d1eaa83154
   languageName: node
   linkType: hard
 
