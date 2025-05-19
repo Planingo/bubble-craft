@@ -1258,12 +1258,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/core@npm:^6.1.15, @fullcalendar/core@npm:~6.1.15":
+"@fullcalendar/core@npm:^6.1.15":
   version: 6.1.15
   resolution: "@fullcalendar/core@npm:6.1.15"
   dependencies:
     preact: "npm:~10.12.1"
   checksum: 10c0/628445dcbfcf9c5a4012cde3ba814af7b74db66c4ec71743fe9c5f5376f96d4b18922d257ad8d5ccf1211b2415d1094dd05e2f4f3324d4dbe880a94f7e5793b7
+  languageName: node
+  linkType: hard
+
+"@fullcalendar/core@npm:~6.1.17":
+  version: 6.1.17
+  resolution: "@fullcalendar/core@npm:6.1.17"
+  dependencies:
+    preact: "npm:~10.12.1"
+  checksum: 10c0/211f5863eaadc8694c9d76084b2e0b65aade73ec8aa51c77f514060541406ed742070217ef66518c1f6065ea7ac2b5ef6e8c3e64dc9b421bb27388b90c0873b7
   languageName: node
   linkType: hard
 
@@ -1276,32 +1285,41 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/interaction@npm:~6.1.15":
-  version: 6.1.15
-  resolution: "@fullcalendar/interaction@npm:6.1.15"
+"@fullcalendar/daygrid@npm:~6.1.17":
+  version: 6.1.17
+  resolution: "@fullcalendar/daygrid@npm:6.1.17"
   peerDependencies:
-    "@fullcalendar/core": ~6.1.15
-  checksum: 10c0/f9e2542965b3d28a4eb65638a21d036d883399956781649f5442c2fb681ee59ea5fb071779be04acb88afed9278d38fc6f5758dc8a6dfa1d7b90cb6858a0115e
+    "@fullcalendar/core": ~6.1.17
+  checksum: 10c0/ae924c0fba749ba0ca33ea06a8d51f117366d7b34411ea6fde7037b5ef98e7e709ac5805d55d2f675b9fefc8eb39e5e566b2a910f965dde7cfcad1b676ea162c
   languageName: node
   linkType: hard
 
-"@fullcalendar/list@npm:~6.1.15":
-  version: 6.1.15
-  resolution: "@fullcalendar/list@npm:6.1.15"
+"@fullcalendar/interaction@npm:~6.1.17":
+  version: 6.1.17
+  resolution: "@fullcalendar/interaction@npm:6.1.17"
   peerDependencies:
-    "@fullcalendar/core": ~6.1.15
-  checksum: 10c0/33c0ba3ee9c2545cd68b5395a4ccf59986fbbcae07a458837a6ac52b0a0e6fe59fbc78d10286115ea5145b70c6aaa03b50cbe95285645c7f91f50dacc6ee1a35
+    "@fullcalendar/core": ~6.1.17
+  checksum: 10c0/986f664890c4ee0a6008b7b9ce78880dbe3ef3754cae96736afa7c6df3f4263837f58c5c832408652d4b36e69ca785689e84e3f5e1f37d595221244341b98f55
   languageName: node
   linkType: hard
 
-"@fullcalendar/multimonth@npm:~6.1.15":
-  version: 6.1.15
-  resolution: "@fullcalendar/multimonth@npm:6.1.15"
+"@fullcalendar/list@npm:~6.1.17":
+  version: 6.1.17
+  resolution: "@fullcalendar/list@npm:6.1.17"
+  peerDependencies:
+    "@fullcalendar/core": ~6.1.17
+  checksum: 10c0/a853e0846cc968c9ed0a4425c0f9cbb1fed1c87696d724a87a95bb18276741629eafaae5fd4b361d193c313e4e7446e6d0e75f9cc9e0c9689ca2324f65e8a7aa
+  languageName: node
+  linkType: hard
+
+"@fullcalendar/multimonth@npm:~6.1.17":
+  version: 6.1.17
+  resolution: "@fullcalendar/multimonth@npm:6.1.17"
   dependencies:
-    "@fullcalendar/daygrid": "npm:~6.1.15"
+    "@fullcalendar/daygrid": "npm:~6.1.17"
   peerDependencies:
-    "@fullcalendar/core": ~6.1.15
-  checksum: 10c0/f6ddb8560697af0d888cc014bb8a3c690e9a1354effca009070af59fb5ac654d9d60b9ee89c9656c3925efe3099c66a5bc19c65559ed6baf93bb53c28706eae9
+    "@fullcalendar/core": ~6.1.17
+  checksum: 10c0/047ac9dbbbf8012a29d1d7e4b038aa4a5be05c4d6f7a33811a37c11145fccf639b8b78dd27bc3fdc9688f664cce23181967954ecb369c3f0988077c647d9b945
   languageName: node
   linkType: hard
 
@@ -1371,6 +1389,17 @@ __metadata:
   peerDependencies:
     "@fullcalendar/core": ~6.1.15
   checksum: 10c0/0ad1012fdbd8dbd3b4f71e015186393863d3d7b627ac8306049263c7814137ffd6bab80732071f4750ee63e7e2a97fa935be7fc54970d6edabda14f26a59e076
+  languageName: node
+  linkType: hard
+
+"@fullcalendar/timegrid@npm:~6.1.17":
+  version: 6.1.17
+  resolution: "@fullcalendar/timegrid@npm:6.1.17"
+  dependencies:
+    "@fullcalendar/daygrid": "npm:~6.1.17"
+  peerDependencies:
+    "@fullcalendar/core": ~6.1.17
+  checksum: 10c0/ebd2ca0da0b0b98ddb336ee6a2a661e15918d4aebabec31c6c460587d085a9a0095604ef2ee08e0dc5eaf4dbc9a2cc9ae2c3f6802a0a5fcc319808e9a8cf6c98
   languageName: node
   linkType: hard
 
@@ -6191,16 +6220,16 @@ __metadata:
   linkType: hard
 
 "fullcalendar@npm:^6.1.15":
-  version: 6.1.15
-  resolution: "fullcalendar@npm:6.1.15"
+  version: 6.1.17
+  resolution: "fullcalendar@npm:6.1.17"
   dependencies:
-    "@fullcalendar/core": "npm:~6.1.15"
-    "@fullcalendar/daygrid": "npm:~6.1.15"
-    "@fullcalendar/interaction": "npm:~6.1.15"
-    "@fullcalendar/list": "npm:~6.1.15"
-    "@fullcalendar/multimonth": "npm:~6.1.15"
-    "@fullcalendar/timegrid": "npm:~6.1.15"
-  checksum: 10c0/71a84711768392f91820078f977da901d82c7be66132ee00f7fa350b43ee43d6d7872514bfcdc3d9d907b74e915ba7852430319c84693d89d9e1c652a77e073d
+    "@fullcalendar/core": "npm:~6.1.17"
+    "@fullcalendar/daygrid": "npm:~6.1.17"
+    "@fullcalendar/interaction": "npm:~6.1.17"
+    "@fullcalendar/list": "npm:~6.1.17"
+    "@fullcalendar/multimonth": "npm:~6.1.17"
+    "@fullcalendar/timegrid": "npm:~6.1.17"
+  checksum: 10c0/54359583b81bd58afd8233f9e96abb29b4e425d8e10a5a39a96ddef44361980a24323207d1b2b09da0141f3a2691fc29bbde803ed0322ac1419d380680ce6144
   languageName: node
   linkType: hard
 
