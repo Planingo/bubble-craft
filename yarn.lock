@@ -11850,13 +11850,13 @@ __metadata:
   linkType: hard
 
 "storybook-addon-pseudo-states@npm:^4.0.2":
-  version: 4.0.3
-  resolution: "storybook-addon-pseudo-states@npm:4.0.3"
+  version: 4.0.4
+  resolution: "storybook-addon-pseudo-states@npm:4.0.4"
   dependencies:
     "@storybook/icons": "npm:^1.2.10"
   peerDependencies:
     storybook: ^8.2.0
-  checksum: 10c0/6491636a9a479364fa4d75d0819e07b4a5cb9f6f3eea4a3d2f92232eef7eb733e3d7614f6a73d8fa6a7da0ca5874443805ba679379feff058ee4cb46b9ceb61d
+  checksum: 10c0/06483f310d71980f074f14513545afbe11840ffd6af2322986ea58d04c0eee857df9e8a1a6323226ddf4b2159d3c2b66cfe8984be53e7ec43df9cdbe4b0a59dd
   languageName: node
   linkType: hard
 
