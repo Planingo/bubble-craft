@@ -1649,7 +1649,7 @@ __metadata:
     "@storybook/addon-interactions": "npm:^8.6.12"
     "@storybook/addon-links": "npm:^8.6.12"
     "@storybook/addon-storysource": "npm:^8.6.12"
-    "@storybook/addon-viewport": "npm:^8.6.12"
+    "@storybook/addon-viewport": "npm:^9.0.6"
     "@storybook/blocks": "npm:^8.6.12"
     "@storybook/builder-vite": "npm:^8.6.12"
     "@storybook/components": "npm:^8.6.12"
@@ -2184,7 +2184,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-viewport@npm:8.6.12, @storybook/addon-viewport@npm:^8.6.12":
+"@storybook/addon-viewport@npm:8.6.12":
   version: 8.6.12
   resolution: "@storybook/addon-viewport@npm:8.6.12"
   dependencies:
@@ -2192,6 +2192,13 @@ __metadata:
   peerDependencies:
     storybook: ^8.6.12
   checksum: 10c0/72a570f4f45ba5c0d1515a14d2e03d04bb510ffc4b8181237f7c787c8d2a6eb6429e4cd048256dafec75bb9a764c4a155c022eed0d6476e7fd7da27f01949db4
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-viewport@npm:^9.0.6":
+  version: 9.0.6
+  resolution: "@storybook/addon-viewport@npm:9.0.6"
+  checksum: 10c0/b62eeb94597ac86bce5dae3546d065498cb9306b4841b90646b4aea51a43cef639d67b342681ba5c39090c8522b9f6e295cd6917ca12d4efa75a91b5922f4a83
   languageName: node
   linkType: hard
 
