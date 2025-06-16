@@ -1651,7 +1651,7 @@ __metadata:
     "@storybook/addon-storysource": "npm:^8.6.12"
     "@storybook/addon-viewport": "npm:^8.6.12"
     "@storybook/blocks": "npm:^8.6.12"
-    "@storybook/builder-vite": "npm:^8.6.12"
+    "@storybook/builder-vite": "npm:^9.0.10"
     "@storybook/components": "npm:^8.6.12"
     "@storybook/core-events": "npm:^8.6.12"
     "@storybook/docs-tools": "npm:^8.6.12"
@@ -2214,7 +2214,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-vite@npm:8.6.12, @storybook/builder-vite@npm:^8.6.12":
+"@storybook/builder-vite@npm:8.6.12":
   version: 8.6.12
   resolution: "@storybook/builder-vite@npm:8.6.12"
   dependencies:
@@ -2225,6 +2225,19 @@ __metadata:
     storybook: ^8.6.12
     vite: ^4.0.0 || ^5.0.0 || ^6.0.0
   checksum: 10c0/cf02c9095a7cf12ac1e372f5e8dc01193c4ae298f16416538de514687b9776a4eda478ff01e5ba73e87e4f3603d8453a6a374dde1673fa22abea103135524892
+  languageName: node
+  linkType: hard
+
+"@storybook/builder-vite@npm:^9.0.10":
+  version: 9.0.10
+  resolution: "@storybook/builder-vite@npm:9.0.10"
+  dependencies:
+    "@storybook/csf-plugin": "npm:9.0.10"
+    ts-dedent: "npm:^2.0.0"
+  peerDependencies:
+    storybook: ^9.0.10
+    vite: ^5.0.0 || ^6.0.0
+  checksum: 10c0/4034c0a5878001f1512faeb0b64264df0c0f394210e87795c5e4e6d96b1f195753e8d28f7cd8de283ee076c534a22581a9d7cacabf3c107ac8672031fb99f414
   languageName: node
   linkType: hard
 
@@ -2278,6 +2291,17 @@ __metadata:
   peerDependencies:
     storybook: ^8.6.12
   checksum: 10c0/8bb5b9612178ff997cb21bd957b7918a6a7cd58fb5f3249e6ec2f3a4a039d3ff4f40b873360f202a56cf64d1235bb88a32ef5e308d3a663f294f925257943472
+  languageName: node
+  linkType: hard
+
+"@storybook/csf-plugin@npm:9.0.10":
+  version: 9.0.10
+  resolution: "@storybook/csf-plugin@npm:9.0.10"
+  dependencies:
+    unplugin: "npm:^1.3.1"
+  peerDependencies:
+    storybook: ^9.0.10
+  checksum: 10c0/e3ef93592876aa79ef3fedf0081b0410f4bb714806cb871818cda20c9d2d919ef3a20dec8f4e1a1806c5ed91511341b99bcbe01bb06a75f8dc13ff73ec90f586
   languageName: node
   linkType: hard
 
