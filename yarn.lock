@@ -1642,7 +1642,7 @@ __metadata:
     "@fullcalendar/resource": "npm:^6.1.15"
     "@fullcalendar/resource-timegrid": "npm:^6.1.15"
     "@fullcalendar/timegrid": "npm:^6.1.15"
-    "@storybook/addon-actions": "npm:^8.6.12"
+    "@storybook/addon-actions": "npm:^9.0.8"
     "@storybook/addon-backgrounds": "npm:^8.6.12"
     "@storybook/addon-docs": "npm:^8.6.12"
     "@storybook/addon-essentials": "npm:^8.6.12"
@@ -2018,7 +2018,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-actions@npm:8.6.12, @storybook/addon-actions@npm:^8.6.12":
+"@storybook/addon-actions@npm:8.6.12":
   version: 8.6.12
   resolution: "@storybook/addon-actions@npm:8.6.12"
   dependencies:
@@ -2030,6 +2030,13 @@ __metadata:
   peerDependencies:
     storybook: ^8.6.12
   checksum: 10c0/f05a876966f170a65d51405f0908e7db74daba033c2468f7de35e17d800960b0201d8edfe822508346c1e7f2f664c9e601cadf9673a17a41e4afafd1af922241
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-actions@npm:^9.0.8":
+  version: 9.0.8
+  resolution: "@storybook/addon-actions@npm:9.0.8"
+  checksum: 10c0/40ab6bf018cb423bf156e6b1317d199f3730690750b88b4c4eed7af636fdbc9392ddc95b1383927ec85f462515ae35bc9f517c934bf05e1edb645f6b9b94264a
   languageName: node
   linkType: hard
 
