@@ -1698,7 +1698,7 @@ __metadata:
     react-router-dom: "npm:^7.0.1"
     remark-gfm: "npm:^4.0.0"
     storybook: "npm:^8.6.12"
-    storybook-addon-pseudo-states: "npm:^4.0.2"
+    storybook-addon-pseudo-states: "npm:^9.0.12"
     vite: "npm:^6.0.2"
     vitest: "npm:^3.0.4"
   peerDependencies:
@@ -2294,16 +2294,6 @@ __metadata:
   version: 5.0.0
   resolution: "@storybook/global@npm:5.0.0"
   checksum: 10c0/8f1b61dcdd3a89584540896e659af2ecc700bc740c16909a7be24ac19127ea213324de144a141f7caf8affaed017d064fea0618d453afbe027cf60f54b4a6d0b
-  languageName: node
-  linkType: hard
-
-"@storybook/icons@npm:^1.2.10":
-  version: 1.2.10
-  resolution: "@storybook/icons@npm:1.2.10"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/aadde2efd5c471b78096f29a6393db111ee95174cab94ade0d2859d476262f080aa8ffb414f82932afd81d5c57bed813193a04e92086962bde2224774dac9060
   languageName: node
   linkType: hard
 
@@ -11849,14 +11839,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook-addon-pseudo-states@npm:^4.0.2":
-  version: 4.0.3
-  resolution: "storybook-addon-pseudo-states@npm:4.0.3"
-  dependencies:
-    "@storybook/icons": "npm:^1.2.10"
+"storybook-addon-pseudo-states@npm:^9.0.12":
+  version: 9.0.12
+  resolution: "storybook-addon-pseudo-states@npm:9.0.12"
   peerDependencies:
-    storybook: ^8.2.0
-  checksum: 10c0/6491636a9a479364fa4d75d0819e07b4a5cb9f6f3eea4a3d2f92232eef7eb733e3d7614f6a73d8fa6a7da0ca5874443805ba679379feff058ee4cb46b9ceb61d
+    storybook: ^9.0.12
+  checksum: 10c0/60ef19a4102e541ae306bef74303761d2d59c3ba1bf0991ba19c7a90d95a34f518b412ab3785270d0c1e73dd151c269f047482e8218af14fc4552b0be0bf07df
   languageName: node
   linkType: hard
 
