@@ -1259,11 +1259,11 @@ __metadata:
   linkType: hard
 
 "@fullcalendar/core@npm:^6.1.15, @fullcalendar/core@npm:~6.1.15":
-  version: 6.1.15
-  resolution: "@fullcalendar/core@npm:6.1.15"
+  version: 6.1.18
+  resolution: "@fullcalendar/core@npm:6.1.18"
   dependencies:
     preact: "npm:~10.12.1"
-  checksum: 10c0/628445dcbfcf9c5a4012cde3ba814af7b74db66c4ec71743fe9c5f5376f96d4b18922d257ad8d5ccf1211b2415d1094dd05e2f4f3324d4dbe880a94f7e5793b7
+  checksum: 10c0/ef54a371395b097334fc602b0aec557c03338958f3b83d0976ed0ad5d89bfebbcf5d380e017ade6fce99fff0632b05be4c707ee09aaadf296ed0217271097ce7
   languageName: node
   linkType: hard
 
