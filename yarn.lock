@@ -1315,13 +1315,13 @@ __metadata:
   linkType: hard
 
 "@fullcalendar/react@npm:^6.1.15":
-  version: 6.1.15
-  resolution: "@fullcalendar/react@npm:6.1.15"
+  version: 6.1.18
+  resolution: "@fullcalendar/react@npm:6.1.18"
   peerDependencies:
-    "@fullcalendar/core": ~6.1.15
+    "@fullcalendar/core": ~6.1.18
     react: ^16.7.0 || ^17 || ^18 || ^19
     react-dom: ^16.7.0 || ^17 || ^18 || ^19
-  checksum: 10c0/8185159c2fa02b31012b84c19f340b835383858d04079bcfb5ccbd1967116d862dbdb863762d99c374433a5364873727fc6f9d7356b2b1d1866ae5d50819ff6e
+  checksum: 10c0/af011c803f88d329af904a6f1a11f41a05f5c48d70a7f0b9fd365c4c820b2220b5d8fd9b397c7f6ba7491a4a82e00d1436d90edd1af7d430e68f5de295cc643c
   languageName: node
   linkType: hard
 
