@@ -1268,11 +1268,11 @@ __metadata:
   linkType: hard
 
 "@fullcalendar/daygrid@npm:^6.1.15, @fullcalendar/daygrid@npm:~6.1.15":
-  version: 6.1.15
-  resolution: "@fullcalendar/daygrid@npm:6.1.15"
+  version: 6.1.18
+  resolution: "@fullcalendar/daygrid@npm:6.1.18"
   peerDependencies:
-    "@fullcalendar/core": ~6.1.15
-  checksum: 10c0/52ba7a479675aa8e2bd36ca6c00c9cc28f11539710cf7a233e8657835b29fe21954e732a23c9b7c7c345c5b6b3c08e3af24ce9125ec28478176cce1b3e7d0da4
+    "@fullcalendar/core": ~6.1.18
+  checksum: 10c0/c61c1ae8db6c0848fa73e875d0737d02b4b18bfa9e825d4aeb75a4d3187c2c87f39844e6bcef225f4bd014e370f2c617f28104b6c7349a4a6aeb1b33cdfc4ee5
   languageName: node
   linkType: hard
 
