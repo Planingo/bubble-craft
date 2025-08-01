@@ -32,6 +32,7 @@ storybook-static
 .metals
 
 build-storybook.log
+debug-storybook.log
 
 .yarn/*
 !.yarn/cache
