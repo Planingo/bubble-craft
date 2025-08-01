@@ -9,7 +9,7 @@ jobs:
     if: github.event.issue.pull_request != null && contains(github.event.comment.body, 'chromatic')
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger CircleCI job
+      - name: Trigger CircleCI Pipeline
         env:
           CIRCLECI_TOKEN: ${{ secrets.CIRCLECI_TOKEN }}
           BRANCH: ${{ github.event.pull_request.head.ref }}
@@ -17,4 +17,5 @@ jobs:
           curl -X POST https://circleci.com/api/v2/project/gh/Planingo/bubble-craft/pipeline \
             -H "Circle-Token: $CIRCLECI_TOKEN" \
             -H "Content-Type: application/json" \
-            -d "{\"branch\":\"${BRANCH}\", \"parameters\":{\"run_chromatic\": true}}"
+            -d "{\"branch\":\"$BRANCH\", \"parameters\":{\"run_chromatic\": true}}"
+
