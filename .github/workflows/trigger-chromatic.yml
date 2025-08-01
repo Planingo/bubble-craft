@@ -11,19 +11,9 @@ jobs:
       contains(github.event.comment.body, 'chromatic')
     runs-on: ubuntu-latest
     steps:
-      - name: Extract PR branch name
-        id: extract_branch
-        run: echo "branch_name=$(gh pr view ${{ github.event.issue.number }} --json headRefName -q .headRefName)" >> $GITHUB_OUTPUT
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Trigger CircleCI chromatic pipeline
-        env:
-          CIRCLECI_TOKEN: ${{ secrets.CIRCLECI_TOKEN }}
-          BRANCH_NAME: ${{ steps.extract_branch.outputs.branch_name }}
         run: |
-          echo "Triggering Chromatic CI for branch: $BRANCH_NAME"
           curl -X POST https://circleci.com/api/v2/project/gh/Planingo/bubble-craft/pipeline \
-            -H "Circle-Token: $CIRCLECI_TOKEN" \
+            -H "Circle-Token: ${{ secrets.CIRCLECI_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d "{\"branch\":\"$BRANCH_NAME\",\"parameters\":{\"run_chromatic\":true}}"
+            -d "{\"branch\": \"${{ github.event.issue.pull_request.head.ref }}\", \"parameters\": {\"run_chromatic\": true}}"
