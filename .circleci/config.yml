@@ -1,23 +1,30 @@
 version: 2.1
+
 orbs:
-  discord: antonioned/discord@0.1.0
   node: circleci/node@5.2.0
+  discord: antonioned/discord@0.1.0
+
+parameters:
+  run_chromatic:
+    type: boolean
+    default: false
 
 jobs:
   chromatic:
-      executor: 
-        name: node/default
-        tag: current
-      steps:
-        - checkout
-        - restore_cache:
-            keys:
-              - v1-dependencies-{{ checksum "package.json" }}
-              - v1-dependencies-
-        - run: yarn install
-        - run: npx chromatic --project-token=$chromatic --exit-zero-on-changes
+    executor:
+      name: node/default
+      tag: current
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+      - run: yarn install
+      - run: npx chromatic --project-token=$chromatic --exit-zero-on-changes
+
   lint-and-format:
-    executor: 
+    executor:
       name: node/default
       tag: current
     steps:
@@ -34,8 +41,9 @@ jobs:
             - ./node_modules
       - run: yarn lint
       - run: yarn format:check
+
   unit-test:
-    executor: 
+    executor:
       name: node/default
       tag: current
     steps:
@@ -51,6 +59,7 @@ jobs:
             - ~/.config
             - ./node_modules
       - run: yarn test
+
   e2e-test:
     executor: 
       name: node/default
@@ -78,6 +87,7 @@ jobs:
       - run: yarn test:e2e
       - store_artifacts:
           path: mochawesome-report
+
   publish:
     executor: 
       name: node/default
@@ -91,6 +101,7 @@ jobs:
           success_only: true
           success_message: ":partying_face: La version :sparkles:${CIRCLE_TAG}:sparkles: de Bubble-craft est disponible :partying_face:"
           webhook: "${DISCORD_STATUS_WEBHOOK}"
+
   deploy:
     docker:
       - image: google/cloud-sdk:latest
@@ -102,7 +113,6 @@ jobs:
             echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
             gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
             gcloud config set project $GCLOUD_PROJECT_ID
-      # Déploiement sur Google Cloud Run
       - run:
           name: Build
           command: ls -la && gcloud builds submit --region=$REGION --tag $_AR_HOSTNAME/$GCLOUD_PROJECT_ID/$_SERVICE_NAME/$REPO_NAME:$CIRCLE_SHA1
@@ -123,17 +133,16 @@ filters-all: &filters-all
 
 workflows:
   version: 2
+
   ci:
     jobs:
       - lint-and-format:
           filters: *filters-all
-      - unit-test :
+      - unit-test:
           filters: *filters-all
-      - e2e-test :
+      - e2e-test:
           filters: *filters-all
-      - chromatic :
-          filters: *filters-all
-      - publish :
+      - publish:
           requires:
             - unit-test
             - lint-and-format
@@ -144,3 +153,8 @@ workflows:
             - unit-test
             - e2e-test
           filters: *filters-tag
+
+  chromatic-run:
+    when: << pipeline.parameters.run_chromatic >>
+    jobs:
+      - chromatic
