@@ -11,24 +11,17 @@ parameters:
 
 jobs:
   chromatic:
-    parameters:
-      run_chromatic:
-        type: boolean
-        default: false
     executor:
       name: node/default
       tag: current
     steps:
-      - when:
-          condition: << parameters.run_chromatic >>
-          steps:
-            - checkout
-            - restore_cache:
-                keys:
-                  - v1-dependencies-{{ checksum "package.json" }}
-                  - v1-dependencies-
-            - run: yarn install
-            - run: npx chromatic --project-token=$chromatic --exit-zero-on-changes
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+      - run: yarn install
+      - run: npx chromatic --project-token=$chromatic --exit-zero-on-changes
 
   lint-and-format:
     executor:
@@ -140,6 +133,7 @@ filters-all: &filters-all
 
 workflows:
   version: 2
+
   ci:
     jobs:
       - lint-and-format:
@@ -159,5 +153,8 @@ workflows:
             - unit-test
             - e2e-test
           filters: *filters-tag
-      - chromatic:
-          run_chromatic: << pipeline.parameters.run_chromatic >>
+
+  chromatic-run:
+    when: << pipeline.parameters.run_chromatic >>
+    jobs:
+      - chromatic
