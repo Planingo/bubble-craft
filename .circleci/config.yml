@@ -19,16 +19,13 @@ jobs:
       name: node/default
       tag: current
     steps:
-      - when:
-          condition: << parameters.run_chromatic >>
-          steps:
-            - checkout
-            - restore_cache:
-                keys:
-                  - v1-dependencies-{{ checksum "package.json" }}
-                  - v1-dependencies-
-            - run: yarn install
-            - run: npx chromatic --project-token=$chromatic --exit-zero-on-changes
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+      - run: yarn install
+      - run: npx chromatic --project-token=$chromatic --exit-zero-on-changes
 
   lint-and-format:
     executor:
@@ -145,8 +142,6 @@ workflows:
       - unit-test :
           filters: *filters-all
       - e2e-test :
-          filters: *filters-all
-      - chromatic :
           filters: *filters-all
       - publish :
           requires:
