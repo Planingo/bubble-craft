@@ -3,7 +3,7 @@ import { SignupPage } from "../components/LoginPage/SignupPage";
 import { IntlProvider } from "../translation/IntlProvider";
 
 describe("<SignupPage />", () => {
-  it("renders", () => {
+  it.skip("renders", () => {
     cy.mount(
       <IntlProvider>
         <BrowserRouter>

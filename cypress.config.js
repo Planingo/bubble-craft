@@ -2,6 +2,7 @@ import { defineConfig } from "cypress";
 
 export default defineConfig({
   reporter: "mochawesome",
+
   reporterOptions: {
     reportDir: "runner-results",
     overwrite: false,
@@ -9,6 +10,7 @@ export default defineConfig({
     json: true,
     reportFilename: "[name]-report",
   },
+
   component: {
     devServer: {
       framework: "react",
