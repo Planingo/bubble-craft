@@ -6,6 +6,9 @@ on:
 
 jobs:
   trigger-chromatic:
+    if: |
+      github.event.issue.pull_request != null &&
+      contains(github.event.comment.body, 'chromatic')
     runs-on: ubuntu-latest
     steps:
       - name: Trigger CircleCI chromatic pipeline
