@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Trigger CircleCI chromatic pipeline
         env:
-          CIRCLECI_TOKEN: ${{ secrets.CIRCLECI_TOKEN }}
+          CIRCLECI_TOKEN: ${{ CIRCLECI_TOKEN }}
         run: |
           curl -X POST https://circleci.com/api/v2/project/gh/Planingo/bubble-craft/pipeline \
           -H "Circle-Token: $CIRCLECI_TOKEN" \
