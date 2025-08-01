@@ -1,3 +1,15 @@
 .storybook-calendar {
-  height: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+}
+
+.calendar {
+  flex: 1;
+}
+
+#events {
+  cursor: pointer;
+  min-width: 10%;
 }
