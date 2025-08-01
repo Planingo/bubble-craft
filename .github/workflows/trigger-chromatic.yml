@@ -9,23 +9,12 @@ jobs:
     if: github.event.issue.pull_request != null && contains(github.event.comment.body, 'chromatic')
     runs-on: ubuntu-latest
     steps:
-      - name: Install GitHub CLI
-        uses: cli/cli@v2
-
-      - name: Get branch name from PR
-        id: get_branch
-        run: |
-          PR_NUMBER=${{ github.event.issue.number }}
-          BRANCH=$(gh pr view $PR_NUMBER --json headRefName -q .headRefName)
-          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
-        env:
-          GH_TOKEN: ${{ github.token }}
-
       - name: Trigger CircleCI job
         env:
           CIRCLECI_TOKEN: ${{ secrets.CIRCLECI_TOKEN }}
+          BRANCH: ${{ github.event.pull_request.head.ref }}
         run: |
           curl -X POST https://circleci.com/api/v2/project/gh/Planingo/bubble-craft/pipeline \
             -H "Circle-Token: $CIRCLECI_TOKEN" \
             -H "Content-Type: application/json" \
-            -d "{\"branch\":\"${{ steps.get_branch.outputs.branch }}\", \"parameters\":{\"run_chromatic\": true}}"
+            -d "{\"branch\":\"${BRANCH}\", \"parameters\":{\"run_chromatic\": true}}"
