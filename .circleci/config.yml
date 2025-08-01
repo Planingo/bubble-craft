@@ -19,13 +19,16 @@ jobs:
       name: node/default
       tag: current
     steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            - v1-dependencies-
-      - run: yarn install
-      - run: npx chromatic --project-token=$chromatic --exit-zero-on-changes
+      - when:
+          condition: << parameters.run_chromatic >>
+          steps:
+            - checkout
+            - restore_cache:
+                keys:
+                  - v1-dependencies-{{ checksum "package.json" }}
+                  - v1-dependencies-
+            - run: yarn install
+            - run: npx chromatic --project-token=$chromatic --exit-zero-on-changes
 
   lint-and-format:
     executor:
@@ -63,6 +66,7 @@ jobs:
             - ~/.config
             - ./node_modules
       - run: yarn test
+
   e2e-test:
     executor: 
       name: node/default
@@ -90,6 +94,7 @@ jobs:
       - run: yarn test:e2e
       - store_artifacts:
           path: mochawesome-report
+
   publish:
     executor: 
       name: node/default
@@ -103,6 +108,7 @@ jobs:
           success_only: true
           success_message: ":partying_face: La version :sparkles:${CIRCLE_TAG}:sparkles: de Bubble-craft est disponible :partying_face:"
           webhook: "${DISCORD_STATUS_WEBHOOK}"
+
   deploy:
     docker:
       - image: google/cloud-sdk:latest
@@ -114,7 +120,6 @@ jobs:
             echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
             gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
             gcloud config set project $GCLOUD_PROJECT_ID
-      # Déploiement sur Google Cloud Run
       - run:
           name: Build
           command: ls -la && gcloud builds submit --region=$REGION --tag $_AR_HOSTNAME/$GCLOUD_PROJECT_ID/$_SERVICE_NAME/$REPO_NAME:$CIRCLE_SHA1
@@ -139,11 +144,11 @@ workflows:
     jobs:
       - lint-and-format:
           filters: *filters-all
-      - unit-test :
+      - unit-test:
           filters: *filters-all
-      - e2e-test :
+      - e2e-test:
           filters: *filters-all
-      - publish :
+      - publish:
           requires:
             - unit-test
             - lint-and-format
@@ -154,5 +159,5 @@ workflows:
             - unit-test
             - e2e-test
           filters: *filters-tag
-      - chromatic: 
+      - chromatic:
           run_chromatic: << pipeline.parameters.run_chromatic >>
