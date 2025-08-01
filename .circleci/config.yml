@@ -1,23 +1,37 @@
 version: 2.1
+
 orbs:
-  discord: antonioned/discord@0.1.0
   node: circleci/node@5.2.0
+  discord: antonioned/discord@0.1.0
+
+parameters:
+  run_chromatic:
+    type: boolean
+    default: false
 
 jobs:
   chromatic:
-      executor: 
-        name: node/default
-        tag: current
-      steps:
-        - checkout
-        - restore_cache:
-            keys:
-              - v1-dependencies-{{ checksum "package.json" }}
-              - v1-dependencies-
-        - run: yarn install
-        - run: npx chromatic --project-token=$chromatic --exit-zero-on-changes
+    parameters:
+      run_chromatic:
+        type: boolean
+        default: false
+    executor:
+      name: node/default
+      tag: current
+    steps:
+      - when:
+          condition: << parameters.run_chromatic >>
+          steps:
+            - checkout
+            - restore_cache:
+                keys:
+                  - v1-dependencies-{{ checksum "package.json" }}
+                  - v1-dependencies-
+            - run: yarn install
+            - run: npx chromatic --project-token=$chromatic --exit-zero-on-changes
+
   lint-and-format:
-    executor: 
+    executor:
       name: node/default
       tag: current
     steps:
@@ -34,8 +48,9 @@ jobs:
             - ./node_modules
       - run: yarn lint
       - run: yarn format:check
+
   unit-test:
-    executor: 
+    executor:
       name: node/default
       tag: current
     steps:
@@ -144,3 +159,5 @@ workflows:
             - unit-test
             - e2e-test
           filters: *filters-tag
+      - chromatic: 
+          run_chromatic: << pipeline.parameters.run_chromatic >>
