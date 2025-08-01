@@ -1,4 +1,4 @@
-name: Trigger Chromatic CI via comment
+name: Trigger Chromatic CI from comment
 
 on:
   issue_comment:
@@ -6,16 +6,21 @@ on:
 
 jobs:
   trigger-chromatic:
-    if: github.event.issue.pull_request != null && contains(github.event.comment.body, 'chromatic')
+    if: |
+      github.event.issue.pull_request != null &&
+      contains(github.event.comment.body, 'chromatic')
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger CircleCI Pipeline
+      - name: Trigger CircleCI chromatic pipeline
         env:
           CIRCLECI_TOKEN: ${{ secrets.CIRCLECI_TOKEN }}
-          BRANCH: ${{ github.event.pull_request.head.ref }}
         run: |
           curl -X POST https://circleci.com/api/v2/project/gh/Planingo/bubble-craft/pipeline \
-            -H "Circle-Token: $CIRCLECI_TOKEN" \
-            -H "Content-Type: application/json" \
-            -d "{\"branch\":\"$BRANCH\", \"parameters\":{\"run_chromatic\": true}}"
-
+          -H "Circle-Token: $CIRCLECI_TOKEN" \
+          -H "Content-Type: application/json" \
+          -d '{
+                "branch": "${{ github.event.issue.pull_request.head.ref }}",
+                "parameters": {
+                  "run_chromatic": true
+                }
+              }'
