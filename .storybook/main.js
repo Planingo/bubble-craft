@@ -18,9 +18,7 @@ export default {
       },
     },
     "@storybook/addon-links",
-    "@storybook/addon-essentials",
     "storybook-addon-pseudo-states",
-    "@storybook/addon-measure",
     "@chromatic-com/storybook",
   ],
   framework: {
