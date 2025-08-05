@@ -11750,8 +11750,8 @@ __metadata:
   linkType: hard
 
 "storybook@npm:^9.1.0":
-  version: 9.1.0
-  resolution: "storybook@npm:9.1.0"
+  version: 9.1.1
+  resolution: "storybook@npm:9.1.1"
   dependencies:
     "@storybook/global": "npm:^5.0.0"
     "@testing-library/jest-dom": "npm:^6.6.3"
@@ -11772,7 +11772,7 @@ __metadata:
       optional: true
   bin:
     storybook: ./bin/index.cjs
-  checksum: 10c0/6360491360303042fd0e3fb1d6420eea78099e52c1ae49515ed1a4acaf8934df533e30d2c048f7db161daf0e7550c459353304f5ac58c6b74168f37524420c74
+  checksum: 10c0/efd2665547dc6bfd4cabd00ee1a6368c7cec27a3e4c16bc875ae06bb5d9ee74120c11102699165530f31fe8becb47212d80632b1fefcafa60fef94b3cd0bf50f
   languageName: node
   linkType: hard
 
