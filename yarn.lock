@@ -1700,7 +1700,7 @@ __metadata:
     eslint-plugin-cypress: "npm:^4.0.0"
     eslint-plugin-mdx: "npm:^3.1.5"
     eslint-plugin-react: "npm:^7.35.2"
-    eslint-plugin-storybook: "npm:9.1.0"
+    eslint-plugin-storybook: "npm:9.1.1"
     final-form: "npm:^4.20.10"
     fullcalendar: "npm:^6.1.15"
     globals: "npm:^16.0.0"
@@ -5451,15 +5451,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-storybook@npm:9.1.0":
-  version: 9.1.0
-  resolution: "eslint-plugin-storybook@npm:9.1.0"
+"eslint-plugin-storybook@npm:9.1.1":
+  version: 9.1.1
+  resolution: "eslint-plugin-storybook@npm:9.1.1"
   dependencies:
     "@typescript-eslint/utils": "npm:^8.8.1"
   peerDependencies:
     eslint: ">=8"
-    storybook: ^9.1.0
-  checksum: 10c0/bada8e7cb7dbe6c86360544564f46fb7a9913676a8e5d2293c6d20c625f81f30d7c8d76587e2c9234a9a5ac7120c51fb182f55b5840b974987eb680b270b6d0a
+    storybook: ^9.1.1
+  checksum: 10c0/4cf80aa078633021b153a3a5b790a39c9919b5fa7203727c15d8ae066e75d6e134d7d718e66a6a5db9815275f32942a2deae1979aeb36be2543572507faced2c
   languageName: node
   linkType: hard
 
