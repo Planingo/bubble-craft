@@ -1352,30 +1352,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/resource-daygrid@npm:~6.1.15":
-  version: 6.1.15
-  resolution: "@fullcalendar/resource-daygrid@npm:6.1.15"
+"@fullcalendar/resource-daygrid@npm:~6.1.19":
+  version: 6.1.19
+  resolution: "@fullcalendar/resource-daygrid@npm:6.1.19"
   dependencies:
-    "@fullcalendar/daygrid": "npm:~6.1.15"
-    "@fullcalendar/premium-common": "npm:~6.1.15"
+    "@fullcalendar/daygrid": "npm:~6.1.19"
+    "@fullcalendar/premium-common": "npm:~6.1.19"
   peerDependencies:
-    "@fullcalendar/core": ~6.1.15
-    "@fullcalendar/resource": ~6.1.15
-  checksum: 10c0/32d47e9e4662184998fa5abddebade664e95cf8a21bd7d9cc2a691209f1fc693b241a508dc61ab2764ba27e3e5251893a9fdeeaed3e086f07f77efa8cb557639
+    "@fullcalendar/core": ~6.1.19
+    "@fullcalendar/resource": ~6.1.19
+  checksum: 10c0/04c1de3907df8b3d8493f6df8dee5dd5ec0ce02215f42843d8c2e0f46038928ce42a28a8c496a66db93a710fdaaf2ce3668dfb9b0901a51dff62987441c96732
   languageName: node
   linkType: hard
 
 "@fullcalendar/resource-timegrid@npm:^6.1.15":
-  version: 6.1.15
-  resolution: "@fullcalendar/resource-timegrid@npm:6.1.15"
+  version: 6.1.19
+  resolution: "@fullcalendar/resource-timegrid@npm:6.1.19"
   dependencies:
-    "@fullcalendar/premium-common": "npm:~6.1.15"
-    "@fullcalendar/resource-daygrid": "npm:~6.1.15"
-    "@fullcalendar/timegrid": "npm:~6.1.15"
+    "@fullcalendar/premium-common": "npm:~6.1.19"
+    "@fullcalendar/resource-daygrid": "npm:~6.1.19"
+    "@fullcalendar/timegrid": "npm:~6.1.19"
   peerDependencies:
-    "@fullcalendar/core": ~6.1.15
-    "@fullcalendar/resource": ~6.1.15
-  checksum: 10c0/64f1f898ea3ac16dd0af7d4630c5cbc17274faea4f545437e2b944e0ead1ccc72abe9ad5dc8066faea06e42b7892b186b1f4c7b923e49eadd486a1257d7ae695
+    "@fullcalendar/core": ~6.1.19
+    "@fullcalendar/resource": ~6.1.19
+  checksum: 10c0/c183dac8679496897d39a2c2d7ffc9eda0213b7b78006816c254fb854f2c48e3f63aa86711641c09f036b23c2fe63530e42c35fa30f8dc3bb39a3d5ab9c3ba68
   languageName: node
   linkType: hard
 
@@ -1390,7 +1390,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullcalendar/timegrid@npm:^6.1.15, @fullcalendar/timegrid@npm:~6.1.15":
+"@fullcalendar/timegrid@npm:^6.1.15, @fullcalendar/timegrid@npm:~6.1.15, @fullcalendar/timegrid@npm:~6.1.19":
   version: 6.1.19
   resolution: "@fullcalendar/timegrid@npm:6.1.19"
   dependencies:
