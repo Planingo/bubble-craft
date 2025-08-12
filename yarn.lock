@@ -11741,11 +11741,11 @@ __metadata:
   linkType: hard
 
 "storybook-addon-pseudo-states@npm:^9.1.0":
-  version: 9.1.0
-  resolution: "storybook-addon-pseudo-states@npm:9.1.0"
+  version: 9.1.2
+  resolution: "storybook-addon-pseudo-states@npm:9.1.2"
   peerDependencies:
-    storybook: ^9.1.0
-  checksum: 10c0/3ae33f251cca875ab3d9b2fe87010e45727d37d6deee95f4cf6446ec1e10105fa0937db89376826d7dcc5d8e5a59def73380d40e3c08e4d014acef60da870703
+    storybook: ^9.1.2
+  checksum: 10c0/fabee347fb13b087ae8168d5f7b1f98981ee3984d6529e32f42c5be884156fe747da5b7e6b325de6e56464926a5a7592cecd0056750760d4e0f4d4ca6f3f67af
   languageName: node
   linkType: hard
 
