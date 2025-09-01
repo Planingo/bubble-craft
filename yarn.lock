@@ -2102,7 +2102,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-vite@npm:9.1.3":
+"@storybook/builder-vite@npm:9.1.3, @storybook/builder-vite@npm:^9.1.0":
   version: 9.1.3
   resolution: "@storybook/builder-vite@npm:9.1.3"
   dependencies:
@@ -2112,19 +2112,6 @@ __metadata:
     storybook: ^9.1.3
     vite: ^5.0.0 || ^6.0.0 || ^7.0.0
   checksum: 10c0/65d558f1502f7feebd6c2b8e2fd6509f557e7ee2da7fd3bf07106bc555abd4d53e38b709db721c5f0c5ccc9f9cbb7feb36d449aab5050142b9fa5ebc2e84624e
-  languageName: node
-  linkType: hard
-
-"@storybook/builder-vite@npm:^9.1.0":
-  version: 9.1.2
-  resolution: "@storybook/builder-vite@npm:9.1.2"
-  dependencies:
-    "@storybook/csf-plugin": "npm:9.1.2"
-    ts-dedent: "npm:^2.0.0"
-  peerDependencies:
-    storybook: ^9.1.2
-    vite: ^5.0.0 || ^6.0.0 || ^7.0.0
-  checksum: 10c0/2411e593903bc61336f2a2c6f48e7314dcc8c776346eff0f6fec28e9fc8e3a90d3f8d6561f30d1caf490349d34c7690f8addf4c56fa1fd778f0dfda49cf3aa97
   languageName: node
   linkType: hard
 
