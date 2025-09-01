@@ -2981,8 +2981,8 @@ __metadata:
   linkType: hard
 
 "antd@npm:^5.14.2":
-  version: 5.27.0
-  resolution: "antd@npm:5.27.0"
+  version: 5.27.1
+  resolution: "antd@npm:5.27.1"
   dependencies:
     "@ant-design/colors": "npm:^7.2.1"
     "@ant-design/cssinjs": "npm:^1.23.0"
@@ -3036,7 +3036,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 10c0/c5eee01a8c69f78c8d8cf673b94891daab2c9e5910bf29c61c3f188be5c55891ea1f58708b9681efe2da7f87dc5e32bb0f5f0baaa0a2c0f8f924c46fbf7ea46c
+  checksum: 10c0/a079454fc786425ffc59d0efe94fc32cae54a673d484341a9884a1a60e6b4bb9fea09f6189542cdee1034749e5681c1ffd747abeb69ca660f078c1f6a27e4ea2
   languageName: node
   linkType: hard
 
