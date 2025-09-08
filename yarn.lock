@@ -2102,7 +2102,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-vite@npm:9.1.3, @storybook/builder-vite@npm:^9.1.0":
+"@storybook/builder-vite@npm:9.1.3":
   version: 9.1.3
   resolution: "@storybook/builder-vite@npm:9.1.3"
   dependencies:
@@ -2115,14 +2115,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/csf-plugin@npm:9.1.2":
-  version: 9.1.2
-  resolution: "@storybook/csf-plugin@npm:9.1.2"
+"@storybook/builder-vite@npm:^9.1.0":
+  version: 9.1.5
+  resolution: "@storybook/builder-vite@npm:9.1.5"
   dependencies:
-    unplugin: "npm:^1.3.1"
+    "@storybook/csf-plugin": "npm:9.1.5"
+    ts-dedent: "npm:^2.0.0"
   peerDependencies:
-    storybook: ^9.1.2
-  checksum: 10c0/a145da545844b9b2af345d43d8f2c035dd801bd6414b4a9a2037dfa950250d08133a956226c49c36a79ffda171ad9388a0f1621c04cfed77e5c342817f4a275e
+    storybook: ^9.1.5
+    vite: ^5.0.0 || ^6.0.0 || ^7.0.0
+  checksum: 10c0/1a64f276012f224ee3224f56fab9b5a3c6e28ac6bbf135a3490d58e4fe2f9a76b127a5e642e0e3331917e78391542704f5b92e1ce3d244e7bdb2f7cd1b3d21fb
   languageName: node
   linkType: hard
 
@@ -2134,6 +2136,17 @@ __metadata:
   peerDependencies:
     storybook: ^9.1.3
   checksum: 10c0/74919587c276ca6fdc200c1c8e74aeb90da5046c50f00fa2a6728cb306077c8e8d7158f49069651013626ea085f43066bde86b27cd825ea4ee94451fbe3851cb
+  languageName: node
+  linkType: hard
+
+"@storybook/csf-plugin@npm:9.1.5":
+  version: 9.1.5
+  resolution: "@storybook/csf-plugin@npm:9.1.5"
+  dependencies:
+    unplugin: "npm:^1.3.1"
+  peerDependencies:
+    storybook: ^9.1.5
+  checksum: 10c0/03d3ad19b1fd3375c1fdd64acfaf903ec81b3626098f421e57bf9f0551924d50c2a8668bf547da25dee90e4b89a03dd06827db16718e81f7008a6c1bf74ce890
   languageName: node
   linkType: hard
 
@@ -2151,17 +2164,6 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
   checksum: 10c0/fd0514fb3fa431a8b5939fe1d9fc336b253ef2c25b34792d2d4ee59e13321108d34f8bf223a0981482f54f83c5ef47ffd1a98c376ca9071011c1b8afe2b01d43
-  languageName: node
-  linkType: hard
-
-"@storybook/react-dom-shim@npm:9.1.2":
-  version: 9.1.2
-  resolution: "@storybook/react-dom-shim@npm:9.1.2"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    storybook: ^9.1.2
-  checksum: 10c0/7547cb0fdcf8098c00017cbfb501f11a34ae73b9e13984520b8143e709b4b8ec1acf7fed9ce51dbb5b5af5dcd657396da17ef1f262f60efdd4956f3e26b3c704
   languageName: node
   linkType: hard
 
