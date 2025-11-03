@@ -1830,17 +1830,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rc-component/qrcode@npm:~1.0.0":
-  version: 1.0.0
-  resolution: "@rc-component/qrcode@npm:1.0.0"
+"@rc-component/qrcode@npm:~1.1.0":
+  version: 1.1.0
+  resolution: "@rc-component/qrcode@npm:1.1.0"
   dependencies:
     "@babel/runtime": "npm:^7.24.7"
     classnames: "npm:^2.3.2"
-    rc-util: "npm:^5.38.0"
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 10c0/406dbe13e3b24ca20ef729d5456a329711ac9ca50f20604ff1e1fdbcb3a716408ad453cc083ec87d541096c85e2f512175f0b357075b40f71bea38e2a4f59cbd
+  checksum: 10c0/24c3bde6a16735f84330c0bfc499b4c912e31e90894e26a1a2b64ce5374b79de0c5328c7d731109508eed583ec6d5c085581cba665a7e69debb8d7ca7c3fcf84
   languageName: node
   linkType: hard
 
@@ -2115,17 +2114,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/csf-plugin@npm:9.1.2":
-  version: 9.1.2
-  resolution: "@storybook/csf-plugin@npm:9.1.2"
-  dependencies:
-    unplugin: "npm:^1.3.1"
-  peerDependencies:
-    storybook: ^9.1.2
-  checksum: 10c0/a145da545844b9b2af345d43d8f2c035dd801bd6414b4a9a2037dfa950250d08133a956226c49c36a79ffda171ad9388a0f1621c04cfed77e5c342817f4a275e
-  languageName: node
-  linkType: hard
-
 "@storybook/csf-plugin@npm:9.1.3":
   version: 9.1.3
   resolution: "@storybook/csf-plugin@npm:9.1.3"
@@ -2151,17 +2139,6 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
   checksum: 10c0/fd0514fb3fa431a8b5939fe1d9fc336b253ef2c25b34792d2d4ee59e13321108d34f8bf223a0981482f54f83c5ef47ffd1a98c376ca9071011c1b8afe2b01d43
-  languageName: node
-  linkType: hard
-
-"@storybook/react-dom-shim@npm:9.1.2":
-  version: 9.1.2
-  resolution: "@storybook/react-dom-shim@npm:9.1.2"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    storybook: ^9.1.2
-  checksum: 10c0/7547cb0fdcf8098c00017cbfb501f11a34ae73b9e13984520b8143e709b4b8ec1acf7fed9ce51dbb5b5af5dcd657396da17ef1f262f60efdd4956f3e26b3c704
   languageName: node
   linkType: hard
 
@@ -2981,8 +2958,8 @@ __metadata:
   linkType: hard
 
 "antd@npm:^5.14.2":
-  version: 5.27.0
-  resolution: "antd@npm:5.27.0"
+  version: 5.28.0
+  resolution: "antd@npm:5.28.0"
   dependencies:
     "@ant-design/colors": "npm:^7.2.1"
     "@ant-design/cssinjs": "npm:^1.23.0"
@@ -2993,7 +2970,7 @@ __metadata:
     "@babel/runtime": "npm:^7.26.0"
     "@rc-component/color-picker": "npm:~2.0.1"
     "@rc-component/mutate-observer": "npm:^1.1.0"
-    "@rc-component/qrcode": "npm:~1.0.0"
+    "@rc-component/qrcode": "npm:~1.1.0"
     "@rc-component/tour": "npm:~1.15.1"
     "@rc-component/trigger": "npm:^2.3.0"
     classnames: "npm:^2.5.1"
@@ -3005,7 +2982,7 @@ __metadata:
     rc-dialog: "npm:~9.6.0"
     rc-drawer: "npm:~7.3.0"
     rc-dropdown: "npm:~4.2.1"
-    rc-field-form: "npm:~2.7.0"
+    rc-field-form: "npm:~2.7.1"
     rc-image: "npm:~7.12.0"
     rc-input: "npm:~1.8.0"
     rc-input-number: "npm:~9.5.0"
@@ -3020,23 +2997,23 @@ __metadata:
     rc-resize-observer: "npm:^1.4.3"
     rc-segmented: "npm:~2.7.0"
     rc-select: "npm:~14.16.8"
-    rc-slider: "npm:~11.1.8"
+    rc-slider: "npm:~11.1.9"
     rc-steps: "npm:~6.0.1"
     rc-switch: "npm:~4.1.0"
-    rc-table: "npm:~7.51.1"
+    rc-table: "npm:~7.54.0"
     rc-tabs: "npm:~15.7.0"
     rc-textarea: "npm:~1.10.2"
     rc-tooltip: "npm:~6.4.0"
     rc-tree: "npm:~5.13.1"
     rc-tree-select: "npm:~5.27.0"
-    rc-upload: "npm:~4.9.2"
+    rc-upload: "npm:~4.11.0"
     rc-util: "npm:^5.44.4"
     scroll-into-view-if-needed: "npm:^3.1.0"
     throttle-debounce: "npm:^5.0.2"
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 10c0/c5eee01a8c69f78c8d8cf673b94891daab2c9e5910bf29c61c3f188be5c55891ea1f58708b9681efe2da7f87dc5e32bb0f5f0baaa0a2c0f8f924c46fbf7ea46c
+  checksum: 10c0/06c08308a7fc93085770e957d7980c367f7839938aa8b87e018f88dd6b12a12abc230ff80eeda78afa33a4357122ead19da6d16ea1adbe534bc1c352d37fbc8f
   languageName: node
   linkType: hard
 
@@ -9981,9 +9958,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-field-form@npm:~2.7.0":
-  version: 2.7.0
-  resolution: "rc-field-form@npm:2.7.0"
+"rc-field-form@npm:~2.7.1":
+  version: 2.7.1
+  resolution: "rc-field-form@npm:2.7.1"
   dependencies:
     "@babel/runtime": "npm:^7.18.0"
     "@rc-component/async-validator": "npm:^5.0.3"
@@ -9991,7 +9968,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 10c0/8b5ba3d4ef2680751235797710da822b96225ba1fd1a0098d4c9b7723ac1e0a8eb07c70a6ca216c0b2f8f45f1035f849b924f13c6386e215ec1d854927a504a2
+  checksum: 10c0/2493cb9f26e69e17d55f32ad689da103a325e613d9222bfb332c2dcbdc96d44ce7dc4c8642a9b89a932ad2c2573508c997a4685e7fe6de2e951a027d2837403a
   languageName: node
   linkType: hard
 
@@ -10305,9 +10282,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-slider@npm:~11.1.8":
-  version: 11.1.8
-  resolution: "rc-slider@npm:11.1.8"
+"rc-slider@npm:~11.1.9":
+  version: 11.1.9
+  resolution: "rc-slider@npm:11.1.9"
   dependencies:
     "@babel/runtime": "npm:^7.10.1"
     classnames: "npm:^2.2.5"
@@ -10315,7 +10292,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 10c0/b202599abf85e21234c2cababe9c6f908aa7fcdde9eca413ef96b209838f3b1a33292d1a1bbe571b84bf46f8a5d28d5c1a070f331bddc0504101e9e2a75cf422
+  checksum: 10c0/193c432e2859ba42b2235cc1949de2d929ba70fa4aa5672eaa5da692797f3fe927f8c0b2a75cc45c6b9f666f204f4ed038ccf904273d6cbc39e112f4a00ddd4a
   languageName: node
   linkType: hard
 
@@ -10347,9 +10324,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-table@npm:~7.51.1":
-  version: 7.51.1
-  resolution: "rc-table@npm:7.51.1"
+"rc-table@npm:~7.54.0":
+  version: 7.54.0
+  resolution: "rc-table@npm:7.54.0"
   dependencies:
     "@babel/runtime": "npm:^7.10.1"
     "@rc-component/context": "npm:^1.4.0"
@@ -10360,7 +10337,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 10c0/ba6b25b7ff5555c059bdd8d504846839a786eb3eb5701b0ac648fb65e8197ed5a9d046d06881df19f6b1fbe014097f7260cc9e1c25c7644278cc6a53c71198fb
+  checksum: 10c0/bf78af66c97aca8437bcf1f88df81b4171afbf647959c9b3600b246c15f9db8763fa50255749390d7f2c0ba0a6aea4f467f64aa4dd6265d56ebf35ffc0d6b94f
   languageName: node
   linkType: hard
 
@@ -10461,9 +10438,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-upload@npm:~4.9.2":
-  version: 4.9.2
-  resolution: "rc-upload@npm:4.9.2"
+"rc-upload@npm:~4.11.0":
+  version: 4.11.0
+  resolution: "rc-upload@npm:4.11.0"
   dependencies:
     "@babel/runtime": "npm:^7.18.3"
     classnames: "npm:^2.2.5"
@@ -10471,7 +10448,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 10c0/2299f4a3d8fa87449178761fcdc3c574b21e34d2f6816ecb6c08729f699e67b23d1284f4077b9ceceb1cc8502d7c350311bc2d1dfacec7f6780d2bf9691888cb
+  checksum: 10c0/9ce59e22e0f9839e482fd37e63d8489e1a9d418113bfe39cd4d2b1e88f59236d4f7c60a3bb5928d2d85781d6f4cf8c30b6085863c802de605ef339fa415903d3
   languageName: node
   linkType: hard
 
