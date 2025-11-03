@@ -1483,6 +1483,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jridgewell/gen-mapping@npm:^0.3.5":
+  version: 0.3.13
+  resolution: "@jridgewell/gen-mapping@npm:0.3.13"
+  dependencies:
+    "@jridgewell/sourcemap-codec": "npm:^1.5.0"
+    "@jridgewell/trace-mapping": "npm:^0.3.24"
+  checksum: 10c0/9a7d65fb13bd9aec1fbab74cda08496839b7e2ceb31f5ab922b323e94d7c481ce0fc4fd7e12e2610915ed8af51178bdc61e168e92a8c8b8303b030b03489b13b
+  languageName: node
+  linkType: hard
+
+"@jridgewell/remapping@npm:^2.3.5":
+  version: 2.3.5
+  resolution: "@jridgewell/remapping@npm:2.3.5"
+  dependencies:
+    "@jridgewell/gen-mapping": "npm:^0.3.5"
+    "@jridgewell/trace-mapping": "npm:^0.3.24"
+  checksum: 10c0/3de494219ffeb2c5c38711d0d7bb128097edf91893090a2dbc8ee0b55d092bb7347b1fd0f478486c5eab010e855c73927b1666f2107516d472d24a73017d1194
+  languageName: node
+  linkType: hard
+
 "@jridgewell/resolve-uri@npm:3.1.0":
   version: 3.1.0
   resolution: "@jridgewell/resolve-uri@npm:3.1.0"
@@ -1690,7 +1710,7 @@ __metadata:
     "@storybook/addon-docs": "npm:^9.1.0"
     "@storybook/addon-links": "npm:^9.1.0"
     "@storybook/addon-storysource": "npm:^8.6.14"
-    "@storybook/builder-vite": "npm:^9.1.0"
+    "@storybook/builder-vite": "npm:^10.0.3"
     "@storybook/react-vite": "npm:^9.1.0"
     "@testing-library/dom": "npm:^10.4.0"
     "@testing-library/jest-dom": "npm:^6.5.0"
@@ -2102,7 +2122,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-vite@npm:9.1.3, @storybook/builder-vite@npm:^9.1.0":
+"@storybook/builder-vite@npm:9.1.3":
   version: 9.1.3
   resolution: "@storybook/builder-vite@npm:9.1.3"
   dependencies:
@@ -2115,14 +2135,40 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/csf-plugin@npm:9.1.2":
-  version: 9.1.2
-  resolution: "@storybook/csf-plugin@npm:9.1.2"
+"@storybook/builder-vite@npm:^10.0.3":
+  version: 10.0.3
+  resolution: "@storybook/builder-vite@npm:10.0.3"
   dependencies:
-    unplugin: "npm:^1.3.1"
+    "@storybook/csf-plugin": "npm:10.0.3"
+    ts-dedent: "npm:^2.0.0"
   peerDependencies:
-    storybook: ^9.1.2
-  checksum: 10c0/a145da545844b9b2af345d43d8f2c035dd801bd6414b4a9a2037dfa950250d08133a956226c49c36a79ffda171ad9388a0f1621c04cfed77e5c342817f4a275e
+    storybook: ^10.0.3
+    vite: ^5.0.0 || ^6.0.0 || ^7.0.0
+  checksum: 10c0/3b72d04ea4681e15efcf691b402c280240b9cd0a95cec4bc54105aa69be4bfaf362f4259773049f3b90f531172d84a2a67044e02a50d88e88ea5de7a6938ac4c
+  languageName: node
+  linkType: hard
+
+"@storybook/csf-plugin@npm:10.0.3":
+  version: 10.0.3
+  resolution: "@storybook/csf-plugin@npm:10.0.3"
+  dependencies:
+    unplugin: "npm:^2.3.5"
+  peerDependencies:
+    esbuild: "*"
+    rollup: "*"
+    storybook: ^10.0.3
+    vite: "*"
+    webpack: "*"
+  peerDependenciesMeta:
+    esbuild:
+      optional: true
+    rollup:
+      optional: true
+    vite:
+      optional: true
+    webpack:
+      optional: true
+  checksum: 10c0/d12e7b714761f5e8b9cc23e4aac361264746bfed53161bdd6bb91290325b1a0ef07a482b03bbd0a3a49262e52cddaa33e391dd92f4d6d988bf41af0c6a8913b8
   languageName: node
   linkType: hard
 
@@ -2151,17 +2197,6 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
   checksum: 10c0/fd0514fb3fa431a8b5939fe1d9fc336b253ef2c25b34792d2d4ee59e13321108d34f8bf223a0981482f54f83c5ef47ffd1a98c376ca9071011c1b8afe2b01d43
-  languageName: node
-  linkType: hard
-
-"@storybook/react-dom-shim@npm:9.1.2":
-  version: 9.1.2
-  resolution: "@storybook/react-dom-shim@npm:9.1.2"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    storybook: ^9.1.2
-  checksum: 10c0/7547cb0fdcf8098c00017cbfb501f11a34ae73b9e13984520b8143e709b4b8ec1acf7fed9ce51dbb5b5af5dcd657396da17ef1f262f60efdd4956f3e26b3c704
   languageName: node
   linkType: hard
 
@@ -2856,6 +2891,15 @@ __metadata:
   bin:
     acorn: bin/acorn
   checksum: 10c0/6d4ee461a7734b2f48836ee0fbb752903606e576cc100eb49340295129ca0b452f3ba91ddd4424a1d4406a98adfb2ebb6bd0ff4c49d7a0930c10e462719bbfd7
+  languageName: node
+  linkType: hard
+
+"acorn@npm:^8.15.0":
+  version: 8.15.0
+  resolution: "acorn@npm:8.15.0"
+  bin:
+    acorn: bin/acorn
+  checksum: 10c0/dec73ff59b7d6628a01eebaece7f2bdb8bb62b9b5926dcad0f8931f2b8b79c2be21f6c68ac095592adb5adb15831a3635d9343e6a91d028bbe85d564875ec3ec
   languageName: node
   linkType: hard
 
@@ -12798,6 +12842,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"unplugin@npm:^2.3.5":
+  version: 2.3.10
+  resolution: "unplugin@npm:2.3.10"
+  dependencies:
+    "@jridgewell/remapping": "npm:^2.3.5"
+    acorn: "npm:^8.15.0"
+    picomatch: "npm:^4.0.3"
+    webpack-virtual-modules: "npm:^0.6.2"
+  checksum: 10c0/29dcd738772aeff91c6f0154f156c95c58a37a4674fcb7cc34d6868af763834f0f447a1c3af074818c0c5602baead49bd3b9399a13f0425d69a00a527e58ddda
+  languageName: node
+  linkType: hard
+
 "untildify@npm:^4.0.0":
   version: 4.0.0
   resolution: "untildify@npm:4.0.0"
@@ -13176,6 +13232,13 @@ __metadata:
   version: 0.6.1
   resolution: "webpack-virtual-modules@npm:0.6.1"
   checksum: 10c0/696bdc1acf3806374bdeb4b9b9856b79ee70b31e92f325dfab9b8c8c7e14bb6ddffa9f895a214770c4fb8fea45a21f34ca64310f74e877292a90f4a9966c9c2f
+  languageName: node
+  linkType: hard
+
+"webpack-virtual-modules@npm:^0.6.2":
+  version: 0.6.2
+  resolution: "webpack-virtual-modules@npm:0.6.2"
+  checksum: 10c0/5ffbddf0e84bf1562ff86cf6fcf039c74edf09d78358a6904a09bbd4484e8bb6812dc385fe14330b715031892dcd8423f7a88278b57c9f5002c84c2860179add
   languageName: node
   linkType: hard
 
