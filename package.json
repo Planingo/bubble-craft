@@ -72,7 +72,7 @@
     "eslint-plugin-storybook": "9.1.2",
     "globals": "^16.0.0",
     "jiti": "^2.0.0",
-    "jsdom": "^26.0.0",
+    "jsdom": "^27.1.0",
     "mocha": "^11.0.1",
     "mocha-junit-reporter": "^2.2.1",
     "mochawesome": "^7.1.3",
